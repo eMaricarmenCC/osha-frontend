@@ -1,0 +1,32 @@
+version: '3.9'
+name: osha-frontend
+
+services:
+  frontend:
+    build:
+      context: /home/mari/Documents/PROYECTO_OSHA_FRONTEND/osha-frontend  # Ruta al directorio del frontend
+    ports:
+      - "3000:3000"  # Mapea el puerto del contenedor al puerto del host
+    depends_on:
+      - backend  # Espera a que el servicio de backend esté disponible antes de iniciar este servicio
+
+  backend:
+    build:
+      context: /home/mari/Documents/PROYECTO_OSHA_BACKEND  # Ruta al directorio del backend
+    ports:
+      - "8000:8000"  # Mapea el puerto del contenedor al puerto del host
+    environment:
+      - DEBUG=1  # Variable de entorno opcional para Django
+    depends_on:
+      - db  # Dependencia del servicio de base de datos
+
+  db:
+    image: mysql:latest  # Utiliza la imagen de MySQL
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD: root_password #Contraseña de root de MySQL
+      - MYSQL_DATABASE: mydatabase  # Nombre de la base de datos
+      - MYSQL_USER: myuser  # Usuario de la base de datos
+      - MYSQL_PASSWORD: mypassword  # Contraseña del usuario de la base de datos
+    ports:
+      - "3306:3306" #Mapea el puerto del contenedor al puerto del host
