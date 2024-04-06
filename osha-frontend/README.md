@@ -10,8 +10,8 @@ Currently, two official plugins are available:
 
 # Construcción de la imagen docker
 
-docker build -t osha-frontend -f docker/Dockerfile .
-sudo docker build -t osha-frontend -f docker/Dockerfile .
+docker build -t osha-frontend .
+sudo docker build -t osha-frontend .
 
 # Ejecutar un contenedor basado en esta imagen
 

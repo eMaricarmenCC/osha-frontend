@@ -1,33 +1,43 @@
-import React from "react";
-import '../styles/Header.css'
+import React, { useState } from "react";
+import '../styles/Header.css';
+import { BiMenuAltRight } from 'react-icons/bi';
+import OutsideClickHandler from "react-outside-click-handler";
+import logoOsha from '/src/assets/logo/logoOsha.png';
 
 function Header(){
+  const [menuOpened, setMenuOpened] = useState(false);
+  
+  const getMenuStyles = (menuOpened) => {
+    if(document.documentElement.clientWidth <= 800){
+      return {right: !menuOpened && "-100%"}
+    }
+  }
+
   return (
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <a href="index.html" class="logo">
-                <h4>Spac<span>Dyna</span></h4>
-              </a>
-              <ul class="nav">
-                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                <li class="scroll-to-section"><a href="#services">Services</a></li>
-                <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-                <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
-                <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-                <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
-              </ul>        
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
-            </nav>
-          </div>
+    <section className="h-wrapper">
+      <div className="flex gap-10 flexCenter paddings innerWidth h-container">
+        <img src='/src/assets/logo/logoOsha.png' alt="logo" width={100} />
+        <OutsideClickHandler 
+          onOutsideClick={()=>{
+            setMenuOpened(false)
+          }}
+        />
+        <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
+          <a href="">Inicio</a>
+          <a href="">Nosotros</a>
+          <a href="">Estándares</a>
+          <a href="">Acreditación</a>
+          <a href="">Grados</a>
+          <a href="">Corporativos</a>
+          <button className="button">
+            <a href="">Contáctanos</a>
+          </button>
         </div>
-      </div>
-    </header>
+        <div className="menu-icon" onClick={()=>setMenuOpened((prev)=>!prev)}>
+          <BiMenuAltRight  size={30} />
+        </div>
+      </div>      
+    </section>
   )
 }
 export default Header

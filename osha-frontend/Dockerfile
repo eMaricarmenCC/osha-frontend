@@ -2,10 +2,10 @@
 FROM node:20-alpine
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copia el archivo package.json y package-lock.json (si existe) para instalar las dependencias
-COPY package*.json ./
+COPY package.json .
 
 # Instala las dependencias del proyecto
 RUN npm install
@@ -17,7 +17,9 @@ COPY . .
 #RUN npm run build
 
 # Expone el puerto 3000 para que la aplicación pueda ser accesible desde fuera del contenedor
-#EXPOSE 3000
+EXPOSE 5173
+
+#RUN npm run build
 
 # Comando para iniciar la aplicación cuando el contenedor se inicia
 CMD ["npm", "run", "dev"]

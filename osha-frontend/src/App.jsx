@@ -1,12 +1,22 @@
-import { useState } from 'react'
+import { Component, useState } from 'react'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Top from './components/Top'
+import Header from './components/Header'
+import Inicio from './pages/Inicio'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>hello</div>
+      <BrowserRouter>
+        <div className='app'>
+          <Top />
+          <Header />
+          <Inicio />
+        </div>
+      </BrowserRouter>
     </>
   )
 }
