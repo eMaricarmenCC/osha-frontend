@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiStudentFill } from "react-icons/pi";
 import { GrLanguage } from "react-icons/gr";
@@ -22,11 +23,13 @@ function Top(){
       
       {/* Aula virtual */}
       <div className="w-1/4 flex justify-center">
-        <a href="" className="flex flex-row gap-1 items-center text-sm">
-          <PiStudentFill color='white'/>
-          <span className="text-white">Aula virtual</span>
-        </a>        
-      </div>
+        <Link to="/aulaosha/login">
+          <a href="" className="flex flex-row gap-1 items-center text-sm">
+            <PiStudentFill color='white'/>
+            <span className="text-white">Aula virtual</span>
+          </a>
+        </Link>
+      </div>     
       
       {/* Lenguaje */}
       <div className="w-1/4 flex justify-end">
