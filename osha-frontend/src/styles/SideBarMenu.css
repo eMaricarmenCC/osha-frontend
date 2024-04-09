@@ -1,11 +1,14 @@
 :root {
-    --VerdePrimario: #009A43;
-    --VerdeIntermedio:#3FAB6E;
-    --VerdeClaro: #C8DED1;
-    --Blanco: #FFFFFF;
-    --GrisClaro: #EDEDED;
-    --GrisIntermedio: #A2A2A2;
-    --GrisOscuro: #555555;
+    --primary: #0082C3;
+    --azulOscuro: #197CAD;
+    --azulMedio: #36A6D5;
+    --azulClaro: #3BBBE6;
+    --secondary: #DEA705;
+    --grisOscuro: #5C5E5D;
+    --grisMedio: #B1B6B7;
+    --grisClaro: #D8DDDD; 
+    --grisFondo: #F5F5F5;
+    --Blanco: #ffff;
     --Negro: #000000;
 }
 
@@ -28,7 +31,7 @@ main{
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    background-color: var(--GrisClaro);
+    background-color: var(--grisClaro);
     overflow-y: auto;
     background-color: var(--Blanco);
 }
@@ -37,11 +40,11 @@ main{
 .sidebar{
     display: flex;
     flex-direction: column;
-    padding: 15px 15px;  
+    padding: 25px 20px 20px 20px;  
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     align-self: stretch;
-    background: var(--VerdePrimario);
+    background: var(--primary);
     transition: all .4s;
     overflow-y: auto;
 }
@@ -54,13 +57,13 @@ main{
     justify-content:flex-end;    
 }
 .burger img:hover{
-    background: var(--VerdeClaro);
+    background: var(--azulClaro);
     transition: all .3s;
     cursor: pointer;
 }
 .burger img {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
 }
 
 /* User - SideBar */
@@ -73,9 +76,10 @@ main{
 }
 .user-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 9px;
-    gap: 14px;
+    padding: 15px 10px;
+    gap: 10px;
     border-radius: 10px;
     -webkit-transition: border-radius .5s;
     transition: border-radius .4s;
@@ -97,16 +101,15 @@ main{
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 210px;
+    width: 170px;
     height: auto;    
-    gap: 1px;
+    gap: 5px;
 }
 
 /* Nav Links*/
 .link-item {
-    height: auto;
+    height: 50px;
     width: auto;
-    flex: 1;
     display: flex;
     align-items: center;
     text-decoration: none;    
@@ -119,16 +122,16 @@ main{
 .link-item.comprimido {
     height: auto;
     flex-direction: column;   
-    gap: 3px;
+    gap: 5px;
     padding: 5px;
 }
 
 .link-item:hover {
-    background: rgba(195,237,192,.45);
+    background: var(--azulClaro);
     transition: all .5s;
 }
 .active {
-    background-color: var(--VerdeIntermedio);
+    background-color: var(--azulMedio);
 }
 
 .iconModComp, .iconComComp {
@@ -149,12 +152,12 @@ main{
     margin: 0px;
 }
 .iconCom img{
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
 }
 .iconComComp img{
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
 }
 
 .text {

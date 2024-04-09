@@ -9,7 +9,7 @@ import Nosotros from './pages/Web/Nosotros/Nosotros';
 import Estandares from './pages/Web/Estandares/Estandares';
 import Acreditacion from './pages/Web/Acreditacion/Acreditacion';
 import Grados from './pages/Web/Grados/Grados';
-import Dashboard from './pages/Aula/Dashboard';
+import Aula from './pages/Aula/Aula';
 
 
 
@@ -20,8 +20,8 @@ function App() {
       <BrowserRouter>      
         <Routes>
           <Route path='/aulaosha/login' element={ <Login/> }/>
-          <Route path='/aulaosha/dashboard' element={ <Dashboard/> }/>
-          <Route path='/' element={
+          <Route path='/aulaosha/*' element={ <Aula/> }/>
+          <Route path='/*' element={
             <div>
               <Top />
               <Header />
