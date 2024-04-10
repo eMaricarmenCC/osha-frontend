@@ -4,12 +4,37 @@ import { PiNotebook } from 'react-icons/pi';
 function Programas() {
   return (
     <div className="px-10 py-10 w-full h-full">
-      <div className="flex flex-col">
-        <h3>Programa: Entrenador de trabajos críticos</h3>
-        <CardCurso/>
-
+      <div className="flex flex-col gap-5">
+        <h3 className='text-primary text-lg'>Programas</h3>
+        <CardPrograma/>
+        <CardPrograma/>
       </div>
     </div>
+  )
+}
+
+function CardPrograma() {
+  return (
+    <div className="flex flex-col gap-1 w-auto h-auto">
+      <div className="flex rounded-r-lg bg-white shadow-lg">
+        {/* Imagen */}
+        <div className=" p-3 flex flex-col gap-1 rounded-r-lg bg-azulClaro items-center">
+          <PiNotebook color='white' style={{width:25, height:25}}/>
+          <h4 className='text-white'>Programa</h4>
+        </div>
+        {/* Contenido */}
+        <div className='p-3 flex-1'>
+          <p className='text-grisOscuro text-lg'> Desarrollo nombre del programa</p>
+          <p className='text-primary'> Código </p>
+        </div>
+        {/* Opciones */}
+        <div className='flex flex-col gap-1 p-2'>
+          <button className='p-2 bg-azulMedio rounded-lg text-sm text-white text-xs'>Ir al programa</button>
+          <button className='p-2 bg-green rounded-lg text-sm text-white text-xs'>Ver notas</button>
+        </div>
+      </div>
+    </div>
+
   )
 }
 
@@ -18,10 +43,10 @@ function CardCurso(){
     <div className="flex flex-col gap-1 w-auto h-auto">
       
       {/* Card curso */}
-      <div className="flex rounded-r-lg bg-grisFondo shadow-lg">
+      <div className="flex rounded-r-lg bg-white shadow-lg">
         <div className=" p-3 flex flex-col gap-1 rounded-r-lg bg-azulClaro items-center">
           <PiNotebook color='white' style={{width:25, height:25}}/>
-          <h4 className='text-white'>curso</h4>
+          <h4 className='text-white'>Programa</h4>
         </div>
         <div className='p-3'>
           <p className='text-grisOscuro'> Desarollo nombre del curso</p>

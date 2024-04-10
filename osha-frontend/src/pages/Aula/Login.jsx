@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { login } from '../../api/Login.api';
+
 
 function Login() {
 
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+
+  const onSubmit = handleLogin(async data => {
+    try {
+      const res = await login(data);
+      console.log(res)
+    } catch (error) {
+      console.log(res)
+    }
+  });  
+  
   return (
     <div className='bg-gris h-screen flex flex-col justify-between'>
       
@@ -27,7 +43,7 @@ function Login() {
               </h2>
             </div>
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-              <form className="space-y-6" action="#" method="POST">
+              <form className="space-y-6" action="#" method="POST" onSubmit={onSubmit}>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                     Usuario
@@ -71,7 +87,6 @@ function Login() {
                   </button>
                 </div>
               </form>
-
               <p className="mt-5 text-center text-10 text-gray-500">
                 No eres un miembro?{' '}
                 <a href="#" className="font-semibold leading-6 text-primary hover:text-indigo-500">

@@ -78,7 +78,7 @@ function SideBarMenu({ children }) {
           </div>
         </div>
       </div>
-      <main>{children}</main>
+      <main className='bg-grisFondo'>{children}</main>
     </div>
     )
 };

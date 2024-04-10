@@ -23,6 +23,10 @@ export default {
         verde: '#3BC0A0',
         rosa: '#C03BAB',
         morado: '#763BC0',
+        
+        red: '#F46060',
+        green: '#5CB85C',
+        yellow: '#F0C62F',
       },
     },
   },

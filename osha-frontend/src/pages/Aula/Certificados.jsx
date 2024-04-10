@@ -4,8 +4,11 @@ import { PiCertificate, PiCertificateBold, PiCertificateFill} from 'react-icons/
 
 function Certificados() {
   return (
-    <div className="px-10 py-10 w-full h-full bg-grisFondo">
-      <div className='flex flex-col'>
+    <div className="px-10 py-10 w-full h-full bg-grisFondo flex flex-col gap-5">
+      <h3 className='text-primary'>Descargue sus credenciales</h3>
+      <div className='flex flex-col gap-5'>
+        <Certificado />
+        <Certificado />
         <Certificado />
       </div>
     </div>
@@ -14,17 +17,17 @@ function Certificados() {
 
 function Certificado() {
   return (
-    <div className="flex gap-4 items-center bg-white p-5 rounded-lg shadow-lg">
+    <div className="flex flex-col sm:flex-row gap-4 items-center bg-white p-5 rounded-lg shadow-lg">
 
       {/* imagen */}
       <div className="">
-        <PiCertificate color='green' style={{color:'var(--primary)', width:40, height:40}} />
+        <PiCertificate style={{color:'var(--secondary)', width:40, height:40}} />
       </div>
       
       {/* programa */}
       <div className="flex-1">
         <div className='flex flex-col gap-1'>
-          <p className='text-base text-grisOscuro'>Nombre del programa</p>
+          <p className='text-base text-grisOscuro'>Nombre del programa programa</p>
           <p className='text-xs text-primary'>Felicidades por aprobar el programa</p>
         </div>        
       </div>

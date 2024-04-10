@@ -10,7 +10,7 @@ import Certificados from '../Aula/Certificados';
 
 function Aula() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col w-full h-full'>
       <SideBarMenu>
         <Header />
         <Routes>
@@ -27,7 +27,7 @@ function Aula() {
 
 function Header() {
   return (
-    <div className='w-full bg-grisFondo shadow-md px-5 py-5'>
+    <div className='w-full bg-white shadow-md px-5 py-5'>
       <div className='flex flex-row'>
         <img src="/src/assets/logo/logoOsha.png" alt="logo osha" className='w-50 h-10' />
 
