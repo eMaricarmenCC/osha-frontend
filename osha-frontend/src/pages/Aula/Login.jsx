@@ -1,22 +1,41 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { login } from '../../api/Login.api';
 
 
 function Login() {
 
+  /* Estado para controlar si el usuario está autentificado */
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  /* Datos de email y contraseña*/
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const onSubmit = handleLogin(async data => {
+  /* EStado de los registros del formulario */
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = handleSubmit(async data => {
     try {
-      const res = await login(data);
-      console.log(res)
+      const res = await login(data.estema, data.estcon);
+      console.log(res);
+      setLoggedIn(true);
     } catch (error) {
-      console.log(res)
+      console.log('Error al conectarse al servidor')
+      setLoggedIn(false);
     }
-  });  
+  });
+
+  // Redirige a la págin '/dashboard' si el usuario está autentificado
+  if (loggedIn) {
+    return <Navigate to="/aulaosha" />
+  }
   
   return (
     <div className='bg-gris h-screen flex flex-col justify-between'>
@@ -56,7 +75,9 @@ function Login() {
                       autoComplete="email"
                       required
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      {...register('estema', { required: true,})}
                     />
+                    {errors.estema?.type === 'required' && <p className='text-red'>*El campo nombre es requerido</p>}
                   </div>
                 </div>
 
@@ -74,7 +95,9 @@ function Login() {
                       autoComplete="current-password"
                       required
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      {...register('estcon', { required: true,})}
                     />
+                    {errors.estcon?.type === 'required' && <p className='text-red'>*El campo nombre es requerido</p>}
                   </div>
                 </div>
 

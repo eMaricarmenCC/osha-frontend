@@ -23,7 +23,7 @@ function Top(){
       
       {/* Aula virtual */}
       <div className="w-1/4 flex justify-center">
-        <Link to="/aulaosha/login">
+        <Link to="/login">
           <a href="" className="flex flex-row gap-1 items-center text-sm">
             <PiStudentFill color='white'/>
             <span className="text-white">Aula virtual</span>

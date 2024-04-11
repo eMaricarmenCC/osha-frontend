@@ -11,6 +11,9 @@ function Certificados() {
         <Certificado />
         <Certificado />
       </div>
+      <div>
+        <p>Cualquier consulta de los certificados comunicarse al correo info@osa.es</p>
+      </div>
     </div>
   )
 }
@@ -36,15 +39,15 @@ function Certificado() {
       <div className="flex gap-2 items-center">
         <div className="flex flex-col items-center gap-1 border-2 border-primary rounded-lg px-1 py-1">
           <LiaFileDownloadSolid style={{color:'var(--primary)', width:25, height:25}} />
-          <p className='text-primary text-xs'>Descarga tu certificado</p>
+          <p className='text-primary text-xs text-center'>Descarga tu certificado</p>
         </div>
         <div className="flex flex-col items-center gap-1 border-2 border-rosa rounded-lg px-1 py-1">
           <LiaFileDownloadSolid style={{color:'var(--rosa)', width:25, height:25}} />
-          <p className='text-rosa text-xs'>Descarga tu diploma</p>
+          <p className='text-rosa text-xs text-center'>Descarga tu diploma</p>
         </div>
         <div className="flex flex-col items-center gap-1 border-2 border-morado rounded-lg px-1 py-1">
           <LiaFileDownloadSolid style={{color:'var(--morado)', width:25, height:25}} />
-          <p className='text-morado text-xs'>Descarga tu carnet</p>
+          <p className='text-morado text-xs text-center'>Descarga tu carnet</p>
         </div>
       </div>
     </div>
