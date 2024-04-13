@@ -3,6 +3,7 @@ import '../styles/Header.css';
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from "react-outside-click-handler";
 import logoOsha from '/src/assets/logo/logoOsha.png';
+import { Link } from "react-router-dom";
 
 function Header(){
   const [menuOpened, setMenuOpened] = useState(false);
@@ -23,12 +24,12 @@ function Header(){
           }}
         />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-          <a href="">Inicio</a>
-          <a href="">Nosotros</a>
-          <a href="">Estándares</a>
-          <a href="">Acreditación</a>
-          <a href="">Grados</a>
-          <a href="">Corporativos</a>
+          <Link to='/' className="" >Inicio</Link>
+          <Link to='/our' className="" >Nosotros</Link>
+          <Link to='/standars' className="" >Estándares</Link>
+          <Link to='/acreditation' className="" >Acreditación</Link>
+          <Link to='/grade' className="" >Grados</Link>
+          <Link to='/corporatives' className="" >Corporativos</Link>
           <button className="button">
             <a href="">Contáctanos</a>
           </button>

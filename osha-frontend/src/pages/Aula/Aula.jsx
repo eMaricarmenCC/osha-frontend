@@ -7,7 +7,6 @@ import Notas from '../Aula/Notas';
 import Certificados from '../Aula/Certificados';
 
 
-
 function Aula() {
   return (
     <div className='flex flex-col w-full h-full'>
@@ -36,4 +35,4 @@ function Header() {
   )
 }
 
-export default Aula
+export default Aula;

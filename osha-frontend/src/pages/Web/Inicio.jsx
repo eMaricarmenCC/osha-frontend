@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/Inicio.css';
 import { HiLocationMarker } from 'react-icons/hi';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
+import Footer from '../../components/Footer';
 import hero from '/src/assets/images/hero-image.png';
 
 function Inicio(){
   return (
+    <>
     <section className='hero-wrapper'>
         <div className="paddings inerWidth flexCenter hero-container">
             {/* Left side */}
@@ -79,6 +80,8 @@ function Inicio(){
             </div>
         </div>
     </section>
+    <Footer/>
+    </>
   )
 }
 export default Inicio
