@@ -1,0 +1,76 @@
+{
+    "title" : "Para mayor información y Asesoramiento, puede contactar con nosotros",
+    "emails": [
+        {
+            "type": "Consulta de programas y servicios",
+            "content": "Si usted tiene alguna consulta relacionada a nuestros programas y servicios puede contactarnos a través de este E-mail",
+            "email": "info@osha.es"
+        },
+        {
+            "type": "Consulta para clientes",
+            "content": "Si usted ya es un cliente y tiene alguna consulta directa a nuestra organización puede realizarlo mediante el siguiente canal:",
+            "email": "atencioncliente@osha.es"
+        },
+        {
+            "type": "Consulta sobre programas de grados o posgrados",
+            "content": "Si usted desea realizar una consulta directa acerca de nuestros programas de grados o posgrados puede realizarlo en:",
+            "email": "consultas@osha.es"
+        },
+        {
+            "type": "Información para la revista SAFETYCARD",
+            "content": "Si usted desea compartir información sobre temas relacionados a la seguridad laboral y ser parte de nuestra revista trimestral SAFETYCARD puede escribirnos al:",
+            "email": "news@osha.es"
+        },
+        {
+            "type": "Quejas sobre el servicio",
+            "content": "Si usted tiene alguna queja sobre el servicio recibido por nuestra organización o un centro Autorizado de Osha-Institute puede escribirnos al:",
+            "email": "complaints@osha.es"
+        },
+        {
+            "type": "Convenios y proveedores",
+            "content": "Si usted desea confirmar un convenio o ser un proveedor de cursos y certificaciones de Osha-Institute puede contactarnos al:",
+            "email": "internacionalidad@osha.es"
+        },
+        {
+            "type": "Centro Autorizado",
+            "content": "Si usted desea ser un Centro Autorizado de Osha-Institute y representar nuestra marca en su país, puede escribirnos al:",
+            "email": "centroautorizado@osha.es"
+        },
+        {
+            "type": "Programas y servicios corporativos",
+            "content": "Si usted desea saber sobre nuestros programas y servicios Corporativos válidos a nivel mundial puede escribirnos al:",
+            "email": "corporativo@osha.es"
+        },
+        {
+            "type": "Acceso a una membresía profesional",
+            "content": "Si usted desea acreditarse y tener un grado profesional propuesto y certificado por Osha-Institute puede escribirnos al:",
+            "email": "acreditacion@osha.es"
+        },
+        {
+            "type": "Membresía profesional",
+            "content": "Si usted desea acceder a una membresía profesional y pertenecer a nuestra comunidad que participa en 170 países a nivel mundial puede escribirnos al:",
+            "conten2" : "Si usted desea contratar una de nuestras membresías profesionales y poder acceder a nuestros cursos, grados acreditaciones, seminarios, simposium y certificaciones puede escribirnos directamente al:",
+            "email": "membresia@osha.es"
+        },
+        {
+            "type": "Certificado por experiencia",
+            "content": "Si cuenta con experiencia laboral en áreas de la Seguridad Laboral y Prevención de Riesgos laborales y no cuenta con un certificado profesional que lo acredite como tal, puede escribirnos y tener un título Osha-Institute.",
+            "email": "certex@osha.es"
+        },
+        {
+            "type": "Denunciar inconformidades con servicios",
+            "content": "Si usted desea denunciar alguna inconformidad con nuestros servicios o los servicios de los centros autorizados puede escribirnos al:",
+            "email": "denuncias@osha.es"
+        },
+        {
+            "type": "Consultas sobre exámenes en línea",
+            "content": "Si usted tiene consultas acerca de nuestros exámenes en línea puede escribirnos directamente a:",
+            "email": "examen@osha.es"
+        },
+        {
+            "type": "Soporte o problemas con programas en línea",
+            "content": "Si usted desea recibir soporte o tiene algún problema con nuestros programas en línea, puede contactarnos a través del E-mail :",
+            "email": "sistemas@osha.es"
+        }
+    ]
+}

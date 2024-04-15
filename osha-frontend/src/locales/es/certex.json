@@ -1,0 +1,106 @@
+{
+    "certex": {
+        "title": "Certex",
+        "subtitle": "¿En qué consiste el servicio de certificación por experiencia certex?",
+        "description": "Reconocer formal y socialmente los conocimientos, habilidades y aptitudes que una persona posee o adquirió en el lapso de un tiempo determinado, para desarrollar un trabajo eficiente, seguro y de calidad. Inmerso en cualquier área de desempeño sea, Industrial, Minero, Administrativo, Transportes, Comunicaciones, Construcción, Energía, Marítimo, Aéreo.",
+        "objective" : {
+            "title" : "Objetivo",
+            "content": "Brindar el Servicio de Evaluación y Certificación por experiencias y competencias Laborales en un determinado proceso, vinculada a un perfil ocupacional u oficio, a través de un programa específico y mediante un proceso voluntario e individual a través de la aplicación de dos instrumentos (prueba de conocimiento y evaluación de desempeño) realizadas por profesionales acreditados por diversas entidades nacionales e internacionales."
+        },
+        
+        "benefits": {
+            "workers": {
+                "title": "Para trabajadores",
+                "content": [
+                    "Reconocer la experiencia laboral y el desempeño de calidad logrado a lo largo de su vida a toda persona que por diversas vías (formación, experiencia y capacitación) han logrado obtener un buen desempeño e incrementado sus conocimientos y habilidades en una ocupación especifica.",
+                    "Obtener un certificado profesional de reconocimiento educativo con amplio valor en el mercado laboral, que le facilitara el acceso o sumersión a un empleo."
+                ]
+            },
+            "companies": {
+                "title": "Para empresas",
+                "content": [
+                    "Mejorar su productividad, por contar con personal calificado y certificado en un determinado puesto de trabajo.",
+                    "Lograr objetivos estratégicos con el apoyo o soporte de mano de obra Calificada.",
+                    "Conocer y Acreditar las competencias de cada trabajador.",
+                    "Facilitar su proceso de selección y capacitación interna."
+                ]
+            }
+        },
+        "process" :{
+            "title": "Procesos",
+            "process": [
+                "El participante recibe una orientación general acerca del proceso de evaluación de certificación laboral por parte del evaluador.",
+                "El evaluador constata la experiencia laboral y determina en qué función o unidad de competencia se podrá evaluar.",
+                "El participante pasa por una evaluación de conocimientos y una evaluación de desempeño. La primera evaluación consta de la aplicación de una prueba de conocimientos escrito de 20 preguntas, dichas preguntas son referidas al trabajo cotidiano del participante. La segunda evaluación consiste en una entrevista presencial al participante, el mismo que será dirigida por un especialista en el área de desempeño y de certificación.",
+                "Al concluir la evaluación se procede a informar al participante los aspectos generales que ha observado y los plasma como fortalezas y recomendaciones para su mejor desempeño, esto se plasma en un documento denominado Plan de Empleabilidad.",
+                "Se procederá a una retroalimentación de competencias laborales y mejora continua (en un campus especifico).",
+                "Osha-Institute, facilitara los resultados de los exámenes y entrevistas al participante así mismo la certificación y acreditación propuesta."
+            ]
+        },        
+        "occupationalProfiles": {
+            "content": "El Programa Certex, te brinda la oportunidad de certificarte en las diversas áreas operativas y administrativas.",
+            "mining": {
+                "title": "Minería",
+                "mining": [
+                    "Inspector de seguridad mina.",
+                    "Técnico en higiene industrial.",
+                    "Técnico en servicios mineros.",
+                    "Técnico de Muestreo mina.",
+                    "Técnico de gestión ambiental mina.",
+                    "Técnico en sostenimiento mina.",
+                    "Supervisor técnico en operaciones mineras (capataz).",
+                    "Supervisor técnico en relleno hidráulico. (capataz rh).",
+                    "Supervisor técnico en Perforación y voladura.",
+                    "Supervisor técnico de maquinaria pesada (Supervisor de maquinaria pesada).",
+                    "Técnico en Geomecánica de Rocas.",
+                    "Secretaria de Seguridad y salud en el trabajo SST.",
+                    "Asistente de oficina en operaciones mineras.",
+                    "Auxiliar de costos y tareo.",
+                    "Maestro perforista mina (manual y mecánico)"
+                ]
+            },
+            "basicManagementAreas": [
+                "Cocina.",
+                "Evaluación y aplicación fitosanitaria.",
+                "Servicio de limpieza",
+                "Caja en establecimientos.",
+                "Instalador electricista.",
+                "Albañilería.",
+                "Recepcionista de hotel/hostal.",
+                "Representante de ventas.",
+                "Cosecha y recolección de hortalizas.",
+                "Corte de piezas para confección de prendas de vestir.",
+                "Costura de prendas de vestir.",
+                "Bordado para confecciones textil.",
+                "Housekeeping.",
+                "Maestro de obras en edificaciones.",
+                "Fierrería de edificaciones."
+            ],
+            "Administrative": [
+                "Secretariado ejecutivo.",
+                "Asistente de gerencia.",
+                "Asistente administrativo.",
+                "Logística y almacenes.",
+                "Gestión de talentos."
+            ],
+            "Industrial": [
+                "Soldadura y construcciones metálicas.",
+                "Prevencionista de Riesgos laborales.",
+                "Técnico en construcción civil.",
+                "Operador de maquinaria pesada. (máquina individual o Múltiple).",
+                "Técnico en plantas industriales (plantas molienda o plantas de producción)",
+                "Técnico Electricista.",
+                "Técnico Electricista.",
+                "Técnico de monitoreo ambiental.",
+                "Técnico en monitoreo de higiene industrial.",
+                "Inspector de seguridad en transporte.",
+                "Supervisor de protección y seguridad. (vigilancia)",
+                "Técnico Andamiero.",
+                "Supervisor de gestión Andamiero (capataz).",
+                "Supervisor Escolta de materiales peligrosos.",
+                "Supervisor Escolta de carga ancha."
+            ]
+        },
+        "certificationAndAccreditation": "CÉRTIFICACIÓN Y ACREDITACIÓN OSHA-INSTITUTE mediante Certex, mantiene vigente el respaldo de diversas entidades nacionales e internacionales que brindan el soporte correspondiente a cada uno de nuestros procesos de certificación y a"
+    }
+}  

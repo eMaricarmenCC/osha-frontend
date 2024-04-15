@@ -1,0 +1,44 @@
+{
+    "locations": {
+        "title": "Sedes",
+        "authorizedCenter" : {
+            "title" : "Vuelvase un centro autorizado OSHA-INSTITUTE",
+            "subtitle" : "¿Por que ser un centro Autorizado de Osha-Institute en el Mundo? Osha-Institute es el gestor de estándares a nivel mundial que trabaja de la mano de organizaciones como, ANSI, ASME, NFPA, NIOSH, IOSH, FEMA, AHA, OMS, los mismos que buscan mejorar la seguridad y salud laboral como también la prevención de accidentes en miles de organizaciones en todo el mundo.",
+            "description" : "Osha-Institute es el gestor de estándares a nivel mundial que trabaja de la mano de organizaciones como, ANSI, ASME, NFPA, NIOSH, IOSH, FEMA, AHA, OMS, los mismos que buscan mejorar la seguridad y salud laboral como también la prevención de accidentes en miles de organizaciones en todo el mundo.",
+            "benefits" : {
+                "title" : "Beneficios",
+                "benefits": [
+                    "Boletín mensual.",
+                    "Gestión de mentores de la Seguridad.",
+                    "Manuales, Guías y Libros digitales.",
+                    "Acreditación a los miembros de su Organización.",
+                    "Acreditación a su Organización.",
+                    "Uso de logo.",
+                    "Visibilidad de su organización en nuestra web oficial.",
+                    "Participación Exclusiva en el programa de reconocimiento internacional de Seguridad."
+                ],
+                "content": "Por eso y mucho más el formar parte de Osha le agregara valor a tu organización y serás un forjador de gestión laboral y prevención de accidentes en tu país."
+            },
+            "process" : {
+                "title": "Proceso",
+                "process": [
+                    "Solicitud de afiliación al e-mail: centroautorizado@osha.es",
+                    "Revisión del directorio (esto podría tardar entre 30 a 50 días dependiendo de su país).",
+                    "Envío de fichas y formularios (los mismos que usted tendrá que devolver llenado).",
+                    "Evaluación, el directorio evaluará puntos específicos en concordancia a nuestra política de ética.",
+                    "Aprobación y acreditación de su Organización y sus Colaboradores (la acreditación de la organización y su personal tiene una duración de 1 año a partir de la certificación).",
+                    "Su organización y su personal recibirán un certificado independientemente con un código QR de verificación a nivel mundial."
+                ]
+            },
+            "membershipFees": {
+                "title": "Afiliación - Centro Autorizado Osha-Institute Membresía ANual",
+                "membershipFees": {
+                    "1-49 Employees": "$3,600 (Annual Membership - $1,200)",
+                    "50-99 Employees": "$4,500 (Annual Membership - $2,500)",
+                    "100+ Employees": "$5,500 (Annual Membership - $2,800)"
+                }
+            },
+            "complaints": "Si usted tiene alguna denuncia o queja sobre el mal uso o representación de Osha-Institute en su país puede escribirnos a denuncias@osha.es que estaremos prestos a poder ayudarlo."
+        }
+    }
+}
