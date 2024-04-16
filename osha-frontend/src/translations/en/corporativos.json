@@ -1,0 +1,54 @@
+{
+    "title" : "Corporations",
+    "content": "We are your strategic allies to increase your productivity by complying with broad safety standards aimed at continuous improvement. We work in compliance with operational and safety parameters established internationally seeking to increase productivity without harming human potential, which is the most important factor in every organization. OSHA-INSTITUTE, improved training, training and training systems for workers in various industries.",
+    "IndustriesOfInfluence" : {
+        "title" : "Influence Industries",
+        "list" : [
+            "Mining.",
+            "Construction.",
+            "Transportation.",
+            "Maritime.",
+            "Consultants.",
+            "Educational.",
+            "Security.",
+            "Emergencies."
+        ]       
+    },
+    "p2" : "Each of our programs has the following benefits that will improve the presence of your company and adequately increase its productivity.",
+    "li2" : [
+        "Certification Valid at National and International Level.",
+        "Quarterly Accompaniment.",
+        "Engineers from Various Operational Areas.",
+        "Professionals with extensive experience.",
+        "Labor Psychologist.",
+        "Quarterly Personnel Monitoring.",
+        "Physical and Digital Reports for Each Worker.",
+        "Free Semiannual Feedback.",
+        "Free Training for Applicant Personnel or New Workers."
+    ],
+    "phrase": "Well-prepared workers are more productive workers",
+    "p3" : "The need for training and specialization of workers in each specific position is important, which is why we implement optimal learning systems, which will comply with the corresponding monitoring.",
+    "li3" : [
+        "Leadership",
+        "Ergonomics",
+        "Business management",
+        "Environment",
+        "Signaling",
+        "Basic Life Support (First Aid)",
+        "Emergency Brigades",
+        "Behavior-Based Safety",
+        "Mining and Industrial Safety",
+        "Office Security",
+        "High Risk Jobs",
+        "Electrical Safety",
+        "Defensive driving",
+        "Hazardous Materials Management",
+        "Microsoft",
+        "Administrative management",
+        "Organizational psychology",
+        "Corporate Management",
+        "Organizational Hazards",
+        "Word, Excel, PowerPoint, SAP",
+        "Logistics and Warehouse Management"
+    ]
+}

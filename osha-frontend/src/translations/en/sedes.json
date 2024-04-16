@@ -1,0 +1,44 @@
+{
+    "locations": {
+        "title": "Headquarters",
+        "authorizedCenter" : {
+            "title" : "Become an OSHA-INSTITUTE Authorized Center",
+            "subtitle" : "Why be an Authorized Osha-Institute center in the World? Osha-Institute is the global standards manager that works hand in hand with organizations such as ANSI, ASME, NFPA, NIOSH, IOSH, FEMA, AHA, WHO, the same ones that seek to improve occupational health and safety as well as accident prevention in thousands of organizations around the world.",
+            "description" : "Osha-Institute is the global standards manager that works hand in hand with organizations such as ANSI, ASME, NFPA, NIOSH, IOSH, FEMA, AHA, WHO, the same ones that seek to improve safety and health labor as well as accident prevention in thousands of organizations around the world.",
+            "benefits" : {
+                "title" : "Benefits",
+                "benefits": [
+                    "Monthly newsletter.",
+                    "Management of Security mentors.",
+                    "Manuals, Guides and Digital Books.",
+                    "Accreditation of members of your Organization.",
+                    "Accreditation to your Organization.",
+                    "Use of logo.",
+                    "Visibility of your organization on our official website.",
+                    "Exclusive Participation in the international Security recognition program."
+                ],
+                "content": "For this reason and much more, being part of Osha will add value to your organization and you will be a forger of labor management and accident prevention in your country."
+            },
+            "process" : {
+                "title": "Process",
+                "process": [
+                    "Membership request to e-mail: centroautorizado@osha.es",
+                    "Directory review (this could take 30 to 50 days depending on your country).",
+                    "Sending files and forms (the same ones that you will have to return filled out).",
+                    "Evaluation, the board will evaluate specific points in accordance with our ethics policy.",
+                    "Approval and accreditation of your Organization and its Collaborators (the accreditation of the organization and its personnel lasts 1 year from certification).",
+                    "Your organization and its staff will receive a certificate independently with a QR code for global verification."
+                ]
+            },
+            "membershipFees": {
+                "title": "Affiliation - Osha-Institute Authorized Center Annual Membership",
+                "membershipFees": {
+                    "1-49 Employees": "$3,600 (Annual Membership - $1,200)",
+                    "50-99 Employees": "$4,500 (Annual Membership - $2,500)",
+                    "100+ Employees": "$5,500 (Annual Membership - $2,800)"
+                }
+            },
+            "complaints": "If you have any complaint or complaint about the misuse or representation of Osha-Institute in your country, you can write to us at denuncias@osha.es and we will be ready to help you."
+        }
+    }
+}

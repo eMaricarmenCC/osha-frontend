@@ -1,0 +1,68 @@
+{
+    "intro": {
+        "education": {
+            "title": "Education",
+            "description": "We bring together the best professionals of international prestige to bring you continuing education corresponding to Safety and Health at Work."
+        },
+        "partnerships": {
+            "title": "Alliances",
+            "description": "For 30 years we have been involved with more than 700 companies internationally with which we work hand in hand to improve accident prevention within their operations."
+        },
+        "certification": {
+            "title": "Certification and accreditation",
+            "description": "At Osha-Institute we are immersed in the global training of professionals in the area of Safety and occupational risk prevention."
+        },
+        "validity": {
+            "title": "Validity",
+            "description": "The Osha-Institute certification and accreditation has international value thanks to our Hague agreement covering more than 120 countries worldwide."
+        }
+    },
+    "methodology": {
+        "title": "Educational and Accreditation Methodology",
+        "description": "Our training and accreditation process for Security professionals is based on modern methodology."
+    },
+    "accreditation": {
+        "title": "Accreditation",
+        "description": "Access one more degree in your professional career in safety and certificate. Give international value to your skills with a certification valid worldwide, always with the guarantee of the Occupational Safety Health Administration \"Osha-Institute\" "
+    },
+    "categories": {
+        "occupationalSafety": {
+            "title": "Occupational Safety",
+            "description": "Since 1971, we have been promoters of continuous improvement in relation to Occupational Safety in Organizations."
+        },
+        "preventionOccupationalHazards": {
+            "title": "Occupational Risk Prevention",
+            "description": "Thanks to the contribution of many professionals, we optimize accident prevention in various industries by optimizing and valuing human resources."
+        },
+        "sciencieTechnology": {
+            "title": "Science technology",
+            "description": "We apply parameters and methods for optimal learning and practical theoretical development."
+        },
+        "psychology": {
+            "title": "Health and Psychology - Health",
+            "description": "We build specific parameters based on health science and universal psychology."
+        },
+        "engineering": {
+            "title": "Engineering",
+            "description": "We manage the best engineering programs based on high international standards applicable worldwide."
+        },
+        "hazardousMaterials": {
+            "title": "Hazardous materials",
+            "description": "The management of hazardous materials in the world is important, which is why we manage an appropriate standard (Hazwoper) improving its management."
+        }
+    },
+    "oshaInstitute": {
+        "vocationalTraining": {
+            "title": "Vocational Training",
+            "description": "You will be able to access professional training programs that meet international requirements, we change national training schemes with international methodology so that you are a competent professional in any industrial field."
+        },
+        "professionalAccreditation": {
+            "title": "Professional Accreditation",
+            "description": "Our professional accreditation program has international value, which is why we accredit the best professionals in the world immersed in the Occupational Health and Safety sector."
+        },
+        "professionalAssistance": {
+            "title": "Professional Assistance",
+            "description": "Our assistance is continuous to accredited professionals, having interaction with higher level professionals, at Osha-institute we are here to help you improve your professional management within your area of influence."
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "certex": {
+        "title": "Certex",
+        "subtitle": "What does the certex experience certification service consist of?",
+        "description": "Formally and socially recognize the knowledge, skills and abilities that a person possesses or acquired within a given period of time, to develop efficient, safe and quality work. Immersed in any area of performance, whether Industrial, Mining, Administrative, Transport, Communications, Construction, Energy, Maritime, Air.",
+        "objective" : {
+            "title" : "Goal",
+            "content": "Provide the Evaluation and Certification Service for experiences and Labor competencies in a certain process, linked to an occupational profile or trade, through a specific program and through a voluntary and individual process through the application of two instruments (knowledge test and performance evaluation) carried out by professionals accredited by various national and international entities."
+        },
+       
+        "benefits": {
+            "workers": {
+                "title": "For workers",
+                "content": [
+                    "Recognize the work experience and quality performance achieved throughout their life to all people who, through various means (education, experience and training) have managed to obtain good performance and increased their knowledge and skills in a specific occupation.",
+                    "Obtain a professional certificate of educational recognition with broad value in the labor market, which will facilitate access or immersion in a job."
+                ]
+            },
+            "companies": {
+                "title": "For companies",
+                "content": [
+                    "Improve your productivity, by having qualified and certified personnel in a specific job position.",
+                    "Achieve strategic objectives with the support of qualified labor.",
+                    "Know and Accredit the skills of each worker.",
+                    "Facilitate your selection and internal training process."
+                ]
+            }
+        },
+        "process" :{
+            "title": "Processes",
+            "process": [
+                "The participant receives general guidance about the labor certification evaluation process from the evaluator.",
+                "The evaluator verifies the work experience and determines in which function or unit of competence it can be evaluated.",
+                "The participant goes through a knowledge evaluation and a performance evaluation. The first evaluation consists of the application of a written knowledge test of 20 questions, these questions are referred to the participant's daily work. The second evaluation consists of a face-to-face interview to the participant, which will be directed by a specialist in the area of performance and certification.",
+                "At the end of the evaluation, the participant is informed of the general aspects that he or she has observed and expresses them as strengths and recommendations for better performance; this is reflected in a document called Employability Plan.",
+                "There will be feedback on job skills and continuous improvement (on a specific campus).",
+                "Osha-Institute will provide the results of the exams and interviews to the participant as well as the proposed certification and accreditation."
+            ]
+        },
+        "occupationalProfiles": {
+            "content": "The Certex Program gives you the opportunity to become certified in various operational and administrative areas.",
+            "mining": {
+                "title": "Mining",
+                "mining": [
+                    "Mine safety inspector.",
+                    "Technician in industrial hygiene.",
+                    "Technician in mining services.",
+                    "Mine Sampling Technician",
+                    "Mine environmental management technician.",
+                    "Mine maintenance technician.",
+                    "Technical supervisor in mining operations (foreman).",
+                    "Technical supervisor in hydraulic filling. (rh foreman).",
+                    "Technical supervisor in Drilling and blasting.",
+                    "Heavy machinery technical supervisor (Heavy machinery supervisor).",
+                    "Technician in Rock Geomechanics.",
+                    "Secretary of Occupational Safety and Health SST.",
+                    "Office assistant in mining operations.",
+                    "Cost and task assistant.",
+                    "Master mine driller (manual and mechanical)"
+                ]
+            },
+            "basicManagementAreas": [
+                "Kitchen.",
+                "Phytosanitary evaluation and application.",
+                "Housekeeping",
+                "Cash in establishments.",
+                "Electrical installer.",
+                "Brickwork.",
+                "Hotel/hostel receptionist.",
+                "Sales representative.",
+                "Harvest and collection of vegetables.",
+                "Cutting pieces for making clothing.",
+                "Sewing of clothing.",
+                "Embroidery for textile clothing.",
+                "Housekeeping.",
+                "Master of works in buildings.",
+                "Building ironworks."
+            ],
+            "Administrative": [
+                "Executive Secretary.",
+                "Management assistant.",
+                "Administrative assistant.",
+                "Logistics and warehouses.",
+                "Talent management."
+            ],
+            "Industrial": [
+                "Welding and metal constructions.",
+                "Occupational Risk Preventionist.",
+                "Civil construction technician.",
+                "Heavy machinery operator. (single or multiple machine).",
+                "Technician in industrial plants (grinding plants or production plants)",
+                "Electric technician.",
+                "Electric technician.",
+                "Environmental monitoring technician.",
+                "Technician in industrial hygiene monitoring.",
+                "Transportation safety inspector.",
+                "Protection and security supervisor (surveillance)",
+                "Scaffolding Technician.",
+                "Scaffolding management supervisor (foreman).",
+                "Hazardous Materials Escort Supervisor.",
+                "Supervisor Wide Load Escort."
+            ]
+        },
+        "certificationAndAccreditation": "OSHA-INSTITUTE CERTIFICATION AND ACCREDITATION through Certex, maintains the support of various national and international entities that provide the corresponding support to each of our certification processes and to"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "whoWeAre" : {
+        "title": "Who we are",
+        "p1": "Occupational Safety Health Administration Osha-Institute is an international corporation of entities linked to safety and health at work and the prevention of occupational risks that comprise it, State Departments, Universities, Training Institutions, Research Centers of Engineering and International Standards Institutes, present in more than 20 countries.",
+        "p2": "Immersed in the purpose of improving processes, productivity and workplace safety in various organizations around the world by establishing standards and norms proposed by OSHA-USA, adhering to the proposals of ANSI, ASME, NFPA and NIOSH, we are leaders in the training and training of professionals present in more than 120 countries.",
+        "tit2-oshins": "OSHA-INSTITUTE",
+        "oshins": "Osha-Institute works hand in hand with organizations such as ANSI, ASME, NFPA and NIOSH to improve safety and quality standards in the tasks of various industries through globally accepted standards.",
+        "tit3-compromise": "OUR COMMITMENT",
+        "compromise": "Our commitment to reducing the rate of accidents and mortality in organizations involved us in the various areas of training and training for which to date we have more than 80,000 certified and accredited professionals worldwide and more than 30 headquarters (training centers) spread internationally."
+    },
+   
+    "legalNature" : {
+        "title": "Legal Nature",
+        "content": "We are a private organization dedicated to higher studies, certification, accreditation and engineering services in various industries internationally, seeking to improve professional skills and reduce the rate of accidents and mortality in various organizations. From its beginnings Osha-Institute contributes to the development of standards, decrees and laws that are immersed in occupational safety in different industries. From our applied and scientific center of high-impact studies, we monthly present improvement proposals promoted by our professionals present throughout the world. world. We make the work environment pleasant, healthy and safe through specific adaptation proposals.",
+        "tit2-mission" : "Osha-Institute Mission",
+        "mission": "Promote comprehensive education to improve the skills and excellence of professionals empowered with optimal knowledge and skills acquired in each vocational training program. We take as a starting point the standards provided by Osha Dol, adapting to 100% On programs -line seeking to improve the education scheme to ensure safe work environments around the world.",
+        "tit2-vision" : "Osha-Institute Vision",
+        "vision": "Train professionals with different characteristics that are excellent in decision-making with a broad vision of improving quality and a safety culture that promote, organize, verify and maintain safe workers in different industries around the world. Osha-Institute promotes degrees, courses and professional training based on established standards and previous scientific studies as we promote safety at every scale."
+    },
+   
+    "internationalCooperation" : {
+        "title" : "International Cooperation",
+        "p": [
+            "Seeking to strengthen education in Latin America, we established educational collaboration agreements and ties with public and private organizations in more than 120 countries.",
+            "This helps us strengthen our academic focus and improve our management, under the guidance and specifications of specialized organizations in each specific area.",
+            "Our work trains professionals who can guarantee safe work environments.",
+            "Our collaborations with public and private organizations from various countries and different cultures have strengthened us, making Osha-Institute one of the best educational institutions based on security issues for different industries that have the human factor as a main source of operational support. .",
+            "Our center for scientific studies and impacts works 365 days a year seeking to improve security systems and standards in the world."
+        ]
+    },
+    "privacyAndSecurityDeclaration" : {
+        "title" : "Privacy and Security Statement",
+        "content" : "Thank you for visiting the Occupational Safety Health Administration Osha-Institute website and reviewing our privacy and security statement. Osha-Institute is committed to maintaining the privacy of your personal information and the security of our computer systems. With Regarding the collection, use and disclosure of personally identifiable information (PII), Osha-Institute makes every effort to ensure compliance with applicable federal law, including, but not limited to, the Privacy Act of 1974, the Reduction Act of Procedures of 1995, and the Freedom of Information Act.",
+        "content-p1" : "As a general rule, the Department does not collect personally identifiable information when you visit our site, unless you choose to provide such information. The information we collect varies depending on what you do when you visit our site.",
+        "queans1": {
+            "question" : "If you respond to an online request for personal information",
+            "answer" : "The information requested by the Department will be used to respond to your inquiry or to provide you with the service associated with the request. When this information is requested, a personalized \"Privacy Notice\" will fully describe the reasons for collecting it and will provide a description of the Department's intended use of the information. This Privacy Notice will appear in one of two places. It will be on the web page where the information is collected or it will be accessible through a prominently displayed link immediately. before the request for information."
+        },
+        "queans2": {
+            "question" : "If you visit our site to read or download information, we collect and store the following information",
+            "answer-li1": "The name of the domain from which you access the Internet (for example, Osha.org, if you are connecting from your Department of Labor computer account).",
+            "answer-li2" : "The date and time of access to our site.",
+            "answer-li3": "The Internet address of the website from which you linked directly to our site.",
+            "answer" : "This information is used by software programs on our website to compile summary statistics that allow us to evaluate the number of visitors to the different sections of our site, identify which information is of most and least interest, determine technical specifications design, monitor system performance, and help us make our site more useful to visitors."
+        },
+        "queans3": {
+            "question" : "If you identify yourself by sending an email with personal information",
+            "answer" : "You may send us personally identifiable information in an email message; for example, you may send us your postal address when you request that we send you that information. This information is used only to respond to your requests for information or records. We may Forward your email to other government employees who are better able to accommodate your requests. If you wish to submit a Freedom of Information Act (FOIA) request, instructions are provided at http://www.dol.gov/. general/foia."
+        },
+        "queans4": {
+            "question" : "If you link to other sites outside of Osha-Institute",
+            "answer": "Our website has many links to other sites. When you link to any of these sites, you are no longer on our site and are subject to the new site's privacy policy."
+        },
+        "queans5": {
+            "question" : "Social networks and third party site",
+            "answer" : "In addition to the Department's official websites, the Department uses social media and third-party sites to provide Osha-Institute content in a different format that may be useful or interesting to you. When we use these sites, the information we provide is consistent with the intended purpose of the Osha-Institute website. Osha-Institute cannot solicit or collect PII on social media sites The privacy protection provided on social media and third-party sites that do not. are part of the Osha-Institute websites may not be the same as the privacy protections provided by Osha-Institute and described here."
+        },
+        "queans6": {
+            "question" : "Vulnerability disclosure policy",
+            "answer" : "The U.S. Department of Labor (Osha) is committed to maintaining the security of our systems and protecting sensitive information from unauthorized disclosure. For more information, please see our Vulnerability Disclosure Policy. "
+        },
+        "queans7": {
+            "question" : "Cookie usage notice",
+            "answer-p1" : "The U.S. Department of Labor (Osha) is committed to maintaining the security of our systems and protecting confidential information from unauthorized disclosure. For more information, please see our Disclosure Policy. vulnerabilities.",
+            "answer-p2" : "Allow the website to identify you as a previous visitor each time you access a site.",
+            "answer-p3": "They track information you see on a site (important for commercial sites trying to determine your purchasing preferences). In more advanced cases, they track your movements across many websites, but not on the entire web.",
+            "answer-p4" : "They are used by businesses for customer convenience to allow them to produce a list of items to purchase and pay for all at once and to gather information about what people are purchasing on their sites. Advertisers use them to determine the effectiveness of its marketing and provide information about consumer preferences and tastes by collecting data from many websites; and can be used to help a website adapt displays to each customer's preferences." ,
+            "answer-p5": "They track information you see on a site (important for commercial sites trying to determine your purchasing preferences). In more advanced cases, they track your movements across many websites, but not on the entire web.",
+            "answer-p6" : "Some Osha-Institute pages have \"session cookies\" to facilitate the use of that particular page. These disappear when the web user ends a web session and closes the browser. Osha-Institute also allows the use of persistent cookies for the collection of web metrics; however, Osha-Institute does not collect any personally identifiable information about visitors to our web pages. Please see our Osha-Institute Persistent Cookie Notice which details the types of information. collected and how to opt out by changing the cookie settings in your browsers.",
+            "answer-p7" : "If you are concerned about the potential use of information collected from your computer by cookies, you can set your browser to warn you before it accepts a cookie. Most Internet browsers have settings that let you allow you to identify and/or reject cookies."
+        },
+        "content-p2" : "For security reasons and to ensure that this service remains available to all users, our website also employs software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or cause damage.",
+        "content-p3" : "Unauthorized attempts to upload information or change information on this service are strictly prohibited and may be punishable under the Computer Fraud and Abuse Act of 1986 and the National Information Infrastructure Protection Act 1996.",
+        "content-p4" : "This statement is about your privacy when using this website. For information about the privacy program."
+    }
+}

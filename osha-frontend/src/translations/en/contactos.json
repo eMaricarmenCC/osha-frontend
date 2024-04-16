@@ -1,0 +1,76 @@
+{
+    "title" : "For more information and advice, you can contact us",
+    "emails": [
+        {
+            "type": "Query of programs and services",
+            "content": "If you have any questions related to our programs and services, you can contact us through this E-mail",
+            "email": "info@osha.es"
+        },
+        {
+            "type": "Customer query",
+            "content": "If you are already a client and have any direct queries to our organization, you can do so through the following channel:",
+            "email": "atencioncliente@osha.es"
+        },
+        {
+            "type": "Query about degree or postgraduate programs",
+            "content": "If you wish to make a direct inquiry about our degree or postgraduate programs you can do so at:",
+            "email": "consultas@osha.es"
+        },
+        {
+            "type": "Information for SAFETYCARD magazine",
+            "content": "If you want to share information on topics related to workplace safety and be part of our quarterly SAFETYCARD magazine, you can write to us at:",
+            "email": "news@osha.es"
+        },
+        {
+            "type": "Service complaints",
+            "content": "If you have any complaint about the service received by our organization or an Authorized Osha-Institute center you can write to us at:",
+            "email": "complaints@osha.es"
+        },
+        {
+            "type": "Agreements and suppliers",
+            "content": "If you wish to confirm an agreement or be a provider of Osha-Institute courses and certifications, you can contact us at:",
+            "email": "internacionalidad@osha.es"
+        },
+        {
+            "type": "Authorized Center",
+            "content": "If you wish to be an Authorized Osha-Institute Center and represent our brand in your country, you can write to us at:",
+            "email": "centroautorizado@osha.es"
+        },
+        {
+            "type": "Corporate programs and services",
+            "content": "If you want to know about our Corporate programs and services valid worldwide, you can write to us at:",
+            "email": "corporativo@osha.es"
+        },
+        {
+            "type": "Access to a professional membership",
+            "content": "If you wish to be accredited and have a professional degree proposed and certified by Osha-Institute you can write to us at:",
+            "email": "acreditacion@osha.es"
+        },
+        {
+            "type": "Professional Membership",
+            "content": "If you want to access a professional membership and belong to our community that participates in 170 countries worldwide, you can write to us at:",
+            "conten2" : "If you wish to contract one of our professional memberships and be able to access our courses, accreditation degrees, seminars, symposiums and certifications, you can write to us directly at:",
+            "email": "membresia@osha.es"
+        },
+        {
+            "type": "Certified by experience",
+            "content": "If you have work experience in the areas of Occupational Safety and Occupational Risk Prevention and do not have a professional certificate that accredits you as such, you can write to us and have an Osha-Institute degree.",
+            "email": "certex@osha.es"
+        },
+        {
+            "type": "Report dissatisfaction with services",
+            "content": "If you wish to report any dissatisfaction with our services or the services of authorized centers, you can write to us at:",
+            "email": "denuncias@osha.es"
+        },
+        {
+            "type": "Online exam queries",
+            "content": "If you have questions about our online exams you can write to us directly at:",
+            "email": "examen@osha.es"
+        },
+        {
+            "type": "Support or problems with online programs",
+            "content": "If you wish to receive support or have any problems with our online programs, you can contact us via E-mail :",
+            "email": "sistemas@osha.es"
+        }
+    ]
+}

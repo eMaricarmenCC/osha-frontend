@@ -1,0 +1,206 @@
+{
+    "accreditation" : {
+        "title" : "Accreditation",
+        "content": "Access an OSHA-INSTITUTE accreditation and become an Osha-Institute specialist and start taking off as a professional. Our trajectory, the value and recognition that we have established over the years worldwide with our contributions and standards is visible and part of our recognition we want to share with you by being part of our family and representing Osha-Institute anywhere in the world."
+    },
+    "mining" : {
+        "title" : "Mining",
+        "content" : "Our accreditation in the Mining industry is reflected in the prevention of work accidents in the various areas and sectors of influence.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list" : [
+                "Job security",
+                "Mining Operations",
+                "Industrial plants"
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "title" : "Current Areas for Professionals",
+            "list": [
+                "Supervisor of Emergency Brigades.",
+                "Mining Operations Supervisor.",
+                "High Risk Work Supervisor.",
+                "Transportation Supervisor.",
+                "Lifting Supervisor.",
+                "Hazardous Materials Supervisor.",
+                "Supervisor of Work in Processing Plants.",
+                "Sustainability Supervisor.",
+                "Drill and Blast Supervisor."
+            ]
+        }
+    },
+    "building" : {
+        "title" : "Construction",
+        "content" : "We cover the various areas in the construction sector, training premium category supervisors in the construction industry worldwide.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list": [
+                "Logistics and Warehouses",
+                "Constructive Operations"
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "title" : "Current Areas for Professionals",
+            "list" : [
+                "Occupational Safety Supervisor.",
+                "Risk Preventionist.",
+                "Trenching supervisor.",
+                "Concrete Wall Supervisor.",
+                "Construction manager.",
+                "Logistics and Warehouse Supervisor."
+            ]
+        }
+    },
+    "hazardousMaterials" : {
+        "title" : "Hazardous Materials",
+        "content" : "By applying internationally used standards and our own standards such as Hazwoper, we promote excellent training of first responders to emergencies with hazardous materials worldwide.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list" : [
+                "Land Spills.",
+                "Marine Spills.",
+                "Air Spills."
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "title" : "Current Areas for Professionals",
+            "list" : [
+                "Hazmat level 3 Technician.",
+                "Hazmat level 4 Specialist.",
+                "Hazmat level 5 Commander.",
+                "Instructor Hazmat."
+            ]
+        }
+    },
+    "transport" : {
+        "title" : "Transports",
+        "content" : "We seek to reduce the rate of accidents on the roads by training leaders in the transportation of people, cargo and dangerous materials.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list": [
+                "Ground transportation.",
+                "Railway transportation.",
+                "Personal transportation.",
+                "Merchandise transports."
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "title" : "Current Areas for Professionals",
+            "list" : [
+                "Land transportation supervisor.",
+                "Cargo and merchandise supervisor.",
+                "Personnel supervisor."
+            ]
+        }
+    },
+    "industries" : {
+        "title" : "Industries",
+        "content": "The training of professionals in the various productive industries involved us directly in training professionals with judgment in making necessary decisions in situ.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list" : [
+                "Factories.",
+                "Manufacture.",
+                "Paper bin.",
+                "Wood.",
+                "Agricultural",
+                "Motoring.",
+                "Metal.",
+                "Alimentary.",
+                "Pharmaceuticals.",
+                "Computing.",
+                "Mechanics.",
+                "Paletera."
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "title" : "Current Areas for Professionals",
+            "list" : [
+                "Line supervisor.",
+                "Personnel supervisor.",
+                "Surface supervisor.",
+                "Plant supervisor.",
+                "Area supervisor.",
+                "road supervisor.",
+                "Traffic supervisor.",
+                "Chemical Supervisor."
+            ]
+        }
+    },
+    "health" : {
+        "title" : "Health",
+        "content": "The personnel of the health sector worldwide fulfill an important task which involves the life and well-being of millions of individuals. For this reason, we promote professional improvement in the various areas of health.",
+        "areasOfInfluence" : {
+            "title" : "Areas of influence",
+            "list" : [
+                "Psychology.",
+                "Healthcare.",
+                "Social Security.",
+                "Nursing.",
+                "Paramedics."
+            ]
+        },
+        "currentAccreditationForProfessionals" : {
+            "list" : [
+                "Room Supervisor.",
+                "Area supervisor.",
+                "Paramedic.",
+                "Fast answer.",
+                "Medical rescuer."
+            ]
+        }
+    },
+    "grades" : {
+        "title" : "Degrees",
+        "content" : "Our professional degrees are accredited and validated in 78 countries worldwide thanks to the international educational forum agreement.",
+        "p2" : "Endorsed by ISO 21001.",
+        "p3" : "And guaranteed by our AE (ACREDITED EDUCATION) accreditation",
+        "p4" : "Each of our degrees meet the requirements required throughout the world and are valid on 4 continents.",
+        "grades" : {
+            "title" : "Degrees",
+            "list" : [
+                "Occupational Safety and Health Manager in the Construction Industry (GSSTIC OSHA).",
+                "Occupational Risk Prevention Manager (GPRL OSHA).",
+                "Occupational Safety and Health Manager (GSSO OSHA).",
+                "Occupational Health and Safety Manager (GSSL OSHA).",
+                "Director of Occupational Risk Prevention (DPRL OSHA).",
+                "Directorate of Safety and Health at Work (DSST OSHA).",
+                "Director of Occupational Safety and Health (DSSO OSHA).",
+                "Occupational Safety and Health Trainer (ESST OSHA).",
+                "Occupational Safety and Health Trainer (ESSO OSHA).",
+                "Occupational Risk Prevention Trainer (EPRL OSHA).",
+                "Occupational Safety and Health Trainer (ESST OSHA).",
+                "HAZMAT (HAZWOPER) Trainer (EH OSHA).",
+                "Work at Height Trainer (ETA OSHA).",
+                "Confined Space Work Trainer (ETEC OSHA).",
+                "Occupational Safety and Health Specialist (ESSO OSHA).",
+                "Occupational Safety and Health Trainer (ESST OSHA).",
+                "specialist in Occupational Risk Prevention (EPRL OSHA).",
+                "Health Care Laboratory Safety Specialist (ESLAT OSHA).",
+                "HAZMAT 4 Specialist (OSHA).",
+                "Train the Trainer (OSHA).",
+                "Occupational Safety Supervisor (OSHA SPST)."
+            ]
+        }
+    },
+    "accreditationAE" : {
+        "accreditationAE" : {
+            "title" : "AE Accreditation",
+            "content" : "AE staff and evaluators are dedicated to providing rigorous, reliable and independent evaluations from conformity assessment bodies according to recognized technical, national and international standards. As a private entity, we comply with our own regulations which It is considered strict and rigorous at the corporate level throughout the world. With our parameters we seek to improve regular and higher education throughout the world. Companies must comply in detail with the norms and standards proposed worldwide. meet strict parameters"
+        },
+        "accreditedEducationAE" : {
+            "title" : "AE Accredited Education",
+            "content" : "It is the most comprehensive, serious and strict compliance multidisciplinary accreditation body that presides globally, with more than 3,500 accredited organizations in approximately 87 countries. AE provides accreditation and acts as architect of the evaluation structure of educational conformity of industry-specific programs."
+        },
+        "identity" : {
+            "title" : "Identity",
+            "content" : [
+                "AE, is a non-governmental organization and a wholly owned subsidiary of the Occupational Safety Health Administration Osha-Institute, which is a private and self-governing organization. In accordance with Osha-Institute's autonomous mission of administering procedures and criteria for the accreditation of conformity assessment programs and encourage organizations to prepare and submit such programs for accreditation, AE provides accreditation services, assessment services and training to public and private sector organizations serving the market global. AE evaluates and accredits educational organizations, institutes, universities, etc., (i.e. higher education organizations) according to national and international standards, requirements and programs.",
+                "The AE evaluation committee has the specific permissions of verifiers, evaluators and certifiers under the international accreditation consensus.",
+                "The status of comprehensive and unanimous signatory based on international accreditation and certification agreements of private and government entities that are immersed in the training, education and certification of professionals around the world.",
+                "Through these activities, AE helps the industry, in improving educational parameters and training and certification of professionals, acting as architect of the conformity assessment structure of industry-specific programs.",
+                "Learn more about how to obtain AE accreditation here"
+            ]
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "membership": {
+        "title": "Membership",
+        "description": [
+            "Why have an Osha-Institute accreditation, the value of internationality provided by Osha-Institute has international coverage, being one of the Organizations that is present worldwide covering issues of Occupational Safety, Occupational Risk Prevention and Risk Management. Environmental Impact around the World.",
+            "Access our accreditations and become a specialist professional accredited by Osha-Institute."
+        ],
+        "benefits": {
+            "title": "Benefits",
+            "benefits": [
+                "Personal accreditation (certificate).",
+                "Access to International Forums.",
+                "Professional Excellence Awards.",
+                "Digital Security and Prevention Toolkits.",
+                "Continuous learning opportunity.",
+                "Security talks and digital materials in PowerPoint.",
+                "Forums with professionals from more than 20 countries together.",
+                "Online training and access to our virtual classrooms.",
+                "Osha-Institute Accreditation Card."
+            ]
+        },
+        "membership": {
+            "title": "Personal Membership Value",
+            "packages": [
+                {
+                    "certificates": "1 certification",
+                    "price": "$1,600",
+                    "membership": "Annual membership",
+                    "price_membership": "$750"
+                },
+                {
+                    "certificates": "2 certificates",
+                    "price": "$3,000",
+                    "membership": "Annual membership",
+                    "price_membership": "$1,200"
+                },
+                {
+                    "certificates": "3 certificates",
+                    "price": "$5,000",
+                    "membership": "Annual membership",
+                    "price_membership": "$2,400"
+                }
+            ]
+        },
+        "contact": "To access an Osha-Institute Membership you must send an E-mail to membresia@osha.es and request more information."
+    }
+}
