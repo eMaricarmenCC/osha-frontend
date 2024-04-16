@@ -1,0 +1,54 @@
+{
+    "title" : "Corporaciones",
+    "content" : "Somos tus aliados estratégicos para elevar tu productividad cumpliendo amplios estándares de seguridad avocados a la mejora continua. Trabajamos cumpliendo parámetros operativos y de seguridad establecidas a nivel internacional buscando elevar la productividad sin dañar el potencial humano, que es factor mas importante en toda organización. OSHA-INSTITUTE, mejoro los sistemas de formación, capacitación y entrenamiento de trabajadores en las diversas industrias.",
+    "IndustriesOfInfluence" : {
+        "title" : "Industrias de Influencia",
+        "list" : [
+            "Minería.",
+            "Construcción.",
+            "Transportes.",
+            "Marítimo.",
+            "Consultoras.",
+            "Educativas.",
+            "Seguridad.",
+            "Emergencias."
+        ]        
+    },
+    "p2" : "Cada uno de nuestros programas cuentan con los siguientes beneficios que mejoraran la presencia de su empresa y aumentaran adecuadamente su productividad.",
+    "li2" : [
+        "Certificación Valida A Nivel Nacional E Internacional.",
+        "Acompañamiento Trimestral.",
+        "Ingenieros De Diversas Áreas Operativas.",
+        "Profesionales De Amplia Experiencia.",
+        "Psicóloga Laboralista.",
+        "Seguimiento Del Personal Trimestral.",
+        "Informes Físicos Y Digitales Por Cada Trabajador.",
+        "Retroalimentación Semestral Gratuita.",
+        "Capacitación A Personal Postulante O Trabajador Nuevo Gratis."
+    ],
+    "phrase" : "Trabajadores bien preparados son trabajadores más productivos",
+    "p3" : "La necesidad de la formación y especialización de los trabajadores en cada puesto específico es importante, por ello nosotros implementamos sistemas de aprendizaje optimo, el cual cumplirá con el seguimiento correspondiente.",
+    "li3" : [
+        "Liderazgo",
+        "Ergonomía",
+        "Gestión Empresarial",
+        "Medio Ambiente",
+        "Señalización",
+        "Soporte Básico de Vida (Primeros Auxilios)",
+        "Brigadas de Emergencias",
+        "Seguridad Basada en el comportamiento",
+        "Seguridad Minera e Industrial",
+        "Seguridad en Oficinas",
+        "Trabajos en Alto Riesgo",
+        "Seguridad Eléctrica",
+        "Manejo defensivo",
+        "Gestión de Materiales Peligrosos",
+        "Microsoft",
+        "Gestión Administrativa",
+        "Psicología Organizacional",
+        "Gestión Corporativa",
+        "Peligros Organizacionales",
+        "Word, Excel, PowerPoint, SAP",
+        "Gestión de Logística y Almacenes"
+    ]
+}

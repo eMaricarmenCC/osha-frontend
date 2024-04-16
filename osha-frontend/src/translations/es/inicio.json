@@ -1,0 +1,68 @@
+{
+    "intro": {
+        "education": {
+            "title": "Educación",
+            "description": "Englobamos a los mejores profesionales de prestigio internacional para llevarte educación continua correspondiente a Seguridad y Salud en Trabajo."
+        },
+        "partnerships": {
+            "title": "Alianzas",
+            "description": "Desde hace 30 años nos encontramos involucrados con mas de 700 empresas a nivel internacional con el cual trabajamos de la mano para mejorar la prevención de accidentes dentro sus operaciones."
+        },
+        "certification": {
+            "title": "Certificación y acreditación",
+            "description": "Desde Osha-Institute estamos inmersos en la formación global de profesionales en el área de la Seguridad y la prevención de riesgos laborales."
+        },
+        "validity": {
+            "title": "Vigencia",
+            "description": "La certificación y acreditación Osha-Institute tiene valor a nivel internacional gracias a nuestro convenio de la Haya englobando mas de 120 países a nivel mundial."
+        }
+    },
+    "methodology": {
+        "title": "Metodología Educativa y de Acreditación",
+        "description": "Nuestro proceso de formación y acreditación a profesionales de la Seguridad esta basado a la metodología moderna."
+    },
+    "acreditation": {
+        "title": "Acreditación",
+        "description": "Accede a un grado más en tu carrera profesional en seguridad y certificate dale un valor internacional a tus competencias con una certificación válido a nivel mundial, siempre con la garantía de la Occupational Safety Health Administration \"Osha-Institute\"."
+    },
+    "categories": {
+        "occupationalSafety": {
+            "title": "Seguridad Laboral",
+            "description": "Desde 1971, somos propulsores de la mejora continua en relación a Seguridad Laboral en las Organizaciones."
+        },
+        "preventionOccupationalHazards": {
+            "title": "Prevención de Riesgos Laborales",
+            "description": "Gracias al aporte de muchos profesionales optimizamos mejoramos la prevención de accidentes en las diversas industrias optimizando y valorando el recurso humano."
+        },
+        "sciencieTecnology": {
+            "title": "Ciencia tecnología",
+            "description": "Aplicamos parámetros y métodos de óptimo aprendizaje y desarrollo teórico práctico."
+        },
+        "psychology": {
+            "title": "Salud y Psicología - Health",
+            "description": "Construimos parámetros específicos basados en la ciencia de la salud y psicología universal."
+        },
+        "engineering": {
+            "title": "Ingeniería",
+            "description": "Manejamos los mejores programas de ingeniería basados en los altos estándares internacionales aplicables a nivel mundial."
+        },
+        "hazardousMaterials": {
+            "title": "Materiales peligrosos",
+            "description": "La gestión de materiales peligrosos en el mundo es importante por ello manejamos un estándar adecuado (Hazwoper) mejorando su gestión."
+        }
+    },
+    "oshaInstitute": {
+        "vocationalTraining": {
+            "title": "Formación Profesional",
+            "description": "Podrás acceder a programas de formación profesional que cumplen con los requisitos internacionales, nosotros cambiamos los esquemas de formación nacional por metodología internacional para que seas un profesional competente en cualquier campo industrial."
+        },
+        "profesionalAccreditation": {
+            "title": "Acreditación Profesional",
+            "description": "Nuestro programa de acreditación profesional tiene valor a nivel internacional por ello acreditamos a los mejores profesionales del mundo inmersos en el sector de la Seguridad y Salud Laboral."
+        },
+        "profesionalAssistance": {
+            "title": "Aistencia Profesional",
+            "description": "Nuestra asistencia es continua a los profesionales acreditados, teniendo interacción con profesionales de mayor nivel, en Osha-institute estamos para ayudarte a mejorar tu gestión profesional dentro tu área de influencia."
+        }
+    }
+}

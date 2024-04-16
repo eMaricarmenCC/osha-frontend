@@ -20,11 +20,13 @@
     
     "internationalCooperation" : {
         "tittle" : "Cooperación Internacional",
-        "p1" : "Buscando fortalecer la educación en América latina, concretamos convenios y lazos de colaboración educativa con organismos públicos y privados en más de 120 países.",
-        "p2" : "Esto nos ayuda a fortalecer nuestro enfoque académico y mejorar nuestra gestión, bajo guía y especificaciones de organismos especializados en cada área determinada.",
-        "p3" : "Nuestro trabajo forma profesionales que pueden garantizar ambientes de trabajo seguro.",
-        "p4" : "Nuestras colaboraciones con organizaciones públicas y privadas de diversos países y diferentes culturas nos fortalecieron haciendo de Osha-Institute una de las mejores casa de estudios basado en temas de seguridad para las diferentes industrias que cuenten con el factor humano como una fuente principal de soporte operacional.",
-        "p5" : "Nuestro centro de estudios e impactos científicos trabaja los 365 días del año buscando mejorar los sistemas y normas de seguridad en el mundo."
+        "p": [
+            "Buscando fortalecer la educación en América latina, concretamos convenios y lazos de colaboración educativa con organismos públicos y privados en más de 120 países.",
+            "Esto nos ayuda a fortalecer nuestro enfoque académico y mejorar nuestra gestión, bajo guía y especificaciones de organismos especializados en cada área determinada.",
+            "Nuestro trabajo forma profesionales que pueden garantizar ambientes de trabajo seguro.",
+            "Nuestras colaboraciones con organizaciones públicas y privadas de diversos países y diferentes culturas nos fortalecieron haciendo de Osha-Institute una de las mejores casa de estudios basado en temas de seguridad para las diferentes industrias que cuenten con el factor humano como una fuente principal de soporte operacional.",
+            "Nuestro centro de estudios e impactos científicos trabaja los 365 días del año buscando mejorar los sistemas y normas de seguridad en el mundo."
+        ]
     },
         
     "privacyAndSecurityDeclaration" : {

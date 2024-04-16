@@ -1,0 +1,47 @@
+{
+    "membership": {
+        "title": "Membresía",
+        "description": [
+            "Por qué tener una acreditación Osha-Institute, el valor de internacionalidad brindado por Osha-Institute tiene una cobertura a nivel internacional, siendo una de las Organizaciones que está presente a nivel mundial abarcando temas de Seguridad Laboral, Prevención de Riesgos laborales y Gestión de Impacto Ambiental en todo el Mundo.",
+            "Accede a nuestras acreditaciones y vuélvete un profesional especialista acreditado por Osha-Institute."
+        ],
+        "benefits": {
+            "title": "Beneficios",
+            "benefits": [
+                "Acreditación personal (certificado).",
+                "Acceso a Foros Internacionales.",
+                "Premios de Excelencia profesional.",
+                "Kits de herramientas de Seguridad y Prevención Digitales.",
+                "Oportunidad de aprendizaje continuo.",
+                "Charlas de Seguridad y materiales digitales en PowerPoint.",
+                "Foros con profesionales de más de 20 países en conjunto.",
+                "Capacitación en línea y accesos a nuestras aulas virtuales.",
+                "Carnet de Acreditación Osha-Institute."
+            ]
+        },
+        "membership": {
+            "title": "Valor por la Membresía Personal",
+            "packages": [
+                {
+                    "certificates": "1 certificación",
+                    "price": "$1,600",
+                    "membership": "Membresía anual",
+                    "price_membership": "$750"
+                },
+                {
+                    "certificates": "2 certificados",
+                    "price": "$3,000",
+                    "membership": "Membresía anual",
+                    "price_membership": "$1,200"
+                },
+                {
+                    "certificates": "3 certificados",
+                    "price": "$5,000",
+                    "membership": "Membresía anual",
+                    "price_membership": "$2,400"
+                }
+            ]
+        },
+        "contact": "Para acceder a una Membresía Osha-Institute usted debe enviar un E-mail a membresia@osha.es y solicitar más información."
+    }
+}
