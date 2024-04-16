@@ -27,6 +27,13 @@ export default {
         red: '#F46060',
         green: '#5CB85C',
         yellow: '#F0C62F',
+
+        whatsapp: '#25D366',
+        telegram: '#0088cc',
+        facebook: '#1877F2',
+        linkedin: '#0A66C2',
+        twitter: '#1DA1F2',
+        instagram: '#E1306C',
       },
     },
   },
