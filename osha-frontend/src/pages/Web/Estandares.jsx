@@ -4,7 +4,7 @@ import React from "react";
 function Estandares(){
   return (
     <>
-      <P>Estandares en construccion</P>
+      <p>Estandares en construccion</p>
     </>
   )
 }

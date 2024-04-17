@@ -5,8 +5,9 @@ import Footer from '../../components/Footer';
 function Nosotros(){
   return (
     <>
-      <P className='text-black' >Nosotros en construccion</P>
-      <Footer />
+      <section>
+      <p className='text-black' >Nosotros en construccion</p>
+      </section>
     </>
   )
 }

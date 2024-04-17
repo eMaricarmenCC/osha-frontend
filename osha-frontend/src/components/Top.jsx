@@ -4,11 +4,17 @@ import { HiOutlineMail } from "react-icons/hi";
 import { PiStudentFill } from "react-icons/pi";
 import { GrLanguage } from "react-icons/gr";
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import i18n from '../config/i18next.config';
 
 
 function Top(){
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
-    <section className="px-4 py-3 flex flex-row bg-primary">
+    <section className="px-4 py-3 flex flex-row gap-4 bg-primary items-center">
       
       {/* Social Share */}
       <div className="">
@@ -59,24 +65,45 @@ function Top(){
       </div>
       
       {/* Aula virtual */}
-      <div className="w-1/4 flex justify-center">
-        <Link to="/login">
-          <a href="" className="flex flex-row gap-1 items-center text-sm">
+      <div className="w-1/4">
+        <span className="flex">
+          <Link to="/login" className="flex flex-row gap-2 py-1 px-3 rounded-lg border border-white justify-center items-center ">
             <PiStudentFill color='white'/>
-            <span className="text-white">Aula virtual</span>
-          </a>
-        </Link>
+            <span className="text-white text-sm">Aula virtual</span>
+          </Link>
+        </span>
       </div>     
       
       {/* Lenguaje */}
-      <div className="w-1/4 flex justify-end">
-        <ul>
-          <li>
-            <a href="">
-              <span></span>
-              <span></span>
-            </a>
+      <div class="">
+        <button class="flex flex-row gap-2 items-center" type="button">
+          <GrLanguage color="white"/>
+          <span className="text-white text-sm">Lenguaje</span>
+        </button>
+        <ul class="">
+          <li id="es">
+            <a href="#" className="flex flex-row gap-1 items-center">
+                <i><img className="w-4"
+                    alt="United States"
+                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                </i>Español
+              </a>
           </li>
+          <li id="en" className="">
+              <a href="#" className="flex flex-row gap-1 items-center">
+                <i><img className="w-4"
+                  alt="United States"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/>
+                </i>English</a>
+          </li>
+        </ul>
+      </div>
+      <div className="w-1/4 flex justify-end">
+        <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={i18n.language}>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+        <ul>
           <li>
             <a href="" className="flex flex-row gap-1 items-center text-sm">
               <GrLanguage color="white"/>

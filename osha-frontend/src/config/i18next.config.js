@@ -26,6 +26,7 @@ import sedes_en from "../translations/en/sedes.json";
 i18n.use(Backend).use(initReactI18next).init({
     interpolation: {escapeValue: false},
     lng: "es",
+    fallbacking: 'es',
     resources: {
         es:{
             prueba: prueba_es,
@@ -55,3 +56,5 @@ i18n.use(Backend).use(initReactI18next).init({
         }
     }
 });
+
+export default i18n;

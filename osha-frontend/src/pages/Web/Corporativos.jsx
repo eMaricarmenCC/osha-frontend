@@ -4,7 +4,7 @@ import React from "react";
 function Corporativos(){
   return (
     <>
-      <P>Corporativos en construccion</P>
+      <p>Corporativos en construccion</p>
     </>
   )
 }

@@ -38,7 +38,7 @@ function Login() {
   }
   
   return (
-    <div className='bg-gris h-screen flex flex-col justify-between'>
+    <div className='bg-gris h-screen flex flex-col justify-between bg-grisFondo'>
       
       { /* Header */}
       <div className='flex flex-row px-5 py-5 bg-white shadow-lg justify-between'>
@@ -120,7 +120,7 @@ function Login() {
           </div>
         </div>
         <div>
-          <img src="/src/assets/images/login.png" alt="person" className='w-65 h-40'/>
+          <img src="/src/assets/images/login.png" alt="person" className='h-40'/>
         </div>
       </div>
 

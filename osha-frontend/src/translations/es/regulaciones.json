@@ -1,0 +1,50 @@
+{
+    "Cumplimiento_de_regulaciones": {
+      "GESTIÓN_DE_CUMPLIMIENTO_DE_SEGURIDAD": {
+    },
+    "p": [
+        "En Osha-Institute estamos preparados para guiarlo a través de los requisitos de cumplimiento de OSHA-EE.UU, incluidos, Seguridad Ocupacional, Seguridad Laboral, Cuidados del Medio Ambiente, Transporte de Cargas y Mercancías, Seguridad con Maquinaria Pesada y Equipos, Prevención de Riesgos laborales, los 17 niveles de regulaciones y procedimientos HAZWOPER, etiquetado DOT y EPA, requisitos de envío y manifestación, y cuestiones de consultoría de códigos de construcción e incendios.",
+        "no solo cubren información sobre seguridad, respuesta a emergencias y cumplimiento normativo, sino que preparan a los estudiantes para evaluar, administrar y resolver de manera competente situaciones del mundo real. Nuestros cursos de capacitación, especialización y grados profesionales son agradables, fáciles de seguir y garantizan que usted y su equipo estén capacitados en el material adecuado al nivel adecuado."
+    ],
+    "contribute":{
+        "title": "Como aportamos",
+        "list": [
+            "Seguridad_en_la_Construcción",
+            "Seguridad_Ocupacional",
+            "Cumplimiento_de_normas_Osha-Institute",
+            "Cumplimiento_del_Departamento_de_Transporte",
+            "Seguridad_contra_incendios_y_vida",
+            "Cumplimiento_del_código_de_construcción_y_seguridad_personal_y_contra_Incendios",
+            "Preparación_y_respuesta_ante_emergencias",
+            "Reconstrucción_de_accidentes",
+            "Manipulación_de_materiales_peligrosos",
+            "Operaciones",
+            "Prevención_de_Riesgos_laborales_en_el_lugar_de_Trabajo"
+        ]
+    },      
+    "practiceAreas": {
+        "title": "Áreas de práctica",
+        "list": [
+            "Investigaciones_de_accidentes",
+            "Construyendo_códigos",
+            "Quemar_Térmico",
+            "Accidentes_de_construcción",
+            "Cumplimiento_de_DOT",
+            "Normas_y_códigos_medioambientales",
+            "La_seguridad_ambiental",
+            "Fuego_Incendio",
+            "Materiales_peligrosos",
+            "Factores_humanos",
+            "Accidentes_industriales",
+            "Equipos_Maquinaria_Industrial",
+            "Escaleras",
+            "Cumplimiento_de_OSHA-INSTITUTE",
+            "Regulaciones_de_OSHA-INSTITUTE",
+            "Advertencias_de_seguridad",
+            "Resbalón_y_caída",
+            "Advertencias_e_instrucciones",
+            "Lesiones_en_el_lugar_de_trabajo"
+        ]
+    }
+    }
+  }

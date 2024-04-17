@@ -4,7 +4,7 @@ import React from "react";
 function Grados(){
   return (
     <>
-      <P>Grados en construccion</P>
+      <p>Grados en construccion</p>
     </>
   )
 }

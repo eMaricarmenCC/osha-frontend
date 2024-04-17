@@ -6,6 +6,9 @@ import logoOsha from '/src/assets/logo/logoOsha.png';
 import { NavLink } from "react-router-dom";
 
 function Header(){
+
+  const [click, setClick] = useState(false);
+
   const [menuOpened, setMenuOpened] = useState(false);
   
   const getMenuStyles = (menuOpened) => {
