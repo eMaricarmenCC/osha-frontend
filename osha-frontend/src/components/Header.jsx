@@ -4,8 +4,11 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from "react-outside-click-handler";
 import logoOsha from '/src/assets/logo/logoOsha.png';
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Header(){
+
+  const { t, i18n } = useTranslation("labels");
 
   const [click, setClick] = useState(false);
 
@@ -27,12 +30,12 @@ function Header(){
           }}
         />
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-          <NavLink to='/' className="" >Inicio</NavLink>
-          <NavLink to='/our' className="" >Nosotros</NavLink>
-          <NavLink to='/standars' className="" >Estándares</NavLink>
-          <NavLink to='/acreditation' className="" >Acreditación</NavLink>
-          <NavLink to='/grade' className="" >Grados</NavLink>
-          <NavLink to='/corporatives' className="" >Corporativos</NavLink>
+          <NavLink to='/' className="" >{t("home")}</NavLink>
+          <NavLink to='/us' className="" >{t("us")}</NavLink>
+          <NavLink to='/standards' className="" >{t("standards")}</NavLink>
+          <NavLink to='/accreditation' className="" >{t("accreditation")}</NavLink>
+          <NavLink to='/degrees' className="" >{t("degrees")}</NavLink>
+          <NavLink to='/corporate' className="" >{t("corporate")}</NavLink>
           <button className="button">
             <a href="">Contáctanos</a>
           </button>

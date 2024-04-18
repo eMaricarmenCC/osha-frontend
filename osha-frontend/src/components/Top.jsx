@@ -5,9 +5,12 @@ import { PiStudentFill } from "react-icons/pi";
 import { GrLanguage } from "react-icons/gr";
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import i18n from '../config/i18next.config';
+import { useTranslation } from "react-i18next";
 
 
 function Top(){
+
+  const { t, i18n } = useTranslation("labels");
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -49,7 +52,7 @@ function Top(){
               <FaInstagram color="white" />
             </a>
           </span>
-          <span>
+          <span className="pl-1">
             <a href="" className="flex flex-row gap-1 items-center text-sm">
               <HiOutlineMail color='white' />
               <span className="text-white">info@osha.es</span>
@@ -64,7 +67,7 @@ function Top(){
         <span className="flex">
           <Link to="/login" className="flex flex-row gap-2 py-1 px-3 rounded-lg border border-white justify-center items-center transform transition-transform hover:scale-110">
             <PiStudentFill color='white'/>
-            <span className="text-white text-sm">Aula virtual</span>
+            <span className="text-white text-sm">{t("virtualClassroom")}</span>
           </Link>
         </span>
 
@@ -72,7 +75,7 @@ function Top(){
         <div className="flex gap-2 justify-end">
           <a href="" className="flex flex-row gap-1 items-center text-sm">
             <GrLanguage color="white"/>
-            <span className="text-white">Lenguaje</span>
+            <span className="text-white">{t("language")}</span>
           </a>
           <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={i18n.language} className="bg-primary text-white text-sm border border-white">
             <option value="en">English</option>

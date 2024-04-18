@@ -26,7 +26,7 @@ function Nosotros(){
               <span className="mx-4 h-auto text-white font-medium">/</span>
             </li>
             <li className="inline-flex items-center">
-              <Link to="#" className="text-gray-600 hover:text-azulClaro text-azulClaro transform transition-transform hover:scale-110">Nosotros</Link>
+              <Link to="#" className="hover:text-azulClaro text-azulClaro transform transition-transform hover:scale-110">Nosotros</Link>
             </li>
           </ul>
         </div>

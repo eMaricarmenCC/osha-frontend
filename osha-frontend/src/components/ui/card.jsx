@@ -93,10 +93,22 @@ function Section1({ imagePath, title, content, colorButton, hoverColorButton }) 
   );
 }
 
-function Card({ color, icon, title, content }) {
+function Card({ colorBg, colorCi, icon, title, content }) {
   return (
-    <div className="rounded-xl bg-white p-6 text-center shadow-xl">
-      <div className={`mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-${color}-400 shadow-lg shadow-${color}-500/40`}>
+    <div className={`rounded-xl bg-${colorBg} p-6 text-center shadow-xl`}>
+      <div className={`mx-auto flex h-20 w-20 -translate-y-12 transform items-center justify-center rounded-full bg-${colorCi} shadow-lg shadow-${colorCi}-500/40`}>
+        {icon}
+      </div>
+      <h1 className={`text-darken mb-3 text-${colorCi} text-lg font-medium lg:px-14`}>{title}</h1>
+      <p className="px-4 text-gray-500">{content}</p>
+    </div>
+  );
+}
+
+function Cardc({ colorBg, colorCi, icon, title, content }) {
+  return (
+    <div className={`rounded-xl bg-${colorBg} p-6 text-center shadow-xl`}>
+      <div className={`mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-${colorCi} shadow-lg shadow-${colorCi}-500/40`}>
         {icon}
       </div>
       <h1 className="text-darken mb-3 text-lg font-medium lg:px-14">{title}</h1>
@@ -104,6 +116,7 @@ function Card({ color, icon, title, content }) {
     </div>
   );
 }
+
 
 function Card2() {
   return (

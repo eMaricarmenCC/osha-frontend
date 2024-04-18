@@ -18,11 +18,12 @@ function Web() {
       <Header />
       <Routes>
         <Route path="/" element={<Inicio/>} />
-        <Route path="/our" element={<Nosotros/>} />
-        <Route path="/standars" element={<Estandares/>} />
-        <Route path="/acreditation" element={<Acreditacion/>} />
-        <Route path='/corporativos' element={<Corporativos/>} />
-        <Route path="/grade" element={<Grados/>} />
+        <Route path="/us" element={<Nosotros/>} />
+        <Route path="/standards" element={<Estandares/>} />
+        <Route path="/accreditation" element={<Acreditacion/>} />
+        <Route path="/degrees" element={<Grados/>} />
+        <Route path='/corporate' element={<Corporativos/>} />
+        
       </Routes>          
       <Footer/>
     </>

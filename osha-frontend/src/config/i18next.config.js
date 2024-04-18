@@ -1,6 +1,8 @@
 import i18n from "i18next";
 import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
+import labels_es from "../translations/es/labels.json";
+import labels_en from "../translations/en/labels.json";
 import prueba_es from "../translations/es/prueba.json";
 import prueba_en from "../translations/en/prueba.json";
 import acreditacion_es from "../translations/es/acreditacion.json";
@@ -13,12 +15,18 @@ import corporativos_es from "../translations/es/corporativos.json";
 import corporativos_en from "../translations/en/corporativos.json";
 import estandares_es from "../translations/es/estandares.json";
 import estandares_en from "../translations/en/estandares.json";
+import fundacionOshaInstitute_es from "../translations/es/fundacionOshaInstitute.json";
+import fundacionOshaInstitute_en from "../translations/en/fundacionOshaInstitute.json";
 import inicio_es from "../translations/es/inicio.json";
 import inicio_en from "../translations/en/inicio.json";
 import membresia_es from "../translations/es/membresia.json";
 import membresia_en from "../translations/en/membresia.json";
 import nosotros_es from "../translations/es/nosotros.json";
 import nosotros_en from "../translations/en/nosotros.json";
+import regulaciones_es from "../translations/es/regulaciones.json";
+import regulaciones_en from "../translations/en/regulaciones.json";
+import representantes_es from "../translations/es/regulaciones.json";
+import representantes_en from "../translations/en/regulaciones.json";
 import sedes_es from "../translations/es/sedes.json";
 import sedes_en from "../translations/en/sedes.json";
 
@@ -29,29 +37,37 @@ i18n.use(Backend).use(initReactI18next).init({
     fallbacking: 'es',
     resources: {
         es:{
+            labels: labels_es,
             prueba: prueba_es,
             acreditacion: acreditacion_es,
             certex: certex_es,
             contactos: contactos_es,
             corporativos: corporativos_es,
             estandares: estandares_es,
+            fundacionOshaInstitute: fundacionOshaInstitute_es,
             inicio: inicio_es,
             membresia: membresia_es,
             nosotros: nosotros_es,
             prueba: prueba_es,
+            regulaciones: regulaciones_es,
+            representantes: representantes_es,
             sedes: sedes_es,
         },
         en: {
+            labels: labels_en,
             prueba: prueba_en,
             acreditacion: acreditacion_en,
             certex: certex_en,
             contactos: contactos_en,
             corporativos: corporativos_en,
             estandares: estandares_en,
+            fundacionOshaInstitute: fundacionOshaInstitute_en,
             inicio: inicio_en,
             membresia: membresia_en,
             nosotros: nosotros_en,
             prueba: prueba_en,
+            regulaciones: regulaciones_en,
+            representantes: representantes_en,
             sedes: sedes_en,
         }
     }
