@@ -16,9 +16,9 @@ function Footer(){
                     />
                   </h1>
                 </p>
-                <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Eos, fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere officiis enim animi
-                  placeat eaque nesciunt alias beatae id, at dicta.</p>
+                <p className="mt-[18px] text-[15px] font-normal text-white/[80%] text-sm">
+                Occupational Safety Health Administration "Osha-Institute" es un corporativo internacional de entidades ligadas a la seguridad y salud en el trabajo y la prevención de riesgos laborales que lo conforman, Departamentos de Estado, Universidades, Instituciones de Formación, Centros de Investigación de Ingeniería e Institutos de Estándares Internacionales, presentes en más de 20 países.
+                </p>
                 <div className="mt-[18px] flex gap-4">
                   {/*<a className="hover:scale-110" target="_blank"
                     href="#"><img alt="facebook icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style="color:transparent" src="https://www.englishyaari.com/img/facebook.svg" /></a><a

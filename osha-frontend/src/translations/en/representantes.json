@@ -1,0 +1,53 @@
+{
+    "title": "Representatives in the world",
+    "representativePakistan": {
+        "title": "Representative in Pakistan",
+        "description": "IEHSAS (Integrated Environment Health & Safety Advisory Services) is a leading training and consultancy organisation. IEHSAS is one of the world's leaders in providing health and safety training programmers. We bring you an unrivaled wealth of experience and expertise to provide the highest quality health, safety and environmental courses. Additionally, we are an accredited/approved center from multiple internationally renowned bodies including NEBOSH, OSHA, AOSH, PEBC, OTHM and many more.",
+        "contact": {
+            "title": "Contacts of the Representative in Pakistan",
+            "address": {
+                "title": "Address",
+                "address": "Office No. 227, 2nd Floor Latif Plazaferopur road, Ichhra Lahore, Punjab 54600"
+            },
+            "cellphone": {
+                "title": "Cellphone / Telephone",
+                "cellphone": "(+92) 304-815-8503 (+042) 37-502-047"
+            },
+            "email": {
+                "title": "Mail",
+                "email": "info@iehsac.com"
+            },
+            "web": {
+                "title": "Official website",
+                "web": "https://www.iehsas.com/"
+            }
+        }
+    },
+    "representativeLondon": {
+        "title": "Representative in London",
+        "description": [
+            "Human Focus is a global leader in skilled behavior change in the workplace.",
+            "We help clients achieve world-class business performance by helping them develop skills and change habits that keep workers safer, healthier and more productive.",
+            "We were founded in 1992 and have grown over our 30 years of service to form close working partnerships with leading health and safety organizations, insurance companies and trade associations."
+        ],
+        "contact": {
+            "title": "Contacts of the Representative in London",
+            "address": {
+                "title": "Address",
+                "address": "Human Focus International Limited, Suite 2, Chapter House, 33 London Road, Reigate RH2 9HZ"
+            },
+            "cellphone": {
+                "title": "Cellphone / Telephone",
+                "cellphone": "01737 647882"
+            },
+            "email": {
+                "title": "Mail",
+                "email": "inquiries@humanfocus.co.uk"
+            },
+            "web": {
+                "title": "Official website",
+                "web": "https://humanfocus.co.uk/"
+            }
+        }
+    }
+}

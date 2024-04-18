@@ -1,0 +1,53 @@
+{
+    "title": "Representantes en el mundo",
+    "representativePakistan": {
+        "title": "Representante en Pakistán",
+        "description": "IEHSAS (Integrated Environment Health & Safety Advisory Services) es una de las principales organizaciones de formación y consultoría. IEHSAS es uno de los líderes mundiales en proporcionar programadores de capacitación en salud y seguridad. Le brindamos una riqueza inigualable de experiencia y conocimientos para brindar cursos de salud, seguridad y medio ambiente de la más alta calidad. Además, somos centro acreditado/aprobado de múltiples organismos de renombre internacional, incluidos NEBOSH, OSHA, AOSH, PEBC, OTHM y muchos más.",
+        "contact": {
+            "title": "Contactos del Representante en Pakistan",
+            "address": {
+                "title": "Dirección",
+                "address": "Oficina n.º 227, segundo piso Latif Plaza ferozpur road, Ichhra Lahore, Punjab 54600"
+            },
+            "cellphone": {
+                "title": "Celular / Teléfono",
+                "cellphone": "(+92) 304-815-8503 (+042) 37-502-047"
+            },
+            "email": {
+                "title": "Correo",
+                "email": "info@iehsac.com"
+            },
+            "web": {
+                "title": "Web oficial",
+                "web": "https://www.iehsas.com/"
+            }
+        }
+    },
+    "representativeLondres": {
+        "title": "Representante en Londres",
+        "description": [
+            "Human Focus es un líder mundial en el cambio de comportamiento calificado en el lugar de trabajo.",
+            "Ayudamos a los clientes a lograr un desempeño comercial de clase mundial al ayudarlos a desarrollar habilidades y cambiar hábitos que mantienen a los trabajadores más seguros, saludables y productivos.",
+            "Fuimos fundados en 1992 y hemos crecido durante nuestros 30 años de servicio para formar asociaciones de trabajo cercanas con organizaciones líderes en salud y seguridad, compañías de seguros y asociaciones comerciales."
+        ],
+        "contact": {
+            "title": "Contactos del Representante en Londres",
+            "address": {
+                "title": "Dirección",
+                "address": "Human Focus International Limited, Suite 2, Sala Capitular, 33 London Road, Reigate RH2 9HZ"
+            },
+            "cellphone": {
+                "title": "Celular / Teléfono",
+                "cellphone": "01737 647882"
+            },
+            "email": {
+                "title": "Correo",
+                "email": "consultas@humanfocus.co.uk"
+            },
+            "web": {
+                "title": "Web oficial",
+                "web": "https://humanfocus.co.uk/"
+            }
+        }
+    }
+}

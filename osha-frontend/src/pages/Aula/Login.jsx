@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { login } from '../../api/Login.api';
+import { CgWebsite } from "react-icons/cg";
 
 
 function Login() {
@@ -38,7 +40,7 @@ function Login() {
   }
   
   return (
-    <div className='bg-gris h-screen flex flex-col justify-between bg-grisFondo'>
+    <div className='flex flex-col h-screen justify-between bg-grisFondo'>
       
       { /* Header */}
       <div className='flex flex-row px-5 py-5 bg-white shadow-lg justify-between'>
@@ -46,16 +48,21 @@ function Login() {
           className="h-10 w-auto"
           src="/src/assets/logo/logoOsha.png"
           alt="Osha Institute"
-        />
-        <div>
-          <button className='bg-primary rounded-lg text-white p-2'>Contactanos</button>
+        />        
+        <div className='flex flex-row gap-1'>
+          <Link to="/" className="p-2 rounded-lg border border-primary">
+            <span className="text-primary text-sm">Página web</span>
+          </Link>
+          <Link to="/contact" className="bg-primary rounded-lg text-white p-2">
+            <span className="text-white text-sm">Contactanos</span>
+          </Link>
         </div>
       </div>
 
       { /* Formulario - imagen */}
-      <div className='flex flex-col md:flex-row w-full gap-5 justify-center items-center py-10'>
+      <div className='flex flex-col md:flex-row justify-center items-center mt-10'>
         <div className='bg-white rounded-lg shadow-lg'>
-          <div className="flex flex-col gap-5 min-h-full justify-center px-6 py-10 lg:px-8 w-500">
+          <div className="flex flex-col gap-5 md:w-900 justify-center px-6 py-10 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
               <h2 className="text-primary text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                 Osha Institute
@@ -120,12 +127,13 @@ function Login() {
           </div>
         </div>
         <div>
-          <img src="/src/assets/images/login.png" alt="person" className='h-40'/>
+          <img src="/src/assets/images/login.png" alt="person" className="hidden sm:block" style={{width:450, height:300}}/>
         </div>
       </div>
 
       {/* Footer logos */}
-      <div>
+      <div className='flex p-2'>
+        <img src="/src/assets/logo/logoAccreditedEducation.png" alt="Accredited Education" className='w-20'/>
       </div>      
     </div>
   )

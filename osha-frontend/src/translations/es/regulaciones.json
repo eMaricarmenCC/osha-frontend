@@ -1,50 +1,160 @@
 {
-    "Cumplimiento_de_regulaciones": {
-      "GESTIÓN_DE_CUMPLIMIENTO_DE_SEGURIDAD": {
+    "regulatoryCompliance": {
+        "title": "Cumplimiento de regulaciones",
+        "subtitle": "Gestión de cumplimiento de seguridad los ",
+        "p": [
+            "En Osha-Institute estamos preparados para guiarlo a través de los requisitos de cumplimiento de OSHA-EE.UU, incluidos, Seguridad Ocupacional, Seguridad Laboral, Cuidados del Medio Ambiente, Transporte de Cargas y Mercancías, Seguridad con Maquinaria Pesada y Equipos, Prevención de Riesgos laborales, los 17 niveles de regulaciones y procedimientos HAZWOPER, etiquetado DOT y EPA, requisitos de envío y manifestación, y cuestiones de consultoría de códigos de construcción e incendios.",
+            "no solo cubren información sobre seguridad, respuesta a emergencias y cumplimiento normativo, sino que preparan a los estudiantes para evaluar, administrar y resolver de manera competente situaciones del mundo real. Nuestros cursos de capacitación, especialización y grados profesionales son agradables, fáciles de seguir y garantizan que usted y su equipo estén capacitados en el material adecuado al nivel adecuado."
+        ],
+        "contribute":{
+            "title": "Como aportamos",
+            "list": [
+                "Seguridad_en_la_Construcción",
+                "Seguridad_Ocupacional",
+                "Cumplimiento_de_normas_Osha-Institute",
+                "Cumplimiento_del_Departamento_de_Transporte",
+                "Seguridad_contra_incendios_y_vida",
+                "Cumplimiento_del_código_de_construcción_y_seguridad_personal_y_contra_Incendios",
+                "Preparación_y_respuesta_ante_emergencias",
+                "Reconstrucción_de_accidentes",
+                "Manipulación_de_materiales_peligrosos",
+                "Operaciones",
+                "Prevención_de_Riesgos_laborales_en_el_lugar_de_Trabajo"
+            ]
+        },
+        "practiceAreas": {
+            "title": "Áreas de práctica",
+            "list": [
+                "Investigaciones_de_accidentes",
+                "Construyendo_códigos",
+                "Quemar_Térmico",
+                "Accidentes_de_construcción",
+                "Cumplimiento_de_DOT",
+                "Normas_y_códigos_medioambientales",
+                "La_seguridad_ambiental",
+                "Fuego_Incendio",
+                "Materiales_peligrosos",
+                "Factores_humanos",
+                "Accidentes_industriales",
+                "Equipos_Maquinaria_Industrial",
+                "Escaleras",
+                "Cumplimiento_de_OSHA-INSTITUTE",
+                "Regulaciones_de_OSHA-INSTITUTE",
+                "Advertencias_de_seguridad",
+                "Resbalón_y_caída",
+                "Advertencias_e_instrucciones",
+                "Lesiones_en_el_lugar_de_trabajo"
+            ]
+        }
     },
-    "p": [
-        "En Osha-Institute estamos preparados para guiarlo a través de los requisitos de cumplimiento de OSHA-EE.UU, incluidos, Seguridad Ocupacional, Seguridad Laboral, Cuidados del Medio Ambiente, Transporte de Cargas y Mercancías, Seguridad con Maquinaria Pesada y Equipos, Prevención de Riesgos laborales, los 17 niveles de regulaciones y procedimientos HAZWOPER, etiquetado DOT y EPA, requisitos de envío y manifestación, y cuestiones de consultoría de códigos de construcción e incendios.",
-        "no solo cubren información sobre seguridad, respuesta a emergencias y cumplimiento normativo, sino que preparan a los estudiantes para evaluar, administrar y resolver de manera competente situaciones del mundo real. Nuestros cursos de capacitación, especialización y grados profesionales son agradables, fáciles de seguir y garantizan que usted y su equipo estén capacitados en el material adecuado al nivel adecuado."
-    ],
-    "contribute":{
-        "title": "Como aportamos",
+    "codeProfessionalConduct": {
+        "title": "Códido de conducta profesional",
+        "description": "Los miembros de la Osha-Institute, en virtud de su aceptación de membresía en la Osha-Institute, están sujetos al siguiente Código de Ética con respecto a sus actividades asociadas con la Seguridad y Salud Ocupacional:",
         "list": [
-            "Seguridad_en_la_Construcción",
-            "Seguridad_Ocupacional",
-            "Cumplimiento_de_normas_Osha-Institute",
-            "Cumplimiento_del_Departamento_de_Transporte",
-            "Seguridad_contra_incendios_y_vida",
-            "Cumplimiento_del_código_de_construcción_y_seguridad_personal_y_contra_Incendios",
-            "Preparación_y_respuesta_ante_emergencias",
-            "Reconstrucción_de_accidentes",
-            "Manipulación_de_materiales_peligrosos",
-            "Operaciones",
-            "Prevención_de_Riesgos_laborales_en_el_lugar_de_Trabajo"
+            "Los miembros deben ser responsables de la conducta ética y profesional en las relaciones con los clientes, empleadores, asociados y el público.",
+            "Los miembros deben ser responsables de la competencia profesional en el desempeño de todas sus actividades profesionales demostrando sus capacidades y ética profesional.",
+            "Los miembros deben ser responsables de la protección del interés profesional, la reputación y el uso del nombre de Osha-Institute que lo merezca o miembro de otra organización profesional involucrada en la seguridad o disciplinas asociadas.",
+            "Los miembros deben estar dedicados al desarrollo profesional de los nuevos miembros en la profesión de seguridad, Prevención de Riesgos y disciplinas asociadas.",
+            "Los miembros deben ser responsables de su total sinceridad en el servicio profesional en su entorno, su localidad, su organización y al mundo.",
+            "Los miembros deben ser responsables de la mejora continua y el desarrollo de competencias profesionales en seguridad, Prevención de Riesgos y disciplinas asociadas.",
+            "Los miembros deben ser responsables de sus esfuerzos profesionales para apoyar el desarrollo y el crecimiento continuo de Osha-Institute."
+        ],
+        "p": "Demostrar sus capacidades y competencias profesionales son parte de la ética que promueve Osha-Institute a nivel mundial por ello nos esforzamos cada día por ser mejores en la creación y el cumplimiento de los estándares propuestos y establecidos a nivel mundial el mismo que aporta a la mejora continua y la prevención de accidentes en las organizaciones."
+    },
+    "oshaInstitute": {
+        "title": "Conoce más a Osha-Institute",
+        "p": [
+            "OSHA-INSTITUTE es un centro de formación y especialización profesional que trabaja directamente con las propuestas de Osha del Departamento de Trabajo de los Estados Unidos.",
+            "Cuando hablamos de la OSHA, nos referimos a la Administración de Seguridad y Salud Ocupacional o por sus siglas en ingles como Occupational Safety and Health Administration - OSHA, la cual entró en vigencia en los Estados Unidos a partir del año 1971. Por tanto no se debe confundir el término OSHA con lo que es el estándar OHSAS.",
+            "Previamente en el año 1970, Estados Unidos experimentaba un alto indice de accidentes laborales, por lo que el presidente de esa época Richard M. Nixon, tomó medidas para reducir esos lamentables incidentes, para lo cual firmó la Ley de Seguridad y Salud Ocupacional un 29 de diciembre de 1970. Esta nueva norma conocida como la Ley OSH por sus siglas del inglés, creó la Administración de Seguridad y Salud Ocupacional - OSHA, la cual entró en vigencia de manera oficial el 28 de abril de 1971.",
+            "Es así como esta entidad se constituye como una agencia del departamento de Trabajo de Estados Unidos, cuya sede se encuentra en la ciudad de Washington DC, donde su misión primordial es hacer cumplir las leyes relacionadas a la seguridad y salud de trabajadores. Asimismo destacar que el jefe de esta agencia es el secretario auxiliar de trabajo encargado de los asuntos de Seguridad y Salud Ocupacional.",
+            "Actualmente esta entidad se encarga de establecer e imponer normas protectoras, las mismas que alcanzan tanto a los empleadores como a los trabajadores, a través de la asistencia técnica y con programas especializados de asesoría, siendo muy reconocida y aceptada a nivel internacional debido a la seriedad y competencia con que establece las normas encargadas de gestionar de la mejor manera la Prevención de Riesgos del Trabajo.",
+            "De esta manera la entidad OSHA y sus socios estatales cuentan con un amplio staff de profesionales, dentro de los cuales se tienen aproximadamente 2400 inspectores y algo mas de 550 asesores estatales, así como investigadores de quejas por temas de discriminación, ingenieros de campo, médicos evaluadores, y personal técnico y de apoyo, los cuales se encuentran estratégicamente distribuidos en más de 130 oficinas activas en todo Estados Unidos y países de influencia.",
+            "Hoy en día de acuerdo a los principios de la OSHA, los empleadores son los responsables de brindar un lugar de empleo que sea seguro y saludable para todos sus empleados. Es decir el papel de la OSHA es ante todo asegurar la seguridad y salud de los trabajadores, a través de la implementación y cumplimiento de normas, así como el adiestramiento, capacitación, entrenamiento y la promoción de la mejora continua en los procesos relacionados a la seguridad y salud en el trabajo.",
+            "Es así como esta entidad trabaja para garantizar la seguridad y salud de todos los trabajadores de Estados Unidos y los países de influencia, quienes en su gran mayoría caen bajo la jurisdicción de OSHA, sin embargo esta entidad ofrece también sus servicios a médicos, abogados, periodistas, científicos, ingenieros, intelectuales y al personal que labora en otras entidades del gobierno.",
+            "Se debe también destacar que parte de la misión de OSHA es la de proveer asistencia o asesoría a los empleadores, con la finalidad de lograr reducir o eliminar los peligros en el centro laboral, para lo cual la OSHA brinda una gran variedad de material informativo así como material especializado en adiestramiento que se enfocan en varios riesgos específicos que comprometen la salud y seguridad en el trabajo.",
+            "De esta manera OSHA está preparada para apoyar tanto a empleadores como a empleados a lograr establecer un puesto de trabajo seguro y saludable. Es así que desde que la Ley de Seguridad y Salud Ocupacional creó la Administración de Seguridad y Salud Ocupacional en 1970, se ha logrado reducir en un 60 % las muertes laborales, y ademas las lesiones y enfermedades ocupacionales han disminuido en un 40 %, lo que resulta positivo a pesar que el nivel de empleo en los Estados Unidos se incrementó notablemente, llegando a la exhorbitante cifra de mas de 115 millones de empleados.",
+            "Aclarar asimismo que las disposiciones de OSHA solo cubren lo que seria el sector privado, sin embargo algunos estados han implementado sus propios programas de seguridad y salud ocupacional que cubren a trabajadores tanto regionales como estatales, los cuales han sido previamente aprobados por OSHA.",
+            "Lo cierto es que desde que se creó la OSHA en Estados Unidos, este país ha logrado significativos progresos en el campo de la seguridad y salud ocupacional, tanto así que la OSHA y sus numerosos socios en los sectores públicos y privados han logrado reducir la tasa de muertes laborales registradas del 2002 al 2008 a niveles muy bajos y mucho mas aceptables.",
+            "Finalmente, no olvidar que la Ley OSH promueve la creación y operación de planes de seguridad y salud ocupacional dentro de cada estado, impidiendo de ese modo la vigilancia estatal de las normas OSHA, a menos que el estado disponga de un plan aprobado. De este modo OSHA aprueba y realiza el seguimiento respectivo a todos los planes estatales, los cuales deben ser por lo menos igual de eficaces que el programa de OSHA federal.",
+            "Por tanto los planes estatales que cubren a todo el sector privado también debe cubrir a los empleados gubernamentales regionales y estatales. Ademas las reglas de OSHA también permiten que los estados desarrollen planes que cubren tan solo a trabajadores del sector público, permaneciendo el sector privado bajo el control o la jurisdicción federal de OSHA."
         ]
-    },      
-    "practiceAreas": {
-        "title": "Áreas de práctica",
-        "list": [
-            "Investigaciones_de_accidentes",
-            "Construyendo_códigos",
-            "Quemar_Térmico",
-            "Accidentes_de_construcción",
-            "Cumplimiento_de_DOT",
-            "Normas_y_códigos_medioambientales",
-            "La_seguridad_ambiental",
-            "Fuego_Incendio",
-            "Materiales_peligrosos",
-            "Factores_humanos",
-            "Accidentes_industriales",
-            "Equipos_Maquinaria_Industrial",
-            "Escaleras",
-            "Cumplimiento_de_OSHA-INSTITUTE",
-            "Regulaciones_de_OSHA-INSTITUTE",
-            "Advertencias_de_seguridad",
-            "Resbalón_y_caída",
-            "Advertencias_e_instrucciones",
-            "Lesiones_en_el_lugar_de_trabajo"
+    },
+    "educationalQuality": {
+        "title": "Calidad educativa",
+        "subtitle": "Osha-Institute",
+        "p": [
+            "Osha-Institute es parte de Accreditated Education AE, este sello nos reconoce por los métodos y programas de formación y especialización aplicado por nosotros a nivel mundial.",
+            "Cada programa está completamente pegado a las normas Osha del Departamento de Trabajo de los Estados Unidos dándole un cumplimiento estricto a cada norma aplicada.",
+            "La metodología usada es no sincrónica (no en vivo) esto ayuda que nuestros alumnos elaboren su propio horario de estudio.",
+            "Forma, teórica explicativa usamos imágenes o videos conjunto para un mejor entendimiento de cada propuesta que ponemos a disposición del alumno.",
+            "Normas Osha-Institute, cada una de las normas usadas en nuestros cursos, módulos o grados son perfectamente traducidas en cada línea explicativa.",
+            "Teoría explicativa, esta teoría no busca cubrir las normas propuestas por su empresa o su país pero puede ser amoldada para lograr la excelencia en seguridad bajo normas que pasaron estudios y pruebas estrictos y que en la actualidad vienen aportando a la reducción de accidentes en las organizaciones."
         ]
+    },
+    "certificatesCredentials": {
+        "title": "Certificados y credenciales",
+        "subtitle": "Osha-Institute",
+        "p": [
+            "Al culminar los programas de formación, cursos o grados los alumnos se hacen acreedor de un certificado o credencial en físico el mismo que cuenta con un código QR y un código numérico que lo acreditan como tal.",
+            "Cada registro del alumno es visible en nuestra web oficial al escanear el código QR o al ingresar el código numérico y puede verlo desde cualquier parte del mundo.",
+            "El envío de certificados o credenciales incluye en el pago total del programa entonces el alumno no debe hacer pagos adicionales para tal fin.",
+            "En caso de pérdida de certificado o credenciales el alumno debe realizar un pago de $ 150 dólares para la renovación o duplicado si lo desea en físico, en caso de desear solo en digital tendrá un costo de $ 80 dólares."
+        ]
+    },
+    "registrationPaymentCancellationPolicy": {
+        "registrationPaymentCancellationPolicy": {
+            "title": "Política de pago y cancelación de matrículas",
+            "description": "El importe de la matrícula es aplicado por cada programa independientemente y por persona que incluye:",
+            "list": [
+                "Programa de formación Profesional y grados en modalidad On-line (no sincrónica).",
+                "Código numérico para postfrma.",
+                "Codigo QR en los credenciales para visibilidad de datos personales en nuestro sistema a nivel mundial.",
+                "Certificado por cada programa o grado realizado.",
+                "Envío de los credenciales hasta el país y ciudad del Participante."
+            ],
+            "p": [
+                "El pago en concepto de grado, especialidad o programas de especialización profesional no será deducible del total del precio del programa y tendrá una validez de 6 meses contados desde la fecha de realización del mismo.",
+                "Los participantes que estén inscritos en varios programas deben cancelar el total del mismo para acceder al programa, no se entregará accesos al programa mientras tanto no esté cancelado al 100%."
+            ]
+        },
+        "paymentCancellationPolicy": {
+            "title": "Política de pagos y cancelaciones",
+            "description": "El pago de los programas y servicios contratados deberá efectuarse a través de los medios aceptados (cuenta bancaria / PayPal) y en los plazos establecidos por la Occupational Safety Health Administration \"Osha\"."
+        },
+        "In-personCoursesOtherServices": {
+            "title": "Cursos presenciales y otros servicios",
+            "description": "El pago del importe total (Inscripción, Curso y Alojamiento en su caso) ha de efectuarse al menos 2 semanas antes del inicio del curso. Para obtener el derecho a la reserva de plaza, se debe cancelar al 100% el precio total del curso y del alojamiento en su caso, deberán abonarse al menos 4 semanas antes del inicio del curso, excepto en los casos de solicitudes posteriores al fin de este espacio de tiempo y siempre que el calendario escolar lo permita (en estos casos, el plazo para el pago de la reserva se computará según el caso particular y se informará del mismo al alumno)."
+        },
+        "cancellationServiceReturns": {
+            "title": "Cancelación del Servicio y/o Devoluciones",
+            "description": "Para cancelar un servicio y requerir la devolución del total de su inversión aplicará en los siguientes casos.",
+            "hospitalizationMedicalPrescription": {
+                "title": "Hospitalización o prescripción médica.",
+                "description": "(Se debe justificar con 10 días una vez emitida la prescripción médica). Remitirá este justificante en el tiempo y forma marcados anteriormente y a la misma dirección de correo electrónico con el que procedió la inscripción, con la misma condición de efectividad tras el acuse de recibo enviado por la Occupational Safety Health Administration \"Osha\"."
+            },
+            "dueToForceMajeure": {
+                "title": "Por causas de fuerza mayor.",
+                "description": [
+                    "En el caso de que la organización tuviera que proceder a la cancelación de un grado/programa de un alumno inividual o grupo por causas de fuerza mayor se prodederá a la devolución del total de lo pagado y no se imputarán gastos de gestión ni costes financieros al / los alumnos.",
+                    "Entre los casos de fuerza mayor, estarían: el menoscabo de la infraestructura (inundaciones, incendios u otro tipo de accidentes o desastres naturales) perdidas de información de nuestra aula virtual o mantenimiento de la plataforma virtual que tenga como resultado la pérdida total de la información, la declaración de quiebra de la organización, la imposibilidad de ofrecer recursos adecuados, etc.",
+                    "Como alternativa a la devolución y siempre que el caso lo permita, el estudiante podrá mantener su reserva con la Occupational Safety Health Administration \"Osha\" durante el tiempo pactado por las partes."
+                ]
+            }
+        }
+    },
+
+
+    "transparency": {
+        "title": "Transparencia",
+        "description": "Occupational Safety Health Administration \"OSHA-INSTITUTE\" es una organización privada sin fines de lucro creada para fortalecer las competencias profesionales basadas a las normas de OSHA de los Estados Unidos además es una casa de estudios particular que brinda educación especializada de grado y posgrado adoptando los estándares propuestos por OSHA-EE.UU, ANSI, ASME, NFPA y NIOSH, sin referenciar la relación con otras organizaciones además no está conectada ni afiliada al Departamento de Trabajo de EE. UU. (DOL) ni a la Occupational Safety and Health Administration \"OSHA\"."
+    },
+    "accreditedEducation": {
+        "title": "Educacion Acreditada",
+        "description": "Acredited Education, es el sello que nos reconoce por los programas y métodos educativos selectos y de calidad garantizando además que somos un principal proveedor de servicios de consulta de seguridad, seminarios y clases de capacitación en seguridad dirigidos por instructores de amplia experiencia y acreditados, capacitación en línea , evaluaciones del sitio , desarrollo de programas escritos , representación regulatoria y otros servicios ergonómicos y ambientales calificado como formación educativa de calidad."
+    },
+    "privacy": {
+        "title": "Privacidad",
+        "description": "Las imágenes, lecciones, programas, etiquetas y otros encontradas en este portal web son de referencia usada solo para fines educativos, cada uno de los programas de entrenamiento, especialidad o postgrado fueron diseñados con la única finalidad de promover el cumplimiento de normas internacionales a nivel mundial, el material encontrado en cada uno de nuestros programas son material especifico usado para la formación profesional en diversas materias y áreas independientes de producción, los estudiantes de OSHA-INSTITUTE pueden dar el uso adecuado a su estudio personal."
     }
-    }
-  }
+}
