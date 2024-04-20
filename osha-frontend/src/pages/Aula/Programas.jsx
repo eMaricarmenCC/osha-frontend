@@ -5,7 +5,7 @@ function Programas() {
   return (
     <div className="px-10 py-10 w-full h-full">
       <div className="flex flex-col gap-5">
-        <h3 className='text-primary text-lg'>Programas</h3>
+        <h3 className='text-primary text-lg'>Programas Matriculados</h3>
         <CardPrograma/>
         <CardPrograma/>
       </div>

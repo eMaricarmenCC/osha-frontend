@@ -13,22 +13,7 @@ function Certificados() {
         <Certificado />
       </div>
       <div>
-        <p>Cualquier consulta de los certificados comunicarse al correo info@osa.es</p>
-        <br /><br />
-      </div>
-      <div>
-        <Card
-          color="teal"
-          icon={ <PiCertificate style={{color:'white', width:40, height:40}} /> }
-          title="TREE AND SHRUB PRUNING"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!"
-        />
-        
-        <br /><br />
-        <Card2 />
-        <br />
-        <br />
-        <Card3 />
+        <p>Cualquier consulta de los certificados comunicarse al correo info@osa.es</p>        
       </div>
     </div>
   )

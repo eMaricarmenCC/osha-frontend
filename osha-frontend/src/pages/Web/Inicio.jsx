@@ -3,7 +3,7 @@ import { HiLocationMarker } from 'react-icons/hi';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import hero from '/src/assets/images/hero-image.png';
-import { HoverEffectCard, Card, Card2, Card3 } from '../../components/ui/card';
+import { HoverEffectCard, Card, Card2, Card3, Form1 } from '../../components/ui/card';
 import { MdSchool } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
@@ -130,8 +130,12 @@ function Inicio(){
           colorCi="white"
           icon={<MdSchool />} 
           title={t("intro.validity.title")} 
-          content={t("intro.validity.description")} 
+          content={t("intro.validity.description")}
         />
+      </div>
+      <div className='flex'>
+        <Form1/>
+        <Form1/>
       </div>
       
     </section>

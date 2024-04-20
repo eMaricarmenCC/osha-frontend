@@ -1,4 +1,75 @@
 
+function GlowingGradientBorder() {
+  return (
+    <div class="min-h-screen bg-gray-50 flex flex-col justify-center relative overflow-hidden ">
+      <div class="max-w-7xl mx-auto">
+        <div class="relative group cursor-pointer">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+          </div>
+          <div
+            class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+            <div class="space-y-2">
+              <p class="text-slate-800">Glowing Gradient Border</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function GradientBorder() {
+  return (
+    <div class="relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
+      <div class="bg-white p-7 rounded-md">
+        <h1 class="font-bold text-xl mb-2">Border gradient example</h1>
+        <p>Create beautfiul cards with gradient borders with Tailwind CSS.</p>
+      </div>  
+    </div>
+  )
+}
+
+function Form1() {
+  return (
+    <div class="py-10 px-5 bg-gray-800 flex flex-col justify-center">
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
+          <div class="text-center">
+            <h1 class="text-3xl">Contact Us!</h1>
+            <p class="text-gray-300">
+              Fill up the form below to send us a message.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </div>
+  )
+}
+
+function CardTwoCards() {
+  return (
+    <div class="py-10 px-5 bg-gray-800 flex flex-col justify-center">
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
+          <div class="text-center">
+            <h1 class="text-3xl">Contact Us!</h1>
+            <p class="text-gray-300">
+              Fill up the form below to send us a message.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </div>
+  )
+}
+
 function categories() {
   return(
     <>
@@ -145,4 +216,4 @@ function Card3() {
   );
 }
 
-export { HoverEffectCard, Section1, Card, Card2, Card3 };
+export { HoverEffectCard, Section1, Card, Card2, Card3, Form1 };
