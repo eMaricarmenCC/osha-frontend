@@ -107,7 +107,7 @@ function Inicio(){
         <Card
           colorBg="white"
           colorCi="green"
-          icon={<MdSchool color='white' style={{height:50}}/>} 
+          icon={<MdSchool color='white' style={{height:50}}/>}
           title={t("intro.education.title")} 
           content={t("intro.education.description")} 
         />
@@ -115,8 +115,8 @@ function Inicio(){
           colorBg="white"
           colorCi="white"
           icon={<MdSchool />} 
-          title={t("intro.partnerships.title")} 
-          content={t("intro.partnerships.description")} 
+          title={t("intro.partnerships.title")}
+          content={t("intro.partnerships.description")}
         />
         <Card
           colorBg="white"
