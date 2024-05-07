@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Examen = () => {
+const Exam = () => {
   // Array de preguntas y alternativas
   const questions = [
     {
@@ -14,7 +14,19 @@ const Examen = () => {
       text: "¿Cuál es el río más largo del mundo?",
       options: ["Amazonas", "Nilo", "Yangtsé", "Misisipi", "Danubio"],
       correctAnswer: "Amazonas"
-    }
+    },
+    {
+      id: 3,
+      text: "¿Cuál es el río más largo del mundo?",
+      options: ["Amazonas", "Nilo", "Yangtsé", "Misisipi", "Danubio"],
+      correctAnswer: "Amazonas"
+    },
+    {
+      id: 4,
+      text: "¿Cuál es el río más largo del mundo?",
+      options: ["Amazonas", "Nilo", "Yangtsé", "Misisipi", "Danubio"],
+      correctAnswer: "Amazonas"
+    },
   ];
 
   // Estado para almacenar las respuestas del usuario
@@ -28,8 +40,8 @@ const Examen = () => {
   // Renderizar preguntas y alternativas
   const renderQuestions = () => {
     return questions.map((question) => (
-      <div key={question.id} className="flex flex-col gap-3 p-5 border-1 border-grisClaro shadow-lg rounded-lg">
-        <h4 className="text-sm">{question.text}</h4>
+      <div key={question.id} className="flex flex-col gap-3 p-5 border-1 border-grisClaro shadow-lg rounded-lg bg-white">
+        <h4 className="text-sm"><b>{question.text}</b></h4>
         <ul className="flex flex-col gap-1">
           {question.options.map((option, index) => (
             <li key={index} className="flex gap-2 items-center">
@@ -67,4 +79,4 @@ const Examen = () => {
   );
 };
 
-export default Examen;
+export default Exam;
