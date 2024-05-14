@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaBuildingColumns } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 
 function Nosotros(){
+
+  const { t, i18n } = useTranslation("nosotros");
+
   return (
     <>
     {/* Breadcrumbs */}
@@ -33,10 +37,46 @@ function Nosotros(){
       </div>
     </div>
     
-    <section className="px-10">
-      <p className='text-black' >Nosotros en construccion</p>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    {/* whoWeAre */}
+    <section className="px-10 mt-10">
+      <div className="mb-4">{/* Titulo */}
+          <h2><b>{t("whoWeAre.title")}</b></h2>
+          <div className="h-1 w-14 bg-secondary mt-1"></div>
+      </div>
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col gap-3">
+          <p>{t("whoWeAre.p1")}</p>
+          <p>{t("whoWeAre.p2")}</p>
+        </div>
+        <div></div>
+      </div>
+
+      
     </section>
+
+    {/* legalNature */}
+    <section className="px-10 mt-10">
+      <h2>{t("legalNature.title")}</h2>
+      <p>{t("legalNature.content")}</p>
+    </section>
+
+    {/* internationalCooperation */}
+    <section className="px-10">
+      <h2>{t("internationalCooperation.title")}</h2>
+      {t("internationalCooperation.p", { returnObjects: true }).map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+    </section>
+
+    {/* privacyAndSecurityDeclaration */}
+    <section className="px-10">
+      <h2>{t("privacyAndSecurityDeclaration.title")}</h2>
+      <p>{t("privacyAndSecurityDeclaration.content")}</p>
+      {t("internationalCooperation.p", { returnObjects: true }).map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+    </section>
+
     </>
   )   
 }
