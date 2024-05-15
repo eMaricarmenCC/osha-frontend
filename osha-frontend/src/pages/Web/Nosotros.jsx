@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaBuildingColumns } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+import { HiMiniBuildingOffice } from "react-icons/hi2";
 
 
 function Nosotros(){
@@ -12,8 +13,8 @@ function Nosotros(){
   return (
     <>
     {/* Breadcrumbs */}
-    <div className="relative w-full" style={{height:100}}>
-      <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" class="object-cover object-center w-full h-full" />
+    <div className="relative w-full" style={{height:150}}>
+      <img src="/src/assets/img-nosotros/nosotros.jpeg" alt="Background Image" class="object-cover object-center w-full h-full" />
       <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 flex flex-row px-5 items-center justify-between">
@@ -36,23 +37,46 @@ function Nosotros(){
         </div>
       </div>
     </div>
-    
-    {/* whoWeAre */}
-    <section className="px-10 mt-10">
-      <div className="mb-4">{/* Titulo */}
-          <h2><b>{t("whoWeAre.title")}</b></h2>
-          <div className="h-1 w-14 bg-secondary mt-1"></div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-4">
-        <div className="flex flex-col gap-3">
-          <p>{t("whoWeAre.p1")}</p>
-          <p>{t("whoWeAre.p2")}</p>
-        </div>
-        <div></div>
-      </div>
 
-      
-    </section>
+    {/* whoWeAre */}
+    <div>
+      <div>
+        <h3 className="text-3xl text-secondary font-bold">{t("whoWeAre.title")}</h3>
+      </div>
+      <div className="px-5 py-10 w-full flex justify-center">
+        <div className="lg:mx-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/src/assets/papel/papel3.jpeg')" }}>
+          <div className="lg:w-2/4">
+            <div className="lg:scale-110 h-80 bg-cover lg:w-full lg:h-full rounded-b-none border lg:rounded-lg"
+              style={{backgroundImage:'url("/src/assets/img-nosotros/nosotrosCrop.jpg")'}}>
+            </div>
+          </div>
+          <div class="py-12 px-6 lg:px-12 max-w-3xl md:max-w-7xl lg:w-2/4 rounded-t-none border lg:rounded-lg">
+            <h2 class="text-3xl text-secondary font-bold">{t("whoWeAre.title")}</h2>
+            <p className="mt-2">{t("whoWeAre.p1")}</p>
+            <p className="mt-2">{t("whoWeAre.p2")}</p>
+            <div class="mt-8">
+                <a href="#" class="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-5 mt-10 w-full flex justify-center">
+        <div className="flex flex-col md:flex-row gap-5 max-w-6xl">
+          <Card
+            title={t("whoWeAre.tit2-oshins")}
+            text={t("whoWeAre.oshins")}
+            background="gray-100"
+            color="primary"
+          />
+          <Card
+            title={t("whoWeAre.tit3-compromise")}
+            text={t("whoWeAre.compromise")}
+            background="gray-100"
+            color="red-500"
+          />
+        </div>
+      </div>
+    </div>
 
     {/* legalNature */}
     <section className="px-10 mt-10">
@@ -80,4 +104,16 @@ function Nosotros(){
     </>
   )   
 }
+const Card = ({ icon, title, text, background, color }) => {
+  return (
+    <div className={`p-5 bg-${background} border-l-8 border-${color} rounded-r-lg shadow-lg flex gap-5`}>
+      <div></div>
+      <div>
+        <h4 className={`text-${color}`}><b>{title}</b></h4>
+        <p className="mt-2">{text}</p>
+      </div>
+    </div>
+  );
+};
+
 export default Nosotros

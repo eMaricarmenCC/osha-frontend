@@ -10,7 +10,7 @@
     },
     
     "legalNature" : {
-        "tittle": "Naturaleza Jurídica",
+        "title": "Naturaleza Jurídica",
         "content": "Somos una organización privada dedicada a los altos estudios, certificación, acreditación y servicios de Ingenieria en las diversas Industrias a nivel internacional, buscando mejorar las competencias profesionales y reducción del índice de accidentalismo y mortandad en las diversas organizaciones. Desde sus inicios Osha-Institute aporta a la elaboración de estándares, decretos y leyes que estén inmersas a la seguridad laboral en las diferentes industrias. Desde nuestro centro aplicado y científico de estudios de gran impacto mensualmente presentamos propuestas de mejora promovidas por nuestros profesionales presentes en todo el mundo. Hacemos que el ambiente de trabajo sea grato, saludable y seguro mediante propuestas de adaptación específicas.",
         "tit2-mision" : "Misión de Osha-Institute",
         "mision": "Promover una educación integra para mejorar las competencias y excelencia de los profesionales facultado de conocimientos y habilidades óptimas adquiridas en cada programa de formación profesional. Tomamos como punto de partida los estándares proporcionados por Osha Dol, adaptando a programas 100% On-line buscando mejorar el esquema de educación para garantizar ambientes de trabajo seguro en todo el mundo.",
@@ -19,7 +19,7 @@
     },
     
     "internationalCooperation" : {
-        "tittle" : "Cooperación Internacional",
+        "title" : "Cooperación Internacional",
         "p": [
             "Buscando fortalecer la educación en América latina, concretamos convenios y lazos de colaboración educativa con organismos públicos y privados en más de 120 países.",
             "Esto nos ayuda a fortalecer nuestro enfoque académico y mejorar nuestra gestión, bajo guía y especificaciones de organismos especializados en cada área determinada.",

@@ -36,6 +36,9 @@ export default {
         twitter: '#1DA1F2',
         instagram: '#E1306C',
       },
+      backgroundImage: {
+        Hero: "url('assets/Hero.png')",
+      },
     },
   },
 }

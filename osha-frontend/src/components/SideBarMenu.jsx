@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from '../pathMenu/MenuItemsPath';
-import '../styles/SideBarMenu.css';
+
 import { FaRegUserCircle } from 'react-icons/fa';
 import { IoMenu } from 'react-icons/io5';
 import { IoIosLogOut } from 'react-icons/io';
