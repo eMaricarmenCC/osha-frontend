@@ -21,14 +21,34 @@ export default {
         grisMedio: '#B1B6B7',
         grisClaro: '#D8DDDD', 
         grisFondo: '#F5F5F5',
+
+        amarilloFuerte: '#F6BB42',
+        amarillo: '#FFCE54',
+        amarilloClaro: '',
+        
+        rosaFuerte:'#D770AD',
+        rosa: '#EC87C0',
+        rosaClaro:'#FFE9F6',
+
+        mintFuerte: '#37BC9B',
+        mint: '#48CFAD',
+        mintClaro:'#D2F3EA',
+
+        lilaFuerte: '#967ADC',
+        lila: '#AC92EC',
+        lilaClaro:'#E8DFFE',
+
+        celesteFuerte: '#3BAFDA',
+        celeste: '#4FC1E9',
+        celesteClaro:'#DCF6FF',
+
+        rojoFuerte: '#DA4453',
+        rojo: '#ED5565',
+        rojoClaro: '#FFD6DA',
+
         verde: '#3BC0A0',
-        rosa: '#C03BAB',
         morado: '#763BC0',
         
-        red: '#F46060',
-        green: '#5CB85C',
-        yellow: '#F0C62F',
-
         whatsapp: '#25D366',
         telegram: '#0088cc',
         facebook: '#1877F2',

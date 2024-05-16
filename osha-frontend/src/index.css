@@ -16,9 +16,29 @@
   --grisMedio: #A3A8A9;
   --grisClaro: #ebebeb;
 
-  --verde: #3BC0A0;
-  --rosa: #C03BAB;
-  --morado: #763BC0;
+  --amarilloFuerte: #F6BB42;
+  --amarillo: #FFCE54;
+  --amarillolaro: #fff6e0;
+        
+  --rosaFuerte:#D770AD;
+  --rosa: #EC87C0;
+  --rosaClaro: #FFE9F6;
+
+  --mintFuerte: #37BC9B;
+  --mint: #48CFAD;
+  --mintClaro:#D2F3EA;
+
+  --lilaFuerte: #967ADC;
+  --lila: #AC92EC;
+  --lilaClaro: #E8DFFE;
+
+  --celesteFuerte: #3BAFDA;
+  --celeste: #4FC1E9;
+  --celesteClaro:#DCF6FF;
+
+  --rojoFuerte: #DA4453;
+  --rojo: #ED5565;
+  --rojoClaro: #FFD6DA;
 
   --white:#ffffff;
   --black: #131110;

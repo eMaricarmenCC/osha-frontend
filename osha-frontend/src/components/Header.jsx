@@ -25,7 +25,7 @@ function Header(){
     <nav className="bg-grisFondo py-4 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         <Link to="/" className="flex items-center">
-          <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-12"/>
+          <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
         </Link>
         <div className="flex items-center lg:order-2">
           <div className="hidden mt-2 mr-4 sm:inline-block">
