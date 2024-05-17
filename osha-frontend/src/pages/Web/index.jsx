@@ -6,8 +6,8 @@
 function Inicio() {
   return (
     <>
-      <div class="main-banner" id="top">
-        <div class="container">
+      <div className="main-banner" id="top">
+        <div className="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="row">

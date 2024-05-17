@@ -14,9 +14,15 @@ import Navbar from '../../components/Navbar/Navbar';
 function Web() {
   return (
     <>
-      <Top />
+      {/* Header */}
+      {/*<header className='bg-primary'>
+        <Top/>
+        <Navbar />
+      </header>*/}
+      
+      {/*<Top />*/}
       {/*<section
-        className="h-screen bg-Hero bg-cover
+        className="h-screen bg-primary bg-cover
         font-[Poppins] md:bg-top bg-center"
       >
         <Navbar />
@@ -30,6 +36,7 @@ function Web() {
           </div>
         </div>
       </section>*/}
+      <Top/>
       <Header />
       <Routes>
         <Route path="/" element={<Inicio/>} />
@@ -39,11 +46,20 @@ function Web() {
         <Route path="/degrees" element={<Grados/>} />
         <Route path='/corporate' element={<Corporativos/>} />
         
-      </Routes>          
+      </Routes>
       <Footer/>
     </>
   )
 }
+
+const Headerr = () => {
+  return(
+    <header>
+      <Top/>
+      <Navbar />
+    </header>
+  );
+};
 
 function Template({ children }) {
   return (

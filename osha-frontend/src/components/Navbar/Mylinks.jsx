@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
+//const { t, i18n } = useTranslation("labels");
+
 export const links = [
   {
     name: "Nosotros",
@@ -6,17 +10,41 @@ export const links = [
       {
         Head: "Sobre nosotros",
         sublink: [
-          { name: "Nosotros", link: "/" },
+          { name: "Nosotros", link: "/us" },
           { name: "Nuestra Identidad", link: "/" },
-          { name: "Coperación INternacional", link: "/" },
+          { name: "Coperación Internacional", link: "/" },
           { name: "Declaración de Privacidad y Seguridad", link: "/" },
-          { name: "Estándares Osha Institute", link: "/" },
+          { name: "Estándares Osha Institute", link: "/standards" },
         ],
       },
     ],
   },
   {
     name: "Acreditación",
+    submenu: true,
+    sublinks: [
+      {
+        Head: "Topwear",
+        sublink: [
+          { name: "Acreditación", link: "/" },
+          { name: "Casual shirts", link: "/" },
+          { name: "formal shirts", link: "/" },
+        ],
+      },
+      {
+        Head: "Instrución",
+        sublink: [
+          { name: "T-shirt", link: "/" },
+          { name: "Casual shirts", link: "/" },
+          { name: "formal shirts", link: "/" },
+          { name: "formal shirts", link: "/" },
+          { name: "formal shirts", link: "/" },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Instrucción",
     submenu: true,
     sublinks: [
       {
@@ -42,7 +70,7 @@ export const links = [
     ],
   },
   {
-    name: "Certex",
+    name: "Grados",
     submenu: true,
     sublinks: [
       {

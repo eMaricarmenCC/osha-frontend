@@ -6,11 +6,34 @@ function Acreditacion() {
   const { t, i18n } = useTranslation("labels");
   return (
     <>
-      <p>Acreditacion en construccion</p>
-      <p>{t("home", {name:"alberto"})} </p>
-      <button onClick={()=>i18n.changeLanguage("es")}>ESPAÑOL</button>
-      <button onClick={()=>i18n.changeLanguage("en")}>INGLES</button>
+      <AcreditacionInicio/>
     </>
-  )
-}
+  );
+};
+
+function AcreditacionInicio() {
+  const { t, i18n } = useTranslation("acreditacion");
+  return(
+    <div className="">
+      <div>
+        <h3>{t("acreditation.title")}</h3>
+        <p className="mt-2">{t("acreditation.content")}</p>
+        <button></button>
+      </div>
+      <div></div>
+    </div>
+  );
+};
+
+function Areas() {
+  const { t, i18n } = useTranslation("estandares");
+  return(
+    <div className="">
+      <div>
+
+      </div>
+      <div></div>
+    </div>
+  );
+};
 export default Acreditacion

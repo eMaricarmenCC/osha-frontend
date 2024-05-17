@@ -21,6 +21,7 @@ function Nosotros(){
       <LegalNature/>
       <InternationalCooperation/>
       <PrivacyAndSecurityDeclaration/>
+      <Estandares/>
     </div>
   )   
 }
@@ -29,7 +30,7 @@ function Nosotros(){
 function Breadcrumbs(){
   return(
     <div className="relative w-full" style={{height:150}}>
-      <img src="/src/assets/img-nosotros/business.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+      <img src="/src/assets/img-nosotros/business.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
       <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 flex flex-row px-5 items-center justify-between">
@@ -90,12 +91,12 @@ function WhoWeAre(){
               style={{backgroundImage:'url("/src/assets/img-nosotros/nosotrosCrop.jpg")'}}>
             </div>
           </div>
-          <div class="py-12 px-6 lg:px-12 max-w-3xl md:max-w-7xl lg:w-2/4 rounded-t-none border lg:rounded-lg">
-            <h2 class="text-3xl text-secondary font-bold">{t("whoWeAre.title")}</h2>
+          <div className="py-12 px-6 lg:px-12 max-w-3xl md:max-w-7xl lg:w-2/4 rounded-t-none border lg:rounded-lg">
+            <h2 className="text-3xl text-secondary font-bold">{t("whoWeAre.title")}</h2>
             <p className="mt-2">{t("whoWeAre.p1")}</p>
             <p className="mt-2">{t("whoWeAre.p2")}</p>
-            <div class="mt-8">
-                <a href="#" class="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</a>
+            <div className="mt-8">
+                <a href="#" className="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</a>
             </div>
           </div>
         </div>
@@ -136,12 +137,12 @@ function LegalNature(){
     <>
     {/* legalNature */}
     <div className="px-5 py-10 lg:px-20 xl:px-20 mt-20" style={{ backgroundImage: "url('/src/assets/papel/papelSeamless.jpg')"}}>
-      <div class="overflow-hidden flex flex-row mx-auto">
-        <img class="w-full max-w-xl rounded-l-full" src="/src/assets/img-nosotros/juridic.jpg" alt="osha-institute"/>
-        <div class={`relative -ml-40 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
-          <h4 class={`font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h4>
+      <div className="overflow-hidden flex flex-row mx-auto">
+        <img className="w-full max-w-xl rounded-l-full" src="/src/assets/img-nosotros/juridic.jpg" alt="osha-institute"/>
+        <div className={`relative -ml-40 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
+          <h4 className={`font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h4>
           <Line/>
-          <p class="text-gray-500 text-sm mt-3">{t("legalNature.content")}</p>
+          <p className="text-gray-500 text-sm mt-3">{t("legalNature.content")}</p>
         </div>
       </div>
     </div>
@@ -167,12 +168,12 @@ function LegalNature(){
 
 const CardFotTex = ({ title, text, textColorClass, img}) => {
   return(
-    <div class="overflow-hidden flex flex-col max-w-xl mx-auto">
-      <img class="w-full rounded-2xl" src={img} alt="osha-institute"/>
-      <div class={`relative -mt-28 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
-        <h4 class={`${textColorClass} font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{title}</h4>
+    <div className="overflow-hidden flex flex-col max-w-xl mx-auto">
+      <img className="w-full rounded-2xl" src={img} alt="osha-institute"/>
+      <div className={`relative -mt-28 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
+        <h4 className={`${textColorClass} font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{title}</h4>
         <Line/>
-        <p class="text-gray-500 text-sm mt-3">{text}</p>
+        <p className="text-gray-500 text-sm mt-3">{text}</p>
       </div>
     </div>
   );
@@ -304,4 +305,17 @@ function AccordianItem({ children, value, trigger, ...props }) {
   )
 }
 
+function Estandares() {
+  const { t, i18n } = useTranslation("estandares");
+  return(
+    <div className="">
+      <div>
+        <h3>{t("title")}</h3>
+        <p className="mt-2">{t("p1")}</p>
+        <p className="mt-2">{t("p2")}</p>
+      </div>
+      <div></div>
+    </div>
+  );
+};
 export default Nosotros;

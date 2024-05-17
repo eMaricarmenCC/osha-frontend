@@ -22,7 +22,7 @@ function Top(){
       {/* Social Share */}
       <div className="">
         <div className="flex gap-1 items-center">
-          <span className="bg-green p-1 rounded-lg border border-white transform transition-transform hover:scale-110">
+          <span className="bg-whatsapp p-1 rounded-lg border border-white transform transition-transform hover:scale-110">
             <a href="https://wa.me/message/YK4GCWUIXVHOK1" target="_blank" title="WhatsApp">
               <FaWhatsapp color="white" />
             </a>

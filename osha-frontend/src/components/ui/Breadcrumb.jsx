@@ -5,7 +5,7 @@ function Breadcrumb({ items, backgroundColor, color }) {
     <nav style={{ backgroundColor: backgroundColor }}>
       <ul className="flex p-4">
         <li className=''>
-          <a href="#" class="text-gray-600 hover:text-blue-500">
+          <a href="#" className="text-gray-600 hover:text-blue-500">
             <FaHome/>
           </a>
         </li>
