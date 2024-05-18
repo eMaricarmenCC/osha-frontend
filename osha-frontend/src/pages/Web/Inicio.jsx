@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { HiLocationMarker } from 'react-icons/hi';
 import CountUp from 'react-countup';
@@ -15,6 +14,14 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
+import { Categories } from '../../components/ui/card';
+
+import { MdSecurity, MdEngineering } from "react-icons/md";
+import { FaHelmetSafety, FaBiohazard } from "react-icons/fa6";
+import { GiMaterialsScience } from "react-icons/gi";
+import { RiMentalHealthFill } from "react-icons/ri";
+
 
 function Inicio(){
 
@@ -132,7 +139,7 @@ function Inicio(){
           bgCiClass="bg-mintFuerte"
         />
         <Card
-          icon={<PiCertificateFill color='white' style={{height:50, width:50}}/>} 
+          icon={<MdEngineering color='white' style={{height:50, width:50}}/>} 
           title={t("intro.certification.title")} 
           content={t("intro.certification.description")} 
           bgClass="bg-white"
@@ -147,6 +154,66 @@ function Inicio(){
           textClass="text-amarilloFuerte"
           bgCiClass="bg-amarilloFuerte"
         />
+      </div>
+    </section>
+
+    {/* Categorías */}
+    <section className="bg-grisFondo">
+      <div className="mt-10 px-5 py-10 sm:px-20">
+        <div className="">
+          <h2 className="text-center uppercase"><b>Categorías</b></h2>
+          <Linea/>
+        </div>
+        <div className="mt-10 grid grid-cols-1 grid-rows-auto gap-4 md:grid-cols-2 md:grid-rows lg:grid-cols-3">
+          <Categories
+            icon={<MdSecurity style={{color:"var(--primary)", height:60, width:60}}/>} 
+            title={t("categories.occupationalSafety.title")}
+            text={t("categories.occupationalSafety.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-primary"
+            borderClass="border-primary"
+          />
+          <Categories
+            icon={<FaHelmetSafety style={{color:"var(--amarilloFuerte)", height:60, width:60}}/>} 
+            title={t("categories.preventionOccupationalHazards.title")}
+            text={t("categories.preventionOccupationalHazards.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-amarilloFuerte"
+            borderClass="border-amarilloFuerte"
+          />
+          <Categories
+            icon={<GiMaterialsScience style={{color:"var(--mintFuerte)", height:60, width:60}}/>} 
+            title={t("categories.sciencieTechnology.title")}
+            text={t("categories.sciencieTechnology.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-mintFuerte"
+            borderClass="border-mintFuerte"
+          />
+          <Categories
+            icon={<RiMentalHealthFill style={{color:"var(--celesteFuerte)", height:60, width:60}}/>} 
+            title={t("categories.psychology.title")}
+            text={t("categories.psychology.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-celesteFuerte"
+            borderClass="border-celesteFuerte"
+          />
+          <Categories
+            icon={<MdEngineering style={{color:"var(--lilaFuerte)", height:60, width:60}}/>} 
+            title={t("categories.engineering.title")}
+            text={t("categories.engineering.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-lilaFuerte"
+            borderClass="border-lilaFuerte"
+          />
+          <Categories
+            icon={<FaBiohazard style={{color:"var(--rojo)", height:60, width:60}}/>} 
+            title={t("categories.hazardousMaterials.title")}
+            text={t("categories.hazardousMaterials.description")}
+            bgColorClass="bg-white"
+            titleColorClass="text-rojo"
+            borderClass="border-rojo"
+          />
+        </div>
       </div>
     </section>
 
@@ -253,9 +320,15 @@ function Inicio(){
 
     {/* Galería */}
     <section>
-      <div className='flex'>
-        <h1>ti</h1>
-        <ShuffleGrid />
+      <div className="px-5 py-10 sm:px-20">
+        <h2 className="text-center text-primary uppercase"><b>Galería</b></h2>
+        <Linea/>
+        <div className="mt-10 w-full items-center gap-8 max-w-6xl mx-auto">
+          <ShuffleGrid
+            images={squareDataGalery}
+            nColClass="grid-cols-4"
+          />
+        </div>
       </div>
     </section>
 
@@ -271,127 +344,48 @@ function Inicio(){
   );
 };
 
-
-const shuffle = (array) => {
-  let currentIndex = array.length,
-    randomIndex;
-
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
-};
-
-const squareData = [
-  {
-    id: 1,
-    src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    id: 8,
-    src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    id: 9,
-    src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    id: 10,
-    src: "https://images.unsplash.com/photo-1610768764270-790fbec18178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-  {
-    id: 11,
-    src: "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=684&q=80",
-  },
-  {
-    id: 12,
-    src: "https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80",
-  },
-  {
-    id: 13,
-    src: "https://images.unsplash.com/photo-1560089000-7433a4ebbd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  },
-  {
-    id: 14,
-    src: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-  },
-  {
-    id: 15,
-    src: "https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80",
-  },
-  {
-    id: 16,
-    src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80",
-  },
-];
-
-const generateSquares = () => {
-  return shuffle(squareData).map((sq) => (
-    <motion.div
-      key={sq.id}
-      layout
-      transition={{ duration: 1.5, type: "spring" }}
-      className="w-full h-full"
-      style={{
-        backgroundImage: `url(${sq.src})`,
-        backgroundSize: "cover",
-      }}
-    ></motion.div>
-  ));
-};
-
-const ShuffleGrid = () => {
-  const timeoutRef = useRef(null);
-  const [squares, setSquares] = useState(generateSquares());
-
-  useEffect(() => {
-    shuffleSquares();
-
-    return () => clearTimeout(timeoutRef.current);
-  }, []);
-
-  const shuffleSquares = () => {
-    setSquares(generateSquares());
-
-    timeoutRef.current = setTimeout(shuffleSquares, 3000);
-  };
-
+const Linea = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
-      {squares.map((sq) => sq)}
+    <div className="flex flex-col justify-center items-center mt-2">
+      <div className="bg-primary h-1 w-80"></div>
+      <div className="bg-secondary h-1 w-40 mt-2"></div>
     </div>
   );
 };
+
+const squareDataGalery = [
+  {
+    id: 1,
+    src: "/src/assets/img-inicio/img-galeria/galeria1.jpg",
+  },
+  {
+    id: 2,
+    src: "/src/assets/img-inicio/img-galeria/galeria2.jpg",
+  },
+  {
+    id: 3,
+    src: "/src/assets/img-inicio/img-galeria/galeria3.jpg",
+  },
+  {
+    id: 4,
+    src: "/src/assets/img-inicio/img-galeria/galeria4.jpg",
+  },
+  {
+    id: 5,
+    src: "/src/assets/img-inicio/img-galeria/galeria5.jpg",
+  },
+  {
+    id: 6,
+    src: "/src/assets/img-inicio/img-galeria/galeria6.jpg",
+  },
+  {
+    id: 7,
+    src: "/src/assets/img-inicio/img-galeria/galeria7.jpg",
+  },
+  {
+    id: 8,
+    src: "/src/assets/img-inicio/img-galeria/galeria8.jpg",
+  },
+];
 
 export default Inicio

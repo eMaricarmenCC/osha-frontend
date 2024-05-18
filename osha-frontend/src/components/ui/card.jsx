@@ -70,26 +70,19 @@ function CardTwoCards() {
   )
 }
 
-function categories() {
+const Categories = ({icon, title, text, bgColorClass, titleColorClass, borderClass}) => {
   return(
-    <>
-    {/*COURSE CATEGORIES DES START*/}
-    <div>
-      <div class="kf_cur_catg_des color-3">
-        <span><i class="icon-chemistry29"></i></span>
-        <div class="kf_cur_catg_capstion">
-          <h5 data-translatable>Ciencia y Tecnología // Sciencie & Tecnology</h5>
-          <p data-translatable>Aplicamos parámetros y métodos de óptimo aprendizaje y
-              desarrollo teórico práctico. // We apply parameters and methods of optimal
-              learning and practical theoretical development.
-          </p>
-        </div>
+    <div className={`${bgColorClass} flex p-4 gap-4 ${borderClass} border-l-4 transform transition-transform duration-350 hover:scale-105 items-center`}>
+      <div className="">
+        <h4 className={`${titleColorClass}`}><b>{title}</b></h4>
+        <p className="mt-1">{text}</p>
+      </div>
+      <div class="">
+        {icon}
       </div>
     </div>
-    {/*COURSE CATEGORIES DES END*/}
-    </>
-  )
-}
+  );
+};
 
 function HoverEffectCard({ backgroundColor, hoverColor, icon, text, link }){
   return(
@@ -218,4 +211,4 @@ function Card3() {
   );
 }
 
-export { HoverEffectCard, Section1, Card, Card2, Card3, Form1 };
+export { HoverEffectCard, Section1, Card, Card2, Card3, Form1, Categories };
