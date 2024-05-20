@@ -26,13 +26,13 @@ const generateSquares = (images) => {
       className="w-full h-full"
       style={{
         backgroundImage: `url(${img.src})`,
-        backgroundSize: "cover",
+        backgroundSize: "cover", //container
       }}
     ></motion.div>
   ));
 };
 
-const ShuffleGrid = ({ images, nColClass}) => {
+const ShuffleGrid = ({ images, nColClass, gapClass}) => {
   const timeoutRef = useRef(null);
   const [squares, setSquares] = useState(generateSquares(images));
 
@@ -47,7 +47,7 @@ const ShuffleGrid = ({ images, nColClass}) => {
   };
 
   return (
-    <div className={`grid ${nColClass} grid-rows-auto h-[450px] gap-2`}>
+    <div className={`grid ${nColClass} grid-rows-auto h-[450px] ${gapClass}`}>
       {squares.map((sq) => sq)}
     </div>
   );

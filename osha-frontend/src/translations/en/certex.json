@@ -9,6 +9,7 @@
         },
        
         "benefits": {
+            "title": "Benefits",
             "workers": {
                 "title": "For workers",
                 "content": [
@@ -28,7 +29,7 @@
         },
         "process" :{
             "title": "Processes",
-            "process": [
+            "content": [
                 "The participant receives general guidance about the labor certification evaluation process from the evaluator.",
                 "The evaluator verifies the work experience and determines in which function or unit of competence it can be evaluated.",
                 "The participant goes through a knowledge evaluation and a performance evaluation. The first evaluation consists of the application of a written knowledge test of 20 questions, these questions are referred to the participant's daily work. The second evaluation consists of a face-to-face interview to the participant, which will be directed by a specialist in the area of performance and certification.",
@@ -38,10 +39,11 @@
             ]
         },
         "occupationalProfiles": {
+            "title": "Occupational Profiles",
             "content": "The Certex Program gives you the opportunity to become certified in various operational and administrative areas.",
             "mining": {
                 "title": "Mining",
-                "mining": [
+                "li": [
                     "Mine safety inspector.",
                     "Technician in industrial hygiene.",
                     "Technician in mining services.",
@@ -59,48 +61,60 @@
                     "Master mine driller (manual and mechanical)"
                 ]
             },
-            "basicManagementAreas": [
-                "Kitchen.",
-                "Phytosanitary evaluation and application.",
-                "Housekeeping",
-                "Cash in establishments.",
-                "Electrical installer.",
-                "Brickwork.",
-                "Hotel/hostel receptionist.",
-                "Sales representative.",
-                "Harvest and collection of vegetables.",
-                "Cutting pieces for making clothing.",
-                "Sewing of clothing.",
-                "Embroidery for textile clothing.",
-                "Housekeeping.",
-                "Master of works in buildings.",
-                "Building ironworks."
-            ],
-            "Administrative": [
-                "Executive Secretary.",
-                "Management assistant.",
-                "Administrative assistant.",
-                "Logistics and warehouses.",
-                "Talent management."
-            ],
-            "Industrial": [
-                "Welding and metal constructions.",
-                "Occupational Risk Preventionist.",
-                "Civil construction technician.",
-                "Heavy machinery operator. (single or multiple machine).",
-                "Technician in industrial plants (grinding plants or production plants)",
-                "Electric technician.",
-                "Electric technician.",
-                "Environmental monitoring technician.",
-                "Technician in industrial hygiene monitoring.",
-                "Transportation safety inspector.",
-                "Protection and security supervisor (surveillance)",
-                "Scaffolding Technician.",
-                "Scaffolding management supervisor (foreman).",
-                "Hazardous Materials Escort Supervisor.",
-                "Supervisor Wide Load Escort."
-            ]
+            "basicManagementAreas": {
+                "title": "Basic management areas",
+                "li":[
+                    "Kitchen.",
+                    "Phytosanitary evaluation and application.",
+                    "Housekeeping",
+                    "Cash in establishments.",
+                    "Electrical installer.",
+                    "Brickwork.",
+                    "Hotel/hostel receptionist.",
+                    "Sales representative.",
+                    "Harvest and collection of vegetables.",
+                    "Cutting pieces for making clothing.",
+                    "Sewing of clothing.",
+                    "Embroidery for textile clothing.",
+                    "Housekeeping.",
+                    "Master of works in buildings.",
+                    "Building ironworks."
+                ]
+            },
+            "Administrative": {
+                "title": "Administrative",
+                "li":[
+                    "Executive Secretary.",
+                    "Management assistant.",
+                    "Administrative assistant.",
+                    "Logistics and warehouses.",
+                    "Talent management."
+                ]
+            },
+            "Industrial": {
+                "title": "Industrial",
+                "li":[
+                    "Welding and metal constructions.",
+                    "Occupational Risk Preventionist.",
+                    "Civil construction technician.",
+                    "Heavy machinery operator. (single or multiple machine).",
+                    "Technician in industrial plants (grinding plants or production plants)",
+                    "Electric technician.",
+                    "Electric technician.",
+                    "Environmental monitoring technician.",
+                    "Technician in industrial hygiene monitoring.",
+                    "Transportation safety inspector.",
+                    "Protection and security supervisor (surveillance)",
+                    "Scaffolding Technician.",
+                    "Scaffolding management supervisor (foreman).",
+                    "Hazardous Materials Escort Supervisor.",
+                    "Supervisor Wide Load Escort."
+                ]
+            }
         },
-        "certificationAndAccreditation": "OSHA-INSTITUTE CERTIFICATION AND ACCREDITATION through Certex, maintains the support of various national and international entities that provide the corresponding support to each of our certification processes and to"
+        "certificationAndAccreditation": {
+            "title": "Certification and accreditation",
+            "content": "OSHA-INSTITUTE CERTIFICATION AND ACCREDITATION through Certex, maintains the support of various national and international entities that provide the corresponding support to each of our certification processes and to individuals the same that is valid internationally thanks to the \"Hague Convention\" (This is an international treaty that eliminates the requirement for legalization of foreign public documents)."
+        }
     }
 }

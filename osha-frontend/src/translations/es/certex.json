@@ -9,6 +9,7 @@
         },
         
         "benefits": {
+            "title": "Beneficios",
             "workers": {
                 "title": "Para trabajadores",
                 "content": [
@@ -28,7 +29,7 @@
         },
         "process" :{
             "title": "Procesos",
-            "process": [
+            "content": [
                 "El participante recibe una orientación general acerca del proceso de evaluación de certificación laboral por parte del evaluador.",
                 "El evaluador constata la experiencia laboral y determina en qué función o unidad de competencia se podrá evaluar.",
                 "El participante pasa por una evaluación de conocimientos y una evaluación de desempeño. La primera evaluación consta de la aplicación de una prueba de conocimientos escrito de 20 preguntas, dichas preguntas son referidas al trabajo cotidiano del participante. La segunda evaluación consiste en una entrevista presencial al participante, el mismo que será dirigida por un especialista en el área de desempeño y de certificación.",
@@ -38,10 +39,11 @@
             ]
         },        
         "occupationalProfiles": {
+            "title": "Perfiles Ocupacionales",
             "content": "El Programa Certex, te brinda la oportunidad de certificarte en las diversas áreas operativas y administrativas.",
             "mining": {
                 "title": "Minería",
-                "mining": [
+                "li": [
                     "Inspector de seguridad mina.",
                     "Técnico en higiene industrial.",
                     "Técnico en servicios mineros.",
@@ -59,48 +61,60 @@
                     "Maestro perforista mina (manual y mecánico)"
                 ]
             },
-            "basicManagementAreas": [
-                "Cocina.",
-                "Evaluación y aplicación fitosanitaria.",
-                "Servicio de limpieza",
-                "Caja en establecimientos.",
-                "Instalador electricista.",
-                "Albañilería.",
-                "Recepcionista de hotel/hostal.",
-                "Representante de ventas.",
-                "Cosecha y recolección de hortalizas.",
-                "Corte de piezas para confección de prendas de vestir.",
-                "Costura de prendas de vestir.",
-                "Bordado para confecciones textil.",
-                "Housekeeping.",
-                "Maestro de obras en edificaciones.",
-                "Fierrería de edificaciones."
-            ],
-            "Administrative": [
-                "Secretariado ejecutivo.",
-                "Asistente de gerencia.",
-                "Asistente administrativo.",
-                "Logística y almacenes.",
-                "Gestión de talentos."
-            ],
-            "Industrial": [
-                "Soldadura y construcciones metálicas.",
-                "Prevencionista de Riesgos laborales.",
-                "Técnico en construcción civil.",
-                "Operador de maquinaria pesada. (máquina individual o Múltiple).",
-                "Técnico en plantas industriales (plantas molienda o plantas de producción)",
-                "Técnico Electricista.",
-                "Técnico Electricista.",
-                "Técnico de monitoreo ambiental.",
-                "Técnico en monitoreo de higiene industrial.",
-                "Inspector de seguridad en transporte.",
-                "Supervisor de protección y seguridad. (vigilancia)",
-                "Técnico Andamiero.",
-                "Supervisor de gestión Andamiero (capataz).",
-                "Supervisor Escolta de materiales peligrosos.",
-                "Supervisor Escolta de carga ancha."
-            ]
+            "basicManagementAreas": {
+                "title": "Areas de gestión básicas",
+                "li":[
+                    "Cocina.",
+                    "Evaluación y aplicación fitosanitaria.",
+                    "Servicio de limpieza",
+                    "Caja en establecimientos.",
+                    "Instalador electricista.",
+                    "Albañilería.",
+                    "Recepcionista de hotel/hostal.",
+                    "Representante de ventas.",
+                    "Cosecha y recolección de hortalizas.",
+                    "Corte de piezas para confección de prendas de vestir.",
+                    "Costura de prendas de vestir.",
+                    "Bordado para confecciones textil.",
+                    "Housekeeping.",
+                    "Maestro de obras en edificaciones.",
+                    "Fierrería de edificaciones."
+                ]
+            },
+            "Administrative": {
+                "title": "Administrativos",
+                "li":[
+                    "Secretariado ejecutivo.",
+                    "Asistente de gerencia.",
+                    "Asistente administrativo.",
+                    "Logística y almacenes.",
+                    "Gestión de talentos."
+                ]
+            },
+            "Industrial": {
+                "title": "Industriales",
+                "li":[
+                    "Soldadura y construcciones metálicas.",
+                    "Prevencionista de Riesgos laborales.",
+                    "Técnico en construcción civil.",
+                    "Operador de maquinaria pesada. (máquina individual o Múltiple).",
+                    "Técnico en plantas industriales (plantas molienda o plantas de producción)",
+                    "Técnico Electricista.",
+                    "Técnico Electricista.",
+                    "Técnico de monitoreo ambiental.",
+                    "Técnico en monitoreo de higiene industrial.",
+                    "Inspector de seguridad en transporte.",
+                    "Supervisor de protección y seguridad. (vigilancia)",
+                    "Técnico Andamiero.",
+                    "Supervisor de gestión Andamiero (capataz).",
+                    "Supervisor Escolta de materiales peligrosos.",
+                    "Supervisor Escolta de carga ancha."
+                ]
+            }
         },
-        "certificationAndAccreditation": "CÉRTIFICACIÓN Y ACREDITACIÓN OSHA-INSTITUTE mediante Certex, mantiene vigente el respaldo de diversas entidades nacionales e internacionales que brindan el soporte correspondiente a cada uno de nuestros procesos de certificación y a"
+        "certificationAndAccreditation": {
+            "title": "Certificación y acreditación",
+            "content": "OSHA-INSTITUTE mediante Certex, mantiene vigente el respaldo de diversas entidades nacionales e internacionales que brindan el soporte correspondiente a cada uno de nuestros procesos de certificación y acreditación a personas naturales el mismo que es valido a nivel Internacional gracias al “Convenio de la Haya” (Este es un tratado internacional que suprime la exigencia de legalización de documentos públicos extranjeros)."
+        }
     }
 }  
