@@ -547,6 +547,4 @@ const Linea = () => {
   );
 };
 
-
-
 export default Inicio

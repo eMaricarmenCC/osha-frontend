@@ -1,5 +1,7 @@
 {
-    "title" : "For more information and advice, you can contact us",
+    "title": "For more information and advice, you can contact us",
+    "subtitle": "Ponte en contacto con nosotros",
+    "p": "Write to our emails, according to the information you need:",
     "emails": [
         {
             "type": "Query of programs and services",

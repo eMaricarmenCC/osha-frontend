@@ -9,6 +9,7 @@ import Acreditacion from '../Web/Acreditacion';
 import Corporativos from '../Web/Corporativos';
 import Grados from '../Web/Grados';
 import Navbar from '../../components/Navbar/Navbar';
+import { Contactos } from './Contactos';
 
 
 function Web() {
@@ -45,7 +46,7 @@ function Web() {
         <Route path="/accreditation" element={<Acreditacion/>} />
         <Route path="/degrees" element={<Grados/>} />
         <Route path='/corporate' element={<Corporativos/>} />
-        
+        <Route path='/contact' element={<Contactos/>} />
       </Routes>
       <Footer/>
     </>

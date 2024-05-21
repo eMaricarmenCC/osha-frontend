@@ -32,11 +32,11 @@
             },
             "membershipFees": {
                 "title": "Affiliation - Osha-Institute Authorized Center Annual Membership",
-                "membershipFees": {
-                    "1-49 Employees": "$3,600 (Annual Membership - $1,200)",
-                    "50-99 Employees": "$4,500 (Annual Membership - $2,500)",
-                    "100+ Employees": "$5,500 (Annual Membership - $2,800)"
-                }
+                "membershipFees": [
+                    "1-49 Employees $3,600 - (Annual Membership - $1,200)",
+                    "50-99 Employees $4,500 - (Annual Membership - $2,500)",
+                    "100+ Employees $5,500 - (Annual Membership - $2,800)"
+                ]
             },
             "complaints": "If you have any complaint or complaint about the misuse or representation of Osha-Institute in your country, you can write to us at denuncias@osha.es and we will be ready to help you."
         }

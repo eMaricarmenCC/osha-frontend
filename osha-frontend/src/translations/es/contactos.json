@@ -1,5 +1,7 @@
 {
-    "title" : "Para mayor información y Asesoramiento, puede contactar con nosotros",
+    "title": "Para mayor Información y Asesoramiento, puede contactar con nosotros",
+    "subtitle": "Ponte en contacto con nosotros",
+    "p": "Escríbenos a nuestros correos, de acuerdo a la información que necesite:",
     "emails": [
         {
             "type": "Consulta de programas y servicios",

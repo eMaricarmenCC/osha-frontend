@@ -58,8 +58,8 @@ const Tabs = () => {
       onMouseLeave={() => handleSetSelected(null)}
       className="relative flex h-fit gap-2"
     >
-      <NavLink to='/'
-        activeClassName='text-primary'
+      <NavLink to="/"
+        activeClassName="text-primary"
         className="text-xl block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
         aria-current="page">
           {t("home")}

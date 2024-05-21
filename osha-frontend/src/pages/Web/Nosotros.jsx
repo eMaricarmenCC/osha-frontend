@@ -5,8 +5,12 @@ import { FaBuildingColumns } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { PiHandshakeFill } from "react-icons/pi";
-import { ChevronDown } from "react-feather";
+import { ChevronDown, Divide } from "react-feather";
 import { FcApproval, FcViewDetails } from "react-icons/fc";
+import { Accordian, AccordianItem } from "../../components/ui/Accordions";
+
+import { List } from "../../components/ui/List";
+import { PiSealCheckBold } from "react-icons/pi";
 
 
 function Nosotros(){
@@ -22,6 +26,8 @@ function Nosotros(){
       <InternationalCooperation/>
       <PrivacyAndSecurityDeclaration/>
       <Estandares/>
+      <Sedes/>
+      <Membresia/>
     </div>
   )   
 }
@@ -256,54 +262,6 @@ function PrivacyAndSecurityDeclaration(){
   );
 };
 
-const AccordianContext = createContext();
-
-function Accordian({ children, value, onChange, ...props }) {
-  const [selected, setSelected] = useState(value)
-
-  useEffect(() => {
-    onChange?.(selected)
-  }, [selected])
-
-  return (
-    <ul {...props}>
-      <AccordianContext.Provider value={{ selected, setSelected }}>
-        {children}
-      </AccordianContext.Provider>
-    </ul>
-  )
-}
-
-function AccordianItem({ children, value, trigger, ...props }) {
-  const { selected, setSelected } = useContext(AccordianContext)
-  const open = selected === value
-
-  const ref = useRef(null)
-
-  return (
-    <li className="rounded-lg shadow-lg border-b bg-white" {...props}>
-      <header
-        role="button"
-        onClick={() => setSelected(open ? null : value)}
-        className="flex justify-between items-center p-4 font-medium"
-      >
-        {trigger}
-        <ChevronDown
-          size={16}
-          className={`transition-transform ${open ? "rotate-180" : ""}`}
-        />
-      </header>
-      <div
-        className="overflow-y-hidden transition-all"
-        style={{ height: open ? ref.current?.offsetHeight || 0 : 0 }}
-      >
-        <div className="pt-2 p-4" ref={ref}>
-          {children}
-        </div>
-      </div>
-    </li>
-  )
-}
 
 function Estandares() {
   const { t, i18n } = useTranslation("estandares");
@@ -318,4 +276,86 @@ function Estandares() {
     </div>
   );
 };
+
+const Sedes = () => {
+  const { t, i18n } = useTranslation("sedes");
+  return(
+    <>
+    {/* Sedes */}
+    <div className="">
+      <div></div>
+      <div className="">
+        <h2>{t("locations.title")}</h2>
+        <h3>{t("locations.authorizedCenter.title")}</h3>
+        <h4>{t("locations.authorizedCenter.subtitle")}</h4>
+        <p>{t("locations.authorizedCenter.description")}</p>
+        <div>
+          <Accordian className='flex flex-col gap-3' >
+            <AccordianItem value='1' trigger={t("locations.authorizedCenter.benefits.title")}>
+              <List
+                list={t("locations.authorizedCenter.benefits.benefits", { returnObjects: true })}
+                icon={<PiSealCheckBold/>}
+              />
+              <p>{t("locations.authorizedCenter.benefits.content")}</p>
+            </AccordianItem>
+            <AccordianItem value='2' trigger={t("locations.authorizedCenter.process.title")}>
+              <List
+                list={t("locations.authorizedCenter.process.process", { returnObjects: true })}
+                icon={<PiSealCheckBold/>}
+              />
+            </AccordianItem>
+            <AccordianItem value='3' trigger={t("locations.authorizedCenter.membershipFees.title")}>
+              <List
+                list={t("locations.authorizedCenter.membershipFees.membershipFees", { returnObjects: true })}
+                icon={<PiSealCheckBold/>}
+              />
+            </AccordianItem>
+          </Accordian>
+          <p>{t("locations.authorizedCenter.complaints")}</p>
+        </div>
+      </div>
+    </div>
+    </>
+  );
+};
+
+/* MEMBRESIA */
+const Membresia = () =>{
+  const { t, i18n } = useTranslation("membresia");
+  return(
+    <>
+    {/* MEMBRESÍA */}
+    <div>
+      <div>
+        <h2>{t("membership.title")}</h2>
+        <p>{t("membership.description")}</p>
+        <div>
+          <Accordian className='flex flex-col gap-3' >
+            <AccordianItem value='1' trigger={t("membership.benefits.title")}>
+              <List
+                list={t("membership.benefits.benefits", { returnObjects: true })}
+                icon={<PiSealCheckBold/>}
+              />
+            </AccordianItem>
+            <AccordianItem value='2' trigger={t("membership.membership.title")}>
+              <ul>
+                {t("membership.membership.packages", { returnObjects: true }).map((li, index) => (
+                  <li key={index} className="">
+                    <p>{li.certificates.certificates}</p>
+                    <p>{li.certificates.price}</p>
+                    <p>{li.certificates.membership}</p>
+                    <p>{li.certificates.price_membership}</p>
+                    </li>
+                ))}
+              </ul>
+            </AccordianItem>
+          </Accordian>
+        </div>
+        <p>{t("membership.contact")}</p>
+      </div>
+    </div>
+    </>
+  );
+};
+
 export default Nosotros;
