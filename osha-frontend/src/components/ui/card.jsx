@@ -209,4 +209,31 @@ function Card3() {
   );
 }
 
+function CardGrado() {
+  return(
+    <div class="rounded-lg overflow-hidden shadow-lg bg-grisClaro">
+      <div class="px-6 py-4 flex flex-col gap-4 bg-azulMedio">
+        <p class="text-white text-center font-bold text-xl md:text-2xl" data-translatable>
+          Train the Trainer Osha</p>
+      </div>
+      <div class="relative">
+        <img class="w-full"
+            src="src/assets/images/grados/TrainTrainer.jpg"
+            alt="grado"/>
+        <div
+            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+        </div>
+      </div>
+      <div class="px-6 py-4 flex flex-col lg:flex-row gap-4 items-center bg-grisClaro">
+        <div class="w-1/2 text-center font-bold">
+          <p class="text-md">CÓDIGO: 1001</p>
+        </div>                        
+        <div class="w-1/2 text-center">
+          <h4 class="text-primary text-center font-bold">TT-OSHA</h4>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export { HoverEffectCard, GradientBorder, Section1, Card, Card2, Card3, Form1, Categories, GlowingGradientBorder };

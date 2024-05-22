@@ -10,10 +10,10 @@ const Line2 = ({bgColorClass1, bgColorClass2}) => {
 
 const Line1 = ({bgColorClass}) => {
   return (
-    <div className="flex flex-row">
-      <div className={`${bgColorClass} h-1 w-6"`}></div>
-      <div className="bg-white h-1 w-4"></div>
-      <div className={`${bgColorClass} h-1 w-20`}></div>
+    <div className="flex flex-row mt-2">
+      <div className={`${bgColorClass} h-2 w-6`}></div>
+      <div className="bg-white h-1 w-3"></div>
+      <div className={`${bgColorClass} h-2 w-24`}></div>
     </div>
   );
 };

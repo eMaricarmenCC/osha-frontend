@@ -49,7 +49,7 @@ function Contactos() {
         <div className="w-full">
           <h4 className="">{t("subtitle")}</h4>
           <h2 className="text-primary"><b>{t("title")}</b></h2>
-          <Line1 bgColorClass={"bg-primary"}/>
+          <Line1 bgColorClass={"bg-secondary"} />
           <p className="mt-5">{t("p")}</p>
           <div className="mt-8">
             {t("emails", { returnObjects: true }).map((li, index) => (
