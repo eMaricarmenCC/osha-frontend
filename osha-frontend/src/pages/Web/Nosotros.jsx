@@ -1,25 +1,25 @@
 import React, { createContext, useContext, useRef, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+
+import { SliderImg } from "../../components/Slider/Slider";
+import { Accordian, AccordianItem } from "../../components/ui/Accordions";
+import { CardFotTex } from "../../components/ui/Card";
+import { List } from "../../components/ui/List";
+import { Line1 } from "../../components/ui/Line";
+
 import { FaHome } from "react-icons/fa";
 import { FaBuildingColumns } from "react-icons/fa6";
-import { useTranslation } from "react-i18next";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { PiHandshakeFill } from "react-icons/pi";
+import { PiHandshakeFill, PiSealCheckBold } from "react-icons/pi";
 import { ChevronDown, Divide } from "react-feather";
 import { FcApproval, FcViewDetails } from "react-icons/fc";
-import { Accordian, AccordianItem } from "../../components/ui/Accordions";
-
-import { List } from "../../components/ui/List";
-import { PiSealCheckBold } from "react-icons/pi";
 
 
 function Nosotros(){
-
   const { t, i18n } = useTranslation("nosotros");
-
   return (
     <div className="bg-grisFondo">
-      {/* Breadcrumbs */}
       <Breadcrumbs/>
       <WhoWeAre/>
       <LegalNature/>
@@ -39,7 +39,7 @@ function Breadcrumbs(){
       <img src="/src/assets/img-nosotros/business.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
       <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="absolute inset-0 flex flex-row px-5 items-center justify-between">
+      <div className="absolute inset-0 flex flex-row items-center justify-between px-5 md:px-10 lg:px-20 xl:px-40">
         <div className="flex flex-row gap-2 items-center">
           <FaBuildingColumns color="white" style={{height:20, width:20}} />
           <h2 className="text-3xl text-white font-bold">Nosotros</h2>
@@ -76,22 +76,15 @@ const Card = ({ icon, title, text, backgroundClass, borderClass, textColorClass 
   );
 };
 
-const Email = () => {
-  return(
-    <></>
-  );
-};
 
+/* WHO WE ARE */
 function WhoWeAre(){
-
   const { t, i18n } = useTranslation("nosotros");
-
   return(
-    <>
-    {/* whoWeAre */}
-    <div>
-      <div className="px-5 py-10 lg:py-20 w-full flex justify-center">
-        <div className="lg:mx-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/src/assets/papel/papel3.jpeg')" }}>
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
+      {/* Who are we? */}
+      <div className="w-full flex justify-center">
+        <div className="lg:ml-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/src/assets/papel/papel3.jpeg')" }}>
           <div className="lg:w-2/4">
             <div className="lg:scale-110 h-80 bg-cover lg:w-full lg:h-full rounded-b-none border lg:rounded-lg"
               style={{backgroundImage:'url("/src/assets/img-nosotros/nosotrosCrop.jpg")'}}>
@@ -102,14 +95,14 @@ function WhoWeAre(){
             <p className="mt-2">{t("whoWeAre.p1")}</p>
             <p className="mt-2">{t("whoWeAre.p2")}</p>
             <div className="mt-8">
-                <a href="#" className="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</a>
+              <Link to="/contact" className="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</Link>
             </div>
           </div>
         </div>
       </div>
       {/* Seccion de cartillas */}
-      <div className="px-5 w-full flex justify-center">
-        <div className="flex flex-col md:flex-row gap-5 max-w-6xl">
+      <div className="mt-20 w-full flex justify-center">
+        <div className="flex flex-col md:flex-row gap-5">
           <Card
             icon={<HiOutlineBuildingOffice2 style={{color:"var(--lilaFuerte)",width:50, height:50}}/>}
             title={t("whoWeAre.tit2-oshins")}
@@ -129,57 +122,48 @@ function WhoWeAre(){
         </div>
       </div>
       {/* Correo */}
-
-    </div>
-    </>
-  );
-};
-
-function LegalNature(){
-
-  const { t, i18n } = useTranslation("nosotros");
-
-  return(
-    <>
-    {/* legalNature */}
-    <div className="px-5 py-10 lg:px-20 xl:px-20 mt-20" style={{ backgroundImage: "url('/src/assets/papel/papelSeamless.jpg')"}}>
-      <div className="overflow-hidden flex flex-row mx-auto">
-        <img className="w-full max-w-xl rounded-l-full" src="/src/assets/img-nosotros/juridic.jpg" alt="osha-institute"/>
-        <div className={`relative -ml-40 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
-          <h4 className={`font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h4>
-          <Line/>
-          <p className="text-gray-500 text-sm mt-3">{t("legalNature.content")}</p>
+      <div className="mt-14">
+        <div className="bg-grisOscuro px-5 py-5">
+          <p className="text-white text-center">Para más información, escríbenos a: info@osha.es</p>
         </div>
       </div>
     </div>
-    <div className="px-5 mt-10">
-      <div className="flex flex-col lg:flex-row gap-4">
-        <CardFotTex
-          title={t("legalNature.tit2-mision")}
-          text={t("legalNature.mision")}
-          textColorClass="text-primary"
-          img="/src/assets/img-nosotros/eduaction.jpeg"
-        />
-        <CardFotTex
-          title={t("legalNature.tit2-vision")}
-          text={t("legalNature.vision")}
-          textColorClass="text-primary"
-          img="/src/assets/img-nosotros/profesionals.jpg"
-        />
-      </div>
-    </div>
-    </>
   );
 };
 
-const CardFotTex = ({ title, text, textColorClass, img}) => {
+
+/* NATURALEZA JURÍDICA */
+function LegalNature(){
+  const { t, i18n } = useTranslation("nosotros");
   return(
-    <div className="overflow-hidden flex flex-col max-w-xl mx-auto">
-      <img className="w-full rounded-2xl" src={img} alt="osha-institute"/>
-      <div className={`relative -mt-28 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
-        <h4 className={`${textColorClass} font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{title}</h4>
-        <Line/>
-        <p className="text-gray-500 text-sm mt-3">{text}</p>
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+      {/* legalNature */}
+      <div className="p-5 rounded-xl" style={{ backgroundImage: "url('/src/assets/papel/papel14.jpg')"}}>
+        <div className="overflow-hidden flex flex-col lg:flex-row mx-auto">
+          <img className="w-full max-w-xl rounded-full" src="/src/assets/img-nosotros/juridic.jpg" alt="osha-institute"/>
+          <div className={`relative lg:-ml-40 px-5 lg:px-10 pt-8 pb-8 bg-white lg:m-10 rounded-xl shadow-xl`}>
+            <h4 className={`font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h4>
+            <Line/>
+            <p className="text-gray-500 text-sm mt-3">{t("legalNature.content")}</p>
+          </div>
+        </div>
+      </div>
+      {/* Mision and Vision */}
+      <div className="mt-20">
+        <div className="flex flex-col lg:flex-row gap-4">
+          <CardFotTex
+            title={t("legalNature.tit2-mision")}
+            text={t("legalNature.mision")}
+            textColorClass="text-primary"
+            img="/src/assets/img-nosotros/eduaction.jpeg"
+          />
+          <CardFotTex
+            title={t("legalNature.tit2-vision")}
+            text={t("legalNature.vision")}
+            textColorClass="text-primary"
+            img="/src/assets/img-nosotros/profesionals.jpg"
+          />
+        </div>
       </div>
     </div>
   );
@@ -195,44 +179,111 @@ const Line = () => {
   );
 };
 
+
+/* COOPEACIÓN INTERNACIONAL */
 function InternationalCooperation(){
-
   const { t, i18n } = useTranslation("nosotros");
-
+  const coopImages = [
+    {
+      id: 1,
+      src: "/src/assets/img-coopinte/coop-accsb.jpg",
+    },
+    {
+      id: 2,
+      src: "/src/assets/img-coopinte/coop-amba.jpg",
+    },
+    {
+      id: 3,
+      src: "/src/assets/img-coopinte/coop-ansi.jpg",
+    },
+    {
+      id: 4,
+      src: "/src/assets/img-coopinte/coop-asme.jpg",
+    },
+    {
+      id: 5,
+      src: "/src/assets/img-coopinte/coop-cat.jpg",
+    },
+    {
+      id: 6,
+      src: "/src/assets/img-coopinte/coop-ecbe.jpg",
+    },
+    {
+      id: 7,
+      src: "/src/assets/img-coopinte/coop-eed.jpg",
+    },
+    {
+      id: 8,
+      src: "/src/assets/img-coopinte/coop-etsi.jpg",
+    },
+    {
+      id: 9,
+      src: "/src/assets/img-coopinte/coop-mit.jpg",
+    },
+    {
+      id: 10,
+      src: "/src/assets/img-coopinte/coop-nfpa.jpg",
+    },
+    {
+      id: 11,
+      src: "/src/assets/img-coopinte/coop-niosh.jpg",
+    },
+    {
+      id: 12,
+      src: "/src/assets/img-coopinte/coop-osha.jpg",
+    },
+    {
+      id: 13,
+      src: "/src/assets/img-coopinte/coop-teex.jpg",
+    },
+    {
+      id: 14,
+      src: "/src/assets/img-coopinte/coop-texas.jpg",
+    },
+    {
+      id: 15,
+      src: "/src/assets/img-coopinte/coop-wso.jpg",
+    },
+  ];
   return(
-    <>
-    {/* internationalCooperation */}
-    <div className="px-10 py-10 mt-5 py-14 bg-azulClaro">
-      <div className="bg-white p-5 rounded-lg">
-        <h2>{t("internationalCooperation.title")}</h2>
-        {t("internationalCooperation.p", { returnObjects: true }).map((paragraph, index) => (
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+      {/* internationalCooperation */}
+      <div className="">
+        <div className="bg-white p-5 rounded-lg shadow-lg">
+          <h2 className="text-primary"><b>{t("internationalCooperation.title")}</b></h2>
+          <Line1 bgColorClass="bg-secondary"/>
+          {t("internationalCooperation.p", { returnObjects: true }).map((paragraph, index) => (
             <p key={index} className="mt-2">{paragraph}</p>
           ))}
+          <button className="mt-4 bg-primary hover:bg-azulOscuro py-2 px-4 rounded-lg text-white">Contáctanos</button>
+        </div>
+        <div>
+          
+        </div>
       </div>
-      <div>
-        <img src="" alt="" />
+      {/* Carousel */}
+      <div className="mt-10">
+        <SliderImg imgs={coopImages}/>
       </div>
     </div>
-    </>
   );
 };
 
+
+/* PRIVACIDAD Y DECLARACIÓN DE LA SEGURIDAD */
 function PrivacyAndSecurityDeclaration(){
-
   const { t, i18n } = useTranslation("nosotros");
-
   return(
-    <>
-    {/* privacyAndSecurityDeclaration */}
-    <div className="px-10 lg:px-20 xl:px-40">
-      <h2>{t("privacyAndSecurityDeclaration.title")}</h2>
-      <div>
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+      <div className="rounded-lg bg-white p-5 shadow-lg">
+        <h2 className="text-primary"><b>{t("privacyAndSecurityDeclaration.title")}</b></h2>
+        <Line1 bgColorClass={"bg-secondary"}/>
         <p>{t("privacyAndSecurityDeclaration.content")}</p>
-
       </div>
-      
-      <div className="p-10 bg-white rounded-lg shadow-lg flex flex-col gap-5">
-        <p>{t("privacyAndSecurityDeclaration.queans1.answer")}</p>
+      <div className="mt-10 flex flex-col gap-5">
+        <div className="bg-white rounded-lg shadow-lg p-5">
+          <p>{t("privacyAndSecurityDeclaration.queans1.answer")}</p>
+        </div>
         <Accordian className='flex flex-col gap-3' >
           <AccordianItem value='1' trigger={t("privacyAndSecurityDeclaration.queans1.question")}>
             {t("privacyAndSecurityDeclaration.queans1.answer")}
@@ -257,8 +308,8 @@ function PrivacyAndSecurityDeclaration(){
           </AccordianItem>
         </Accordian>
       </div>
+    
     </div>
-    </>
   );
 };
 
@@ -266,11 +317,13 @@ function PrivacyAndSecurityDeclaration(){
 function Estandares() {
   const { t, i18n } = useTranslation("estandares");
   return(
-    <div className="">
-      <div>
-        <h3>{t("title")}</h3>
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+      <div className="bg-white rounded-lg shadow-lg p-5">
+        <h3 className="text-primary"><b>{t("title")}</b></h3>
+        <Line1 bgColorClass={"bg-secondary"}/>
         <p className="mt-2">{t("p1")}</p>
         <p className="mt-2">{t("p2")}</p>
+        <Link to="https://www.osha.gov/topics/text-index" className="bg-primary p-3 rounded-lg hover:bg-azulOscuro text-white">Conoce los estándares</Link>
       </div>
       <div></div>
     </div>

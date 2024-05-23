@@ -1,3 +1,4 @@
+import React from "react";
 
 function GlowingGradientBorder() {
   return (
@@ -236,4 +237,40 @@ function CardGrado() {
   )
 }
 
-export { HoverEffectCard, GradientBorder, Section1, Card, Card2, Card3, Form1, Categories, GlowingGradientBorder };
+const Line = () => {
+  return (
+    <div className="flex">
+      <div className="bg-secondary h-1 w-5"></div>
+      <div className="bg-white h-1 w-2"></div>
+      <div className="bg-secondary h-1 w-20"></div>
+    </div>
+  );
+};
+
+const CardFotTex = ({ title, text, textColorClass, img}) => {
+  return(
+    <div className="overflow-hidden flex flex-col max-w-xl mx-auto">
+      <img className="w-full rounded-2xl" src={img} alt="osha-institute"/>
+      <div className={`relative -mt-28 px-10 pt-8 pb-8 bg-white m-10 rounded-xl shadow-xl`}>
+        <h4 className={`${textColorClass} font-semibold text-lg inline-block ease-in-out inline-block mb-1`}>{title}</h4>
+        <Line/>
+        <p className="text-gray-500 text-sm mt-3">{text}</p>
+      </div>
+    </div>
+  );
+};
+
+
+
+export { 
+  HoverEffectCard,
+  GradientBorder, 
+  Section1, 
+  Card,
+  Card2,
+  Card3, 
+  Form1,
+  Categories, 
+  GlowingGradientBorder, 
+  CardFotTex
+};

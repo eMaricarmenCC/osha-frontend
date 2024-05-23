@@ -7,6 +7,7 @@ import { BsPatchCheck } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import { TbPointFilled } from "react-icons/tb";
+import { Line1 } from "../../components/ui/Line";
 
 
 function Corporativos(){
@@ -46,21 +47,22 @@ function Corporativos(){
 const Certex = () => {
   const { t, i18n } = useTranslation("certex");
   return(
-    <>
-    {/* Certex */}
-    <div className="px-5 py-10 lg:px-20 xl:px-20 mt-5">
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
       <div>
         <h5>{t("certex.title")}</h5>
-        <h3>{t("certex.subtitle")}</h3>
+        <h2 className="text-primary"><b>{t("certex.subtitle")}</b></h2>
+        <Line1 bgColorClass={"bg-secondary"}/>
         <p>{t("certex.description")}</p>
-        <button>Contactar</button>
+        <button className="mt-5 bg-primary hover:bg-azulOscuro text-white p-3 rounded-lg">Contactar</button>
       </div>
-      <div>
-        <h3>{t("certex.objective.title")}</h3>
+      {/* OBjetivo */}
+      <div className="mt-10">
+        <h3 className="text-primary"><b>{t("certex.objective.title")}</b></h3>
         <p>{t("certex.objective.content")}</p>
       </div>
-      <div>
-        <h3>{t("certex.benefits.title")}</h3>
+      {/* Beneficios */}
+      <div className="mt-10">
+        <h3 className="text-primary"><b>{t("certex.benefits.title")}</b></h3>
         <div>          
           <h4>{t("certex.benefits.workers.title")}</h4>
           <List
@@ -76,17 +78,19 @@ const Certex = () => {
           />
         </div>
       </div>
-      <div>
-        <h3>{t("certex.process.title")}</h3>
+      {/* Procesos */}
+      <div className="mt-10">
+        <h3 className="text-primary"><b>{t("certex.process.title")}</b></h3>
         <List
           list={t("certex.process.content", { returnObjects: true })}
           icon={<TbPointFilled style={{color:"var(--primary)"}}/>}
         />
       </div>
-      <div>
-        <h3>{t("certex.occupationalProfiles.title")}</h3>
+      {/* Perfiles ocupacionales */}
+      <div className="mt-10">
+        <h3 className="text-primary"><b>{t("certex.occupationalProfiles.title")}</b></h3>
         <p>{t("certex.occupationalProfiles.content")}</p>
-        <div>
+        <div className="mt-5">
           <Accordian className='flex flex-col gap-3' >
             <AccordianItem value='1' trigger={t("certex.occupationalProfiles.mining.title")}>
               <List
@@ -115,25 +119,27 @@ const Certex = () => {
           </Accordian>
         </div>
       </div>
-      <div>
+      {/* Certificación y acreditación */}
+      <div className="">
         <h3>{t("certex.certificationAndAccreditation.title")}</h3>
         <p>{t("certex.certificationAndAccreditation.content")}</p>
       </div>
     </div>
-    </>
   );
 };
 
+
+/* Corportivo */
 const Corporativo = () => {
   const { t, i18n } = useTranslation("corporativos");
   return(
-    <>
-    {/* Corporativos */}
-    <div className="px-5 py-10 lg:px-20 xl:px-20 mt-20">
-      <h3>{t("title")}</h3>
+    <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+    <div className="">
+      <h2 className="text-primary"><b>{t("title")}</b></h2>
+      <Line1 bgColorClass={"bg-secondary"}/>
       <p>{t("content")}</p>
-      <div>
-        <h4>{t("IndustriesOfInfluence.title")}</h4>
+      <div className="mt-5">
+        <h4 className="">{t("IndustriesOfInfluence.title")}</h4>
         <ListResponsive
           list= {t("IndustriesOfInfluence.list", { returnObjects: true })}
           icon={<BsPatchCheck style={{color:"var(--primary)"}}/>}
@@ -155,7 +161,7 @@ const Corporativo = () => {
         />
       </div>
     </div>
-    </>
+    </div>
   );
 };
 export default Corporativos
