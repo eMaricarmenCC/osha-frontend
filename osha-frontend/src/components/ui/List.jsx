@@ -13,10 +13,10 @@ const List = ({list, icon}) => {
 
 const ListResponsive = ({list, icon}) => {
   return(
-    <div class="flex flex-wrap">
+    <div className="flex flex-wrap">
       {list.map((li, index) => (
-        <div class="p-1 sm:w-1/2 w-full">
-          <div class="bg-gray-100 rounded flex p-2 h-full items-center">
+        <div className="p-1 sm:w-1/2 w-full">
+          <div className="bg-gray-100 rounded flex p-2 h-full items-center">
             {icon}
             <p className="ml-2">{li}</p>
           </div>

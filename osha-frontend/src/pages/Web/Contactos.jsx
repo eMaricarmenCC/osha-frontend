@@ -67,73 +67,73 @@ function Contactos() {
           <div className="bg-grisFondo p-5 rounded-lg">
             <h3 className="text-center text-primary">Formulario para contactarnos</h3>
             <form action="" className="mt-5 bg-white flex flex-col gap-5 p-5 rounded-lg shadow-lg">
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Nombre completos"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <FaRegUser style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Email"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <MdOutlineEmail style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Teléfono"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <MdOutlinePhone style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Edad"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <FaRegCalendar style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="País o región"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <RiLandscapeLine style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Grado de intrucción"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <FaRegBookmark style={{color:"var(--primary)"}}/>
                 </span>
               </div>
-              <div class="relative bg-inherit">
+              <div className="relative bg-inherit">
                 <input
                   type="text"
                   className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                   placeholder="Carrera o programa de elección"
                 />
-                <span class="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
+                <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                   <MdOutlineSchool style={{color:"var(--primary)"}}/>
                 </span>
               </div>

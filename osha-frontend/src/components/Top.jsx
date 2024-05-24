@@ -20,7 +20,7 @@ function Top(){
     <section className="px-4 py-3 flex flex-col md:flex-row gap-4 bg-primary items-center justify-between">
       
       {/* Social Share */}
-      <div className="">
+      <div className="hidden md:block">
         <div className="flex gap-1 items-center">
           <span className="bg-whatsapp p-1 rounded-lg border border-white transform transition-transform hover:scale-110">
             <a href="https://wa.me/message/YK4GCWUIXVHOK1" target="_blank" title="WhatsApp">

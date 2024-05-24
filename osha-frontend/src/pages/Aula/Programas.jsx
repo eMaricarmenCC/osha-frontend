@@ -114,7 +114,7 @@ function Curso() {
                 <a className="py-3.5 w-full flex items-center text-azulMedio hover:text-primary hover:bg-blue-50" href="#"
                   onClick={() => handleClick(Introduccion)}
                 >
-                    <span class="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
+                    <span className="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
                     Introducción
                 </a>
               </li>
@@ -122,7 +122,7 @@ function Curso() {
                 <a className="py-3.5 w-full flex items-center text-azulMedio hover:text-primary hover:bg-blue-50" href="#"
                   onClick={() => handleClick(Objetivos)}
                 >
-                    <span class="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
+                    <span className="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
                     Objetivos del curso
                 </a>
               </li>
@@ -130,7 +130,7 @@ function Curso() {
                 <a className="py-3.5 w-full flex items-center text-azulMedio hover:text-primary hover:bg-blue-50" href="#"
                     onClick={() => handleClick(<TabSections activeKey={0} sections={Modulo1} />)}
                 >
-                    <span class="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
+                    <span className="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
                     <div className='flex flex-col '>
                       Módulo 1:
                       <p className='font-normal text-gray-500 text-sm'>Nombre del módulo nombre</p>
@@ -141,7 +141,7 @@ function Curso() {
                 <a className="py-3.5 w-full flex items-center text-azulMedio hover:text-primary hover:bg-blue-50" href="#"
                     onClick={() => handleClick(<TabSections activeKey={0} sections={Modulo2} />)}
                 >
-                    <span class="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
+                    <span className="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
                     <div className='flex flex-col '>
                       Módulo 2:
                       <p className='font-normal text-gray-500 text-sm'>Nombre del módulo nombre</p>
@@ -152,7 +152,7 @@ function Curso() {
                 <a className="py-3.5 w-full flex items-center text-azulMedio hover:text-primary hover:bg-blue-50" href="#"
                     onClick={() => handleClick(Examen)}
                 >
-                    <span class="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
+                    <span className="ml-5 mr-2.5 w-1 h-7 bg-azulMedio rounded-r-md"></span>
                     Examen final
                 </a>
               </li>

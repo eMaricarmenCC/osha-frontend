@@ -77,7 +77,7 @@ const Card = ({ icon, title, text, backgroundClass, borderClass, textColorClass 
 };
 
 
-/* WHO WE ARE */
+/* QUIENES SOMOS */
 function WhoWeAre(){
   const { t, i18n } = useTranslation("nosotros");
   return(
@@ -411,4 +411,4 @@ const Membresia = () =>{
   );
 };
 
-export default Nosotros;
+export { Nosotros, WhoWeAre, LegalNature, InternationalCooperation };

@@ -2,15 +2,15 @@ import React from "react";
 
 function GlowingGradientBorder() {
   return (
-    <div class="max-w-7xl mx-auto">
-      <div class="relative group cursor-pointer">
+    <div className="max-w-7xl mx-auto">
+      <div className="relative group cursor-pointer">
         <div
-          class="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+          className="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
         </div>
         <div
-          class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
-          <div class="space-y-2">
-            <p class="text-slate-800">Glowing Gradient Border</p>
+          className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+          <div className="space-y-2">
+            <p className="text-slate-800">Glowing Gradient Border</p>
           </div>
         </div>
       </div>
@@ -20,9 +20,9 @@ function GlowingGradientBorder() {
 
 function GradientBorder() {
   return (
-    <div class="relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
-      <div class="bg-white p-7 rounded-md">
-        <h1 class="font-bold text-xl mb-2">Border gradient example</h1>
+    <div className="relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
+      <div className="bg-white p-7 rounded-md">
+        <h1 className="font-bold text-xl mb-2">Border gradient example</h1>
         <p>Create beautfiul cards with gradient borders with Tailwind CSS.</p>
       </div>  
     </div>
@@ -31,15 +31,15 @@ function GradientBorder() {
 
 function Form1() {
   return (
-    <div class="py-10 px-5 bg-gray-800 flex flex-col justify-center">
-      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div className="py-10 px-5 bg-gray-800 flex flex-col justify-center">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div
-            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+            className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
         </div>
-        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
-          <div class="text-center">
-            <h1 class="text-3xl">Contact Us!</h1>
-            <p class="text-gray-300">
+        <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
+          <div className="text-center">
+            <h1 className="text-3xl">Contact Us!</h1>
+            <p className="text-gray-300">
               Fill up the form below to send us a message.
             </p>
           </div>
@@ -51,15 +51,15 @@ function Form1() {
 
 function CardTwoCards() {
   return (
-    <div class="py-10 px-5 bg-gray-800 flex flex-col justify-center">
-      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div className="py-10 px-5 bg-gray-800 flex flex-col justify-center">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div
-            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+            className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
         </div>
-        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
-          <div class="text-center">
-            <h1 class="text-3xl">Contact Us!</h1>
-            <p class="text-gray-300">
+        <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
+          <div className="text-center">
+            <h1 className="text-3xl">Contact Us!</h1>
+            <p className="text-gray-300">
               Fill up the form below to send us a message.
             </p>
           </div>
@@ -76,7 +76,7 @@ const Categories = ({icon, title, text, bgColorClass, titleColorClass, borderCla
         <h4 className={`${titleColorClass}`}><b>{title}</b></h4>
         <p className="mt-1">{text}</p>
       </div>
-      <div class="">
+      <div className="">
         {icon}
       </div>
     </div>
@@ -212,25 +212,25 @@ function Card3() {
 
 function CardGrado() {
   return(
-    <div class="rounded-lg overflow-hidden shadow-lg bg-grisClaro">
-      <div class="px-6 py-4 flex flex-col gap-4 bg-azulMedio">
-        <p class="text-white text-center font-bold text-xl md:text-2xl" data-translatable>
+    <div className="rounded-lg overflow-hidden shadow-lg bg-grisClaro">
+      <div className="px-6 py-4 flex flex-col gap-4 bg-azulMedio">
+        <p className="text-white text-center font-bold text-xl md:text-2xl" data-translatable>
           Train the Trainer Osha</p>
       </div>
-      <div class="relative">
-        <img class="w-full"
+      <div className="relative">
+        <img className="w-full"
             src="src/assets/images/grados/TrainTrainer.jpg"
             alt="grado"/>
         <div
-            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+            className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
         </div>
       </div>
-      <div class="px-6 py-4 flex flex-col lg:flex-row gap-4 items-center bg-grisClaro">
-        <div class="w-1/2 text-center font-bold">
-          <p class="text-md">CÓDIGO: 1001</p>
+      <div className="px-6 py-4 flex flex-col lg:flex-row gap-4 items-center bg-grisClaro">
+        <div className="w-1/2 text-center font-bold">
+          <p className="text-md">CÓDIGO: 1001</p>
         </div>                        
-        <div class="w-1/2 text-center">
-          <h4 class="text-primary text-center font-bold">TT-OSHA</h4>
+        <div className="w-1/2 text-center">
+          <h4 className="text-primary text-center font-bold">TT-OSHA</h4>
         </div>
       </div>
     </div>

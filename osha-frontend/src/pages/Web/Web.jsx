@@ -3,12 +3,13 @@ import Top from '../../components/Top';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Inicio from '../Web/Inicio';
-import Nosotros from '../Web/Nosotros';
+import { Nosotros, WhoWeAre, LegalNature, InternationalCooperation } from '../Web/Nosotros';
 import Estandares from '../Web/Estandares';
 import Acreditacion from '../Web/Acreditacion';
 import Corporativos from '../Web/Corporativos';
-import Grados from '../Web/Grados';
+import { Grados } from '../Web/Grados';
 import Navbar from '../../components/Navbar/Navbar';
+import Navbar2 from '../../components/Navbar/Navbar2';
 import { Contactos } from './Contactos';
 
 
@@ -16,10 +17,11 @@ function Web() {
   return (
     <>
       {/* Header */}
-      {/*<header className='bg-primary'>
+      <header className="">
         <Top/>
-        <Navbar />
-      </header>*/}
+        <Navbar/>
+
+      </header>
       
       {/*<Top />*/}
       {/*<section
@@ -37,11 +39,17 @@ function Web() {
           </div>
         </div>
       </section>*/}
-      <Top/>
+      {/*<Top/>
       <Header />
+      <Navbarr/>*/}
       <Routes>
         <Route path="/" element={<Inicio/>} />
         <Route path="/us" element={<Nosotros/>} />
+        <Route path="/nosotros" element={<WhoWeAre/>} />
+        <Route path="/nuestra-identidad" element={<LegalNature/>} />
+        <Route path="/cooperacion-internacional" element={<InternationalCooperation/>} />
+        <Route path="/declaracion-privacidad" element={<Nosotros/>} />
+        <Route path="/estandares-osha" element={<Estandares/>} />
         <Route path="/standards" element={<Estandares/>} />
         <Route path="/accreditation" element={<Acreditacion/>} />
         <Route path="/degrees" element={<Grados/>} />

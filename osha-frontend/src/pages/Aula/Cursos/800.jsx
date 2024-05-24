@@ -22,20 +22,20 @@ export const M1s1 = () => {
       <h3>Definición de cultura de seguridad</h3>
       <p>Lo creas o no, OSHA en realidad tiene una definición bastante buena de cultura de seguridad. OSHA define la cultura como "una combinación de actitudes, comportamientos, creencias, valores, formas de hacer las cosas y otras características compartidas de un grupo particular de personas" de una organización.</p>
       <p>Es importante entender que, desde el punto de vista del empleador, la cultura corporativa de la empresa es algo que debe gestionarse, pero si le pide a un empleado que defina la cultura, probablemente le dirá que es simplemente... "así son las cosas por aquí". ".</p>
-      <p class="text-orange">La cultura de seguridad es una combinación de las actitudes, comportamientos y creencias de una organización en relación con la seguridad.</p>
+      <p className="text-orange">La cultura de seguridad es una combinación de las actitudes, comportamientos y creencias de una organización en relación con la seguridad.</p>
     </div>
   );
 };
 export const M1s2 = () => {
   return (
     <div>
-      <div class="row">
-        <div class="col-md-8">
+      <div className="row">
+        <div className="col-md-8">
           <p>El éxito del Sistema de Gestión de Seguridad en la Construcción (CSMS) de su empresa depende de la voluntad de la alta dirección de demostrar un compromiso serio a largo plazo para proteger a todos los empleados de lesiones y enfermedades en el trabajo.</p>
           <p>Pero, ¿cómo se consigue el compromiso de la alta dirección si aún no lo tienes? El verdadero compromiso no surge de la nada.</p>
           <p>El compromiso de la dirección con la seguridad probablemente se producirá en la medida en que cada directivo comprenda claramente los beneficios positivos derivados de su esfuerzo. Comprender los beneficios creará un fuerte deseo de hacer lo que sea necesario para mejorar la cultura de seguridad de la empresa.</p>
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <p>Cuando la dirección está comprometida con la seguridad, se creará un fuerte deseo de hacer lo que sea necesario para mejorar la cultura general de seguridad de la empresa.</p>
         </div>                    
       </div>
