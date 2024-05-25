@@ -53,8 +53,8 @@ function Web() {
         <Route path="/standards" element={<Estandares/>} />
         <Route path="/accreditation" element={<Acreditacion/>} />
         <Route path="/degrees" element={<Grados/>} />
-        <Route path='/corporate' element={<Corporativos/>} />
-        <Route path='/contact' element={<Contactos/>} />
+        <Route path='/corporativos' element={<Corporativos/>} />
+        <Route path='/contactanos' element={<Contactos/>} />
       </Routes>
       <Footer/>
     </>

@@ -1,11 +1,18 @@
 {
     "home": "Inicio",
     "us": "Nosotros",
-    "standards": "Estandares",
+    "aboutus": "Sobre nosotros",
+    "ouridentity": "Nuestra identidad",
+    "cooperation": "Cooperación internacional",
+    "privacy": "Declaración de privacidad",
+    "standards": "Estandares Osha",
     "accreditation": "Acreditación",
+    "accreditationae": "Acreditación AE",
+    "academy": "Formación académica",
     "degrees": "Grados",
+    "courses": "Cursos",
+    "freecourses": "Cursos gratuitos",
     "corporate": "Corporativos",
-
     "virtualClassroom": "Aula virtual",
     "language": "Lenguaje",
     "contactUs": "Contáctanos"

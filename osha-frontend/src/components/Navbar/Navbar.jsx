@@ -1,54 +1,174 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  FiArrowRight,
-  FiBarChart2,
-  FiChevronDown,
-  FiHome,
-  FiPieChart,
-} from "react-icons/fi";
 import { AnimatePresence, color, motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
+import { FiArrowRight, FiBarChart2, FiChevronDown, FiHome, FiPieChart } from "react-icons/fi";
 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-    <div className="absolute hidden md:block flex h-50 w-full justify-start bg-grisFondo p-8 text-neutral-200 md:justify-center">
-      <Tabs />
-    </div>
-    {/* Navbar for mobile */}
-    <nav className="block md:hidden bg-white w-full">
-      <div className="flex items-center justify-around">
-        <div className="py-3 px-5 w-full flex justify-between">
-          <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-10" />
-          <div className="text-3xl" onClick={() => setOpen(!open)}>
-            <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
-          </div>
-        </div>
-        <div className={`
-          absolute z-50 bg-grisFondo ${open ? "left-0" : "left-[-100%]"}
-          h-screen w-[70%] top-0 overflow-y-auto bottom-0 duration-500
-          border-grisMedio shadow-3xl rounded-r-3xl flex flex-col
-        `}>
-          <div className="py-6 px-5 w-full flex justify-center">
-            <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-16" />
-            {/*<div className="text-3xl" onClick={() => setOpen(!open)}>
+      {/* Navbar for md.. */}
+      <NavbarMd />
+      {/* Navbar for mobile */}
+      <nav className="block md:hidden bg-white w-full">
+        <div className="flex items-center justify-around">
+          <div className="py-3 px-5 w-full flex justify-between">
+            <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-10" />
+            <div className="text-3xl" onClick={() => setOpen(!open)}>
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
-            </div>*/}
+            </div>
           </div>
-          <div className="px-6 flex flex-col">
-            <NavLinks/>
-          </div>
-          <div className="mx-auto mt-auto mb-5">
-            <button className="bg-primary py-2 px-3 rounded-lg shadow-lg text-white">Contactanos</button>
+          <div className={`
+            absolute z-50 bg-grisFondo ${open ? "left-0" : "left-[-100%]"}
+            h-screen w-[70%] top-0 overflow-y-auto bottom-0 duration-500
+            border-grisMedio shadow-3xl rounded-r-3xl flex flex-col
+          `}>
+            <div className="py-6 px-5 w-full flex justify-center">
+              <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-16" />
+              {/*<div className="text-3xl" onClick={() => setOpen(!open)}>
+                <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+              </div>*/}
+            </div>
+            <div className="px-2 flex flex-col">
+              <NavLinks/>
+            </div>
+            <div className="mx-auto mt-auto mb-5">
+              <button className="bg-primary py-2 px-3 rounded-lg shadow-lg text-white">Contactanos</button>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </>
+  );
+};
+
+const NavbarMd = () => {
+
+  const { t, i18n } = useTranslation("labels");
+  const navlinks = [
+    {
+      name: t("home"),
+      submenu: false,
+      link: "/",
+    },
+    {
+      name: t("us"),
+      submenu: true,
+      Component: Nosotross,
+      sublinks: [
+        { name: t("aboutus"), link: "/nosotros" },
+        { name: t("ouridentity"), link: "/nuestra-identidad" },
+        { name: t("cooperation"), link: "/cooperacion-internacional" },
+        { name: t("privacy"), link: "/declaracion-privacidad" },
+        { name: t("standards"), link: "/estandares-osha" },
+      ],
+    },
+    {
+      name: t("accreditation"),
+      submenu: true,
+      Component: Acreditacion,
+      sublinks: [
+        { name: t("accreditation"), link: "/acreditacion" },
+        { name: t("accreditationae"), link: "/adreditacion-ae" },
+      ],
+    },
+    {
+      name: t("academy"),
+      submenu: true,
+      Component: Blog,
+      sublinks:  [
+        { name: t("degrees"), link: "/grados" },
+        { name: t("courses"), link: "/cursos" },
+        { name: t("freecourses"), link: "/cursos-gratuitos" },
+      ],
+    },
+    {
+      name: t("degrees"),
+      submenu: false,
+      link: "/grados",
+    },
+  ];
+
+  const [selected, setSelected] = useState(null);
+  const [dir, setDir] = useState(null);
+
+  const handleSetSelected = (val) => {
+    if (typeof selected === "number" && typeof val === "number") {
+      setDir(selected > val ? "r" : "l");
+    } else if (val === null) {
+      setDir(null);
+    }
+    setSelected(val);
+  };
+
+  return (
+    <div className="hidden md:block flex w-full bg-grisFondo p-6 text-neutral-200 md:justify-center">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
+        </Link>
+        {/* Navbar */}
+        <div
+          onMouseLeave={() => handleSetSelected(null)}
+          className="relative flex h-fit gap-2 z-50"
+        >
+          {navlinks.map((link, index) => {
+            
+            return (
+              <Tab1
+                tab={index}
+                selected={selected}
+                handleSetSelected={handleSetSelected}
+                chevronDown={link.submenu}
+              >
+                {link.name}
+              </Tab1>
+            );
+          })}
+          <AnimatePresence>
+            {selected && <Content dir={dir} selected={selected} />}
+          </AnimatePresence>
+        </div>
+        {/* Boton de Contactanos */}
+        <Link to="/contactanos"
+          className="text-xl text-white bg-azulMedio hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+        >
+            {t("contactUs")}
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+const Tab1 = ({ children, tab, handleSetSelected, selected, chevronDown }) => {
+  return (
+    <button
+      id={`shift-tab-${tab}`}
+      onMouseEnter={() => handleSetSelected(tab)}
+      onClick={() => handleSetSelected(tab)}
+      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors ${
+        selected === tab
+          ? " bg-primary text-neutral-100"
+          : "text-neutral-400"
+      }`}
+    >
+      <span>{children}</span>
+      {chevronDown ? (
+        <FiChevronDown
+          className={`transition-transform ${
+            selected === tab ? "rotate-180" : ""
+          }`}
+        />
+      ) : (
+        <NavLink>
+
+        </NavLink>
+      )}
+    </button>
   );
 };
 
