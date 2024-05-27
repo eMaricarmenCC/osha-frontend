@@ -1,28 +1,32 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from "framer-motion";
+import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { HiLocationMarker } from 'react-icons/hi';
 import CountUp from 'react-countup';
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
 import { HoverEffectCard, GlowingGradientBorder, GradientBorder, Card, Card2, Card3, Form1 } from '../../components/ui/Card';
-import { MdSchool } from "react-icons/md";
-import { FaHandshake } from "react-icons/fa";
-import { AiFillSafetyCertificate } from "react-icons/ai";
+import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
+import { Categories } from '../../components/ui/Card';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
-import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
-import { Categories } from '../../components/ui/Card';
-import { MdSecurity, MdEngineering } from "react-icons/md";
+
+import { MdSecurity, MdEngineering, MdSchool } from "react-icons/md";
 import { FaHelmetSafety, FaBiohazard } from "react-icons/fa6";
 import { GiMaterialsScience } from "react-icons/gi";
 import { RiMentalHealthFill } from "react-icons/ri";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import { FiArrowRight } from "react-icons/fi";
-import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
+import { HiLocationMarker } from 'react-icons/hi';
+import { FaHandshake } from "react-icons/fa";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { PiStudentBold, PiBooks } from "react-icons/pi";
+import { LuBookMarked } from "react-icons/lu";
 
 
 function Inicio(){
@@ -35,18 +39,20 @@ function Inicio(){
     <Acreditacion/>
     <AlianzaConvenio/>
     <Galería/>
-    <EJemplo/>
+    {/* <EJemplo/> */}
     </>
   );
 };
 
+
+/* HERO INICIO */
 const Hero = () => {
   const COLORS_TOP = ["#5900FF", "#006FFF", "#00E8FF", "#1DD7DE", "#0082C3"];
   const color = useMotionValue(COLORS_TOP[0]);
   useEffect(() => {
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 10,
+      duration: 5,
       repeat: Infinity,
       repeatType: "mirror",
     });
@@ -70,16 +76,6 @@ const Hero = () => {
   ];
   return(
     <>
-    {/* Hero */}
-    {/*<section className="h-screen">
-      <div className="h-full bg-gradient-to-r from-primary to-sky-200">
-        <div className="flex flex-row">
-          <div></div>
-          <img src="/src/assets/img-inicio/engineer.png" alt="" style={{weight:600, height:650}}/>
-        </div>
-        <div className="w-full h-28 bg-grisOscuro"></div>
-      </div>
-    </section>*/}
     <motion.section
       style={{ backgroundImage, }}
       className="relative flex flex-col min-h-[83vh] w-full place-content-center overflow-hidden bg-gray-950 text-gray-200 items-center"
@@ -92,16 +88,16 @@ const Hero = () => {
             gapClass="gap-6"
           />
         </div>*/}
-        <div className="relative z-10 flex flex-col items-center justify-center">
+        <div className="relative z-10 flex flex-col items-center justify-center pt-10 px-5 lg:p-0">
           <div className="flex flex-col items-center">
-            <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-5 py-3 text-lg">
+            <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-5 py-3 text-sm sm:text-lg text-center">
               La ingeniería, tecnología y ciencia junta!
             </span>
-            <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-              <b>Bienvenidos a <span className="text-primary">Osha</span> Institute</b>
+            <h1 className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+              <b>Bienvenidos a <span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span></b>
             </h1>
-            <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-              Somos quienes respaldamos tu futuro Lorem ipsum, dolor sit amet.
+            <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-grisMedio">
+              Somos quienes respaldamos tu futuro.
             </p>
             <motion.button
               style={{ border, boxShadow, }}
@@ -113,41 +109,62 @@ const Hero = () => {
               <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
             </motion.button>
           </div>
-          <div className="mt-10 flex flex-row gap-3">
-            <div className="p-4 border-white border-2 rounded-xl">
-              <span className="text-xl">
-                <CountUp end={21} duration={4} />
-                <span>+</span>
-              </span>
-              <span className="ml-2">Programas</span>
-            </div>
-            <div className="p-4 border-white border-2 rounded-xl">
-              <span>
-                <CountUp start={1950} end={200} duration={4} />
-                  <span>+</span>
-              </span>
-              <span className="ml-2">Cursos</span>
-            </div>
-            <div className="p-4 border-white border-2 rounded-xl">
-              <span>
-                <CountUp start={100} end={5000} />
-                <span>+</span>
-              </span>
-              <span className="ml-2">Certificados</span>
-            </div>
-          </div>
+          <CountUpHome/>
         </div>
         <div className="flex flex-col items-center justify-end">
-          <img className="" src="/src/assets/img-inicio/hero/engineer.png" alt="" style={{weight:350, height:700}}/>
+          <img className="z-20 h-[380px] w-[280px] md:h-[500px] md:w-[360px] lg:h-[800px] lg:w-[600px]" src="/src/assets/img-inicio/hero/engineer.png" alt=""/>
         </div>
       </div>
       <div className="absolute inset-0 z-0">
         <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={3} />
+          <Stars radius={50} count={5500} factor={5} fade speed={2} />
         </Canvas>
       </div>
     </motion.section>
     </>
+  );
+};
+
+const CountUpHome = () => {
+  return(
+    <div className="mt-10 flex flex-row gap-3">
+      <ItemCount
+        icon={<PiStudentBold/>}
+        text="Estudiantes"
+        nstart={130}
+        nend={150}
+        time={4}
+      />
+      <ItemCount
+        icon={<PiBooks/>}
+        text="Programas"
+        nstart={80}
+        nend={100}
+        time={4}
+      />
+      <ItemCount
+        icon={<LuBookMarked/>}
+        text="Cursos"
+        nstart={180}
+        nend={200}
+        time={4}
+      />
+    </div>
+  );
+};
+
+const ItemCount = ({icon, text, nstart, nend, time}) => {
+  return(
+    <div className="flex flex-col items-center p-3 border-secondary border-b-2 transparent rounded-t-lg bg-gray-600/50 text-3xl sm:flex-row sm:gap-3">
+      <span className="sm:text-4xl md:text-5xl">{icon}</span>
+      <div className="flex flex-col items-center">
+        <span className="lg:text-4xl text-primary"><b>
+          <span className="text-secondary">+</span>
+          <CountUp start={nstart} end={nend} duration={time} /></b>
+        </span>
+        <p className="ml-2 text-white">{text}</p>
+      </div>
+    </div>
   );
 };
 
@@ -377,8 +394,8 @@ const Acreditacion = () => {
           <img src="/src/assets/img-alianzas/ansi.jpg" alt="" style={{width:500}} className="rounded-lg"/>
         </div>
         <div className="p-5 border-secondary border-r-4 border-b-4">
-          <h3 className="text-primary uppercase"><b>{t("acreditation.title")}</b></h3>
-          <p className="mt-3">{t("acreditation.description")}</p>
+          <h3 className="text-primary uppercase"><b>{t("accreditation.title")}</b></h3>
+          <p className="mt-3">{t("accreditation.description")}</p>
           <button className="mt-3 bg-primary rounded-lg p-2 text-white">Certificate</button>
         </div>
       </div>
@@ -395,10 +412,7 @@ const AlianzaConvenio = () => {
     <section className="" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
       <div className="mt-10 px-5 py-10 sm:px-20">
         <h2 className="text-white text-center uppercase"><b>Nuestras alianzas y convenios</b></h2>
-        <div className="flex flex-col justify-center items-center mt-2">
-          <div className="bg-primary h-1 w-80"></div>
-          <div className="bg-secondary h-1 w-40 mt-2"></div>
-        </div>
+        <Linea/>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -541,8 +555,8 @@ const EJemplo = () => {
 const Linea = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-2">
-      <div className="bg-primary h-1 w-80"></div>
-      <div className="bg-secondary h-1 w-40 mt-2"></div>
+      <div className="bg-primary h-1 w-56 xs:w-80"></div>
+      <div className="bg-secondary h-1 w-28 xs:w-40 mt-2"></div>
     </div>
   );
 };

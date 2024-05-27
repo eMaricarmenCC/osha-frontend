@@ -6,7 +6,11 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'customnb': '1020px',
+      }
+    },
   },
   plugins: [],
   theme: {

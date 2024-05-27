@@ -70,7 +70,7 @@ const NavLinks = () => {
               }}
             >
               <span>{link.icon}</span>
-              <span className=" text-md py-5 flex justify-between items-center md:pr-0 group text-primary">
+              <span className=" text-md py-4 flex justify-between items-center md:pr-0 group text-primary">
                 {link.name}
               </span>
               <span className="text-xl inline text-primary ml-auto">
@@ -97,7 +97,7 @@ const NavLinks = () => {
             >
               <ul>
                 {link.sublinks.map((slink, index) => (
-                  <li key={index} className="pl-7 py-2 text-grisOscuro rounded-lg hover:bg-blue-100 hover:text-primary">
+                  <li key={index} className="pl-7 py-1.5 text-sm text-grisOscuro rounded-lg hover:bg-blue-100 hover:text-primary">
                     <NavLink to={slink.link}>
                       {slink.name}
                     </NavLink>

@@ -10,20 +10,26 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {/* Navbar for md.. */}
+      {/* Navbar for laptop, pc */}
       <NavbarMd />
+
       {/* Navbar for mobile */}
       <nav className="block md:hidden bg-white w-full">
         <div className="flex items-center justify-around">
           <div className="py-3 px-5 w-full flex justify-between">
-            <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-10" />
+            {/* Logo */}
+            <Link to="/" className="">
+              <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-10"/>
+            </Link>
+            {/* Menu Icon */}
             <div className="text-3xl" onClick={() => setOpen(!open)}>
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
             </div>
           </div>
+          {/* Navbar */}
           <div className={`
             absolute z-50 bg-grisFondo ${open ? "left-0" : "left-[-100%]"}
-            h-screen w-[70%] top-0 overflow-y-auto bottom-0 duration-500
+            h-[90%] w-[70%] top-0 overflow-y-auto bottom-0 duration-500
             border-grisMedio shadow-3xl rounded-r-3xl flex flex-col
           `}>
             <div className="py-6 px-5 w-full flex justify-center">
@@ -50,11 +56,13 @@ const NavbarMd = () => {
   const { t, i18n } = useTranslation("labels");
   const navlinks = [
     {
+      id: 0,
       name: t("home"),
       submenu: false,
       link: "/",
     },
     {
+      id:1,
       name: t("us"),
       submenu: true,
       Component: Nosotross,
@@ -67,6 +75,7 @@ const NavbarMd = () => {
       ],
     },
     {
+      id:2,
       name: t("accreditation"),
       submenu: true,
       Component: Acreditacion,
@@ -76,6 +85,7 @@ const NavbarMd = () => {
       ],
     },
     {
+      id:3,
       name: t("academy"),
       submenu: true,
       Component: Blog,
@@ -86,9 +96,10 @@ const NavbarMd = () => {
       ],
     },
     {
-      name: t("degrees"),
+      id:4,
+      name: t("headquarters"),
       submenu: false,
-      link: "/grados",
+      link: "/sedes",
     },
   ];
 
@@ -116,17 +127,27 @@ const NavbarMd = () => {
           onMouseLeave={() => handleSetSelected(null)}
           className="relative flex h-fit gap-2 z-50"
         >
-          {navlinks.map((link, index) => {
-            
+          {navlinks.map((link) => {
             return (
-              <Tab1
-                tab={index}
-                selected={selected}
-                handleSetSelected={handleSetSelected}
-                chevronDown={link.submenu}
-              >
-                {link.name}
-              </Tab1>
+              <>
+                {link.submenu ? (
+                  <Tab1
+                    tab={link.id}
+                    selected={selected}
+                    handleSetSelected={handleSetSelected}
+                    chevronDown={link.submenu}
+                  >
+                    {link.name}
+                  </Tab1>
+                ) : (
+                  <NavLink to={link.link}
+                    id={`shift-tab-${link.id}`}
+                    className="flex items-center gap-1 rounded-full px-3 py-1.5 text-lg transition-colors hover:bg-primary hover:text-neutral-100 text-neutral-400"
+                  >
+                    {link.name}
+                  </NavLink>
+                )}
+              </>
             );
           })}
           <AnimatePresence>
@@ -135,40 +156,34 @@ const NavbarMd = () => {
         </div>
         {/* Boton de Contactanos */}
         <Link to="/contactanos"
-          className="text-xl text-white bg-azulMedio hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+          className="text-xl text-white bg-azulMedio hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
         >
-            {t("contactUs")}
+          {t("contactUs")}
         </Link>
       </div>
     </div>
   );
 };
 
-const Tab1 = ({ children, tab, handleSetSelected, selected, chevronDown }) => {
+const Tab1 = ({ children, tab, handleSetSelected, selected }) => {
   return (
-    <button
+    <NavLink
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}
-      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors ${
+      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-lg transition-colors ${
         selected === tab
           ? " bg-primary text-neutral-100"
           : "text-neutral-400"
       }`}
     >
       <span>{children}</span>
-      {chevronDown ? (
-        <FiChevronDown
-          className={`transition-transform ${
-            selected === tab ? "rotate-180" : ""
-          }`}
-        />
-      ) : (
-        <NavLink>
-
-        </NavLink>
-      )}
-    </button>
+      <FiChevronDown
+        className={`transition-transform ${
+          selected === tab ? "rotate-180" : ""
+        }`}
+      />
+    </NavLink>
   );
 };
 
@@ -201,7 +216,6 @@ const Tabs = () => {
       {TABS.map((t) => {
         return (
           <Tab
-            key={t.id}
             selected={selected}
             handleSetSelected={handleSetSelected}
             tab={t.id}

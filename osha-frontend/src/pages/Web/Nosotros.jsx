@@ -32,7 +32,7 @@ function Nosotros(){
   )   
 }
 
-// Breadcrumbs para la cabecera de cada página 
+// Breadcrumbs para la cabecera de cada página
 function Breadcrumbs(){
   return(
     <div className="relative w-full" style={{height:150}}>
