@@ -41,6 +41,27 @@ pipeline {
                 }   
             }
         }
+        stage('Deploy') {
+            environment {
+                EEGSAC_SSH_FILE = credentials('eegsac_ssh_private_key')
+                SSH_CONF = "-oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no"
+            }
+            steps {
+                dir("dist") {
+                    sh "scp $SSH_CONF -i $EEGSAC_SSH_FILE $DEPLOY_FILE educa7ls@162.251.85.146:$EEGSAC_HOME"
 
+                    sh "ssh $SSH_CONF -i $EEGSAC_SSH_FILE educa7ls@162.251.85.146 \"rm -rf $DEPLOY_FOLDER/*\""
+                    
+                    sh "ssh $SSH_CONF -i $EEGSAC_SSH_FILE educa7ls@162.251.85.146 \"mv $EEGSAC_HOME/$DEPLOY_FILE $DEPLOY_FOLDER/\""
+                    // Unzip
+                    sh "ssh $SSH_CONF -i $EEGSAC_SSH_FILE educa7ls@162.251.85.146 \"cd $DEPLOY_FOLDER/ && unzip -o $DEPLOY_FILE\""
+                    sh "ssh $SSH_CONF -i $EEGSAC_SSH_FILE educa7ls@162.251.85.146 \"cd $DEPLOY_FOLDER/ && unzip -o src.zip\""
+
+                    // remove deploy.zip
+                    sh "ssh $SSH_CONF -i $EEGSAC_SSH_FILE educa7ls@162.251.85.146 \"rm $DEPLOY_FOLDER/$DEPLOY_FILE\""
+
+                }
+            }
+        }
     }
 }
