@@ -81,6 +81,8 @@ const Card = ({ icon, title, text, backgroundClass, borderClass, textColorClass 
 function WhoWeAre(){
   const { t, i18n } = useTranslation("nosotros");
   return(
+    <>
+    <Breadcrumbs/>
     <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
       {/* Who are we? */}
       <div className="w-full flex justify-center">
@@ -127,7 +129,7 @@ function WhoWeAre(){
           <p className="text-white text-center">Para más información, escríbenos a: info@osha.es</p>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

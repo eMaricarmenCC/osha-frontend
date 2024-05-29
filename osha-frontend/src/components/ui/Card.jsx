@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Line1, Line2 } from "./Line";
 
 function GlowingGradientBorder() {
   return (
@@ -128,12 +130,12 @@ function Section({}){
         </div>
       </div>      
     </div>
-  )
-}
+  );
+};
 
-function Section1({ imagePath, title, content, colorButton, hoverColorButton }) {
+function SectionImgContent({ imagePath, title, content, textButton, link }) {
   return (
-    <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+    <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
       {/* Image Column */}
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <img className="h-full w-full object-cover md:rounded-lg" src={imagePath} alt={title} />
@@ -142,19 +144,20 @@ function Section1({ imagePath, title, content, colorButton, hoverColorButton }) 
       <div className="max-w-lg bg-white md:rounded-lg md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
         {/* Text Wrapper */}
         <div className="flex flex-col p-10 md:px-15">
-          <h2 className="text-xl font-medium uppercase text-green-800 lg:text-2xl">{title}</h2>
-          <p className="mt-4">{content}</p>
+          <h2 className="text-xl font-bold uppercase text-primary lg:text-2xl">{title}</h2>
+          <Line1 bgColorClass={"bg-secondary"} />
+          <p className="mt-2">{content}</p>
           {/* Button Container */}
-          <div className="mt-5">
-            <a href="#" className={`inline-block w-full text-center text-lg font-medium text-gray-100
-                                    bg-${colorButton} rounded-lg border-solid border-2 py-2 px-10
-                                    hover:bg-${hoverColorButton} hover:shadow-md md:w-48`}>Read More</a>
+          <div className="mt-8">
+            <Link to={link} className="px-8 py-3 bg-gradient-to-b from-primary to-sky-800 text-white font-bold rounded-xl hover:shadow-lg">
+              {textButton}
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 const Card = ({icon, title, content, bgClass, textClass, bgCiClass }) => {
   return (
@@ -182,16 +185,6 @@ function Cardc({ colorBg, colorCi, icon, title, content }) {
   );
 }
 
-
-function Card2() {
-  return (
-    <div className="relative card">
-      <p className="heading">Popular this month</p>
-      <p>Powered By</p>
-      <p className="font-semibold text-purple-600">Uiverse</p>
-    </div>
-  );
-}
 
 function Card3() {
   return (
@@ -264,10 +257,10 @@ const CardFotTex = ({ title, text, textColorClass, img}) => {
 
 export { 
   HoverEffectCard,
-  GradientBorder, 
-  Section1, 
+  GradientBorder,
+  Section,
+  SectionImgContent, 
   Card,
-  Card2,
   Card3, 
   Form1,
   Categories, 

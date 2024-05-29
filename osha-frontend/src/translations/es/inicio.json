@@ -19,7 +19,11 @@
     },
     "methodology": {
         "title": "Metodología Educativa y de Acreditación",
-        "description": "Nuestro proceso de formación y acreditación a profesionales de la Seguridad esta basado a la metodología moderna."
+        "description": "Nuestro proceso de formación y acreditación a profesionales de la Seguridad esta basado a la metodología moderna.",
+        "learnMoreUs": "Conoce más sobre nosotros"
+    },
+    "accreditationDegrees":{
+        "title": "Grados de Acreditación profesional"
     },
     "accreditation": {
         "title": "Acreditación",

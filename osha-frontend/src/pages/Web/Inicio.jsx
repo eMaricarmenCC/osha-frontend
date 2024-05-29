@@ -6,9 +6,10 @@ import CountUp from 'react-countup';
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-import { HoverEffectCard, GlowingGradientBorder, GradientBorder, Card, Card2, Card3, Form1 } from '../../components/ui/Card';
+import { SectionImgContent, HoverEffectCard, GlowingGradientBorder, GradientBorder, Section, Card, Card3, Form1 } from '../../components/ui/Card';
 import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
 import { Categories } from '../../components/ui/Card';
+import { Linea, OneLine } from '../../components/ui/Line';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
@@ -27,18 +28,21 @@ import { FaHandshake } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { PiStudentBold, PiBooks } from "react-icons/pi";
 import { LuBookMarked } from "react-icons/lu";
+import { t } from 'i18next';
 
 
 function Inicio(){
   const { t, i18n } = useTranslation("inicio");
   return (
     <>
-    <Hero/>
-    <IntroCards/>
-    <Categorias/>
-    <Acreditacion/>
-    <AlianzaConvenio/>
-    <Galería/>
+      <Hero/>
+      <IntroCards/>
+      <MetodologiaEducativa/>
+      <Grados/>
+      <Categorias/>
+      <Acreditacion/>
+      <AlianzaConvenio/>
+      <Galería/>
     {/* <EJemplo/> */}
     </>
   );
@@ -93,9 +97,17 @@ const Hero = () => {
             <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-5 py-3 text-sm sm:text-lg text-center">
               La ingeniería, tecnología y ciencia junta!
             </span>
-            <h1 className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+            <motion.h1
+              initial={{y: "2rem", opacity:0}}
+              animate={{y: 0, opacity: 1}}
+              transition={{
+                duration: 2,
+                type: "spring"
+              }}
+              className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
+            >
               <b>Bienvenidos a <span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span></b>
-            </h1>
+            </motion.h1>
             <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-grisMedio">
               Somos quienes respaldamos tu futuro.
             </p>
@@ -111,8 +123,17 @@ const Hero = () => {
           </div>
           <CountUpHome/>
         </div>
-        <div className="flex flex-col items-center justify-end">
-          <img className="z-20 h-[380px] w-[280px] md:h-[500px] md:w-[360px] lg:h-[800px] lg:w-[600px]" src="/src/assets/img-inicio/hero/engineer.png" alt=""/>
+        <div className="z-20 flex flex-col items-center justify-end">
+          <motion.div
+            initial={{x: "7rem", opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              duration: 2,
+              type: "spring",
+            }}
+            className='image-container'>
+            <img className="h-[380px] w-[280px] md:h-[500px] md:w-[360px] lg:h-[800px] lg:w-[600px]" src="/src/assets/img-inicio/hero/engineer.png" alt=""/>
+          </motion.div>
         </div>
       </div>
       <div className="absolute inset-0 z-0">
@@ -192,91 +213,11 @@ const Hero1 = () => {
   );
 };
 
-const Hero2 = () => {
-  return(
-    <>
-    <section className='hero-wrapper'>
-        <div className="paddings inerWidth flexCenter hero-container">
-            {/* Left side */}
-            <div className='flezColStart hero-left'>
-              <div className="hero-tittle">
-                <div className="orange-circle" />
-                <motion.h1
-                  initial={{y: "2rem", opacity:0}}
-                  animate={{y: 0, opacity: 1}}
-                  transition={{
-                    duration: 2,
-                    type: "spring"
-                  }}
-                >
-                  Discover <br/>
-                  Most Suitable <br/>
-                  Property
-                </motion.h1>
-              </div>
-              
-              <div className='flexColStart hero-des'>
-                <span>Find a variety of properties that you very easilty</span>
-                <span>Forget all difficulties in finding a residence for you</span>
-              </div>
-
-              <div className='search-bar'>
-                <HiLocationMarker color="var(--blue)" size={25} />
-                <input type='text' />
-                <button className='button'>Search</button>
-              </div>
-
-              <div className='flexCenter stats'>
-                <div className="flexColCenter stat">
-                  <span>
-                    <CountUp start={8800} end={9000} duration={4} />
-                    <span>+</span>
-                  </span>
-                  <span className='secondaryText'>Premium Products</span>
-                </div>
-
-                <div className="flexColCenter stat">
-                  <span>
-                    <CountUp start={1950} end={2000} duration={4} />
-                    <span>+</span>
-                  </span>
-                  <span className='secondaryText'>Happy Customers</span>
-                </div>
-
-                <div className="flexColCenter stat">
-                  <span>
-                    <CountUp end={28} />
-                    <span>+</span>
-                  </span>
-                  <span className='secondaryText'>Award Winning</span>
-                </div>
-              </div>
-            </div>
-            {/* Right side */}
-            <div className='flexCenter hero-right'>
-              <motion.div
-                initial={{x: "7rem", opacity: 0}}
-                animate={{x: 0, opacity: 1}}
-                transition={{
-                  duration: 2,
-                  type: "spring",
-                }}
-                className='image-container'>
-                <img src='/src/assets/images/Sliders/slider1.jpg' alt="osha institute" />
-              </motion.div>
-            </div>
-        </div>
-    </section>
-    </>
-  );
-};
-
+/* CARDS DE INTRODUCCIÓN */
 const IntroCards = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
-    <>
-    {/* Cards */}
-    <section className="px-5 py-10 sm:px-20 bg-grisFondo">
+    <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10" style={{ backgroundImage: "url('/src/assets/papel/papel15.jpg')" }}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Card
           icon={<MdSchool color='white' style={{height:50, width:50}}/>}
@@ -312,10 +253,46 @@ const IntroCards = () => {
         />
       </div>
     </section>
-    </>
   );
 };
 
+/* METODOLOGÍA EDUCATIVA */
+const MetodologiaEducativa = () => {
+  const { t, i18n } = useTranslation("inicio");
+  return(
+    <section className="bg-grisFondo">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10">
+        <SectionImgContent
+          imagePath={"/src/assets/img-inicio/education.jpeg"}
+          title={t("methodology.title")}
+          content={t("methodology.description")}
+          textButton={t("methodology.learnMoreUs")}
+          link={"/nosotros"}
+        />
+      </div>
+    </section>
+  );
+};
+
+/* GRADOS */
+const Grados = () => {
+  const { t, i18n } = useTranslation("inicio");
+  return(
+    <section className="bg-white">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10">
+        <div className="flex flex-row">
+          <OneLine/>
+          <h1 className="text-center font-bold uppercase text-primary">{t("accreditationDegrees.title")}</h1>
+          <OneLine/>
+        </div>
+        <Linea/>
+
+      </div>
+    </section>
+  );
+};
+
+/* CATEGORÍAS */
 const Categorias = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
@@ -552,13 +529,5 @@ const EJemplo = () => {
   );
 };
 
-const Linea = () => {
-  return (
-    <div className="flex flex-col justify-center items-center mt-2">
-      <div className="bg-primary h-1 w-56 xs:w-80"></div>
-      <div className="bg-secondary h-1 w-28 xs:w-40 mt-2"></div>
-    </div>
-  );
-};
 
 export default Inicio

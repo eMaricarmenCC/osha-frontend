@@ -65,7 +65,7 @@ function Top(){
 
         {/* Aula virtual */}
         <span className="flex">
-          <Link to="/login" className="flex flex-row gap-2 py-1 px-3 rounded-lg border border-white justify-center items-center transform transition-transform hover:scale-110">
+          <Link to="https://testing.aulavirtual.osha.es/login" className="flex flex-row gap-2 py-1 px-3 rounded-lg border border-white justify-center items-center transform transition-transform hover:scale-110">
             <PiStudentFill color='white'/>
             <span className="text-white text-sm">{t("virtualClassroom")}</span>
           </Link>

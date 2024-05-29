@@ -19,7 +19,11 @@
     },
     "methodology": {
         "title": "Educational and Accreditation Methodology",
-        "description": "Our training and accreditation process for Security professionals is based on modern methodology."
+        "description": "Our training and accreditation process for Security professionals is based on modern methodology.",
+        "learnMoreUs": "Learn more about us"
+    },
+    "accreditationDegrees":{
+        "title": "Professional Accreditation Degrees"
     },
     "accreditation": {
         "title": "Accreditation",
