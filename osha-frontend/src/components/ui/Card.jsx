@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Line1, Line2 } from "./Line";
+import { CiBarcode } from "react-icons/ci";
+import { FaCentercode } from "react-icons/fa";
+
 
 function GlowingGradientBorder() {
   return (
@@ -135,24 +138,24 @@ function Section({}){
 
 function SectionImgContent({ imagePath, title, content, textButton, link }) {
   return (
-    <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
+    <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl md:pb-48 lg:pb-0">
       {/* Image Column */}
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <img className="h-full w-full object-cover md:rounded-lg" src={imagePath} alt={title} />
       </div>
       {/* Text Column */}
-      <div className="max-w-lg bg-white md:rounded-lg md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+      <div className="max-w-lg bg-white md:rounded-lg md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-22 xl:ml-12">
         {/* Text Wrapper */}
         <div className="flex flex-col p-10 md:px-15">
           <h2 className="text-xl font-bold uppercase text-primary lg:text-2xl">{title}</h2>
           <Line1 bgColorClass={"bg-secondary"} />
           <p className="mt-2">{content}</p>
           {/* Button Container */}
-          <div className="mt-8">
-            <Link to={link} className="px-8 py-3 bg-gradient-to-b from-primary to-sky-800 text-white font-bold rounded-xl hover:shadow-lg">
+          <button className="flex mt-5">
+            <Link to={link} className="px-8 py-3 bg-gradient-to-b from-azulMedio to-primary text-white font-semibold rounded-xl hover:shadow-lg transform transition-transform hover:scale-110">
               {textButton}
             </Link>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -166,7 +169,7 @@ const Card = ({icon, title, content, bgClass, textClass, bgCiClass }) => {
           {icon}
         </div>
       <div className={`rounded-xl ${bgClass} pt-14 px-6 pb-6 text-center shadow-xl`}>
-        <h1 className={`text-darken mb-3 ${textClass} text-lg font-medium lg:px-14`}><b>{title}</b></h1>
+        <h1 className={`text-darken mb-3 ${textClass} text-lg font-medium`}><b>{title}</b></h1>
         <p className="text-gray-500">{content}</p>
       </div>
     </div>
@@ -203,16 +206,57 @@ function Card3() {
   );
 }
 
-function CardGrado() {
+const CardGrado = ({title, code, label, src}) => {
+  return(
+    <div className="group cursor-pointer overflow-hidden shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg bg-gray-100">
+      <span className="absolute top-50 z-0 h-24 w-24 rounded-full bg-primary transition-all duration-300 group-hover:scale-[12]"></span>
+      <div className="relative mx-auto">
+        <div className="relative">
+          <img className="w-full h-full object-cover" src={src} alt="grado" />
+          <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+        </div>
+        <div className="px-5 pb-5">
+          <span className="relative grid h-24 w-24 -mt-14 p-2 border-primary border-8 place-items-center rounded-full bg-white transition-all duration-300 group-hover:bg-grisFondo">
+            <img src="/src/assets/logo/logoOsha.png" alt="grado"/>
+          </span>
+          <div
+            className="mt-3 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90"
+          >
+            <h3 className="text-primary text-center font-bold text-lg md:text-xl transition-all duration-300 group-hover:text-white">
+              {title}
+            </h3>
+            <div className="mt-3 flex flex-row items-center justify-center gap-3">
+              <div className="flex flex-row items-center gap-1">
+                <CiBarcode style={{color:"var(--azulMedio)", height:30, width:30}}/>
+                <span> Código: {code}</span>
+              </div>
+              <div className="flex flex-row items-center gap-1">
+                <FaCentercode style={{color:"var(--azulMedio)", height:25, width:25}}/>
+                <span>{label}</span>
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 flex justify-end">
+            <Link to="#" className="border-azulMedio border-2 p-2 rounded-lg text-azulMedio transition-all duration-300 group-hover:text-white group-hover:border-white">
+              Ver más &rarr;
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CardGrado1 = ({key, title, code, label, src}) => {
   return(
     <div className="rounded-lg overflow-hidden shadow-lg bg-grisClaro">
       <div className="px-6 py-4 flex flex-col gap-4 bg-azulMedio">
         <p className="text-white text-center font-bold text-xl md:text-2xl" data-translatable>
-          Train the Trainer Osha</p>
+          {title}</p>
       </div>
       <div className="relative">
         <img className="w-full"
-            src="src/assets/images/grados/TrainTrainer.jpg"
+            src={src}
             alt="grado"/>
         <div
             className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -220,15 +264,15 @@ function CardGrado() {
       </div>
       <div className="px-6 py-4 flex flex-col lg:flex-row gap-4 items-center bg-grisClaro">
         <div className="w-1/2 text-center font-bold">
-          <p className="text-md">CÓDIGO: 1001</p>
+          <p className="text-md">Código: {code}</p>
         </div>                        
         <div className="w-1/2 text-center">
-          <h4 className="text-primary text-center font-bold">TT-OSHA</h4>
+          <h4 className="text-primary text-center font-bold">{label}</h4>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Line = () => {
   return (
@@ -265,5 +309,6 @@ export {
   Form1,
   Categories, 
   GlowingGradientBorder, 
-  CardFotTex
+  CardFotTex,
+  CardGrado
 };

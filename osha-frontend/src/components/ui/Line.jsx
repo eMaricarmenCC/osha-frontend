@@ -1,14 +1,14 @@
 const OneLine = () => {
   return(
-    <div className="bg-primary h-2 w-auto"></div>
+    <div className="bg-secondary h-1 w-20"></div>
   );
 };
 
 const Linea = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-2">
-      <div className="bg-primary h-1 w-56 xs:w-80 lg:w-full"></div>
-      <div className="bg-secondary h-1 w-28 xs:w-40 mt-2 lg:w-200"></div>
+    <div className="flex flex-col justify-center items-center mt-2 gap-2">
+      <div className="bg-primary p-1 w-[100%] sm:w-[80%] lg:w-[60%] rounded-full"></div>
+      <div className="bg-secondary p-1 w-[70%] sm:w-[50%] lg:w-[40%] rounded-full"></div>
     </div>
   );
 };
@@ -28,6 +28,16 @@ const Line1 = ({bgColorClass}) => {
       <div className={`${bgColorClass} h-2 w-6 lg:w-10`}></div>
       <div className="bg-white h-1 w-3"></div>
       <div className={`${bgColorClass} h-2 w-24`}></div>
+    </div>
+  );
+};
+
+const Title = ({}) => {
+  return(
+    <div className="mt-2 rounded-full border-gradient border-8 border-primary p-2">
+      <div className="rounded-full border-4 border-primary p-2">
+        <h1 className="text-center font-bold uppercase text-secondary w-auto text-xl lg:text-3xl">{t("accreditationDegrees.title")}</h1>
+      </div>
     </div>
   );
 };

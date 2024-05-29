@@ -47,7 +47,7 @@ const ShuffleGrid = ({ images, nColClass, gapClass}) => {
   };
 
   return (
-    <div className={`grid ${nColClass} grid-rows-auto h-[450px] ${gapClass}`}>
+    <div className={`grid grid-cols-2 sm:grid-cols-3 md:${nColClass} grid-rows-auto h-[450px] ${gapClass}`}>
       {squares.map((sq) => sq)}
     </div>
   );

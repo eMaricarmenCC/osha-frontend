@@ -5,11 +5,12 @@ import { useTranslation } from "react-i18next";
 import CountUp from 'react-countup';
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Link } from "react-router-dom";
 
-import { SectionImgContent, HoverEffectCard, GlowingGradientBorder, GradientBorder, Section, Card, Card3, Form1 } from '../../components/ui/Card';
+import { SectionImgContent, CardGrado, HoverEffectCard, GlowingGradientBorder, GradientBorder, Section, Card, Card3, Form1 } from '../../components/ui/Card';
 import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
 import { Categories } from '../../components/ui/Card';
-import { Linea, OneLine } from '../../components/ui/Line';
+import { Linea, Line1, OneLine } from '../../components/ui/Line';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
@@ -32,25 +33,25 @@ import { t } from 'i18next';
 
 
 function Inicio(){
-  const { t, i18n } = useTranslation("inicio");
   return (
-    <>
+    <section className="">
       <Hero/>
       <IntroCards/>
       <MetodologiaEducativa/>
       <Grados/>
-      <Categorias/>
       <Acreditacion/>
+      <Categorias/>
       <AlianzaConvenio/>
       <Galería/>
     {/* <EJemplo/> */}
-    </>
+    </section>
   );
 };
 
 
 /* HERO INICIO */
 const Hero = () => {
+  const { t, i18n } = useTranslation("labels");
   const COLORS_TOP = ["#5900FF", "#006FFF", "#00E8FF", "#1DD7DE", "#0082C3"];
   const color = useMotionValue(COLORS_TOP[0]);
   useEffect(() => {
@@ -61,7 +62,7 @@ const Hero = () => {
       repeatType: "mirror",
     });
   }, []);
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(110% 110% at 50% 0%, #020617 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   const squareDataGalery = [
@@ -85,17 +86,10 @@ const Hero = () => {
       className="relative flex flex-col min-h-[83vh] w-full place-content-center overflow-hidden bg-gray-950 text-gray-200 items-center"
     >
       <div className="flex flex-col lg:flex-row max-w-7xl items-center justify-center gap-5">
-        {/*<div className="pr-10 min-w-[300px] max-w-md items-center justify-center gap-5">
-          <ShuffleGrid
-            images={squareDataGalery}
-            nColClass="grid-cols-1"
-            gapClass="gap-6"
-          />
-        </div>*/}
         <div className="relative z-10 flex flex-col items-center justify-center pt-10 px-5 lg:p-0">
           <div className="flex flex-col items-center">
             <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-5 py-3 text-sm sm:text-lg text-center">
-              La ingeniería, tecnología y ciencia junta!
+              {t("hero.subtitle1")}
             </span>
             <motion.h1
               initial={{y: "2rem", opacity:0}}
@@ -104,12 +98,12 @@ const Hero = () => {
                 duration: 2,
                 type: "spring"
               }}
-              className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
+              className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
             >
-              <b>Bienvenidos a <span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span></b>
+              Bienvenidos a<span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span>
             </motion.h1>
             <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-grisMedio">
-              Somos quienes respaldamos tu futuro.
+              {t("hero.subtitle2")}
             </p>
             <motion.button
               style={{ border, boxShadow, }}
@@ -278,15 +272,155 @@ const MetodologiaEducativa = () => {
 const Grados = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
-    <section className="bg-white">
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10">
-        <div className="flex flex-row">
-          <OneLine/>
-          <h1 className="text-center font-bold uppercase text-primary">{t("accreditationDegrees.title")}</h1>
-          <OneLine/>
-        </div>
+    <section className="bg-grisFondo" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
+        <h1 className="text-center font-bold uppercase text-white w-auto text-2xl lg:text-3xl">
+          {t("accreditationDegrees.title")}
+        </h1>
         <Linea/>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+          { gradosData.map(grado => (
+            <CardGrado
+              key={grado.id}
+              title={grado.title}
+              code={grado.code}
+              label={grado.label}
+              src={grado.src}
+            />
+          ))
+          }
+        </div>
+      </div>
+    </section>
+  );
+};
 
+const gradosData = [
+  {
+    id: 1,
+    title: "Train the Trainer Osha",
+    code: 1001,
+    label: "TT-OSHA",
+    src: "/src/assets/img-grados/TrainTrainer.jpg"
+  },
+  {
+    id: 2,
+    title: "Trainer Hazmat",
+    code: 1010,
+    label: "TH-OSHA",
+    src: "/src/assets/img-grados/HazmatTrainer.jpg"
+  },
+  {
+    id: 3,
+    title: "Confined Space Trainer",
+    code: 1015,
+    label: "CST-OSHA",
+    src: "/src/assets/img-grados/ConfinedSpaceTraining.jpg"
+  },
+  {
+    id: 4,
+    title: "Trainer de Seguridad y Salud Ocupacional",
+    code: 1016,
+    label: "TSSO-OSHA",
+    src: "/src/assets/img-grados/OccupationalHealthSafetyTrainer.jpg"
+  },
+  {
+    id: 5,
+    title: "Trainer Trabajos en Altura",
+    code: 1019,
+    label: "TTA-OSHA",
+    src: "/src/assets/img-grados/TrainerTrabajoEnAltura.jpg"
+  },
+  {
+    id: 6,
+    title: "Trainer de Trabajos Críticos",
+    code: 1002,
+    label: "TCW-OSHA",
+    src: "/src/assets/img-grados/CriticalWorkTrainer.jpg"
+  },
+  {
+    id: 7,
+    title: "Gerencia de la Seguridad y Salud Laboral",
+    code: 1051,
+    label: "GSSL-OSHA",
+    src: "/src/assets/img-grados/GerenciaSeguridadSaludLaboral.jpg"
+  },
+  {
+    id: 8,
+    title: "Trainer de Seguridad y Salud en la trabajo en la Industria de la Construcción",
+    code: 1060,
+    label: "GSSTIC-OSHA",
+    src: "/src/assets/img-grados/OccupationalHealthSafetyManagerConstructionIndustry.jpg"
+  },
+  {
+    id: 9,
+    title: "Director de Prevención de Riesgos Laborales",
+    code: 1071,
+    label: "DPRL-OSHA",
+    src: "/src/assets/img-grados/DirectorOccupationalRiskPrevention.jpg"
+  },
+  {
+    id: 10,
+    title: "Especialista de Seguridad y Salud en el Trabajo",
+    code: 2010,
+    label: "ESST-OSHA",
+    src: "/src/assets/img-grados/OccupationalHealthSafetySpecialis.jpg"
+  },
+  {
+    id: 11,
+    title: "Especialista de Seguridad y Salud Ocupacional",
+    code: 2020,
+    label: "ESSO-OSHA",
+    src: "/src/assets/img-grados/OccupationalHealthSafetySpecialist.jpg"
+  },
+  {
+    id: 12,
+    title: "Especialista en Prevención de Riesgos Laborales",
+    code: 2030,
+    label: "EPRL-OSHA",
+    src: "/src/assets/img-grados/OccupationalRiskPreventionSpecialist.jpg"
+  },
+  {
+    id: 13,
+    title: "Supervisor de Seguridad y Salud en el Trabajo",
+    code: 2022,
+    label: "SSST-OSHA",
+    src: "/src/assets/img-grados/SafetyHealthWorkTrainer.jpg"
+  },
+  {
+    id: 14,
+    title: "Técnico en Seguridad y Salud Laboral en la Industria de la Construcción",
+    code: 2040,
+    label: "TSSLIC-OSHA",
+    src: "/src/assets/img-grados/SeguridadSaludTrabajo.jpg"
+  },
+  {
+    id: 15,
+    title: "Hazmat Nivel IV Especialista",
+    code: 2056,
+    label: "HIV-OSHA",
+    src: "/src/assets/img-grados/Hazmat4.jpg"
+  },
+];
+
+/* ACREDITACIÓN */
+const Acreditacion = () => {
+  const { t, i18n } = useTranslation("inicio");
+  return(
+    <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
+      <div className="flex flex-col md:flex-row gap-5 items-center">
+        <div className="">
+          <img src="/src/assets/img-inicio/accreditation.png" alt="Educacion acreditada" className="rounded-lg h-full"/>
+        </div>
+        <div className="px-5 py-10 border-secondary border-r-4 border-b-4">
+          <h2 className="text-primary uppercase"><b>{t("accreditation.title")}</b></h2>
+          <p className="mt-3">{t("accreditation.description")}</p>
+          <button className="mt-5">
+            <Link to="" className="flex rounded-lg py-3 px-5 text-white font-semibold bg-gradient-to-b from-azulMedio to-primary hover:bg-azulOscuro transform transition-transform hover:scale-110 text-white">
+              Certificate
+            </Link>
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -296,12 +430,10 @@ const Grados = () => {
 const Categorias = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
-    <>
-    {/* Categorías */}
     <section className="bg-grisFondo">
-      <div className="mt-10 px-5 py-10 sm:px-20">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <div className="">
-          <h2 className="text-center uppercase"><b>Categorías</b></h2>
+          <h2 className="text-center text-gray-600 font-bold uppercase">Categorías</h2>
           <Linea/>
         </div>
         <div className="mt-10 grid grid-cols-1 grid-rows-auto gap-4 md:grid-cols-2 md:grid-rows lg:grid-cols-3">
@@ -356,38 +488,15 @@ const Categorias = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };
 
-const Acreditacion = () => {
-  const { t, i18n } = useTranslation("inicio");
-  return(
-    <>
-    {/* Acreditacion */}
-    <section className="mt-10 px-5 py-10 sm:px-20">
-      <div className="flex flex-col md:flex-row gap-5 items-center">
-        <div className="">
-          <img src="/src/assets/img-alianzas/ansi.jpg" alt="" style={{width:500}} className="rounded-lg"/>
-        </div>
-        <div className="p-5 border-secondary border-r-4 border-b-4">
-          <h3 className="text-primary uppercase"><b>{t("accreditation.title")}</b></h3>
-          <p className="mt-3">{t("accreditation.description")}</p>
-          <button className="mt-3 bg-primary rounded-lg p-2 text-white">Certificate</button>
-        </div>
-      </div>
-    </section>
-    </>
-  );
-};
-
+/* ALIANZAS Y CONVENIOS */
 const AlianzaConvenio = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
-    <>
-    {/* Alianzas y convenios */}
     <section className="" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
-      <div className="mt-10 px-5 py-10 sm:px-20">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <h2 className="text-white text-center uppercase"><b>Nuestras alianzas y convenios</b></h2>
         <Linea/>
         <Swiper
@@ -455,10 +564,11 @@ const AlianzaConvenio = () => {
           </div>
         </Swiper>
       </div>
-    </section></>
+    </section>
   );
 };
 
+/* GALERÍA */
 const Galería = () => {
   const { t, i18n } = useTranslation("inicio");
   const squareDataGalery = [
@@ -496,8 +606,6 @@ const Galería = () => {
     },
   ];
   return (
-    <>
-    {/* Galería */}
     <section>
       <div className="px-5 py-10 sm:px-20">
         <h2 className="text-center text-primary uppercase"><b>Galería</b></h2>
@@ -511,7 +619,6 @@ const Galería = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };
 

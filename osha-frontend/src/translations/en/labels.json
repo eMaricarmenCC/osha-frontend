@@ -18,5 +18,20 @@
     "language": "Language",
 
     "contactUs": "Contact Us",
-    "learnMoreUs": "Conoce más sobre nosotros"
+    "learnMoreUs": "Conoce más sobre nosotros",
+
+    "hero": {
+        "title": [
+            "Bienvenido a",
+            "OSHA",
+            "Institute"
+        ],
+        "subtitle1": "Engineering, technology and science together!",
+        "subtitle2": "We are the ones who support your future."
+    },
+    "countup": [
+        "Students",
+        "Programs",
+        "Courses"
+    ]
 }
