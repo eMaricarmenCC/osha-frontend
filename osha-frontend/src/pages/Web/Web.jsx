@@ -1,15 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
 import Top from '../../components/Top';
 import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Inicio from '../Web/Inicio';
-import { Nosotros, WhoWeAre, LegalNature, InternationalCooperation } from '../Web/Nosotros';
-import Estandares from '../Web/Estandares';
-import Acreditacion from '../Web/Acreditacion';
-import Corporativos from '../Web/Corporativos';
-import { Grados } from '../Web/Grados';
 import Navbar from '../../components/Navbar/Navbar';
-import Navbar2 from '../../components/Navbar/Navbar2';
+import Footer from '../../components/Footer';
+
+import Inicio from '../Web/Inicio';
+import { WhoWeAre, LegalNature, InternationalCooperation, PrivacyAndSecurityDeclaration } from '../Web/Nosotros';
+import Estandares from '../Web/Estandares';
+import { Grados } from '../Web/Grados';
+import { Certex } from '../Web/Certex';
+import { Cursos, CursosGratuitos } from '../Web/Cursos';
+import { Membresia } from '../Web/Membresia';
+import { Acreditacion, AcreditacionAE} from '../Web/Acreditacion';
+import { Corporativos } from '../Web/Corporativos';
+import { Sedes } from '../Web/Sedes';
 import { Contactos } from './Contactos';
 
 
@@ -20,40 +24,23 @@ function Web() {
       <header className="">
         <Top/>
         <Navbar/>
-
       </header>
-      
-      {/*<Top />*/}
-      {/*<section
-        className="h-screen bg-primary bg-cover
-        font-[Poppins] md:bg-top bg-center"
-      >
-        <Navbar />
-        <div className="flex flex-col justify-center text-center items-center h-3/4">
-          <h2 className="text-white text-2xl font-medium ">Fashion Tips</h2>
-          <h1 className="md:text-5xl text-3xl text-white font-semibold py-5">
-            Items every woman should have
-          </h1>
-          <div className="text-xl">
-            
-          </div>
-        </div>
-      </section>*/}
-      {/*<Top/>
-      <Header />
-      <Navbarr/>*/}
       <Routes>
         <Route path="/" element={<Inicio/>} />
-        <Route path="/us" element={<Nosotros/>} />
         <Route path="/nosotros" element={<WhoWeAre/>} />
         <Route path="/nuestra-identidad" element={<LegalNature/>} />
         <Route path="/cooperacion-internacional" element={<InternationalCooperation/>} />
-        <Route path="/declaracion-privacidad" element={<Nosotros/>} />
+        <Route path="/declaracion-privacidad" element={<PrivacyAndSecurityDeclaration/>} />
         <Route path="/estandares-osha" element={<Estandares/>} />
-        <Route path="/standards" element={<Estandares/>} />
-        <Route path="/accreditation" element={<Acreditacion/>} />
-        <Route path="/degrees" element={<Grados/>} />
+        <Route path="/acreditaCion" element={<Acreditacion/>} />
+        <Route path="/acreditaCion-ae" element={<AcreditacionAE/>} />
+        <Route path="/grados" element={<Grados/>} />
+        <Route path="/certex" element={<Certex/>} />
+        <Route path="/cursos" element={<Cursos/>} />
+        <Route path="/cursos-gratuitos" element={<CursosGratuitos/>} />
+        <Route path="/membresia" element={<Membresia/>} />
         <Route path='/corporativos' element={<Corporativos/>} />
+        <Route path='/sedes' element={<Sedes/>} />
         <Route path='/contactanos' element={<Contactos/>} />
       </Routes>
       <Footer/>

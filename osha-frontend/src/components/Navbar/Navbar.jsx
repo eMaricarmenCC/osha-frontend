@@ -88,7 +88,7 @@ const NavbarMd = () => {
       id:3,
       name: t("academy"),
       submenu: true,
-      Component: Blog,
+      Component: Academy,
       sublinks:  [
         { name: t("degrees"), link: "/grados" },
         { name: t("courses"), link: "/cursos" },
@@ -343,8 +343,6 @@ const Nub = ({ selected }) => {
 };
 
 
-
-
 const Nosotross = () => {
   return (
     <div className="flex flex-col gap-4">
@@ -354,14 +352,40 @@ const Nosotross = () => {
       <NavLink to="/nuestra-identidad" className="block text-sm text-neutral-400">
         Nuestra identidad
       </NavLink>
-      <NavLink to="/nosotros" className="mb-1 block text-sm text-neutral-400">
+      <NavLink to="/cooperacion-internacional" className="mb-1 block text-sm text-neutral-400">
         Cooperación internacional
       </NavLink>
-      <NavLink to="/nosotros" className="mb-1 block text-sm text-neutral-400">
+      <NavLink to="/declaracion-privacidad" className="mb-1 block text-sm text-neutral-400">
         Declaración de privacidad y seguridad
       </NavLink>
-      <NavLink to="/nosotros" className="mb-1 block text-sm text-neutral-400">
-        Tax/VAT
+      <NavLink to="/estandares-osha" className="mb-1 block text-sm text-neutral-400">
+        Estándares Osha
+      </NavLink>
+    </div>
+  );
+};
+
+
+const Academy = () => {
+  return (
+    <div className="flex flex-col gap-4">
+      <NavLink to="/grados" className="mb-1 block text-sm text-neutral-400">
+        Grados
+      </NavLink>
+      <NavLink to="/certex" className="block text-sm text-neutral-400">
+        Certex
+      </NavLink>
+      <NavLink to="/cursos" className="block text-sm text-neutral-400">
+        Cursos
+      </NavLink>
+      <NavLink to="/cursos-gratuitos" className="mb-1 block text-sm text-neutral-400">
+        Cursos gratuitos
+      </NavLink>
+      <NavLink to="/membresia" className="mb-1 block text-sm text-neutral-400">
+        Membresía
+      </NavLink>
+      <NavLink to="/corporativos" className="mb-1 block text-sm text-neutral-400">
+        Corporativos
       </NavLink>
     </div>
   );
@@ -371,34 +395,27 @@ const Nosotross = () => {
 const Acreditacion = () => {
   return (
     <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <a
-        href="#"
+      <NavLink
+        to="acreditacion"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiHome className="mb-2 text-xl text-indigo-300" />
         <span className="text-xs">Acreditación</span>
-      </a>
-      <a
-        href="#"
+      </NavLink>
+      <NavLink
+        to="acreditacion-ae"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
         <span className="text-xs">ACreditación AE</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Areas</span>
-      </a>
-      <a
-        href="#"
+      </NavLink>
+      <NavLink
+        to="sedes"
         className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
       >
         <FiPieChart className="mb-2 text-xl text-indigo-300" />
         <span className="text-xs">Sedes</span>
-      </a>
+      </NavLink>
     </div>
   );
 };
@@ -537,7 +554,7 @@ const TABS = [
   {
     title: "Formación Profesional",
     menu: true,
-    Component: Blog,
+    Component: Academy,
     link: '/degrees',
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));

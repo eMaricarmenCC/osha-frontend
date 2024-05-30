@@ -5,6 +5,20 @@ import { CiBarcode } from "react-icons/ci";
 import { FaCentercode } from "react-icons/fa";
 
 
+const CardImgText = ({ icon, title, text, backgroundClass, borderClass, textColorClass }) => {
+  return (
+    <div className={`p-5 ${backgroundClass} border-l-8 ${borderClass} rounded-r-lg shadow-lg flex items-center gap-3`}>
+      <div>
+        {icon}
+      </div>
+      <div>
+        <h4 className={`${textColorClass}`}><b>{title}</b></h4>
+        <p className="mt-2 text-xs">{text}</p>
+      </div>
+    </div>
+  );
+};
+
 function GlowingGradientBorder() {
   return (
     <div className="max-w-7xl mx-auto">
@@ -20,8 +34,8 @@ function GlowingGradientBorder() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 function GradientBorder() {
   return (
@@ -247,42 +261,6 @@ const CardGrado = ({title, code, label, src}) => {
   );
 };
 
-const CardGrado1 = ({key, title, code, label, src}) => {
-  return(
-    <div className="rounded-lg overflow-hidden shadow-lg bg-grisClaro">
-      <div className="px-6 py-4 flex flex-col gap-4 bg-azulMedio">
-        <p className="text-white text-center font-bold text-xl md:text-2xl" data-translatable>
-          {title}</p>
-      </div>
-      <div className="relative">
-        <img className="w-full"
-            src={src}
-            alt="grado"/>
-        <div
-            className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-        </div>
-      </div>
-      <div className="px-6 py-4 flex flex-col lg:flex-row gap-4 items-center bg-grisClaro">
-        <div className="w-1/2 text-center font-bold">
-          <p className="text-md">Código: {code}</p>
-        </div>                        
-        <div className="w-1/2 text-center">
-          <h4 className="text-primary text-center font-bold">{label}</h4>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Line = () => {
-  return (
-    <div className="flex">
-      <div className="bg-secondary h-1 w-5"></div>
-      <div className="bg-white h-1 w-2"></div>
-      <div className="bg-secondary h-1 w-20"></div>
-    </div>
-  );
-};
 
 const CardFotTex = ({ title, text, textColorClass, img}) => {
   return(
@@ -299,7 +277,8 @@ const CardFotTex = ({ title, text, textColorClass, img}) => {
 
 
 
-export { 
+export {
+  CardImgText,
   HoverEffectCard,
   GradientBorder,
   Section,

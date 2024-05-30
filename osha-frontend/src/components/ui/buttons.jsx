@@ -1,11 +1,15 @@
+import React from 'react';
+import { Link } from "react-router-dom";
 
-function button1() {
+const buttonPrimary = ({text, link}) => {
   return (
-    <button>
-        Texto
+    <button className="mt-5">
+      <Link to={link} className="flex rounded-lg py-3 px-5 text-white font-semibold bg-gradient-to-b from-azulMedio to-primary hover:bg-azulOscuro transform transition-transform hover:scale-110 text-white">
+        {text}
+      </Link>
     </button>
-  )
-}
+  );
+};
 
 function imput() {
   return (
@@ -20,3 +24,5 @@ function imput() {
 
   )
 }
+
+export { buttonPrimary }
