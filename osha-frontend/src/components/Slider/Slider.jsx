@@ -10,7 +10,7 @@ const SliderImg = ({imgs}) => {
         <Swiper
           modules={[Pagination, Autoplay]}
           autoplay={{
-            delay: 3000,
+            delay: 1500,
             disableOnInteraction: false
           }}
           pagination={{
@@ -60,7 +60,7 @@ const SliderImg = ({imgs}) => {
 const Card = ({ img }) => {
   return (
     <div className="flex flex-col items-center bg-white rounded-lg shadow-lg">
-      <img src={img} className=""/>
+      <img src={img} className="w-full h-full object-contain object-center"/>
     </div>
   );
 };

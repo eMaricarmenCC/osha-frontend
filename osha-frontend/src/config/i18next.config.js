@@ -29,6 +29,8 @@ import representantes_es from "../translations/es/regulaciones.json";
 import representantes_en from "../translations/en/regulaciones.json";
 import sedes_es from "../translations/es/sedes.json";
 import sedes_en from "../translations/en/sedes.json";
+import politicapago_es from "../translations/es/politicapago.json";
+import politicapago_en from "../translations/en/politicapago.json";
 
 
 i18n.use(Backend).use(initReactI18next).init({
@@ -52,6 +54,7 @@ i18n.use(Backend).use(initReactI18next).init({
             regulaciones: regulaciones_es,
             representantes: representantes_es,
             sedes: sedes_es,
+            politicapago: politicapago_es,
         },
         en: {
             labels: labels_en,
@@ -69,6 +72,7 @@ i18n.use(Backend).use(initReactI18next).init({
             regulaciones: regulaciones_en,
             representantes: representantes_en,
             sedes: sedes_en,
+            politicapago: politicapago_en,
         }
     }
 });

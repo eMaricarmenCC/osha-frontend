@@ -15,7 +15,7 @@ function Estandares(){
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
         <div className="bg-white rounded-lg shadow-lg p-5">
           <h3 className="text-primary"><b>{t("title")}</b></h3>
           <Line1 bgColorClass={"bg-secondary"}/>

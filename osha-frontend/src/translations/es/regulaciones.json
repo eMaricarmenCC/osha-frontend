@@ -102,47 +102,6 @@
             "En caso de pérdida de certificado o credenciales el alumno debe realizar un pago de $ 150 dólares para la renovación o duplicado si lo desea en físico, en caso de desear solo en digital tendrá un costo de $ 80 dólares."
         ]
     },
-    "registrationPaymentCancellationPolicy": {
-        "registrationPaymentCancellationPolicy": {
-            "title": "Política de pago y cancelación de matrículas",
-            "description": "El importe de la matrícula es aplicado por cada programa independientemente y por persona que incluye:",
-            "list": [
-                "Programa de formación Profesional y grados en modalidad On-line (no sincrónica).",
-                "Código numérico para postfrma.",
-                "Codigo QR en los credenciales para visibilidad de datos personales en nuestro sistema a nivel mundial.",
-                "Certificado por cada programa o grado realizado.",
-                "Envío de los credenciales hasta el país y ciudad del Participante."
-            ],
-            "p": [
-                "El pago en concepto de grado, especialidad o programas de especialización profesional no será deducible del total del precio del programa y tendrá una validez de 6 meses contados desde la fecha de realización del mismo.",
-                "Los participantes que estén inscritos en varios programas deben cancelar el total del mismo para acceder al programa, no se entregará accesos al programa mientras tanto no esté cancelado al 100%."
-            ]
-        },
-        "paymentCancellationPolicy": {
-            "title": "Política de pagos y cancelaciones",
-            "description": "El pago de los programas y servicios contratados deberá efectuarse a través de los medios aceptados (cuenta bancaria / PayPal) y en los plazos establecidos por la Occupational Safety Health Administration \"Osha\"."
-        },
-        "In-personCoursesOtherServices": {
-            "title": "Cursos presenciales y otros servicios",
-            "description": "El pago del importe total (Inscripción, Curso y Alojamiento en su caso) ha de efectuarse al menos 2 semanas antes del inicio del curso. Para obtener el derecho a la reserva de plaza, se debe cancelar al 100% el precio total del curso y del alojamiento en su caso, deberán abonarse al menos 4 semanas antes del inicio del curso, excepto en los casos de solicitudes posteriores al fin de este espacio de tiempo y siempre que el calendario escolar lo permita (en estos casos, el plazo para el pago de la reserva se computará según el caso particular y se informará del mismo al alumno)."
-        },
-        "cancellationServiceReturns": {
-            "title": "Cancelación del Servicio y/o Devoluciones",
-            "description": "Para cancelar un servicio y requerir la devolución del total de su inversión aplicará en los siguientes casos.",
-            "hospitalizationMedicalPrescription": {
-                "title": "Hospitalización o prescripción médica.",
-                "description": "(Se debe justificar con 10 días una vez emitida la prescripción médica). Remitirá este justificante en el tiempo y forma marcados anteriormente y a la misma dirección de correo electrónico con el que procedió la inscripción, con la misma condición de efectividad tras el acuse de recibo enviado por la Occupational Safety Health Administration \"Osha\"."
-            },
-            "dueToForceMajeure": {
-                "title": "Por causas de fuerza mayor.",
-                "description": [
-                    "En el caso de que la organización tuviera que proceder a la cancelación de un grado/programa de un alumno inividual o grupo por causas de fuerza mayor se prodederá a la devolución del total de lo pagado y no se imputarán gastos de gestión ni costes financieros al / los alumnos.",
-                    "Entre los casos de fuerza mayor, estarían: el menoscabo de la infraestructura (inundaciones, incendios u otro tipo de accidentes o desastres naturales) perdidas de información de nuestra aula virtual o mantenimiento de la plataforma virtual que tenga como resultado la pérdida total de la información, la declaración de quiebra de la organización, la imposibilidad de ofrecer recursos adecuados, etc.",
-                    "Como alternativa a la devolución y siempre que el caso lo permita, el estudiante podrá mantener su reserva con la Occupational Safety Health Administration \"Osha\" durante el tiempo pactado por las partes."
-                ]
-            }
-        }
-    },
 
 
     "transparency": {

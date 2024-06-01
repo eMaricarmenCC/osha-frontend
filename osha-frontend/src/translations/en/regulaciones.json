@@ -102,48 +102,6 @@
             "In case of loss of certificate or credentials, the student must make a payment of $150 dollars for the renewal or duplicate if they want it physically, if they want it only digitally it will cost $80 dollars."
         ]
     },
-    "registrationPaymentCancellationPolicy": {
-        "registrationPaymentCancellationPolicy": {
-            "title": "Registration payment and cancellation policy",
-            "description": "The tuition fee is applied by each program independently and per person that includes:",
-            "list": [
-                "Professional training program and degrees in online mode (non-synchronous).",
-                "Numeric code for postsignature.",
-                "QR code on credentials for visibility of personal data in our system worldwide.",
-                "Certificate for each program or degree completed.",
-                "Sending the credentials to the country and city of the Participant."
-            ],
-            "p": [
-                "The payment for degree, specialty or professional specialization programs will not be deductible from the total price of the program and will be valid for 6 months from the date of completion of the program.",
-                "Participants who are enrolled in several programs must cancel the entire program to access the program; access to the program will not be granted until it is 100% cancelled."
-            ]
-        },
-        "paymentCancellationPolicy": {
-            "title": "Payment and cancellation policy",
-            "description": "Payment for the contracted programs and services must be made through accepted means (bank account / PayPal) and within the deadlines established by the Occupational Safety Health Administration \"Osha\"."
-        },
-        "In-personCoursesOtherServices": {
-            "title": "In-person courses and other services",
-            "description": "Payment of the total amount (Registration, Course and Accommodation if applicable) must be made at least 2 weeks before the start of the course. To obtain the right to reserve a place, 100% of the total price of the course and accommodation, if applicable, must be paid at least 4 weeks before the start of the course, except in cases of requests after the end of the course. this period of time and whenever the school calendar allows it (in these cases, the deadline for payment of the reservation will be calculated according to the particular case and the student will be informed of it)."
-        },
-        "cancellationServiceReturns": {
-            "title": "Cancellation of Service and/or Returns",
-            "description": "To cancel a service and require a refund of the total amount of your investment, it will apply in the following cases.",
-            "hospitalizationMedicalPrescription": {
-                "title": "Hospitalization or medical prescription.",
-                "description": "(It must be justified within 10 days once the medical prescription is issued). This receipt will be sent in the time and manner indicated above and to the same email address with which the registration proceeded, with the same condition of effectiveness after the acknowledgment of receipt sent by the Occupational Safety Health Administration \"Osha\"."
-            },
-            "dueToForceMajeure": {
-                "title": "Due to force majeure.",
-                "description": [
-                    "In the event that the organization had to cancel a degree/program of an individual or group student due to force majeure, the total amount paid will be refunded and no management expenses or financial costs will be charged. to/the students.",
-                    "Among cases of force majeure, there would be: damage to the infrastructure (floods, fires or other types of accidents or natural disasters), loss of information from our virtual classroom or maintenance of the virtual platform that results in the total loss of the information, the declaration of bankruptcy of the organization, the impossibility of offering adequate resources, etc.",
-                    "As an alternative to the return and whenever the case allows, the student may maintain his reservation with the Occupational Safety Health Administration \"Osha\" during the time agreed upon by the parties."
-                ]
-            }
-        }
-    },
-
 
     "transparency": {
         "title": "Transparency",

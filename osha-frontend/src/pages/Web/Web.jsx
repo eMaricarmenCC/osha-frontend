@@ -15,7 +15,9 @@ import { Acreditacion, AcreditacionAE} from '../Web/Acreditacion';
 import { Corporativos } from '../Web/Corporativos';
 import { Sedes } from '../Web/Sedes';
 import { Contactos } from './Contactos';
-
+import { Conducta } from './Conducta';
+import { Cumplimiento } from './Cumplimiento';
+import { Calidad } from './Calidad';
 
 function Web() {
   return (
@@ -42,6 +44,10 @@ function Web() {
         <Route path='/corporativos' element={<Corporativos/>} />
         <Route path='/sedes' element={<Sedes/>} />
         <Route path='/contactanos' element={<Contactos/>} />
+        <Route path='/cumplimiento' element={<Cumplimiento/>} />
+        <Route path='/codigo-conducta' element={<Conducta/>} />
+        <Route path='/calidad-educativa' element={<Calidad/>} />
+        <Route path='/conoce-mas' element={<Contactos/>} />
       </Routes>
       <Footer/>
     </>

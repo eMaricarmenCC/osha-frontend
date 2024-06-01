@@ -1,9 +1,25 @@
+import { TbPointFilled } from "react-icons/tb";
+
+
 const List = ({list, icon}) => {
   return(
     <ul className="mt-3 flex flex-col space-y-2">
       {list.map((li, index) => (
         <li key={index} className="flex gap-1 items-center">
           {icon}
+          <p className="">{li}</p>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+const ListPoint = ({list}) => {
+  return(
+    <ul className="flex flex-col space-y-2">
+      {list.map((li, index) => (
+        <li key={index} className="flex gap-1 text-primary">
+          <TbPointFilled className="mt-1" style={{minHeight:14, minWidth:14, maxHeight:14, maxWidth:14}}/>
           <p className="">{li}</p>
         </li>
       ))}
@@ -26,4 +42,4 @@ const ListResponsive = ({list, icon}) => {
   );
 };
 
-export {List, ListResponsive};
+export {List, ListPoint, ListResponsive};

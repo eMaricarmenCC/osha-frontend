@@ -28,20 +28,20 @@ function Sedes() {
             <AccordianItem value='1' trigger={t("locations.authorizedCenter.benefits.title")}>
               <List
                 list={t("locations.authorizedCenter.benefits.benefits", { returnObjects: true })}
-                icon={<PiSealCheckBold/>}
+                icon={<PiSealCheckBold style={{color:"var(--secondary)"}}/>}
               />
               <p>{t("locations.authorizedCenter.benefits.content")}</p>
             </AccordianItem>
             <AccordianItem value='2' trigger={t("locations.authorizedCenter.process.title")}>
               <List
                 list={t("locations.authorizedCenter.process.process", { returnObjects: true })}
-                icon={<PiSealCheckBold/>}
+                icon={<PiSealCheckBold style={{color:"var(--secondary)"}}/>}
               />
             </AccordianItem>
             <AccordianItem value='3' trigger={t("locations.authorizedCenter.membershipFees.title")}>
               <List
                 list={t("locations.authorizedCenter.membershipFees.membershipFees", { returnObjects: true })}
-                icon={<PiSealCheckBold/>}
+                icon={<PiSealCheckBold style={{color:"var(--secondary)"}}/>}
               />
             </AccordianItem>
           </Accordian>

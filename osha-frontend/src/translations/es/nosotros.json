@@ -39,9 +39,11 @@
         },
         "queans2": {
             "question" : "Si visita nuestro sitio para leer o descargar información, recopilamos y almacenamos la siguiente información",
-            "answer-li1" : "El nombre del dominio desde el que accede a Internet (por ejemplo, Osha.org, si se conecta desde la cuenta de computadora del Departamento de Trabajo).",
-            "answer-li2" : "La fecha y hora de acceso a nuestro sitio.",
-            "answer-li3" : "La dirección de Internet del sitio web desde el que se vinculó directamente a nuestro sitio.",
+            "answer-li" : [
+                "El nombre del dominio desde el que accede a Internet (por ejemplo, Osha.org, si se conecta desde la cuenta de computadora del Departamento de Trabajo).",
+                "La fecha y hora de acceso a nuestro sitio.",
+                "La dirección de Internet del sitio web desde el que se vinculó directamente a nuestro sitio."
+            ],
             "answer" : "Esta información es utilizada por programas de software en nuestro sitio web para recopilar estadísticas resumidas que nos permiten evaluar el número de visitantes a las diferentes secciones de nuestro sitio, identificar qué información es de mayor y menor interés, determinar especificaciones técnicas de diseño, monitorear el desempeño del sistema, y ayúdanos a hacer que nuestro sitio sea más útil para los visitantes."        
         },
         "queans3": {

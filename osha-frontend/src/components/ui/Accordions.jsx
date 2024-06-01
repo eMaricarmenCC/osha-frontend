@@ -180,7 +180,7 @@ function Accordian({ children, value, onChange, ...props }) {
       </AccordianContext.Provider>
     </ul>
   )
-}
+};
 
 function AccordianItem({ children, value, trigger, ...props }) {
   const { selected, setSelected } = useContext(AccordianContext)
@@ -189,13 +189,13 @@ function AccordianItem({ children, value, trigger, ...props }) {
   const ref = useRef(null)
 
   return (
-    <li className="rounded-lg shadow-lg border-b bg-white" {...props}>
+    <li className="rounded-r-lg shadow-lg border-l-4 border-primary bg-white" {...props}>
       <header
         role="button"
         onClick={() => setSelected(open ? null : value)}
         className="flex justify-between items-center p-4 font-medium"
       >
-        <p><b>{trigger}</b></p>
+        <p className="font-bold">{trigger}</p>
         <ChevronDown
           size={16}
           className={`transition-transform ${open ? "rotate-180" : ""}`}
@@ -205,7 +205,7 @@ function AccordianItem({ children, value, trigger, ...props }) {
         className="overflow-y-hidden transition-all"
         style={{ height: open ? ref.current?.offsetHeight || 0 : 0 }}
       >
-        <div className="pt-2 p-4" ref={ref}>
+        <div className="p-4 border-t border-gray-300" ref={ref}>
           {children}
         </div>
       </div>

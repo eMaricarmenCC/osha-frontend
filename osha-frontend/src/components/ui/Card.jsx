@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Line1, Line2 } from "./Line";
+import { Line, Line1, Line2 } from "./Line";
 import { CiBarcode } from "react-icons/ci";
 import { FaCentercode } from "react-icons/fa";
 

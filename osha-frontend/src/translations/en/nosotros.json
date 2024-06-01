@@ -38,9 +38,11 @@
         },
         "queans2": {
             "question" : "If you visit our site to read or download information, we collect and store the following information",
-            "answer-li1": "The name of the domain from which you access the Internet (for example, Osha.org, if you are connecting from your Department of Labor computer account).",
-            "answer-li2" : "The date and time of access to our site.",
-            "answer-li3": "The Internet address of the website from which you linked directly to our site.",
+            "answer-li": [
+                "The name of the domain from which you access the Internet (for example, Osha.org, if you are connecting from your Department of Labor computer account).",
+                "The date and time of access to our site.",
+                "The Internet address of the website from which you linked directly to our site."
+            ],
             "answer" : "This information is used by software programs on our website to compile summary statistics that allow us to evaluate the number of visitors to the different sections of our site, identify which information is of most and least interest, determine technical specifications design, monitor system performance, and help us make our site more useful to visitors."
         },
         "queans3": {

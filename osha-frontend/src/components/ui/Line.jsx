@@ -32,6 +32,16 @@ const Line1 = ({bgColorClass}) => {
   );
 };
 
+const Line = () => {
+  return (
+    <div className="flex">
+      <div className="bg-secondary h-1 w-5"></div>
+      <div className="bg-white h-1 w-2"></div>
+      <div className="bg-secondary h-1 w-20"></div>
+    </div>
+  );
+};
+
 const Title = ({}) => {
   return(
     <div className="mt-2 rounded-full border-gradient border-8 border-primary p-2">
@@ -42,4 +52,4 @@ const Title = ({}) => {
   );
 };
 
-export { OneLine, Linea, Line1, Line2 };
+export { OneLine, Linea, Line1, Line2, Line };
