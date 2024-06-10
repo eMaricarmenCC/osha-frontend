@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 import Inicio from '../Web/Inicio';
 import { WhoWeAre, LegalNature, InternationalCooperation, PrivacyAndSecurityDeclaration } from '../Web/Nosotros';
 import Estandares from '../Web/Estandares';
-import { Grados } from '../Web/Grados';
+import { GradoDetalle, Grados } from '../Web/Grados';
 import { Certex } from '../Web/Certex';
 import { Cursos, CursosGratuitos } from '../Web/Cursos';
 import { Membresia } from '../Web/Membresia';
@@ -37,6 +37,7 @@ function Web() {
         <Route path="/acreditaCion" element={<Acreditacion/>} />
         <Route path="/acreditaCion-ae" element={<AcreditacionAE/>} />
         <Route path="/grados" element={<Grados/>} />
+        <Route path="/grados/:id" element={<GradoDetalle/>} />
         <Route path="/certex" element={<Certex/>} />
         <Route path="/cursos" element={<Cursos/>} />
         <Route path="/cursos-gratuitos" element={<CursosGratuitos/>} />

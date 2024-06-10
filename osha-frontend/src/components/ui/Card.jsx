@@ -220,7 +220,7 @@ function Card3() {
   );
 }
 
-const CardGrado = ({title, code, label, src}) => {
+const CardGrado = ({id, title, code, label, src}) => {
   return(
     <div className="group cursor-pointer overflow-hidden shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg bg-gray-100">
       <span className="absolute top-50 z-0 h-24 w-24 rounded-full bg-primary transition-all duration-300 group-hover:scale-[12]"></span>
@@ -251,7 +251,7 @@ const CardGrado = ({title, code, label, src}) => {
             </div>
           </div>
           <div className="mt-4 flex justify-end">
-            <Link to="#" className="border-azulMedio border-2 p-2 rounded-lg text-azulMedio transition-all duration-300 group-hover:text-white group-hover:border-white">
+            <Link to={`/grados/${id}`} className="border-azulMedio border-2 p-2 rounded-lg text-azulMedio transition-all duration-300 group-hover:text-white group-hover:border-white">
               Ver más &rarr;
             </Link>
           </div>

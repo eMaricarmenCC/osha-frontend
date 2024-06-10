@@ -23,10 +23,10 @@ function Question({text, content, iconA, iconQ}) {
   );
 };
 
-function Email({key, text, content, email, icon}) {
+function Email({text, content, email, icon}) {
   return(
     <div className="text-left mb-3">
-      <div className="mt-2 flex flex-row items-center">
+      <a href={`mailto:${email}`} className="mt-2 flex flex-row items-center transform transition-transform hover:scale-105">
         <div className="items-center justify-center p-3 ml-3 rounded-full bg-primary text-white border-4 border-white text-xl font-semibold">
           {icon}
         </div>
@@ -34,7 +34,7 @@ function Email({key, text, content, email, icon}) {
           <p className=""><b>{text}</b></p>
           <p className="text-primary"><b>{email}</b></p>
         </div>
-      </div>
+      </a>
       <div className="mt-2 bg-gray-100 py-2 px-5 w-full rounded-lg">
         <p className="">{content}</p>
       </div>

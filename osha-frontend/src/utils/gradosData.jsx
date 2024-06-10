@@ -7,39 +7,39 @@ const gradosData = [
     src: "/src/assets/img-grados/TrainTrainer.png"
   },
   {
-    id: 2,
+    id: 62,
+    title: "Trainer de Trabajos Críticos",
+    code: 1002,
+    label: "TCW-OSHA",
+    src: "/src/assets/img-grados/CriticalWorkTrainer.png"
+  },
+  {
+    id: 3,
     title: "Trainer Hazmat",
     code: 1010,
     label: "TH-OSHA",
     src: "/src/assets/img-grados/HazmatTrainer.jpg"
   },
   {
-    id: 3,
+    id: 4,
     title: "Confined Space Trainer",
     code: 1015,
     label: "CST-OSHA",
     src: "/src/assets/img-grados/ConfinedSpaceTraining.png"
   },
   {
-    id: 4,
+    id: 5,
     title: "Trainer de Seguridad y Salud Ocupacional",
     code: 1016,
     label: "TSSO-OSHA",
     src: "/src/assets/img-grados/OccupationalHealthSafetyTrainer.jpg"
   },
   {
-    id: 5,
+    id: 6,
     title: "Trainer Trabajos en Altura",
     code: 1019,
     label: "TTA-OSHA",
     src: "/src/assets/img-grados/TrainerTrabajoEnAltura.jpg"
-  },
-  {
-    id: 6,
-    title: "Trainer de Trabajos Críticos",
-    code: 1002,
-    label: "TCW-OSHA",
-    src: "/src/assets/img-grados/CriticalWorkTrainer.png"
   },
   {
     id: 7,

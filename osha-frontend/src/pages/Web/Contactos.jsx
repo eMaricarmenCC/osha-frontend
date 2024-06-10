@@ -34,13 +34,14 @@ function Contactos() {
             <p className="mt-5">{t("p")}</p>
             <div className="mt-8">
               {t("emails", { returnObjects: true }).map((li, index) => (
-                <Email
-                  key={index}
-                  text={li.type}
-                  content={li.content}
-                  email={li.email}
-                  icon={<MdOutlineMailOutline/>}
-                />
+                <div key={index}>
+                  <Email
+                    text={li.type}
+                    content={li.content}
+                    email={li.email}
+                    icon={<MdOutlineMailOutline/>}
+                  />
+                </div>
               ))}
             </div>
           </div>

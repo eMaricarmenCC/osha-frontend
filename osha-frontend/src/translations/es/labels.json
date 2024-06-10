@@ -21,17 +21,17 @@
     "learnMoreUs": "Conoce más sobre nosotros",
 
     "hero": {    
-        "title": [
-            "Welcome to",
-            "OSHA",
-            "Institute"
-        ],
+        "title": {
+            "t1":"Bienvenido a",
+            "t2":"OSHA",
+            "t3":"Institute"
+        },
         "subtitle1": "La ingeniería, tecnología y ciencia junta!",
         "subtitle2": "Somos quienes respaldamos tu futuro."
     },
-    "countup": [
-        "Estudiantes",
-        "Programas",
-        "Cursos"
-    ]
+    "countup": {
+        "est":"Estudiantes",
+        "pro":"Programas",
+        "cur":"Cursos"
+    }
 }

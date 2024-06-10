@@ -101,7 +101,7 @@ const Hero = () => {
               }}
               className="max-w-[190px] xs:max-w-xl sm:max-w-2xl md:max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-4xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
             >
-              Bienvenidos a<span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span>
+              {t("hero.title.t1")} <span className="text-primary uppercase">Osha</span> <span className="text-secondary">Institute</span>
             </motion.h1>
             <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-grisMedio">
               {t("hero.subtitle2")}
@@ -112,7 +112,7 @@ const Hero = () => {
               whileTap={{ scale: 0.985, }}
               className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
             >
-              Contáctanos
+              {t("contactUs")}
               <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
             </motion.button>
           </div>
@@ -142,25 +142,26 @@ const Hero = () => {
 };
 
 const CountUpHome = () => {
+  const { t, i18n } = useTranslation("labels");
   return(
     <div className="mt-10 flex flex-row gap-3">
       <ItemCount
         icon={<PiStudentBold/>}
-        text="Estudiantes"
+        text={t("countup.est")}
         nstart={130}
         nend={150}
         time={4}
       />
       <ItemCount
         icon={<PiBooks/>}
-        text="Programas"
+        text={t("countup.pro")}
         nstart={80}
         nend={100}
         time={4}
       />
       <ItemCount
         icon={<LuBookMarked/>}
-        text="Cursos"
+        text={t("countup.cur")}
         nstart={180}
         nend={200}
         time={4}
