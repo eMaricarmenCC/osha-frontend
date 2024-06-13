@@ -1,1103 +1,1182 @@
 {
-    "tt-osha": {
-        "title": "Train the Trainer Osha",
-        "code": 1001,
-        "label": "TT-OSHA",
-        "presentation":[
-            "b",
-            ""
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
+    "title": "Grados",
+    "tab-header": [
+        "Presentación",
+        "Beneficios",
+        "Temática"
+    ],
+    "degreeData": [
+        {
+            "id": "tt-osha",
+            "title": "Train the Trainer Osha",
+            "code": 1001,
+            "label": "TT-OSHA",
+            "presentation":[
+                "b",
+                ""
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
 
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
 
-                ]
-            }
-        ],
-        "src": "",
-        "img": ""
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/TrainTrainer.png",
+            "img": ""
+        },
+        {
+            "id": "ttc-osha",
+            "title": "Trainer de Trabajos Criticos",
+            "code": 1002,
+            "label": "TTC-OSHA",
+            "presentation":[
+                "La globalización, el mercado cambiante y las crecientes necesidades de las Organizaciones empresariales, industriales y administrativas exigen cada vez profesionales con competencias integrales de conocimientos completos, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
+                "Los trabajos críticos o de alto riesgo son trabajos que necesitan una visión con enfoque óptimo en la Operatividad donde demande la seguridad para así mantener al factor humano libre de peligros trabajando desde los riesgos y controles aplicables mediante métodos efectivos.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias que involucran trabajos críticos o trabajos de riesgo complejo. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Formación y Entrenamiento",
+                    "courses": [
+                        "Introducción a la formación en seguridad",
+                        "Introducción a OSHA",
+                        "Introducción a la Formación en OSHA",
+                        "Desarrollo de Capacitación en OSHA",
+                        "Realización de Capacitación en OSHA"
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Gestión Integral de la Seguridad Laboral y Ocupacional",
+                    "courses": [
+                        "Seguridad en la construcción de acero",
+                        "Seguridad del petróleo y el gas costa afuera I",
+                        "Seguridad de petróleo y gas en alta mar II",
+                        "Seguridad eléctrica para empleados: Básico",
+                        "Seguridad del conductor",
+                        "Seguridad en la soldadura: Básico",
+                        "Seguridad en montacargas: Básico",
+                        "Seguridad en las excavaciones: Básico",
+                        "Seguridad básica de grúa",
+                        "Seguridad en espacios confinados",
+                        "Seguridad con pistolas de clavos",
+                        "Seguridad Vial en Zonas de Trabajo",
+                        "Seguridad Eléctrica para Técnicos y Supervisores",
+                        "Seguridad de camiones industriales motorizados",
+                        "Seguridad en el Laboratorio",
+                        "Seguridad en Zanjas y Excavaciones",
+                        "Seguridad de herramientas manuales y eléctricas",
+                        "Seguridad en el lugar de trabajo de la construcción",
+                        "Seguridad de equipo pesado",
+                        "Seguridad de demolición",
+                        "Seguridad en espacios confinados en la construcción",
+                        "Seguridad de Grúas y Derricks I",
+                        "Seguridad de Grúas y Derricks II"
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Gestión de Riesgos",
+                    "courses": [
+                        "Riesgos físicos para la salud en la construcción",
+                        "Riesgos biológicos para la salud en la construcción",
+                        "Riesgos ergonómicos en la construcción",
+                        "Riesgos ergonómicos en la industria general",
+                        "Peligros para la Salud en la Construcción"
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Gestión de Riesgos",
+                    "courses": [
+                        "Introducción a SEMS II 30 CFR 250.1900-1933",
+                        "Introducción a la supervisión de seguridad",
+                        "Introducción al liderazgo en seguridad",
+                        "Introducción a la responsabilidad de la seguridad",
+                        "Introducción al reconocimiento de seguridad",
+                        "Introducción a los controles de peligros",
+                        "Introducción al análisis de riesgos laborales",
+                        "Análisis y control de peligros",
+                        "Programa de comunicación de peligros",
+                        "Realización de un análisis de riesgos laborales (JHA)",
+                        "Programa de Control de Energía (Bloqueo/Etiquetado)",
+                        "Introducción a la ergonomía",
+                        "Programa de espacios confinados",
+                        "Planes de Acción de Emergencia",
+                        "Planes de Prevención de Incendios",
+                        "Gestión de Seguridad de Flotas",
+                        "Montaje e Inspección de Andamios Seguros",
+                        "Protección contra caídas en la construcción",
+                        "Enfoque Cuatro: Riesgos de caída",
+                        "Foco cuatro - Atrapado o entre peligros",
+                        "Foco cuatro - Peligros de ser golpeado",
+                        "Foco cuatro - Riesgos de electrocución"
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Gestión Integrada",
+                    "courses": [
+                        "Salud: Equipo de Protección Personal",
+                        "Comunicación de peligros: básico",
+                        "Planes de acción de emergencia y prevención de incendios",
+                        "Equipo de protección personal: Básico",
+                        "Superficies para caminar-trabajar y protección contra caídas",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo",
+                        "Protección de máquinas: básico",
+                        "Higiene Industrial: Básico",
+                        "Investigación de Accidentes: Básico",
+                        "Salud: Estrés y violencia en el lugar de trabajo",
+                        "Salud: seguridad eléctrica",
+                        "Cuidado de la salud: seguridad radiológica",
+                        "Cuidado de la salud: prevención de lesiones ergonómicas",
+                        "Introducción a la gestión de la seguridad",
+                        "Investigación Efectiva de Accidentes",
+                        "Equipo de Protección Personal",
+                        "Introducción a la protección de máquinas",
+                        "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción"
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Hazwoper",
+                    "courses": [
+                        "HAZWOPER I",
+                        "HAZWOPER II",
+                        "HAZWOPER III",
+                        "HAZWOPER IV",
+                        "HAZWOPER V"
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/CriticalWorkTrainer.png",
+            "img": ""
+        },
+        {
+            "id": "th-osha",
+            "title": "Trainer Hazmat Osha",
+            "code": 1010,
+            "label": "TH-OSHA",
+            "presentation":[
+                "Este programa de formación profesional es el más requerido por profesionales a nivel mundial debido al valor profesional que le otorgará a usted al completar los módulos de formación.",
+                "La prioridad es dar cumplimiento a la norma Osha Hazwoper del 29 CFR 1910.120 y 1926.65 para adoptar los puntos establecidos para la formación de entrenadores con amplios conocimientos basados en la norma Osha-Dol.",
+                "Esta acreditación cumple el requisito propuesto por osha en la 1910.120 (g) (7).",
+                "Todos los programas ofrecidos por Osha-Institute están regulados dado el caso esta regulación le da el valor profesional validado en 80 países a nivel mundial."
+            ],
+            "hours":320,
+            "price": 200,
+            "benefits": "Gestión de la Seguridad",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Gestión de la Seguridad",
+                    "courses": [
+                        "Introducción a la Supervisión de Seguridad.",
+                        "Introducción al Liderazgo en la Seguridad.",
+                        "Formación en Seguridad y Jerarquía de Controles",
+                        "Introducción al análisis de riesgos laborales",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo."
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Gestión de Riesgos",
+                    "courses": [
+                        "Riesgos físicps para la salud en la construcción.",
+                        "Riesgos biológicos para la salud en la construcción",
+                        "Comunicación de peligros básico.",
+                        "Plan de acción de emergencias y prevención de indendios.",
+                        "Equipos de protección personal básico"
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Hazpower",
+                    "courses": [
+                        "Hazpower 1",
+                        "Hazpower 2",
+                        "Hazpower 3",
+                        "Hazpower 4",
+                        "Hazpower 5"
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Gestión Integral",
+                    "courses": [
+                        "Sistema globalmente Armonizado SGA.",
+                        "Quimica general en la industria 1.",
+                        "Química básica 2.",
+                        "Generalidades tóxicológicas."
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Gestión toxicologica",
+                    "courses": [
+                        "Toxicocinética",
+                        "Toxicodinamia",
+                        "Tratamiento Genral",
+                        "Tratamiento Específico",
+                        "Hipoxias tóxicas por ciaruno",
+                        "Metahemoglobinemia",
+                        "Radiotoxicidad"
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Intoxicaciones",
+                    "courses": [
+                        "Monoxido de carbono",
+                        "Intoxicación con etanol",
+                        "Intoxicación con metanol",
+                        "Intoxicación con glicoles",
+                        "Hidrocarburos generalidades",
+                        "Hidrocarburos alfabeticos o lineales",
+                        "Hidrocarburos alogenados clorados",
+                        "Hidrocarburos cíclicos aromáticos",
+                        "Hidrocarburos Nitrogenados"
+                    ]
+                },
+                {
+                    "module": "Módulo 7",
+                    "title": "Materiales peligrosos",
+                    "courses": [
+                        "Arsénico",
+                        "Plomo",
+                        "Mercurio",
+                        "Cromo",
+                        "Manganeso",
+                        "Talio",
+                        "HIerro",
+                        "Organofosforados",
+                        "Carbamatos",
+                        "Organoclorados",
+                        "Dicumarinicus",
+                        "Biperidilos",
+                        "Piretrinas"
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/HazmatTrainer.jpg",
+            "img": ""
+        },
+        {
+            "id": "tec-osha",
+            "title": "Trainer de Espacios Confinados",
+            "code": 1015,
+            "label": "TEC-OSHA",
+            "presentation":[
+                "",
+                ""
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/ConfinedSpaceTraining.png",
+            "img": ""
+        },
+        {
+            "id": "tsso-osha",
+            "title": "Trainer de Seguridad y Salud Ocupacional",
+            "code": 1016,
+            "label": "TSSO-OSHA",
+            "presentation":[
+                "b",
+                ""
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/OccupationalHealthSafetyTrainer.jpg",
+            "img": ""
+        },
+        {
+            "id": "tta-osha",
+            "title": "Trainer de Trabajos en Altura",
+            "code": 1019,
+            "label": "TTA-OSHA",
+            "presentation":[
+                "b",
+                ""
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/TrainerTrabajoEnAltura.jpg",
+            "img": ""
+        },
+        {
+            "id": "gssl-osha",
+            "title": "Gerencia de la Seguridad y Salud Laboral",
+            "code": 1051,
+            "label": "GSSL-OSHA",
+            "presentation":[
+                "La excelencia en la gestión de la seguridad y salud en el trabajo, la seguridad Ocupacional y la prevención de riesgos laborales, requiere la aplicación de óptimos conocimientos y habilidades que ayuden a contribuir y aportar mejoras en bien de toda una organización con respuestas inmediatas pero a la vez óptimas de planeación y ejecución de resultados basados a normas de seguridad establecidas presentes a nivel mundial que aportan a la reducción de los índices de accidentalismo y mortandad en el entorno laboral.",
+                "Para ello OSHA-EE.UU mediante estudios e investigaciones fue elaborando normas y estándares de soporte fundamental aplicadas por Osha-Institute.",
+                "A ello sumamos propuestas de mejora englobados en estándares aplicados por ANSI, ASME y NIOSH en más de I 120 países a nivel mundial."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Introducción a la Seguridad Laboral Bajo Normas Osha",
+                    "courses": [
+                        "Introducción a la gestión de la seguridad (8 módulos)",
+                        "Introducción a la Formación en Seguridad (2 módulos)",
+                        "Introducción a OSHA-EE.UU (2 módulos)",
+                        "Introducción a la Responsabilidad en la Seguridad (2 módulos)",
+                        "Introducción al Liderazgo en la Seguridad (2 módulos)",
+                        "Introducción al Reconocimiento de Seguridad (2 módulos)",
+                        "Introducción a la Supervisión de Seguridad (2 módulos)",
+                        "Introducción a los controles de peligro (2 módulos)",
+                        "Introducción al análisis de riesgos laborales (2 módulos)"
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Seguridad Operativa y de Riesgo",
+                    "courses": [
+                        "Seguridad Eléctrica para empleados básico (2 módulos)",
+                        "Seguridad del conductor (2 módulos)",
+                        "Seguridad en la soldadura básico (2 módulos)",
+                        "Seguridad en excavaciones básico (2 módulos)",
+                        "Seguridad en Montacargas básico (2 módulos)",
+                        "Seguridad básico de grúa (2 módulos)",
+                        "Seguridad en espacios confinados (5 módulos)",
+                        "Protección de maquinaria básico (2 módulos)."
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Emergencias y Rescate",
+                    "courses": [
+                        "Programa de espacios confinados (9 módulos)",
+                        "Superficies para caminar, trabajar y protección contra caídas (2 módulos)",
+                        "Planes de acción de emergencia y prevención de Incendios (2 módulos)"
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Higiene Laboral",
+                    "courses": [
+                        "Equipo de protección personal básico (2 módulos)",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo (3 módulos)",
+                        "Orientación sobre limpieza y Desinfección (1 módulo)"
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Riesgos Laborales",
+                    "courses": [
+                        "Riesgos físicos para la salud en la Construcción (2 módulos)",
+                        "Riesgos biológicos para la salud en la Construcción (2 módulos)",
+                        "Riesgos ergonómicos en la Construcción (2 módulos)",
+                        "Riesgos ergonómicos en la industria general (2 módulos)"
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "SGA-HAZWOPER(Gestión de Materiales Peligrosos en las Industrias)",
+                    "courses": [
+                        "Comunicación de peligros básico (2 módulos)",
+                        "Hazwoper 1 (5 módulos)",
+                        "Hazwoper 2 (5 módulos)",
+                        "Hazwoper 3 (5 módulos)",
+                        "Hazwoper 4 (6 módulos)"
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/GerenciaSeguridadSaludLaboral.png",
+            "img": ""
+        },
+        {
+            "id": "gsic-osha",
+            "title": "Gerencia de la Seguridad en la Industria de la Construcción",
+            "code": 1052,
+            "label": "GSIC-OSHA",
+            "presentation":[
+                "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben sei abordados desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
+                "En este escenario el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Gestión Integral",
+                    "courses": [
+                        "Introducción a la supervisión de seguridad.",
+                        "Introducción a Osha.",
+                        "Introducción a la formación de Seguridad.",
+                        "Introducción a la responsabilidad de la seguridad.",
+                        "Introducción al reconocimiento de la seguridad.",
+                        "Introducción a la gestión de la seguridad",
+                        "Introducción al liderazgo en la seguridad.",
+                        "Introducción a la Ergonomía.",
+                        "Introducción al análisis de riesgos laborales.",
+                        "Introducción a los controles de peligros."
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Seguridad laboral",
+                    "courses": [
+                        "Seguridad en la soldadura: Básico.",
+                        "Seguridad en montacargas: básico.",
+                        "Seguridad en las excavaciones: Básico.",
+                        "Seguridad básica de grúa.",
+                        "Seguridad en espacios confinados.",
+                        "Seguridad de equipo pesado.",
+                        "Seguridad de demolición.",
+                        "Seguridad en espacios confinados en la Construcción.",
+                        "Seguridad en la construcción de acero.",
+                        "Seguridad de Grúas y Derricks I.",
+                        "Seguridad de Grúas y Derricks II.",
+                        "Seguridad del petróleo y el gas costa afuera I.",
+                        "Seguridad del petróleo y gas en alta mar II.",
+                        "Seguridad del conductor.",
+                        "Seguridad eléctrica para empleados: básico."
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Gestión de riesgos",
+                    "courses": [
+                        "Riesgos físicos para la salud en la Construcción.",
+                        "Riesgos biológicos para la salud en la construcción.",
+                        "Riesgos ergonómicos en la construcción."
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Seguridad Ocupacional",
+                    "courses": [
+                        "Peligros para la Salud en la Construcción.",
+                        "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción.",
+                        "Equipo de protección personal: Básico.",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo.",
+                        "Orientación para la limpieza y desinfección.",
+                        "Protección contra caídas en la Construcción.",
+                        "Foco Cuatro: Riesgos de caída.",
+                        "Foco cuatro Atrapado o entre peligros.",
+                        "Foco cuatro peligros de ser golpeado.",
+                        "Foco cuatro - Riesgos de electrocución."
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Gestión Ambiental y Seguridad",
+                    "courses": [
+                        "Introducción a SEMS II 30 CFR 250.1900-1933."
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Prevención",
+                    "courses": [
+                        "Inspección de pozos de petróleo y gas.",
+                        "Programa de espacios confinados.",
+                        "Protección de máquinas: básico.",
+                        "Planes de acción de emergencia y prevención de incendios.",
+                        "Comunicación de peligros: básico.",
+                        "Superficies para caminar-trabajar y protección contra caídas.",
+                        "Gestión de la seguridad del petróleo y el gas."
+                    ]
+                },
+                {
+                    "module": "Módulo 7",
+                    "title": "Hazwoper/Química",
+                    "courses": [
+                        "HAZWOPER I.",
+                        "HAZWOPER II.",
+                        "HAZWOPER III.",
+                        "HAZWOPER IV.",
+                        "HAZWOPER V.",
+                        "HAZWOPER VI.",
+                        "QUIMICA GENERAL EN LA INDUSTRIA 1.",
+                        "QUIMICA BASICA 2."
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/GerenciaSeguridadSaludLaboral.png",
+            "img": ""
+        },
+        {
+            "id": "tsstic-osha",
+            "title": "Trainer de Seguridad y Salud en el Trabajo en la Industria de la Construcción",
+            "code": 1060,
+            "label": "TSSTIC-OSHA",
+            "presentation":[
+                "b",
+                ""
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/OccupationalHealthSafetyManagerConstructionIndustry.jpg",
+            "img": ""
+        },
+        {
+            "id": "dprl-osha",
+            "title": "Director de Prevención de Riesgos Laborales Osha",
+            "code": 1071,
+            "label": "DPRL-OSHA",
+            "presentation":[
+                "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/DirectorOccupationalRiskPrevention.png",
+            "img": ""
+        },
+        {
+            "id": "esst-osha",
+            "title": "Especialista de Seguridad y Salud en el Trabajo",
+            "code": 2010,
+            "label": "ESST-OSHA",
+            "presentation":[
+                "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/OccupationalHealthSafetySpecialis.jpg",
+            "img": ""
+        },
+        {
+            "id": "esso-osha",
+            "title": "Especialista de Seguridad y Salud Ocupacional",
+            "code": 2020,
+            "label": "ESSO-OSHA",
+            "presentation":[
+                "Las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos, enfocado no solo a las normas nacionales, sino también a las normas internacionales debido a que las carteras de clientes son internacionales manteniendo las competencias integrales, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y salud Ocupacional, minimizando los daños Ocupacionales, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
+            ],
+            "hours":280,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Gestión de Seguridad Laboral",
+                    "courses": [
+                        "Formación en Seguridad",
+                        "Responsabilidad de la Seguridad",
+                        "Supervisión de Seguridad",
+                        "Reconocimiento de Seguridad",
+                        "Introducción a Osha."
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Prevención de Riesgos",
+                    "courses": [
+                        "Higiene y prevención de enfermedades en el lugar de trabajo",
+                        "Protección de máquinas básico",
+                        "Equipo de protección personal",
+                        "Seguridad del conductor",
+                        "Superficies para trabajar y caminar y protección contra caídas"
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Trabajo de Alto Peligro",
+                    "courses": [
+                        "Seguridad Eléctrica para empleados básico",
+                        "Seguridad en Espacios Confinados",
+                        "Programa de Espacios Confinados",
+                        "Seguridad en soldadura básico",
+                        "Seguridad en excavaciones básico", 
+                        "Seguridad con Montacargas básico"
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Seguridad Ocupacional",
+                    "courses": [
+                        "Riesgos Biológicos para la Salud en la Construcción",
+                        "Riesgos físicos para la salud en la Construcción",
+                        "Planes de acción de emergencias y prevención de incendios",
+                        "Introducción al análisis de riesgos laborales"
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Ergonomía Laboral",
+                    "courses": [
+                        "Introducción a la Ergonomia",
+                        "Riesgos Ergonomicos en la Construcción",
+                        "Riesgos Ergonomicos en la Industria general",
+                        "Introducción a los controles de peligros"
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Toxicología General",
+                    "courses": [
+                        "Toxicologia General",
+                        "Toxicocinética",
+                        "Toxicodinamia",
+                        "Tratamiento del paciente Intoxicado",
+                        "Tratamientos Específicos",
+                        "Hipoxias Tóxicas Monóxido de Carbono",
+                        "Hipoxias Tóxicas Cianuro",
+                        "Hipoxias Metahemoglobinemia",
+                        "Hipoxias Tóxicas Gases de Guerra",
+                        "Alcohol Etílico"
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Gestión de Materiales y Residuos Peligrosos",
+                    "courses": [
+                        "Comunicación de Peligros básico",
+                        "Orientación para la limpieza y Desinfección",
+                        "Hazwoper I",
+                        "Hazwoper II",
+                        "Hazwoper III",
+                        "Hazwoper IV",
+                        "Sistema Globalmente Armonizado SGA"
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/OccupationalHealthSafetySpecialist.jpg",
+            "img": ""
+        },
+        {
+            "id": "eprl-osha",
+            "title": "Especialista en Prevención de Riesgos Laborales",
+            "code": 2030,
+            "label": "EPRL-OSHA",
+            "presentation":[
+                "El alto índice de accidentalismo y mortandad en las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos y específicos, enfocado no solo a las normas o leyes nacionales, sino también a las normas internacionales de presencia a nivel mundial, manteniendo las competencias integrales y competitivas, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de la prevención de riesgos, minimizando los altos índices de accidentalismo, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Gestión de la Seguridad",
+                    "courses": [
+                        "Seguridad en la soldadura: básico.",
+                        "Seguridad en montacargas: básico",
+                        "Seguridad en las excavaciones: básico",
+                        "Seguridad en espacios confinados",
+                        "Seguridad eléctrica para empleados: básico",
+                        "Introducción al liderazgo en seguridad",
+                        "Introducción a la Supervisión de seguridad",
+                        "Introducción a la responsabilidad de la seguridad",
+                        "Introducción al reconocimiento de seguridad.",
+                        "Seguridad del conductor.",
+                        "Introducción a la formación en seguridad"
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Gestión de Riesgos",
+                    "courses": [
+                        "Introducción al análisis de riesgos laborales",
+                        "Riesgos físicos para la salud en la construcción",
+                        "Riesgos biológicos para la salud en la construcción.",
+                        "Riesgos ergonómicos en la construcción",
+                        "Riesgos ergonómicos en la industria general."
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Trabajos de alto riesgo",
+                    "courses": [
+                        "Programa de espacios confinados",
+                        "Superficies para caminar-trabajar y protección contra caídas",
+                        "Planes de acción de emergencia y prevención de incendios",
+                        "Introducción a la ergonomía",
+                        "Sistema Globalmente Armonizado \"SGA\""
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Gestión de seguridad OSHA",
+                    "courses": [
+                        "Programa de espacios confinados",
+                        "Superficies para caminar-trabajar y protección contra caídas",
+                        "Planes de acción de emergencia y prevención de incendios",
+                        "Introducción a la ergonomía",
+                        "Sistema Globalmente Armonizado \"SGA\""
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "HAZWOPER",
+                    "courses": [
+                        "HAZWOPER I.",
+                        "HAZWOPER II.",
+                        "HAZWOPER III.",
+                        "HAZWOPER IV.",
+                        "HAZWOPER V.",
+                        "HAZWOPER VI."
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/OccupationalRiskPreventionSpecialist.png",
+            "img": ""
+        },
+        {
+            "id": "tsslic-osha",
+            "title": "Técnico en Seguridad y Salud Laboral en la Industria de la Construcción",
+            "code": 2040,
+            "label": "TSSLIC-OSHA",
+            "presentation":[
+                "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben ser abordados, guiados y dirigidos desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
+                "En este escenario, el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "Gestión Integral",
+                    "courses": [
+                        "Introducción a la supervisión de seguridad.",
+                        "Introducción a Osha.",
+                        "Introducción a la formación de Seguridad.",
+                        "Introducción a la responsabilidad de la seguridad.",
+                        "Introducción al reconocimiento de la seguridad.",
+                        "Introducción a la gestión de la seguridad.",
+                        "Introducción al liderazgo en la seguridad.",
+                        "Introducción a la Ergonomía.",
+                        "Introducción al análisis de riesgos laborales.",
+                        "Introducción a los controles de peligros."
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "Seguridad laboral",
+                    "courses": [
+                        "Seguridad en la soldadura: Básico.",
+                        "Seguridad en montacargas: Básico.",
+                        "Seguridad en las excavaciones: Básico.",
+                        "Seguridad básica de grúa.",
+                        "Seguridad en espacios confinados.",
+                        "Seguridad de equipo pesado.",
+                        "Seguridad de demolición.",
+                        "Seguridad en espacios confinados en la construcción.",
+                        "Seguridad en la construcción de acero.",
+                        "Seguridad de Grúas y Derricks I.",
+                        "Seguridad de Grúas y Derricks II.",
+                        "Seguridad del petróleo y el gas costa afuera I.",
+                        "Seguridad de petróleo y gas en alta mar II.",
+                        "Seguridad del conductor.",
+                        "Seguridad eléctrica para empleados: Básico."
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "Gestión de riesgos",
+                    "courses": [
+                        "Riesgos físicos para la salud en la Construcción.",
+                        "Riesgos biológicos para la salud en la construcción.",
+                        "Riesgos ergonómicos en la construcción.",
+                        "Riesgos ergonómicos en la industria general."
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "Seguridad Ocupacional",
+                    "courses": [
+                        "Peligros para la Salud en la Construcción.",
+                        "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción.",
+                        "Equipo de protección personal: Básico.",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo.",
+                        "Orientación para la limpieza y desinfección.",
+                        "Protección contra caídas en la Construcción.",
+                        "Foco Cuatro - Riesgos de caída.",
+                        "Foco cuatro - Atrapado o entre peligros.",
+                        "Foco cuatro - Peligros de ser golpeado.",
+                        "Foco cuatro - Riesgos de electrocución."
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "Gestión Ambiental y Seguridad",
+                    "courses": [
+                        "Introducción a SEMS II 30 CFR 250.1900-1933."
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "Prevención",
+                    "courses": [
+                        "Inspección de pozos de petróleo y gas.",
+                        "Programa de espacios confinados.",
+                        "Protección de máquinas: Básico.",
+                        "Planes de acción de emergencia y prevención de Incendios.",
+                        "Comunicación de peligros: Básico.",
+                        "Superficies para caminar-trabajar y protección contra caídas.",
+                        "Gestión de la seguridad del petróleo y el gas."
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/SeguridadSaludTrabajo.jpg",
+            "img": ""
+        },
+        {
+            "id": "ehiv-osha",
+            "title": "Especialista en Hazmat Nivel IV",
+            "code": 2056,
+            "label": "EHIV-OSHA",
+            "presentation":[
+                "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez, profesionales con competencias y amplio conocimiento, capaces de desarrollar estrategias para gestionar y administrar las eventualidades operacionales actuando de manera efectiva ante eventos inesperados que suelen darse en las operaciones diversas.",
+                "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global y la respuesta inmediata, estratégica e integradora de los procesos de primera respuesta, Asimismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones acertivas marcando diferencia por una formación amplia y óptima."
+            ],
+            "hours":150,
+            "price": 200,
+            "benefits": "",
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/Hazmat4.jpg",
+            "img": ""
+        }
+    ],
+    "certificate":{
+        "title": "Opciones de Certificado",
+        "digital": "Certificado digital",
+        "fisico": "Certificado físico"
     },
-    "ttc-osha":{
-        "title": "Trainer de Trabajos Criticos",
-        "code": 1002,
-        "label": "TTC-OSHA",
-        "presentation":[
-            "La globalización, el mercado cambiante y las crecientes necesidades de las Organizaciones empresariales, industriales y administrativas exigen cada vez profesionales con competencias integrales de conocimientos completos, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
-            "Los trabajos críticos o de alto riesgo son trabajos que necesitan una visión con enfoque óptimo en la Operatividad donde demande la seguridad para así mantener al factor humano libre de peligros trabajando desde los riesgos y controles aplicables mediante métodos efectivos.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias que involucran trabajos críticos o trabajos de riesgo complejo. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Formación y Entrenamiento",
-                "courses": [
-                    "Introducción a la formación en seguridad",
-                    "Introducción a OSHA",
-                    "Introducción a la Formación en OSHA",
-                    "Desarrollo de Capacitación en OSHA",
-                    "Realización de Capacitación en OSHA"
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Gestión Integral de la Seguridad Laboral y Ocupacional",
-                "courses": [
-                    "Seguridad en la construcción de acero",
-                    "Seguridad del petróleo y el gas costa afuera I",
-                    "Seguridad de petróleo y gas en alta mar II",
-                    "Seguridad eléctrica para empleados: Básico",
-                    "Seguridad del conductor",
-                    "Seguridad en la soldadura: Básico",
-                    "Seguridad en montacargas: Básico",
-                    "Seguridad en las excavaciones: Básico",
-                    "Seguridad básica de grúa",
-                    "Seguridad en espacios confinados",
-                    "Seguridad con pistolas de clavos",
-                    "Seguridad Vial en Zonas de Trabajo",
-                    "Seguridad Eléctrica para Técnicos y Supervisores",
-                    "Seguridad de camiones industriales motorizados",
-                    "Seguridad en el Laboratorio",
-                    "Seguridad en Zanjas y Excavaciones",
-                    "Seguridad de herramientas manuales y eléctricas",
-                    "Seguridad en el lugar de trabajo de la construcción",
-                    "Seguridad de equipo pesado",
-                    "Seguridad de demolición",
-                    "Seguridad en espacios confinados en la construcción",
-                    "Seguridad de Grúas y Derricks I",
-                    "Seguridad de Grúas y Derricks II"
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Gestión de Riesgos",
-                "courses": [
-                    "Riesgos físicos para la salud en la construcción",
-                    "Riesgos biológicos para la salud en la construcción",
-                    "Riesgos ergonómicos en la construcción",
-                    "Riesgos ergonómicos en la industria general",
-                    "Peligros para la Salud en la Construcción"
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Gestión de Riesgos",
-                "courses": [
-                    "Introducción a SEMS II 30 CFR 250.1900-1933",
-                    "Introducción a la supervisión de seguridad",
-                    "Introducción al liderazgo en seguridad",
-                    "Introducción a la responsabilidad de la seguridad",
-                    "Introducción al reconocimiento de seguridad",
-                    "Introducción a los controles de peligros",
-                    "Introducción al análisis de riesgos laborales",
-                    "Análisis y control de peligros",
-                    "Programa de comunicación de peligros",
-                    "Realización de un análisis de riesgos laborales (JHA)",
-                    "Programa de Control de Energía (Bloqueo/Etiquetado)",
-                    "Introducción a la ergonomía",
-                    "Programa de espacios confinados",
-                    "Planes de Acción de Emergencia",
-                    "Planes de Prevención de Incendios",
-                    "Gestión de Seguridad de Flotas",
-                    "Montaje e Inspección de Andamios Seguros",
-                    "Protección contra caídas en la construcción",
-                    "Enfoque Cuatro: Riesgos de caída",
-                    "Foco cuatro - Atrapado o entre peligros",
-                    "Foco cuatro - Peligros de ser golpeado",
-                    "Foco cuatro - Riesgos de electrocución"
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Gestión Integrada",
-                "courses": [
-                    "Salud: Equipo de Protección Personal",
-                    "Comunicación de peligros: básico",
-                    "Planes de acción de emergencia y prevención de incendios",
-                    "Equipo de protección personal: Básico",
-                    "Superficies para caminar-trabajar y protección contra caídas",
-                    "Higiene y prevención de enfermedades en el lugar de trabajo",
-                    "Protección de máquinas: básico",
-                    "Higiene Industrial: Básico",
-                    "Investigación de Accidentes: Básico",
-                    "Salud: Estrés y violencia en el lugar de trabajo",
-                    "Salud: seguridad eléctrica",
-                    "Cuidado de la salud: seguridad radiológica",
-                    "Cuidado de la salud: prevención de lesiones ergonómicas",
-                    "Introducción a la gestión de la seguridad",
-                    "Investigación Efectiva de Accidentes",
-                    "Equipo de Protección Personal",
-                    "Introducción a la protección de máquinas",
-                    "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción"
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Hazwoper",
-                "courses": [
-                    "HAZWOPER I",
-                    "HAZWOPER II",
-                    "HAZWOPER III",
-                    "HAZWOPER IV",
-                    "HAZWOPER V"
-                ]
-            }
-        ]
-    },
-    "th-osha":{
-        "title": "Trainer Hazmat Osha",
-        "code": 1010,
-        "label": "TH-OSHA",
-        "presentation":[
-            "Este programa de formación profesional es el más requerido por profesionales a nivel mundial debido al valor profesional que le otorgará a usted al completar los módulos de formación.",
-            "La prioridad es dar cumplimiento a la norma Osha Hazwoper del 29 CFR 1910.120 y 1926.65 para adoptar los puntos establecidos para la formación de entrenadores con amplios conocimientos basados en la norma Osha-Dol.",
-            "Esta acreditación cumple el requisito propuesto por osha en la 1910.120 (g) (7).",
-            "Todos los programas ofrecidos por Osha-Institute están regulados dado el caso esta regulación le da el valor profesional validado en 80 países a nivel mundial."
-        ],
-        "hours":320,
-        "benefits": "Gestión de la Seguridad",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Gestión de la Seguridad",
-                "courses": [
-                    "Introducción a la Supervisión de Seguridad.",
-                    "Introducción al Liderazgo en la Seguridad.",
-                    "Formación en Seguridad y Jerarquía de Controles",
-                    "Introducción al análisis de riesgos laborales",
-                    "Higiene y prevención de enfermedades en el lugar de trabajo."
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Gestión de Riesgos",
-                "courses": [
-                    "Riesgos físicps para la salud en la construcción.",
-                    "Riesgos biológicos para la salud en la construcción",
-                    "Comunicación de peligros básico.",
-                    "Plan de acción de emergencias y prevención de indendios.",
-                    "Equipos de protección personal básico"
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Hazpower",
-                "courses": [
-                    "Hazpower 1",
-                    "Hazpower 2",
-                    "Hazpower 3",
-                    "Hazpower 4",
-                    "Hazpower 5"
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Gestión Integral",
-                "courses": [
-                    "Sistema globalmente Armonizado SGA.",
-                    "Quimica general en la industria 1.",
-                    "Química básica 2.",
-                    "Generalidades tóxicológicas."
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Gestión toxicologica",
-                "courses": [
-                    "Toxicocinética",
-                    "Toxicodinamia",
-                    "Tratamiento Genral",
-                    "Tratamiento Específico",
-                    "Hipoxias tóxicas por ciaruno",
-                    "Metahemoglobinemia",
-                    "Radiotoxicidad"
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Intoxicaciones",
-                "courses": [
-                    "Monoxido de carbono",
-                    "Intoxicación con etanol",
-                    "Intoxicación con metanol",
-                    "Intoxicación con glicoles",
-                    "Hidrocarburos generalidades",
-                    "Hidrocarburos alfabeticos o lineales",
-                    "Hidrocarburos alogenados clorados",
-                    "Hidrocarburos cíclicos aromáticos",
-                    "Hidrocarburos Nitrogenados"
-                ]
-            },
-            {
-                "module": "Módulo 7",
-                "title": "Materiales peligrosos",
-                "courses": [
-                    "Arsénico",
-                    "Plomo",
-                    "Mercurio",
-                    "Cromo",
-                    "Manganeso",
-                    "Talio",
-                    "HIerro",
-                    "Organofosforados",
-                    "Carbamatos",
-                    "Organoclorados",
-                    "Dicumarinicus",
-                    "Biperidilos",
-                    "Piretrinas"
-                ]
-            }
-        ]
-    },
-    "tec-osha":{
-        "title": "Trainer de Espacios Confinados",
-        "code": 1015,
-        "label": "TEC-OSHA",
-        "presentation":[
-            "",
-            ""
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "tsso-osha":{
-        "title": "Trainer de Seguridad y Salud Ocupacional",
-        "code": 1016,
-        "label": "TSSO-OSHA",
-        "presentation":[
-            "b",
-            ""
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "tta-osha":{
-        "title": "Trainer de Trabajos en Altura",
-        "code": 1019,
-        "label": "TTA-OSHA",
-        "presentation":[
-            "b",
-            ""
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "gssl-osha":{
-        "title": "Gerencia de la Seguridad y Salud Laboral",
-        "code": 1051,
-        "label": "GSSL-OSHA",
-        "presentation":[
-            "La excelencia en la gestión de la seguridad y salud en el trabajo, la seguridad Ocupacional y la prevención de riesgos laborales, requiere la aplicación de óptimos conocimientos y habilidades que ayuden a contribuir y aportar mejoras en bien de toda una organización con respuestas inmediatas pero a la vez óptimas de planeación y ejecución de resultados basados a normas de seguridad establecidas presentes a nivel mundial que aportan a la reducción de los índices de accidentalismo y mortandad en el entorno laboral.",
-            "Para ello OSHA-EE.UU mediante estudios e investigaciones fue elaborando normas y estándares de soporte fundamental aplicadas por Osha-Institute.",
-            "A ello sumamos propuestas de mejora englobados en estándares aplicados por ANSI, ASME y NIOSH en más de I 120 países a nivel mundial."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Introducción a la Seguridad Laboral Bajo Normas Osha",
-                "courses": [
-                    "Introducción a la gestión de la seguridad (8 módulos)",
-                    "Introducción a la Formación en Seguridad (2 módulos)",
-                    "Introducción a OSHA-EE.UU (2 módulos)",
-                    "Introducción a la Responsabilidad en la Seguridad (2 módulos)",
-                    "Introducción al Liderazgo en la Seguridad (2 módulos)",
-                    "Introducción al Reconocimiento de Seguridad (2 módulos)",
-                    "Introducción a la Supervisión de Seguridad (2 módulos)",
-                    "Introducción a los controles de peligro (2 módulos)",
-                    "Introducción al análisis de riesgos laborales (2 módulos)"
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Seguridad Operativa y de Riesgo",
-                "courses": [
-                    "Seguridad Eléctrica para empleados básico (2 módulos)",
-                    "Seguridad del conductor (2 módulos)",
-                    "Seguridad en la soldadura básico (2 módulos)",
-                    "Seguridad en excavaciones básico (2 módulos)",
-                    "Seguridad en Montacargas básico (2 módulos)",
-                    "Seguridad básico de grúa (2 módulos)",
-                    "Seguridad en espacios confinados (5 módulos)",
-                    "Protección de maquinaria básico (2 módulos)."
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Emergencias y Rescate",
-                "courses": [
-                    "Programa de espacios confinados (9 módulos)",
-                    "Superficies para caminar, trabajar y protección contra caídas (2 módulos)",
-                    "Planes de acción de emergencia y prevención de Incendios (2 módulos)"
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Higiene Laboral",
-                "courses": [
-                    "Equipo de protección personal básico (2 módulos)",
-                    "Higiene y prevención de enfermedades en el lugar de trabajo (3 módulos)",
-                    "Orientación sobre limpieza y Desinfección (1 módulo)"
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Riesgos Laborales",
-                "courses": [
-                    "Riesgos físicos para la salud en la Construcción (2 módulos)",
-                    "Riesgos biológicos para la salud en la Construcción (2 módulos)",
-                    "Riesgos ergonómicos en la Construcción (2 módulos)",
-                    "Riesgos ergonómicos en la industria general (2 módulos)"
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "SGA-HAZWOPER(Gestión de Materiales Peligrosos en las Industrias)",
-                "courses": [
-                    "Comunicación de peligros básico (2 módulos)",
-                    "Hazwoper 1 (5 módulos)",
-                    "Hazwoper 2 (5 módulos)",
-                    "Hazwoper 3 (5 módulos)",
-                    "Hazwoper 4 (6 módulos)"
-                ]
-            }
-        ]
-    },
-    "gsic-osha":{
-        "title": "Gerencia de la Seguridad en la Industria de la Construcción",
-        "code": 1052,
-        "label": "GSIC-OSHA",
-        "presentation":[
-            "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben sei abordados desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
-            "En este escenario el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Gestión Integral",
-                "courses": [
-                    "Introducción a la supervisión de seguridad.",
-                    "Introducción a Osha.",
-                    "Introducción a la formación de Seguridad.",
-                    "Introducción a la responsabilidad de la seguridad.",
-                    "Introducción al reconocimiento de la seguridad.",
-                    "Introducción a la gestión de la seguridad",
-                    "Introducción al liderazgo en la seguridad.",
-                    "Introducción a la Ergonomía.",
-                    "Introducción al análisis de riesgos laborales.",
-                    "Introducción a los controles de peligros."
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Seguridad laboral",
-                "courses": [
-                    "Seguridad en la soldadura: Básico.",
-                    "Seguridad en montacargas: básico.",
-                    "Seguridad en las excavaciones: Básico.",
-                    "Seguridad básica de grúa.",
-                    "Seguridad en espacios confinados.",
-                    "Seguridad de equipo pesado.",
-                    "Seguridad de demolición.",
-                    "Seguridad en espacios confinados en la Construcción.",
-                    "Seguridad en la construcción de acero.",
-                    "Seguridad de Grúas y Derricks I.",
-                    "Seguridad de Grúas y Derricks II.",
-                    "Seguridad del petróleo y el gas costa afuera I.",
-                    "Seguridad del petróleo y gas en alta mar II.",
-                    "Seguridad del conductor.",
-                    "Seguridad eléctrica para empleados: básico."
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Gestión de riesgos",
-                "courses": [
-                    "Riesgos físicos para la salud en la Construcción.",
-                    "Riesgos biológicos para la salud en la construcción.",
-                    "Riesgos ergonómicos en la construcción."
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Seguridad Ocupacional",
-                "courses": [
-                    "Peligros para la Salud en la Construcción.",
-                    "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción.",
-                    "Equipo de protección personal: Básico.",
-                    "Higiene y prevención de enfermedades en el lugar de trabajo.",
-                    "Orientación para la limpieza y desinfección.",
-                    "Protección contra caídas en la Construcción.",
-                    "Foco Cuatro: Riesgos de caída.",
-                    "Foco cuatro Atrapado o entre peligros.",
-                    "Foco cuatro peligros de ser golpeado.",
-                    "Foco cuatro - Riesgos de electrocución."
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Gestión Ambiental y Seguridad",
-                "courses": [
-                    "Introducción a SEMS II 30 CFR 250.1900-1933."
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Prevención",
-                "courses": [
-                    "Inspección de pozos de petróleo y gas.",
-                    "Programa de espacios confinados.",
-                    "Protección de máquinas: básico.",
-                    "Planes de acción de emergencia y prevención de incendios.",
-                    "Comunicación de peligros: básico.",
-                    "Superficies para caminar-trabajar y protección contra caídas.",
-                    "Gestión de la seguridad del petróleo y el gas."
-                ]
-            },
-            {
-                "module": "Módulo 7",
-                "title": "Hazwoper/Química",
-                "courses": [
-                    "HAZWOPER I.",
-                    "HAZWOPER II.",
-                    "HAZWOPER III.",
-                    "HAZWOPER IV.",
-                    "HAZWOPER V.",
-                    "HAZWOPER VI.",
-                    "QUIMICA GENERAL EN LA INDUSTRIA 1.",
-                    "QUIMICA BASICA 2."
-                ]
-            }
-        ]
-    },
-    "tsstic-osha":{
-        "title": "Trainer de Seguridad y Salud en el Trabajo en la Industria de la Construcción",
-        "code": 1060,
-        "label": "TSSTIC-OSHA",
-        "presentation":[
-            "b",
-            ""
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "dprl-osha":{
-        "title": "Director de Prevención de Riesgos Laborales Osha",
-        "code": 1071,
-        "label": "DPRL-OSHA",
-        "presentation":[
-            "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "esst-osha":{
-        "title": "Especialista de Seguridad y Salud en el Trabajo",
-        "code": 2010,
-        "label": "ESST-OSHA",
-        "presentation":[
-            "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
-        ]
-    },
-    "esso-osha":{
-        "title": "Especialista de Seguridad y Salud Ocupacional",
-        "code": 2020,
-        "label": "ESSO-OSHA",
-        "presentation":[
-            "Las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos, enfocado no solo a las normas nacionales, sino también a las normas internacionales debido a que las carteras de clientes son internacionales manteniendo las competencias integrales, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y salud Ocupacional, minimizando los daños Ocupacionales, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
-        ],
-        "hours":280,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Gestión de Seguridad Laboral",
-                "courses": [
-                    "Formación en Seguridad",
-                    "Responsabilidad de la Seguridad",
-                    "Supervisión de Seguridad",
-                    "Reconocimiento de Seguridad",
-                    "Introducción a Osha."
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Prevención de Riesgos",
-                "courses": [
-                    "Higiene y prevención de enfermedades en el lugar de trabajo",
-                    "Protección de máquinas básico",
-                    "Equipo de protección personal",
-                    "Seguridad del conductor",
-                    "Superficies para trabajar y caminar y protección contra caídas"
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Trabajo de Alto Peligro",
-                "courses": [
-                    "Seguridad Eléctrica para empleados básico",
-                    "Seguridad en Espacios Confinados",
-                    "Programa de Espacios Confinados",
-                    "Seguridad en soldadura básico",
-                    "Seguridad en excavaciones básico", 
-                    "Seguridad con Montacargas básico"
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Seguridad Ocupacional",
-                "courses": [
-                    "Riesgos Biológicos para la Salud en la Construcción",
-                    "Riesgos físicos para la salud en la Construcción",
-                    "Planes de acción de emergencias y prevención de incendios",
-                    "Introducción al análisis de riesgos laborales"
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Ergonomía Laboral",
-                "courses": [
-                    "Introducción a la Ergonomia",
-                    "Riesgos Ergonomicos en la Construcción",
-                    "Riesgos Ergonomicos en la Industria general",
-                    "Introducción a los controles de peligros"
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Toxicología General",
-                "courses": [
-                    "Toxicologia General",
-                    "Toxicocinética",
-                    "Toxicodinamia",
-                    "Tratamiento del paciente Intoxicado",
-                    "Tratamientos Específicos",
-                    "Hipoxias Tóxicas Monóxido de Carbono",
-                    "Hipoxias Tóxicas Cianuro",
-                    "Hipoxias Metahemoglobinemia",
-                    "Hipoxias Tóxicas Gases de Guerra",
-                    "Alcohol Etílico"
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Gestión de Materiales y Residuos Peligrosos",
-                "courses": [
-                    "Comunicación de Peligros básico",
-                    "Orientación para la limpieza y Desinfección",
-                    "Hazwoper I",
-                    "Hazwoper II",
-                    "Hazwoper III",
-                    "Hazwoper IV",
-                    "Sistema Globalmente Armonizado SGA"
-                ]
-            }
-        ]
-    },
-    "eprl-osha":{
-        "title": "Especialista en Prevención de Riesgos Laborales",
-        "code": 2030,
-        "label": "EPRL-OSHA",
-        "presentation":[
-            "El alto índice de accidentalismo y mortandad en las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos y específicos, enfocado no solo a las normas o leyes nacionales, sino también a las normas internacionales de presencia a nivel mundial, manteniendo las competencias integrales y competitivas, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de la prevención de riesgos, minimizando los altos índices de accidentalismo, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Gestión de la Seguridad",
-                "courses": [
-                    "Seguridad en la soldadura: básico.",
-                    "Seguridad en montacargas: básico",
-                    "Seguridad en las excavaciones: básico",
-                    "Seguridad en espacios confinados",
-                    "Seguridad eléctrica para empleados: básico",
-                    "Introducción al liderazgo en seguridad",
-                    "Introducción a la Supervisión de seguridad",
-                    "Introducción a la responsabilidad de la seguridad",
-                    "Introducción al reconocimiento de seguridad.",
-                    "Seguridad del conductor.",
-                    "Introducción a la formación en seguridad"
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Gestión de Riesgos",
-                "courses": [
-                    "Introducción al análisis de riesgos laborales",
-                    "Riesgos físicos para la salud en la construcción",
-                    "Riesgos biológicos para la salud en la construcción.",
-                    "Riesgos ergonómicos en la construcción",
-                    "Riesgos ergonómicos en la industria general."
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Trabajos de alto riesgo",
-                "courses": [
-                    "Programa de espacios confinados",
-                    "Superficies para caminar-trabajar y protección contra caídas",
-                    "Planes de acción de emergencia y prevención de incendios",
-                    "Introducción a la ergonomía",
-                    "Sistema Globalmente Armonizado \"SGA\""
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Gestión de seguridad OSHA",
-                "courses": [
-                    "Programa de espacios confinados",
-                    "Superficies para caminar-trabajar y protección contra caídas",
-                    "Planes de acción de emergencia y prevención de incendios",
-                    "Introducción a la ergonomía",
-                    "Sistema Globalmente Armonizado \"SGA\""
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "HAZWOPER",
-                "courses": [
-                    "HAZWOPER I.",
-                    "HAZWOPER II.",
-                    "HAZWOPER III.",
-                    "HAZWOPER IV.",
-                    "HAZWOPER V.",
-                    "HAZWOPER VI."
-                ]
-            }
-        ]
-    },
-    "tsslic-osha":{
-        "title": "Técnico en Seguridad y Salud Laboral en la Industria de la Construcción",
-        "code": 2040,
-        "label": "TSSLIC-OSHA",
-        "presentation":[
-            "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben ser abordados, guiados y dirigidos desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
-            "En este escenario, el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "Gestión Integral",
-                "courses": [
-                    "Introducción a la supervisión de seguridad.",
-                    "Introducción a Osha.",
-                    "Introducción a la formación de Seguridad.",
-                    "Introducción a la responsabilidad de la seguridad.",
-                    "Introducción al reconocimiento de la seguridad.",
-                    "Introducción a la gestión de la seguridad.",
-                    "Introducción al liderazgo en la seguridad.",
-                    "Introducción a la Ergonomía.",
-                    "Introducción al análisis de riesgos laborales.",
-                    "Introducción a los controles de peligros."
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "Seguridad laboral",
-                "courses": [
-                    "Seguridad en la soldadura: Básico.",
-                    "Seguridad en montacargas: Básico.",
-                    "Seguridad en las excavaciones: Básico.",
-                    "Seguridad básica de grúa.",
-                    "Seguridad en espacios confinados.",
-                    "Seguridad de equipo pesado.",
-                    "Seguridad de demolición.",
-                    "Seguridad en espacios confinados en la construcción.",
-                    "Seguridad en la construcción de acero.",
-                    "Seguridad de Grúas y Derricks I.",
-                    "Seguridad de Grúas y Derricks II.",
-                    "Seguridad del petróleo y el gas costa afuera I.",
-                    "Seguridad de petróleo y gas en alta mar II.",
-                    "Seguridad del conductor.",
-                    "Seguridad eléctrica para empleados: Básico."
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "Gestión de riesgos",
-                "courses": [
-                    "Riesgos físicos para la salud en la Construcción.",
-                    "Riesgos biológicos para la salud en la construcción.",
-                    "Riesgos ergonómicos en la construcción.",
-                    "Riesgos ergonómicos en la industria general."
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "Seguridad Ocupacional",
-                "courses": [
-                    "Peligros para la Salud en la Construcción.",
-                    "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción.",
-                    "Equipo de protección personal: Básico.",
-                    "Higiene y prevención de enfermedades en el lugar de trabajo.",
-                    "Orientación para la limpieza y desinfección.",
-                    "Protección contra caídas en la Construcción.",
-                    "Foco Cuatro - Riesgos de caída.",
-                    "Foco cuatro - Atrapado o entre peligros.",
-                    "Foco cuatro - Peligros de ser golpeado.",
-                    "Foco cuatro - Riesgos de electrocución."
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "Gestión Ambiental y Seguridad",
-                "courses": [
-                    "Introducción a SEMS II 30 CFR 250.1900-1933."
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "Prevención",
-                "courses": [
-                    "Inspección de pozos de petróleo y gas.",
-                    "Programa de espacios confinados.",
-                    "Protección de máquinas: Básico.",
-                    "Planes de acción de emergencia y prevención de Incendios.",
-                    "Comunicación de peligros: Básico.",
-                    "Superficies para caminar-trabajar y protección contra caídas.",
-                    "Gestión de la seguridad del petróleo y el gas."
-                ]
-            }
-        ]
-    },
-    "ehiv-osha":{
-        "title": "Especialista en Hazmat Nivel IV",
-        "code": 2056,
-        "label": "EHIV-OSHA",
-        "presentation":[
-            "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez, profesionales con competencias y amplio conocimiento, capaces de desarrollar estrategias para gestionar y administrar las eventualidades operacionales actuando de manera efectiva ante eventos inesperados que suelen darse en las operaciones diversas.",
-            "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global y la respuesta inmediata, estratégica e integradora de los procesos de primera respuesta, Asimismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones acertivas marcando diferencia por una formación amplia y óptima."
-        ],
-        "hours":150,
-        "benefits": "",
-        "sylabus": [
-            {
-                "module": "Módulo 1",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 2",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 3",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 4",
-                "title": "",
-                "courses": [
-                ]
-            },
-            {
-                "module": "Módulo 5",
-                "title": "",
-                "courses": [
-
-                ]
-            },
-            {
-                "module": "Módulo 6",
-                "title": "",
-                "courses": [
-
-                ]
-            }
+    "considerations": {
+        "title": "Consideraciones",
+        "list": [
+            "El valor total incluye gastos de envío.",
+            "Los certificados digitales son enviados dentro las 24 horas.",
+            "Los certificados físicos son enviados a su ciudad de residencia dentro las 24 horas.",
+            "Al aplicar el certificado físico, accede gratuitamente al certificado digital.",
+            "Cada certificado incluye una credencial de bolsillo."
         ]
     }
 }

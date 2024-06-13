@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate, useParams } from 'react-router-dom';
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Line, Line1, Line2 } from "./Line";
 import { CiBarcode } from "react-icons/ci";
@@ -220,9 +222,9 @@ function Card3() {
   );
 }
 
-const CardGrado = ({id, title, code, label, src}) => {
+const CardGrado = ({id, title, code, label, src, onClick}) => {
   return(
-    <div className="group cursor-pointer overflow-hidden shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg bg-gray-100">
+    <div onClick={onClick} className="group cursor-pointer overflow-hidden shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg bg-gray-100">
       <span className="absolute top-50 z-0 h-24 w-24 rounded-full bg-primary transition-all duration-300 group-hover:scale-[12]"></span>
       <div className="relative mx-auto">
         <div className="relative">
@@ -251,9 +253,10 @@ const CardGrado = ({id, title, code, label, src}) => {
             </div>
           </div>
           <div className="mt-4 flex justify-end">
-            <Link to={`/grados/${id}`} className="border-azulMedio border-2 p-2 rounded-lg text-azulMedio transition-all duration-300 group-hover:text-white group-hover:border-white">
+            <button to={`/grados/${id}`} className="border-azulMedio border-2 p-2 rounded-lg text-azulMedio transition-all duration-300 group-hover:text-white group-hover:border-white"
+            >
               Ver más &rarr;
-            </Link>
+            </button>
           </div>
         </div>
       </div>

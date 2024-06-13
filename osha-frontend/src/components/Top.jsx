@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiStudentFill } from "react-icons/pi";
 import { GrLanguage } from "react-icons/gr";
-import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaYoutube, FaWhatsapp, FaTelegramPlane, FaFacebookF, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import i18n from '../config/i18next.config';
 import { useTranslation } from "react-i18next";
 
@@ -22,6 +22,11 @@ function Top(){
       {/* Social Share */}
       <div className="hidden md:block">
         <div className="flex gap-1 items-center">
+          <span className="bg-youtube p-1 rounded-lg border border-white transform transition-transform hover:scale-110">
+            <a href="https://www.youtube.com/channel/UC-dGYMa8PxA6L6dIWF1DwZA" target="_blank" title="youtube">
+              <FaYoutube color="white" />
+            </a>
+          </span>
           <span className="bg-whatsapp p-1 rounded-lg border border-white transform transition-transform hover:scale-110">
             <a href="https://wa.me/message/YK4GCWUIXVHOK1" target="_blank" title="WhatsApp">
               <FaWhatsapp color="white" />

@@ -53,6 +53,7 @@ export default {
         verde: '#3BC0A0',
         morado: '#763BC0',
         
+        youtube: '#E81D1D',
         whatsapp: '#25D366',
         telegram: '#0088cc',
         facebook: '#1877F2',

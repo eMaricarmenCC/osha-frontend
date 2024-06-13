@@ -7,7 +7,7 @@ const gradosData = [
     src: "/src/assets/img-grados/TrainTrainer.png"
   },
   {
-    id: 62,
+    id: 2,
     title: "Trainer de Trabajos Críticos",
     code: 1002,
     label: "TCW-OSHA",
