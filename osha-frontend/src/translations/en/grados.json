@@ -12,49 +12,170 @@
             "code": 1001,
             "label": "TT-OSHA",
             "presentation":[
-                "b",
-                ""
+                "Toda actividad laboral en las diversas industrias requiere de profesionales que puedan interactuar directamente con todos los miembros de la organización manteniendo un ambiente laboral afectuoso y gustoso manteniendo siempre la productividad llevando de la mano la seguridad y la operación de manera exitosa y planificada.",
+                "Es preciso mencionar que los riesgos y peligros organizacionales es para todos los involucrados desde administrativos, personal de servicio, supervisión de línea y personal operativo, los cuales deben ser abordados desde una perspectiva general fomentando el mejoramiento de la calidad de vida de los colaboradores. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, prevención de riesgos y gestión psicológica que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas propuestas.",
+                "En este escenario, el sector operativo y de seguridad tienen la necesidad urgente de contar con el recurso humano formado específicamente para desarrollar un trabajo optimo no solamente para realizar el sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional que engloba a todos los miembros y a todos los departamentos de una organización. En respuesta a este requerimiento a nivel internacional Osha-Institute desarrollo este programa acorde y encajado sobre las normas Osha del Departamento de Trabajo de los Estados Unidos."
             ],
-            "hours":150,
-            "price": 200,
-            "benefits": "",
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": "Grado"
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": "Trainer"
+                },
+                {
+                    "title": "Validez",
+                    "text": "INternacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": "320"
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
+            "hours":320,
+            "price": 1350,
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "Occupational Safety and Health Trainer of Osha-Institute",
+                    "l3": "Entrenador de Seguridad y Salud en el Trabajo del Instituto Osha"
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por 320 horas como:",
+                    "l2": "TRAIN THE TRAINER"
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "Entrenador de Seguridad y Salud en el TRabajo de Osha-Institute",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "320",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
-                    "title": "",
+                    "title": "Gestión Integral",
                     "courses": [
+                        "Introducción a la supervisión de seguridad.",
+                        "Introducción a Osha.",
+                        "Introducción a la formación de Seguridad.",
+                        "INtroducción a la formación en Osha",
+                        "Introducción a la responsabilidad de la seguridad.",
+                        "Introducción al reconocimiento de la seguridad.",
+                        "Introducción a la gestión de la seguridad",
+                        "Introducción al liderazgo en la seguridad.",
+                        "Introducción a la Ergonomía.",
+                        "Introducción al análisis de riesgos laborales.",
+                        "Introducción a los controles de peligros."
                     ]
                 },
                 {
                     "module": "Módulo 2",
-                    "title": "",
+                    "title": "Seguridad laboral",
                     "courses": [
+                        "Desarrollo de capacitación en Osha.",
+                        "Realización de capacitación en Osha",
+                        "Seguridad en la soldadura: Básico.",
+                        "Seguridad en montacargas: Básico.",
+                        "Seguridad en las excavaciones: Básico.",
+                        "Seguridad básica de grúa.",
+                        "Seguridad en espacios confinados.",
+                        "Seguridad de equipo pesado.",
+                        "Seguridad de demolición.",
+                        "Seguridad en espacios confinados en la Construcción.",
+                        "Seguridad en la construcción de acero.",
+                        "Seguridad de Grúas y Derricks I.",
+                        "Seguridad de Grúas y Derricks II.",
+                        "Seguridad del petróleo y el gas costa afuera I.",
+                        "Seguridad del petróleo y gas en alta mar II.",
+                        "Seguridad del conductor.",
+                        "Seguridad eléctrica para empleados: Básico."
                     ]
                 },
                 {
                     "module": "Módulo 3",
-                    "title": "",
+                    "title": "Gestión de riesgos",
                     "courses": [
+                        "Realización de un análisis de riesgo laboral (JHA).",
+                        "Riesgos físicos para la salud en la Construcción.",
+                        "Riesgos biológicos para la salud en la construcción.",
+                        "Riesgos ergonómicos en la construcción.",
+                        "Riesgos ergonómicos en la insdustria general."
                     ]
                 },
                 {
                     "module": "Módulo 4",
-                    "title": "",
+                    "title": "Seguridad Ocupacional",
                     "courses": [
+                        "Introducción a la supervisión dfe seguridad.",
+                        "Peligros para la Salud en la Construcción.",
+                        "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción.",
+                        "Equipo de protección personal: Básico.",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo.",
+                        "Orientación para la limpieza y desinfección.",
+                        "Protección contra caídas en la Construcción.",
+                        "Foco Cuatro: Riesgos de caída.",
+                        "Foco cuatro - Atrapado o entre peligros.",
+                        "Foco cuatro - Peligros de ser golpeado.",
+                        "Foco cuatro - Riesgos de electrocución."
                     ]
                 },
                 {
                     "module": "Módulo 5",
-                    "title": "",
+                    "title": "Gestión Ambiental y Seguridad",
                     "courses": [
-
+                        "Introducción a SEMS II 30 CFR 250.1900-1933."
                     ]
                 },
                 {
                     "module": "Módulo 6",
-                    "title": "",
+                    "title": "Prevención",
                     "courses": [
-
+                        "Inspección de pozos de petróleo y gas.",
+                        "Programa de espacios confinados.",
+                        "Protección de máquinas: Básico.",
+                        "Planes de acción de emergencia y prevención de incendios.",
+                        "Comunicación de peligros: Básico.",
+                        "Superficies para caminar-trabajar y protección contra caídas.",
+                        "Gestión de la seguridad del petróleo y el gas."
+                    ]
+                },
+                {
+                    "module": "Módulo 7",
+                    "title": "Hazwoper/Química",
+                    "courses": [
+                        "HAZWOPER I.",
+                        "HAZWOPER II.",
+                        "HAZWOPER III.",
+                        "HAZWOPER IV.",
+                        "HAZWOPER V.",
+                        "HAZWOPER VI.",
+                        "QUIMICA GENERAL EN LA INDUSTRIA 1.",
+                        "QUIMICA BASICA 2."
                     ]
                 }
             ],
@@ -71,9 +192,65 @@
                 "Los trabajos críticos o de alto riesgo son trabajos que necesitan una visión con enfoque óptimo en la Operatividad donde demande la seguridad para así mantener al factor humano libre de peligros trabajando desde los riesgos y controles aplicables mediante métodos efectivos.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias que involucran trabajos críticos o trabajos de riesgo complejo. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -204,9 +381,65 @@
                 "Esta acreditación cumple el requisito propuesto por osha en la 1910.120 (g) (7).",
                 "Todos los programas ofrecidos por Osha-Institute están regulados dado el caso esta regulación le da el valor profesional validado en 80 países a nivel mundial."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":320,
             "price": 200,
-            "benefits": "Gestión de la Seguridad",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -311,9 +544,65 @@
                 "",
                 ""
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -366,9 +655,65 @@
                 "b",
                 ""
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -419,9 +764,65 @@
                 "b",
                 ""
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -475,9 +876,65 @@
                 "Para ello OSHA-EE.UU mediante estudios e investigaciones fue elaborando normas y estándares de soporte fundamental aplicadas por Osha-Institute.",
                 "A ello sumamos propuestas de mejora englobados en estándares aplicados por ANSI, ASME y NIOSH en más de I 120 países a nivel mundial."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -560,9 +1017,65 @@
                 "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben sei abordados desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
                 "En este escenario el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -673,9 +1186,65 @@
                 "b",
                 ""
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -728,9 +1297,65 @@
                 "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -783,9 +1408,65 @@
                 "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez más profesionales con competencias integrales, capaces de desarrollar estrategias para gestionar y administrar los procesos operacionales con seguridad de una manera eficiente e innovadora.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y prevención de accidentes laborales en las industrias. Asimismo, que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral minimizando el índice de accidentalismo y mortandad así mismo aportar al crecimiento rentable de sus organizaciones."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -838,9 +1519,65 @@
                 "Las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos, enfocado no solo a las normas nacionales, sino también a las normas internacionales debido a que las carteras de clientes son internacionales manteniendo las competencias integrales, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de seguridad y salud Ocupacional, minimizando los daños Ocupacionales, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":280,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -938,9 +1675,65 @@
                 "El alto índice de accidentalismo y mortandad en las Industrias cuentan con una alta necesidad de profesionales con amplios conocimientos sólidos y específicos, enfocado no solo a las normas o leyes nacionales, sino también a las normas internacionales de presencia a nivel mundial, manteniendo las competencias integrales y competitivas, capaces de desarrollar estrategias para gestionar y administrar adecuadamente los recursos disponibles y los procesos operacionales con seguridad, de una manera eficiente e innovadora.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global, estratégica e integradora de los procesos de la prevención de riesgos, minimizando los altos índices de accidentalismo, así mismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones enfocados en la excelencia laboral."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -1017,9 +1810,65 @@
                 "Toda actividad laboral en la industria de la construcción conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben ser abordados, guiados y dirigidos desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los colaboradores en las organizaciones. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
                 "En este escenario, el sector productivo tiene la necesidad urgente de contar con el recurso humano formado, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",
@@ -1117,9 +1966,65 @@
                 "La globalización, el mercado cambiante y las crecientes necesidades de las empresas exigen cada vez, profesionales con competencias y amplio conocimiento, capaces de desarrollar estrategias para gestionar y administrar las eventualidades operacionales actuando de manera efectiva ante eventos inesperados que suelen darse en las operaciones diversas.",
                 "Este programa busca formar profesionales altamente competitivos, que destaquen por su visión global y la respuesta inmediata, estratégica e integradora de los procesos de primera respuesta, Asimismo que estos profesionales tengan habilidades de liderazgo, capaces de tomar decisiones acertivas marcando diferencia por una formación amplia y óptima."
             ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
             "hours":150,
             "price": 200,
-            "benefits": "",
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
             "sylabus": [
                 {
                     "module": "Módulo 1",

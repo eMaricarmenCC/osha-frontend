@@ -12,6 +12,12 @@ import { ListIcon, ListPoint } from "../../components/ui/List";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { LuArrowRightSquare } from "react-icons/lu";
+import { GrCertificate } from "react-icons/gr";
+import { PiCertificate } from "react-icons/pi";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { FaLaptop, FaQrcode } from "react-icons/fa";
+import { TiTime } from "react-icons/ti";
+
 import "../../styles/Tab.css";
 
 
@@ -166,10 +172,66 @@ export const Presentacion = ({ content }) => {
 };
 export const Beneficios = ({ content }) => {
   return (
-    <div>
-      <div className="row">
-        <div className="col-md-8">
-          
+    <div className="">
+      <div className="grid grid-cols-1 2xl:grid-cols-2 grid-row-auto gap-5">
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p className="text-sm">{content.certificate.l1}</p>
+            <p className="font-bold text-primary">{content.certificate.l2}</p>
+            <p className="text-sm">{content.certificate.l3}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <GrCertificate style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p className="text-sm">{content.diplomat.l1}</p>
+            <p className="font-bold text-primary">{content.diplomat.l2}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <LiaCertificateSolid style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p className="font-bold text-primary">{content.carnet.l1}</p>
+            <p>{content.carnet.l2}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <PiCertificate style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p className="text-sm">{content.code.l1}</p>
+            <p className="font-bold text-primary">{content.code.l2}</p>
+            <p className="text-xs">{content.code.l3}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <FaQrcode style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p>{content.hours.l1}</p>
+            <p className="font-bold text-primary">{content.hours.l2}</p>
+            <p className="font-bold text-primary">{content.hours.l3}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <TiTime style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3 bg-gray-200 py-5 px-5 border-l-8 border-primary rounded-r-3xl sm:rounded-r-full items-center text-center">
+          <div className="w-full">
+            <p>{content.classroom.l1}</p>
+            <p className="font-bold text-primary">{content.classroom.l2}</p>
+            <p className="font-bold text-primary">{content.classroom.l3}</p>
+            <p>{content.classroom.l4}</p>
+          </div>
+          <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
+            <FaLaptop style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
+          </div>
         </div>
       </div>
     </div>
