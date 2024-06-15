@@ -11,6 +11,8 @@
             "title": "Train the Trainer Osha",
             "code": 1001,
             "label": "TT-OSHA",
+            "hours":320,
+            "price": 1350,
             "presentation":[
                 "Toda actividad laboral en las diversas industrias requiere de profesionales que puedan interactuar directamente con todos los miembros de la organización manteniendo un ambiente laboral afectuoso y gustoso manteniendo siempre la productividad llevando de la mano la seguridad y la operación de manera exitosa y planificada.",
                 "Es preciso mencionar que los riesgos y peligros organizacionales es para todos los involucrados desde administrativos, personal de servicio, supervisión de línea y personal operativo, los cuales deben ser abordados desde una perspectiva general fomentando el mejoramiento de la calidad de vida de los colaboradores. En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, prevención de riesgos y gestión psicológica que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas propuestas.",
@@ -23,11 +25,11 @@
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": "Trainer"
+                    "text": "Trainer (Entrenador)"
                 },
                 {
                     "title": "Validez",
-                    "text": "INternacional"
+                    "text": "Internacional"
                 },
                 {
                     "title": "Modalidad",
@@ -42,8 +44,6 @@
                     "text": "OSHA"
                 }
             ],
-            "hours":320,
-            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
@@ -195,11 +195,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Trainer (Entrenador)"
                 },
                 {
                     "title": "Validez",
@@ -211,24 +211,24 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 1350,
             "benefits": {
                 "certificate": {
-                    "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l1": "Certificado de grado como:",
+                    "l2": "Critical Work Trainer",
+                    "l3": "Entrenador de Trabajos Críticos"
                 },
                 "diplomat": {
-                    "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l1": "Certificado de Diplomatura por 320 horas como:",
+                    "l2": "Supervisor Especialista en Trabajos Críticos"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -236,12 +236,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Critical Work Trainer",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -384,11 +384,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Trainer (Entrenador)"
                 },
                 {
                     "title": "Validez",
@@ -400,7 +400,7 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
@@ -408,16 +408,16 @@
                 }
             ],
             "hours":320,
-            "price": 200,
+            "price": 1980,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Hazmat Trainer Osha",
+                    "l3": "Entrenador Matpel de Osha"
                 },
                 "diplomat": {
-                    "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l1": "Certificado de Diplomatura por 320 horas como:",
+                    "l2": "Entrenador de Materiales y Residuos Peligrosos"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -425,12 +425,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Trainer Hazmat Osha",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -652,13 +652,12 @@
             "code": 1016,
             "label": "TSSO-OSHA",
             "presentation":[
-                "b",
-                ""
+                "Dentro de las gestiones operativas y administrativas es necesario contar con la preparación necesaria para de esa manera ponerla en práctica en el día a día. La gestión de la seguridad y salud en el trabajo, la seguridad Ocupacional y la prevención de riesgos laborales, requiere la aplicación de óptimos conocimientos y habilidades que ayuden a contribuir y aportar mejoras en bien de toda una organización con respuestas inmediatas pero a la vez óptimas de planeación y ejecución de resultados basados a normas de seguridad establecidas presentes a nivel mundial que aportan a la reducción de los índices de accidentalismo y mortandad en el entorno laboral. Para ello OSHA-EE.UU mediante estudios é investigaciones fue elaborando normas y estándares de soporte fundamental aplicadas por Osha-Institute en todos nuestros programas de formación profesional. A ello sumamos propuestas de mejora englobados en estándares aplicados por ANSI, ASME y NIOSH en más de 120 países a nivel mundial."
             ],
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
@@ -681,17 +680,18 @@
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Occupational Safety and Health Trainer \"Osha\"",
+                    "l3": "Entrenador de Seguridad y Salud Occupacional \"Osha•\""
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Occupational Health and Safety Management Under OSHA Standards",
+                    "l3": "Gerencia en la Seguridad y Salud en el Trabajo Bajo Normas Osha"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -699,12 +699,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Occupational Safety and Health Trainer \"Osha\"",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -717,7 +717,7 @@
             "sylabus": [
                 {
                     "module": "Módulo 1",
-                    "title": "",
+                    "title": "Introducción a la Seguridad Laboral",
                     "courses": [
                     ]
                 },

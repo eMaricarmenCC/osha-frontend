@@ -17,6 +17,7 @@ import { PiCertificate } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { FaLaptop, FaQrcode } from "react-icons/fa";
 import { TiTime } from "react-icons/ti";
+import { TbArrowBigRightFilled } from "react-icons/tb";
 
 import "../../styles/Tab.css";
 
@@ -99,7 +100,25 @@ function GradoDetalle(){
           </div>
           {/* div side right */}
           <div className="bg-gray-100 p-5 lg:min-w-lg">
-            <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:w-[300px] max-w-[500px]"/>
+            <div className="flex justify-center">
+              <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:w-[300px] max-w-[500px]"/>
+            </div>
+            <hr className="my-6 border-t-2 border-gray-300" />
+            <div className="flex flex-col gap-3">
+              {grado.details.map((detail, index) => (
+                <div key={index} className="flex flex-row gap-3">
+                  <TbArrowBigRightFilled style={{color:"var(--secondary)"}}/>
+                  <p><span className="text-primary font-bold">{detail.title}: </span>{detail.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col">
+              <div className="">
+                <p>{grado.details.title}</p>
+                <p>{grado.details.text}</p>
+              </div>
+            </div>
+            <hr className="my-6 border-t-2 border-gray-300" />
             <h4 className="mt-3 mb-3 text-primary">{t("certificate.title")}</h4>
             <p>{t("certificate.digital")} </p>
             <p>{t("certificate.fisico")} </p>
@@ -241,16 +260,16 @@ export const Tematica = ({ content }) => {
   return (
     <div>
       {content.map((module, index) => (
-        <>
-        <div key={index} className="mb-5">
-          <h4 className="text-sky-800">{module.module}: {module.title}</h4>
-          <ListIcon
-            list={module.courses}
-            icon={<LuArrowRightSquare style={{color:"var(--primary)"}}/>}
-          />
+        <div key={index}>
+          <div className="mb-5">
+            <h4 className="text-sky-800">{module.module}: {module.title}</h4>
+            <ListIcon
+              list={module.courses}
+              icon={<LuArrowRightSquare style={{color:"var(--primary)"}}/>}
+            />
+          </div>
+          <hr className="my-6 border-t-2 border-gray-300" />
         </div>
-        <hr className="my-6 border-t-2 border-gray-300" />
-        </>
       ))}
     </div>
   );

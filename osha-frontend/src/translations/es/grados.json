@@ -657,7 +657,7 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
@@ -680,7 +680,7 @@
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
+            "hours":320,
             "price": 1350,
             "benefits": {
                 "certificate": {
@@ -717,7 +717,7 @@
             "sylabus": [
                 {
                     "module": "Módulo 1",
-                    "title": "",
+                    "title": "Introducción a la Seguridad Laboral",
                     "courses": [
                     ]
                 },
