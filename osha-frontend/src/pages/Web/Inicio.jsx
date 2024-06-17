@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -29,8 +30,6 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 import { PiStudentBold, PiBooks } from "react-icons/pi";
 import { LuBookMarked } from "react-icons/lu";
 import { t } from 'i18next';
-
-import gradosData from "../../utils/gradosData";
 
 
 function Inicio(){
@@ -272,22 +271,28 @@ const MetodologiaEducativa = () => {
 
 /* GRADOS */
 const Grados = () => {
-  const { t, i18n } = useTranslation("inicio");
+  const { t, i18n } = useTranslation("grados");
+  const navigate = useNavigate();
+
+  const handleCardClick = (grado) => {
+    navigate(`/grados/${grado.id}`, { state: { grado } });
+  };
   return(
     <section className="bg-grisFondo" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <h1 className="text-center font-bold uppercase text-white w-auto text-2xl lg:text-3xl">
-          {t("accreditationDegrees.title")}
+          {t("titleHome")}
         </h1>
         <Linea/>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
-          { gradosData.map(grado => (
+          { t("degreeData", { returnObjects: true }).map(grado => (
             <CardGrado
-              key={grado.id}
+              id={grado.id}
               title={grado.title}
               code={grado.code}
               label={grado.label}
               src={grado.src}
+              onClick={() => handleCardClick(grado)}
             />
           ))
           }
@@ -327,7 +332,7 @@ const Categorias = () => {
     <section className="bg-grisFondo">
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <div className="">
-          <h2 className="text-center text-gray-600 font-bold uppercase">Categorías</h2>
+          <h2 className="text-center text-gray-600 font-bold uppercase">{t("categories.title")}</h2>
           <Linea/>
         </div>
         <div className="mt-10 grid grid-cols-1 grid-rows-auto gap-4 md:grid-cols-2 md:grid-rows lg:grid-cols-3">
@@ -391,7 +396,7 @@ const AlianzaConvenio = () => {
   return(
     <section className="" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
-        <h2 className="text-white text-center uppercase"><b>Nuestras alianzas y convenios</b></h2>
+        <h2 className="text-white text-center uppercase font-bold">{t("alliences.title")}</h2>
         <Linea/>
         <Swiper
           effect={'coverflow'}
@@ -414,7 +419,7 @@ const AlianzaConvenio = () => {
             clickable:true
           }}
           modules={[EffectCoverflow,Pagination,Navigation]}
-          className="relative h-[28rem] pt-[2rem]"
+          className="relative h-[16rem] xs:h-[28rem] sm:h-[28rem] pt-[2rem]"
         >
           <SwiperSlide>
             <img src="/src/assets/img-alianzas/ansi.jpg" alt="slide_image" />
@@ -502,7 +507,7 @@ const Galería = () => {
   return (
     <section>
       <div className="px-5 py-10 sm:px-20">
-        <h2 className="text-center text-primary uppercase"><b>Galería</b></h2>
+        <h2 className="text-center text-primary uppercase font-bold">{t("gallery.title")}</h2>
         <Linea/>
         <div className="mt-10 w-full items-center gap-8 max-w-6xl mx-auto">
           <ShuffleGrid

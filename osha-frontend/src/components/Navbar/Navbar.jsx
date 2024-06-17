@@ -116,7 +116,7 @@ const NavbarMd = () => {
   };
 
   return (
-    <div className="hidden md:block flex w-full bg-grisFondo p-6 text-neutral-200 md:justify-center">
+    <div className="hidden md:block flex w-full bg-grisFondo p-3 text-neutral-200 md:justify-center">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -276,7 +276,7 @@ const Content = ({ selected, dir }) => {
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-800 via-neutral-800 to-neutral-700 p-4"
+      className="absolute left-24 top-[calc(100%_+_23px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-800 via-neutral-800 to-neutral-700 p-4"
     >
       <Bridge />
       <Nub selected={selected} />

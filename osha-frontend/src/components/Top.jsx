@@ -17,7 +17,7 @@ function Top(){
   };
 
   return (
-    <section className="px-4 py-3 flex flex-col md:flex-row gap-4 bg-primary items-center justify-between">
+    <section className="px-4 py-2 flex flex-col md:flex-row gap-4 bg-primary items-center justify-between">
       
       {/* Social Share */}
       <div className="hidden md:block">

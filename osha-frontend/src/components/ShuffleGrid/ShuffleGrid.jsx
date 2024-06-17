@@ -8,6 +8,7 @@ const shuffle = (array) => {
   while (currentIndex != 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
+
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex],
       array[currentIndex],
@@ -17,37 +18,39 @@ const shuffle = (array) => {
   return array;
 };
 
-const generateSquares = (images) => {
-  return shuffle(images).map((img, index) => (
+const generateSquares = ({squareData}) => {
+  return shuffle(squareData).map((sq) => (
     <motion.div
-      key={img.id || index}
+      key={sq.id}
       layout
       transition={{ duration: 1.5, type: "spring" }}
       className="w-full h-full"
       style={{
-        backgroundImage: `url(${img.src})`,
-        backgroundSize: "cover", //container
+        backgroundImage: `url(${sq.src})`,
+        backgroundSize: "cover",
       }}
     ></motion.div>
   ));
 };
 
-const ShuffleGrid = ({ images, nColClass, gapClass}) => {
+const ShuffleGrid = ({squareData, nRow, nCol}) => {
   const timeoutRef = useRef(null);
-  const [squares, setSquares] = useState(generateSquares(images));
+  const [squares, setSquares] = useState(generateSquares(squareData));
 
   useEffect(() => {
     shuffleSquares();
+
     return () => clearTimeout(timeoutRef.current);
   }, []);
 
   const shuffleSquares = () => {
-    setSquares(generateSquares(images));
+    setSquares(generateSquares());
+
     timeoutRef.current = setTimeout(shuffleSquares, 3000);
   };
 
   return (
-    <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 grid-rows-auto h-[450px] ${gapClass}`}>
+    <div className={`grid grid-cols-${nCol} grid-rows-${nRow} h-[450px] gap-1`}>
       {squares.map((sq) => sq)}
     </div>
   );

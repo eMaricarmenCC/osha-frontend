@@ -30,6 +30,7 @@
         "description": "Accede a un grado más en tu carrera profesional en seguridad y certificate dale un valor internacional a tus competencias con una certificación válido a nivel mundial, siempre con la garantía de la Occupational Safety Health Administration \"Osha-Institute\"."
     },
     "categories": {
+        "title": "Categorias",
         "occupationalSafety": {
             "title": "Seguridad Laboral",
             "description": "Desde 1971, somos propulsores de la mejora continua en relación a Seguridad Laboral en las Organizaciones."
@@ -54,6 +55,12 @@
             "title": "Materiales peligrosos",
             "description": "La gestión de materiales peligrosos en el mundo es importante por ello manejamos un estándar adecuado (Hazwoper) mejorando su gestión."
         }
+    },
+    "alliences": {
+        "title": "Nuestras Alianzas y Convenios"
+    },
+    "gallery": {
+        "title": "Galería"
     },
     "oshaInstitute": {
         "vocationalTraining": {

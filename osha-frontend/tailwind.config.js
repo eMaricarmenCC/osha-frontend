@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        'xs': '500px',
         'customnb': '1020px',
       }
     },

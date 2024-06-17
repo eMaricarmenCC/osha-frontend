@@ -8,7 +8,7 @@ import { CardFotTex } from "../../components/ui/Card";
 import { ListPoint } from "../../components/ui/List";
 import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
-import { buttonPrimary } from "../../components/ui/buttons";
+import { buttonPrimary } from "../../components/ui/Button";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
@@ -51,7 +51,7 @@ function WhoWeAre(){
   return(
     <section>
       <Breadcrumbs
-        text={"Nosotros"}
+        text={t("title")}
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
@@ -113,7 +113,7 @@ function LegalNature(){
   return(
     <section>
       <Breadcrumbs
-        text={"Nuestra identidad"}
+        text={t("legalNature.title")}
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />

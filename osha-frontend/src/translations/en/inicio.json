@@ -30,6 +30,7 @@
         "description": "Access one more degree in your professional career in safety and certificate. Give international value to your skills with a certification valid worldwide, always with the guarantee of the Occupational Safety Health Administration \"Osha-Institute\" "
     },
     "categories": {
+        "title": "Categories",
         "occupationalSafety": {
             "title": "Occupational Safety",
             "description": "Since 1971, we have been promoters of continuous improvement in relation to Occupational Safety in Organizations."
@@ -54,6 +55,12 @@
             "title": "Hazardous materials",
             "description": "The management of hazardous materials in the world is important, which is why we manage an appropriate standard (Hazwoper) improving its management."
         }
+    },
+    "alliences": {
+        "title": "Our Alliances and Agreements"
+    },
+    "gallery": {
+        "title": "Gallery"
     },
     "oshaInstitute": {
         "vocationalTraining": {

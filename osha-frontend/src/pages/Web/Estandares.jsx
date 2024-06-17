@@ -5,7 +5,6 @@ import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 import { FaBuildingColumns } from "react-icons/fa6";
 
-
 function Estandares(){
   const { t, i18n } = useTranslation("estandares");
   return (
@@ -21,7 +20,9 @@ function Estandares(){
           <Line1 bgColorClass={"bg-secondary"}/>
           <p className="mt-2">{t("p1")}</p>
           <p className="mt-2">{t("p2")}</p>
-          <Link to="https://www.osha.gov/topics/text-index" className="bg-primary p-3 rounded-lg hover:bg-azulOscuro text-white">Conoce los estándares</Link>
+          <div className="mt-8 mb-5">
+            <a href="https://www.osha.gov/topics/text-index" className="mt-4 bg-primary p-3 rounded-lg hover:bg-azulOscuro text-white">Conoce los estándares</a>
+          </div>
         </div>
         <div></div>
       </div>
