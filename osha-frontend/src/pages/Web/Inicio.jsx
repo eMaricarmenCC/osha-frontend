@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 import { useTranslation } from "react-i18next";
 import CountUp from 'react-countup';
 import { Stars } from "@react-three/drei";
@@ -12,6 +13,7 @@ import { SectionImgContent, CardGrado, HoverEffectCard, GlowingGradientBorder, G
 import { ShuffleGrid } from '../../components/ShuffledGrid/ShuffleGrid';
 import { Categories } from '../../components/ui/Card';
 import { Linea, Line1, OneLine } from '../../components/ui/Line';
+import { AnimatedDiv } from '../../components/ui/AnimatedDiv';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
@@ -42,7 +44,6 @@ function Inicio(){
       <Categorias/>
       <AlianzaConvenio/>
       <Galería/>
-    {/* <EJemplo/> */}
     </section>
   );
 };
@@ -205,17 +206,21 @@ const Hero1 = () => {
 /* CARDS DE INTRODUCCIÓN */
 const IntroCards = () => {
   const { t, i18n } = useTranslation("inicio");
-  return(
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // La animación se activará solo una vez
+    threshold: 0.1,     // Se activa cuando el 10% del div es visible
+  });
+  return(    
     <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10" style={{ backgroundImage: "url('/src/assets/papel/papel15.jpg')" }}>
       <motion.div
-        initial={{y: "10rem", opacity: 0}}
-        animate={{y: 0, opacity: 1}}
-        transition={{
-          duration: 2,
-          type: "spring",
+        ref={ref}
+        initial={{ y: '10%', opacity: 0 }}
+        animate={inView ? { y: '0%', opacity: 1 } : { y: '40%', opacity: 0 }}
+        transition={{ 
+          type: 'spring', stiffness: 120, damping: 20
         }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
       >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Card
           icon={<MdSchool color='white' style={{height:50, width:50}}/>}
           title={t("intro.education.title")} 
@@ -248,17 +253,19 @@ const IntroCards = () => {
           textClass="text-amarilloFuerte"
           bgCiClass="bg-amarilloFuerte"
         />
-      </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        
       </div>
-    </section>
+      </motion.div>
+    </section>    
   );
 };
 
 /* METODOLOGÍA EDUCATIVA */
 const MetodologiaEducativa = () => {
   const { t, i18n } = useTranslation("inicio");
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // La animación se activará solo una vez
+    threshold: 0.1,     // Se activa cuando el 10% del div es visible
+  });
   return(
     <section className="bg-grisFondo">
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10">
@@ -278,16 +285,27 @@ const MetodologiaEducativa = () => {
 const Grados = () => {
   const { t, i18n } = useTranslation("grados");
   const navigate = useNavigate();
-
   const handleCardClick = (grado) => {
     navigate(`/grados/${grado.id}`, { state: { grado } });
   };
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // La animación se activará solo una vez
+    threshold: 0.1,     // Se activa cuando el 10% del div es visible
+  });
   return(
     <section className="bg-grisFondo" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
-        <h1 className="text-center font-bold uppercase text-white w-auto text-2xl lg:text-3xl">
+        <motion.h1
+          ref={ref}
+          initial={{ y: '-10rem', opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 1 } : { y: '-10rem', opacity: 0 }}
+          transition={{ 
+            duration: 3, type: 'spring', stiffness: 120, damping: 20
+          }}
+          className="text-center font-bold uppercase text-white w-auto text-2xl lg:text-3xl"
+        >
           {t("titleHome")}
-        </h1>
+        </motion.h1>
         <Linea/>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
           { t("degreeData", { returnObjects: true }).map(grado => (
