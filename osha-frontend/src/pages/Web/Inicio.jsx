@@ -29,7 +29,6 @@ import { FaHandshake } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { PiStudentBold, PiBooks } from "react-icons/pi";
 import { LuBookMarked } from "react-icons/lu";
-import { t } from 'i18next';
 
 
 function Inicio(){
@@ -65,20 +64,6 @@ const Hero = () => {
   const backgroundImage = useMotionTemplate`radial-gradient(110% 110% at 50% 0%, #020617 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
-  const squareDataGalery = [
-    {
-      id: 1,
-      src: "/src/assets/img-inicio/sliders/slider1.jpg",
-    },
-    {
-      id: 2,
-      src: "/src/assets/img-inicio/sliders/slider2.jpg",
-    },
-    {
-      id: 3,
-      src: "/src/assets/img-inicio/sliders/slider3.jpg",
-    },
-  ];
   return(
     <>
     <motion.section
@@ -115,11 +100,20 @@ const Hero = () => {
               <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
             </motion.button>
           </div>
-          <CountUpHome/>
+          <motion.div
+            initial={{y: "5rem", opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{
+              duration: 2,
+              type: "spring",
+            }}
+            className="">
+            <CountUpHome/>
+          </motion.div>
         </div>
         <div className="z-20 flex flex-col items-center justify-end">
           <motion.div
-            initial={{x: "7rem", opacity: 0}}
+            initial={{x: "10rem", opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
               duration: 2,
@@ -213,7 +207,15 @@ const IntroCards = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
     <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10" style={{ backgroundImage: "url('/src/assets/papel/papel15.jpg')" }}>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <motion.div
+        initial={{y: "10rem", opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
         <Card
           icon={<MdSchool color='white' style={{height:50, width:50}}/>}
           title={t("intro.education.title")} 
@@ -246,6 +248,9 @@ const IntroCards = () => {
           textClass="text-amarilloFuerte"
           bgCiClass="bg-amarilloFuerte"
         />
+      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
       </div>
     </section>
   );
