@@ -20,9 +20,9 @@ function Sedes() {
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
         <h1 className="text-primary uppercase"><b>{t("locations.title")}</b></h1>
         <Line1 bgColorClass={"bg-secondary"}/>
-        <h3>{t("locations.authorizedCenter.title")}</h3>
-        <h4>{t("locations.authorizedCenter.subtitle")}</h4>
-        <p>{t("locations.authorizedCenter.description")}</p>
+        <h3 className="mt-3">{t("locations.authorizedCenter.title")}</h3>
+        <h4 className="mt-3">{t("locations.authorizedCenter.subtitle")}</h4>
+        <p className="mt-5">{t("locations.authorizedCenter.description")}</p>
         <div className="mt-5">
           <Accordian className='flex flex-col gap-3' >
             <AccordianItem value='1' trigger={t("locations.authorizedCenter.benefits.title")}>
@@ -45,7 +45,7 @@ function Sedes() {
               />
             </AccordianItem>
           </Accordian>
-          <p>{t("locations.authorizedCenter.complaints")}</p>
+          <p className="mt-10">{t("locations.authorizedCenter.complaints")}</p>
         </div>
       </div>
     </section>

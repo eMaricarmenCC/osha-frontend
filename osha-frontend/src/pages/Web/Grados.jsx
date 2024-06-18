@@ -82,7 +82,7 @@ function GradoDetalle(){
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14 bg-gray-100">
         <div className="flex flex-col lg:flex-row gap-10 w-full">
           <div className="w-full">
             <h1 className="font-bold uppercase text-primary w-auto text-2xl lg:text-3xl">
@@ -99,7 +99,7 @@ function GradoDetalle(){
             </div>
           </div>
           {/* div side right */}
-          <div className="bg-gray-100 p-5 lg:min-w-lg">
+          <div className="bg-white rounded-lg shadow-lg p-5 lg:min-w-lg">
             <div className="flex justify-center">
               <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:w-[300px] max-w-[500px]"/>
             </div>
@@ -207,6 +207,7 @@ export const Beneficios = ({ content }) => {
           <div className="w-full">
             <p className="text-sm">{content.diplomat.l1}</p>
             <p className="font-bold text-primary">{content.diplomat.l2}</p>
+            <p className="text-sm">{content.diplomat.l3}</p>
           </div>
           <div className="h-full flex items-center sm:p-5 sm:bg-white rounded-full">
             <LiaCertificateSolid style={{color:"var(--primary)", height:"50px", width:"50px"}}/>
@@ -265,7 +266,7 @@ export const Tematica = ({ content }) => {
             <h4 className="text-sky-800">{module.module}: {module.title}</h4>
             <ListIcon
               list={module.courses}
-              icon={<LuArrowRightSquare style={{color:"var(--primary)"}}/>}
+              icon={<LuArrowRightSquare style={{color:"var(--primary)", minHeight:14, minWidth:14, maxHeight:14, maxWidth:14}}/>}
             />
           </div>
           <hr className="my-6 border-t-2 border-gray-300" />

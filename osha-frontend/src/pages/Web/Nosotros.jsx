@@ -55,7 +55,7 @@ function WhoWeAre(){
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full bg-gray-100">
         {/* Who are we? */}
         <div className="w-full flex justify-center">
           <div className="lg:ml-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/src/assets/papel/papel3.jpeg')" }}>
@@ -118,7 +118,7 @@ function LegalNature(){
         img="/src/assets/img-nosotros/business.jpg"
       />
       {/* legalNature */}
-      <div className="px-5 md:px-10 lg:px-20 xl:px-60 py-10 lg:py-12 lg:py-12">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-60 py-10 lg:py-12 lg:py-12 bg-gray-100">
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="">
             <h1 className={`text-primary font-bold inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h1>
@@ -271,13 +271,13 @@ function InternationalCooperation(){
 function PrivacyAndSecurityDeclaration(){
   const { t, i18n } = useTranslation("nosotros");
   return(
-    <section className="bg-grisFondo">
+    <section>
       <Breadcrumbs
         text={t("privacyAndSecurityDeclaration.title")}
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16 bg-gray-100">
         <div className="flex flex-col gap-5 lg:gap-12 sm:flex-row">
           <div className="">
             <h2 className="text-primary"><b>{t("privacyAndSecurityDeclaration.title")}</b></h2>
@@ -287,7 +287,7 @@ function PrivacyAndSecurityDeclaration(){
           <img className="rounded-full h-full h-max-[300px] sm:mt-28 md:mt-0 xs:h-[200px] lg:h-[200px]" src="/src/assets/img-inicio/datasecurity.jpg" alt="" />
         </div>
         <div className="mt-10 flex flex-col gap-5">
-          <div className="bg-white rounded-r-lg shadow-lg p-5 border-l-8 border-sky-500 border-2">
+          <div className="rounded-r-lg shadow-lg p-5 border-l-8 border-primary border-2">
             <p>{t("privacyAndSecurityDeclaration.content-p1")}</p>
           </div>
           <Accordian className='flex flex-col gap-5' >
@@ -322,7 +322,7 @@ function PrivacyAndSecurityDeclaration(){
               <p className="mt-3">{t("privacyAndSecurityDeclaration.queans7.answer-p7")}</p>
             </AccordianItem>
           </Accordian>
-          <div className="border-2 border-primary p-5 rounded-lg bg-white">
+          <div className="border-2 border-primary p-5 rounded-lg">
             <p>{t("privacyAndSecurityDeclaration.content-p2")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p3")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p4")}</p>

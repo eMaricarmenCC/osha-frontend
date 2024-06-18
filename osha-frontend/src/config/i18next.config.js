@@ -33,6 +33,8 @@ import politicapago_es from "../translations/es/politicapago.json";
 import politicapago_en from "../translations/en/politicapago.json";
 import grados_es from "../translations/es/grados.json";
 import grados_en from "../translations/en/grados.json";
+import cursos_es from "../translations/es/cursos.json";
+import cursos_en from "../translations/en/cursos.json";
 
 
 i18n.use(Backend).use(initReactI18next).init({
@@ -58,6 +60,7 @@ i18n.use(Backend).use(initReactI18next).init({
             sedes: sedes_es,
             politicapago: politicapago_es,
             grados: grados_es,
+            cursos: cursos_es,
         },
         en: {
             labels: labels_en,
@@ -77,6 +80,7 @@ i18n.use(Backend).use(initReactI18next).init({
             sedes: sedes_en,
             politicapago: politicapago_en,
             grados: grados_en,
+            cursos: cursos_en,
         }
     }
 });

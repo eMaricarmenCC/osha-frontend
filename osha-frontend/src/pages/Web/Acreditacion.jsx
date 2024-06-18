@@ -41,19 +41,19 @@ function AcreditacionAE() {
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
         <div className="bg-white  p-5 rounded-lg shadow-lg">
           <h3 className="text-primary"><b>{t("accreditationAE.accreditationAE.title")}</b></h3>
-          <Line1 bgColorClassName={"bg-secondary"}/>
+          <Line1 bgColorClass={"bg-secondary"}/>
           <p className="mt-2">{t("accreditationAE.accreditationAE.content")}</p>
           <button></button>
         </div>
         <div className="mt-5 bg-white  p-5 rounded-lg shadow-lg">
           <h3 className="text-primary"><b>{t("accreditationAE.accreditedEducationAE.title")}</b></h3>
-          <Line1 bgColorClassName={"bg-secondary"}/>
+          <Line1 bgColorClass={"bg-secondary"}/>
           <p className="mt-2">{t("accreditationAE.accreditedEducationAE.content")}</p>
           <button></button>
         </div>
         <div className="mt-5 bg-white  p-5 rounded-lg shadow-lg">
           <h3 className="text-primary"><b>{t("accreditationAE.identity.title")}</b></h3>
-          <Line1 bgColorClassName={"bg-secondary"}/>
+          <Line1 bgColorClass={"bg-secondary"}/>
             {t("accreditationAE.identity.content", { returnObjects: true }).map((p, index) => (
               <p>{p}</p>
             ))}

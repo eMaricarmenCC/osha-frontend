@@ -18,8 +18,8 @@ const ListIcon = ({list, icon}) => {
   return(
     <ul className="mt-3 flex flex-col space-y-2">
       {list.map((li, index) => (
-        <li key={index} className="flex gap-1 items-center">
-          {icon}
+        <li key={index} className="flex gap-1">
+          <span className="mt-1">{icon}</span>
           <p className="">{li}</p>
         </li>
       ))}
@@ -54,5 +54,19 @@ const ListResponsive = ({list, icon}) => {
     </div>
   );
 };
+const ListResponsive3Col = ({list, icon}) => {
+  return(
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      {list.map((li, index) => (
+        <div className="p-1 w-full">
+          <div className="bg-gray-100 rounded flex p-2 h-full items-center">
+            {icon}
+            <p className="ml-2">{li}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export {List, ListIcon, ListPoint, ListResponsive};
+export {List, ListIcon, ListPoint, ListResponsive, ListResponsive3Col};

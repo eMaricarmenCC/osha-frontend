@@ -53,7 +53,8 @@
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por 320 horas como:",
-                    "l2": "TRAIN THE TRAINER"
+                    "l2": "TRAIN THE TRAINER",
+                    "l3": "Entrena al Entrendor"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -61,7 +62,7 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "Entrenador de Seguridad y Salud en el TRabajo de Osha-Institute",
+                    "l2": "Entrenador de Seguridad y Salud en el Trabajo de Osha-Institute",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
@@ -229,7 +230,8 @@
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por 320 horas como:",
-                    "l2": "Supervisor Especialista en Trabajos Críticos"
+                    "l2": "Critical Work Specialist Supervisor",
+                    "l3": "Supervisor Especialista en Trabajos Críticos"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -418,7 +420,8 @@
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por 320 horas como:",
-                    "l2": "Entrenador de Materiales y Residuos Peligrosos"
+                    "l2": "Hazardous Materials and Waste Trainer",
+                    "l3": "Entrenador de Materiales y Residuos Peligrosos"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -564,7 +567,7 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
@@ -581,7 +584,8 @@
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "",
+                    "l3": ""
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -594,7 +598,7 @@
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -662,7 +666,7 @@
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Trainer (Entrenador)"
                 },
                 {
                     "title": "Validez",
@@ -674,7 +678,7 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
@@ -718,38 +722,86 @@
             "sylabus": [
                 {
                     "module": "Módulo 1",
-                    "title": "Introducción a la Seguridad Laboral",
+                    "title": "Introducción a la Seguridad Laboral Bajo NOrmas OSHA EE.UU.",
                     "courses": [
+                        "Introducción a la gestión de la seguridad (8 módulos)",
+                        "Introducción a la Formación en Seguridad (2 módulos)",
+                        "Introducción a OSHA-EE.UU (2 módulos)",
+                        "Introducción a la Responsabilidad en la Seguridad (2 módulos)",
+                        "Introducción al Liderazgo en la Seguridad (2 módulos)",
+                        "Introducción al Reconocimiento de Seguridad (2 módulos)",
+                        "Introducción a la Supervisión de Seguridad (2 módulos)",
+                        "Introducción a los controles de peligro (2 módulos)",
+                        "Introducción al análisis de riesgos laborales (2 módulos)"
                     ]
                 },
                 {
                     "module": "Módulo 2",
-                    "title": "",
+                    "title": "Seguridad Operativa y de Riesgo",
                     "courses": [
+                        "Seguridad Eléctrica para empleados básico (2 módulos)",
+                        "Seguridad del conductor (2 módulos)",
+                        "Seguridad en la soldadura básico (2 módulos)",
+                        "Seguridad en excavaciones básico (2 módulos)",
+                        "Seguridad en Montacargas básico (2 módulos)",
+                        "Seguridad básico de grúa (2 módulos)",
+                        "Seguridad en espacios confinados (5 módulos)",
+                        "Protección de maquinaria básico (2 módulos)."
                     ]
                 },
                 {
                     "module": "Módulo 3",
-                    "title": "",
+                    "title": "Emergencias y Rescate",
                     "courses": [
+                        "Programa de espacios confinados (9 módulos)",
+                        "Superficies para caminar, trabajar y protección contra caídas (2 módulos)",
+                        "Planes de acción de emergencia y prevención de Incendios (2 módulos)"
                     ]
                 },
                 {
                     "module": "Módulo 4",
-                    "title": "",
+                    "title": "Higiene Laboral",
                     "courses": [
+                        "Equipo de protección personal básico (2 módulos)",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo (3 módulos)",
+                        "Orientación sobre limpieza y Desinfección (1 módulo)"
                     ]
                 },
                 {
                     "module": "Módulo 5",
-                    "title": "",
+                    "title": "Riesgos Laborales",
                     "courses": [
+                        "Riesgos físicos para la salud en la Construcción (2 módulos)",
+                        "Riesgos biológicos para la salud en la Construcción (2 módulos)",
+                        "Riesgos ergonómicos en la Construcción (2 módulos)",
+                        "Riesgos ergonómicos en la industria general (2 módulos)"
                     ]
                 },
                 {
                     "module": "Módulo 6",
-                    "title": "",
+                    "title": "SGA-HAZWOPER(Gestión de Materiales Peligrosos en las Industrias)",
                     "courses": [
+                        "Comunicación de peligros básico (2 módulos)",
+                        "Hazwoper 1 (5 módulos)",
+                        "Hazwoper 2 (5 módulos)",
+                        "Hazwoper 3 (5 módulos)",
+                        "Hazwoper 4 (6 módulos)",
+                        "Sistema globalmente armonizado SGA (2 módulos)"
+                    ]
+                },
+                {
+                    "module": "Módulo 7",
+                    "title": "Ergonomía Laboral",
+                    "courses": [
+                        "Introducción a la Ergonomía (5 módulos)"
+                    ]
+                },
+                {
+                    "module": "Módulo 8",
+                    "title": "Química Industrial",
+                    "courses": [
+                        "Química general en la industria (1 módulo)",
+                        "Química básica (1 módulo)"
                     ]
                 }
             ],
@@ -762,17 +814,18 @@
             "code": 1019,
             "label": "TTA-OSHA",
             "presentation":[
-                "b",
-                ""
+                "Toda actividad laboral que involucre trabajos en altura conlleva riesgos particulares para todos los involucrados desde administrativos, supervisión de línea y personal operativo, los cuales deben ser abordados, guiados y dirigidos desde una perspectiva general y prevención que fomente el mejoramiento de la calidad de vida de los involucrados.",
+                "En este contexto, los estándares aplicados por el Departamento de Trabajo de los Estados Unidos, demanda una serie de obligaciones para las empresas, en coherencia con estándares internacionales y políticas públicas relacionadas con los sistemas de seguridad y salud en el trabajo, que permiten un abordaje especializado y multidisciplinario que aporten a un 100% a lograr las metas.",
+                "En este escenario, el sector productivo tiene la necesidad urgente de contar con profesionales que tengan una visión amplia y coherente en este trabajo, no solamente para realizar las tareas propias del sistema de seguridad y salud en el trabajo, sino para direccionar, administrar y asesorar las actividades inherentes a este importante proceso organizacional."
             ],
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Trainer (Entrenador)"
                 },
                 {
                     "title": "Validez",
@@ -784,24 +837,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "220"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":220,
+            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "WORK AT HEIGHT TRAINER OSHA",
+                    "l3": "ENTRENADOR DE TRABAJOS EN ALTURA OSHA"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Supervisor of work at height based on OSHA-USA standards.",
+                    "li3": "Supervisor de trabajos en altura basado a las normas OSHA-EE.UU"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -809,12 +863,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "WORK AT HEIGHT TRAINER OSHA",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "220",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -827,40 +881,88 @@
             "sylabus": [
                 {
                     "module": "Módulo 1",
-                    "title": "",
+                    "title": "Gestión Integral",
                     "courses": [
+                        "Introducción a la supervisión de seguridad.",
+                        "Introducción a Osha.",
+                        "Introducción a la formación de seguridad.",
+                        "Introducción a la formación en Osha.",
+                        "Introducción a la responsabilidad de la seguridad.",
+                        "Introducción al reconocimiento de la seguridad.",
+                        "Introducción a la gestión de la seguridad.",
+                        "Introducción al liderazgo en la seguridad.",
+                        "Introducción a la Ergonomía.",
+                        "Introducción al análisis de riesgos laborales.",
+                        "Introducción a los controles de peligro."
                     ]
                 },
                 {
                     "module": "Módulo 2",
-                    "title": "",
+                    "title": "Seguridad Laboral",
                     "courses": [
+                        "Desarrollo de capacitación en Osha.",
+                        "Realización de capacitación en Osha.",
+                        "Seguridad en la soldadura: Básico.",
+                        "Seguridad en montacargas: Básico",
+                        "Seguridad en las excavaciones: Básico",
+                        "Seguridad básica de grúa",
+                        "Seguridad en espacios confinados",
+                        "Seguridad de equipos pesados",
+                        "Seguridad de demolición",
+                        "Seguridad en espacios confinados en la Construcción",
+                        "Seguridad en la construcción de acero",
+                        "Seguridad de Grúas y Derricks I.",
+                        "Seguridad II de Grúas y Derricks.",
+                        "Seguridad del petróleo y gas en alta mar II.",
+                        "Seguridad del conductor",
+                        "Seguridad eléctrica para empleados: Básico"
                     ]
                 },
                 {
                     "module": "Módulo 3",
                     "title": "",
                     "courses": [
+                        "Realización de un análisis de riesgo laboral (JHA).",
+                        "Riesgo físico para la salud en la Construcción.",
+                        "Riesgo biológico para la salud en la construcción.",
+                        "Riesgo ergonómicos en la construcción.",
+                        "Riesgo ergonómicos en la industria general"
                     ]
                 },
                 {
                     "module": "Módulo 4",
                     "title": "",
                     "courses": [
+                        "Introducción a la supervisión de seguridad",
+                        "Peligros para la Salud en la Construcción",
+                        "Desarrollo de un Sistema de Gestión de Seguridad en la Construcción",
+                        "Equipos de protección personal: Básico.",
+                        "Higiene y prevención de enfermedades en el lugar de trabajo.",
+                        "Orientación para la limpieza y desinfección",
+                        "Protección contra caídas en la Construcción",
+                        "Foco Cuatro: Riesgos de caída",
+                        "Foco Cuatro - Atrapado o entre peligros",
+                        "Foco Cuatro - peligros de ser golpeado",
+                        "Foco Cuatro - Riesgo de electrocución"
                     ]
                 },
                 {
                     "module": "Módulo 5",
-                    "title": "",
+                    "title": "Gestión Ambiental y Seguridad",
                     "courses": [
-
+                        "Introducción a SEMS II 30 CFR 250 1900-1933"
                     ]
                 },
                 {
                     "module": "Módulo 6",
-                    "title": "",
+                    "title": "Gestión de Seguridad en Trabajos de Altura",
                     "courses": [
-
+                        "Atención sanitaria: prevención de lesiones ergonómicas",
+                        "Atención médica: prevención de resbalones, tropezones, y caídas.",
+                        "Programa de protección contra caídas",
+                        "Introducción a la gestión de la seguridad en la construcción.",
+                        "Enfoque cuatro: peligros de caídas",
+                        "Enfoque cuatro: Atrapados entre peligros"
                     ]
                 }
             ],
@@ -869,7 +971,7 @@
         },
         {
             "id": "gssl-osha",
-            "title": "Gerencia de la Seguridad y Salud Laboral",
+            "title": "Gerente de Seguridad y Salud Laboral \"Osha\"",
             "code": 1051,
             "label": "GSSL-OSHA",
             "presentation":[
@@ -880,11 +982,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Gerente"
                 },
                 {
                     "title": "Validez",
@@ -896,24 +998,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "220"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":220,
+            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Labor Safety and Health Manager \"Osha\"",
+                    "l3": "Gerente de Seguridad y Salud Laboral \"Osha\""
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Occupational Health and Safety Management Under Osha Standards",
+                    "l3": "Gerencia de la Seguridad y Salud en el Trabajo Bajo Normas Osha"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -921,12 +1024,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Labor Safety and Health Manager \"Osha\"",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "220",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1021,11 +1124,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Gerente"
                 },
                 {
                     "title": "Validez",
@@ -1037,24 +1140,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Safety Manager in the Construction Industry Under Osha Standards",
+                    "l3": "Gerente de Seguridad en la Industria de la Construcción Bajo Normas Osha"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Safety in the Construction Industry Based on Osha-USA Standards",
+                    "l3": "Seguridad en la Industria de la Construcción Basado en las Normas Osha-EE.UU."
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1062,12 +1166,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Safety Manager in the Construction Industry Under Osha Standards",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1213,8 +1317,8 @@
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":0,
+            "price": 0,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
@@ -1223,7 +1327,8 @@
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "",
+                    "l3": ""
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1301,11 +1406,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Director"
                 },
                 {
                     "title": "Validez",
@@ -1317,24 +1422,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "150"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 1350,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Director of Occupational Risk Prevention",
+                    "l3": "Director de prevención de riesgos laborales (OSHA)"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Workplace Health and Safety Supervisor",
+                    "l3": "Supervisor de Seguridad y Salud en el Trabajo"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1342,12 +1448,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Director of Occupational Risk Prevention",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1359,41 +1465,58 @@
             },
             "sylabus": [
                 {
-                    "module": "Módulo 1",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Introducción a la Supervisión de Seguridad",
+                        "Introducción al Liderazgo en la Seguridad",
+                        "Introducción a la Responsabilidad en la Seguridad",
+                        "Introducción al Reconocimiento de Seguridad",
+                        "Introducción a la Formación en Seguridad y Jerarquía de Controles.",
+                        "Introducción al Análisis de Riesgos laborales",
+                        "Introducción a Osha"
                     ]
                 },
                 {
-                    "module": "Módulo 2",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Higiene y Prevención de Enfermedades en el lugar de trabajo",
+                        "Riesgos Físicos para la Salud en la Construcción",
+                        "Riesgos Biológicos para la Salud en la Construcción",
+                        "Riesgos Ergonomicos en la Construcción",
+                        "Riesgos Ergonomicos en la Industria general"
                     ]
                 },
                 {
-                    "module": "Módulo 3",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Protección de Máquinas: Básico",
+                        "Seguridad en la Soldadura: básico",
+                        "Seguridad en Montacargas: básico",
+                        "Seguridad en Excavadoras básico",
+                        "Seguridad del Conductor"
                     ]
                 },
                 {
-                    "module": "Módulo 4",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Comunicación de Peligros básico",
+                        "Plan de Accción de Emergencias y Prevención de Incendios",
+                        "Equipo de Protección Personal básico",
+                        "Superficie para caminar - trabajar y protección contra caídas"
                     ]
                 },
                 {
-                    "module": "Módulo 5",
+                    "module": "",
                     "title": "",
                     "courses": [
-
-                    ]
-                },
-                {
-                    "module": "Módulo 6",
-                    "title": "",
-                    "courses": [
-
+                        "Hazwoper 1",
+                        "Hazwoper 2",
+                        "Hazwoper 3",
+                        "Sistema Globalmente Armonizado SGA"
                     ]
                 }
             ],
@@ -1412,11 +1535,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Especialidad"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Especialista"
                 },
                 {
                     "title": "Validez",
@@ -1428,7 +1551,7 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "150"
                 },
                 {
                     "title": "Estándares",
@@ -1436,16 +1559,17 @@
                 }
             ],
             "hours":150,
-            "price": 200,
+            "price": 750,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "SPECIALIST IN SAFETY AND HEALTH AT WORK",
+                    "l3": "Especialista en Seguridad y Salud en el Trabajo"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "WORKPLACE HEALTH AND SAFETY SUPERVISOR",
+                    "l3": "Supervisor de Seguridad y Salud en el Trabajo"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1453,12 +1577,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "SPECIALIST IN SAFETY AND HEALTH AT WORK",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "150",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1470,41 +1594,58 @@
             },
             "sylabus": [
                 {
-                    "module": "Módulo 1",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Introducción a la Supervisión de Seguridad",
+                        "Introducción al Liderazgo en la Seguridad",
+                        "Introducción a la Responsabilidad en la Seguridad",
+                        "Introducción al Reconocimiento de Seguridad",
+                        "Introducción a la Formación en Seguridad y Jerarquía de Controles.",
+                        "Introducción al Análisis de Riesgos laborales",
+                        "Introducción a Osha"
                     ]
                 },
                 {
-                    "module": "Módulo 2",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Higiene y Prevención de Enfermedades en el lugar de trabajo",
+                        "Riesgos Físicos para la Salud en la Construcción",
+                        "Riesgos Biológicos para la Salud en la Construcción",
+                        "Riesgos Ergonomicos en la Construcción",
+                        "Riesgos Ergonomicos en la Industria general"
                     ]
                 },
                 {
-                    "module": "Módulo 3",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Protección de Máquinas: Básico",
+                        "Seguridad en la Soldadura: básico",
+                        "Seguridad en Montacargas: básico",
+                        "Seguridad en Excavadoras básico",
+                        "Seguridad del Conductor"
                     ]
                 },
                 {
-                    "module": "Módulo 4",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Comunicación de Peligros básico",
+                        "Plan de Accción de Emergencias y Prevención de Incendios",
+                        "Equipo de Protección Personal básico",
+                        "Superficie para caminar - trabajar y protección contra caídas"
                     ]
                 },
                 {
-                    "module": "Módulo 5",
+                    "module": "",
                     "title": "",
                     "courses": [
-
-                    ]
-                },
-                {
-                    "module": "Módulo 6",
-                    "title": "",
-                    "courses": [
-
+                        "Hazwoper 1",
+                        "Hazwoper 2",
+                        "Hazwoper 3",
+                        "Sistema Globalmente Armonizado SGA"
                     ]
                 }
             ],
@@ -1523,11 +1664,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Especialidad"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Especialista"
                 },
                 {
                     "title": "Validez",
@@ -1539,24 +1680,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "280"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":280,
-            "price": 200,
+            "hours":320,
+            "price": 600,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Occupational Health and Safety Specialist",
+                    "l3": "Especialista en Seguridad y Salud Ocupacional"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Occupational Health and Safety Management Under Osha Standards",
+                    "l3": "Gerencia en la Seguridad y Salud Ocupacional Bajo Normas Osha"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1564,12 +1706,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Occupational Health and Safety Specialist",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1679,11 +1821,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Especialidad"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Especialista"
                 },
                 {
                     "title": "Validez",
@@ -1695,24 +1837,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 600,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Specialist in Labor Risk Prevention Osha",
+                    "l3": "Especialista en Prevención de Riesgos Laborales"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Occupational Risk Prevention Management Under OSHA Standards",
+                    "l3": "Gestión de la Prevención de Riesgos Laborales Bajo Normas OSHA"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1720,12 +1863,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Specialist in Labor Risk Prevention Osha",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1814,11 +1957,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Grado"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Técnico"
                 },
                 {
                     "title": "Validez",
@@ -1830,24 +1973,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "220"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 580,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "Occupational Health and Safety Technician in The Construction Industry OSHA",
+                    "l3": "Técnico en Seguridad y Salud Ocupacional en la Industria de la Construcción OSHA"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Safety in the Construction Industry Based on OSHA-USA Standards",
+                    "l3": "Seguridad en la Industria de la Construcción Basado en las Normas OSHA-EE.UU."
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -1855,12 +1999,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "Occupational Health and Safety Technician in The Construction Industry OSHA",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -1970,11 +2114,11 @@
             "details": [
                 {
                     "title": "Tipo",
-                    "text": ""
+                    "text": "Especialidad"
                 },
                 {
                     "title": "Grado Obtenido",
-                    "text": ""
+                    "text": "Especialista"
                 },
                 {
                     "title": "Validez",
@@ -1986,24 +2130,25 @@
                 },
                 {
                     "title": "Horas",
-                    "text": ""
+                    "text": "320"
                 },
                 {
                     "title": "Estándares",
                     "text": "OSHA"
                 }
             ],
-            "hours":150,
-            "price": 200,
+            "hours":320,
+            "price": 600,
             "benefits": {
                 "certificate": {
                     "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
+                    "l2": "HAZMAT IV HAZARDOUS MATERIALS SPECIALIST",
+                    "l3": "Especilista en Materiales Peligrosos Hazmat IV"
                 },
                 "diplomat": {
                     "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": ""
+                    "l2": "Instructor in Comprehensive Management of Hazardous Materials",
+                    "l3": "Instructor en Gestión Integral de Materiales Peligrosos"
                 },
                 "carnet": {
                     "l1": "Carnet de Acreditación para bolsillo",
@@ -2011,12 +2156,12 @@
                 },
                 "code": {
                     "l1": "Código como:",
-                    "l2": "",
+                    "l2": "HAZMAT IV HAZARDOUS MATERIALS SPECIALIST",
                     "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
                 },
                 "hours": {
                     "l1": "Horas cargadas",
-                    "l2": "",
+                    "l2": "320",
                     "l3": "Horas Académicas"
                 },
                 "classroom": {
@@ -2028,41 +2173,83 @@
             },
             "sylabus": [
                 {
-                    "module": "Módulo 1",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Introducción a la Supervisión de Seguridad.",
+                        "Introducción al Liderazgo en la Seguridad.",
+                        "Introducción a la Responsabilidad en la Seguridad.",
+                        "Introducción al Reconocimiento de Seguridad.",
+                        "Introducción a la Formación en Seguridad y Jerarquía de Controles.",
+                        "Introducción al Análisis de Riesgos laborales."
                     ]
                 },
                 {
-                    "module": "Módulo 2",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Higiene y Prevención de Enfermedades en el lugar de trabajo.",
+                        "Riesgos Físicos para la Salud en la Construcción.",
+                        "Riesgos Biológicos para la Salud en la Construcción.",
+                        "Comunicación de Peligros básico.",
+                        "Plan de Acción de Emergencias y Prevención de Incendios.",
+                        "Equipo de Protección Personal básico."
                     ]
                 },
                 {
-                    "module": "Módulo 3",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Hazwoper 1.",
+                        "Hazwoper 2.",
+                        "Hazwoper 3.",
+                        "Hazwoper 4.",
+                        "Hazwoper 5.",
+                        "Sistema Globalmente Armonizado SGA."
                     ]
                 },
                 {
-                    "module": "Módulo 4",
+                    "module": "",
                     "title": "",
                     "courses": [
+                        "Química General en la Industria 1.",
+                        "Química Básica 2.",
+                        "Generalidades Toxicologicas.",
+                        "Toxicocinética.",
+                        "Toxicodinamia.",
+                        "Tratamiento General.",
+                        "Tratamiento Específico.",
+                        "Monóxido de Carbono."
                     ]
                 },
                 {
-                    "module": "Módulo 5",
+                    "module": "",
                     "title": "",
                     "courses": [
-
-                    ]
-                },
-                {
-                    "module": "Módulo 6",
-                    "title": "",
-                    "courses": [
-
+                        "Hipoxias Tóxicas por Cianuro.",
+                        "Metahemoglobinemia.",
+                        "Radiotoxicidad.",
+                        "Intoxicación con Etanol.",
+                        "Intoxicación con Metanol.",
+                        "Intoxicación con Glicoles.",
+                        "Hidrocarburos Generalidades.",
+                        "Hidrocarburos Alifáticos o Lineales.",
+                        "Hidrocarburos Alogenados clorado.",
+                        "Hidrocarburos Cíclicos aromáticos.",
+                        "Hidrocarburos Nitrogenados.",
+                        "Arsénico.",
+                        "Plomo.",
+                        "Mercurio",
+                        "Cromo.",
+                        "Manganeso.",
+                        "Talio.",
+                        "Hierro.",
+                        "Organofosforados.",
+                        "Carbamatos.",
+                        "Organoclorados.",
+                        "Dicumarinicus.",
+                        "Biperidilos.",
+                        "Piretrinas."
                     ]
                 }
             ],
