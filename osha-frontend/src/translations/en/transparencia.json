@@ -1,0 +1,70 @@
+{
+    "title": "Transparency",
+    "text": "Osha-Institute is a center of higher professional studies that offers professional degrees of international value with a methodology and university acceptance.",
+    "list": [
+        "Accredited by \"AE\" Accredited Uducation.",
+        "International compliance EU of the European Union.",
+        "Each professional degree of Osha-Institute is guaranteed by the ISO 21001 (Educational Quality).",
+        "Validation of the governmental and central state centers affiliated to Unesco.",
+        "International Educational Committee \"IEC\".",
+        "International Convention of The Hague."
+    ],
+    "degrees": {
+        "title": "Certified OSHA-Institute professional degrees contain the following designation.",
+        "list": [
+            "Manager",
+            "Director",
+            "Trainer",
+            "Specialist",
+            "Supervisor",
+            "Technician"
+        ],
+        "text": [
+            "These degrees have professional academic value accepted in 98 countries worldwide covering Latin America, the United States and Canada, Europe and Asia and under compliance with local educational standards in Africa.",
+            "OSHA-Institute does not provide OSHA 10 or OSHA 30 courses regulated by the United States Department of Labor for jobs in the Construction Industry.",
+            "To take these courses you must contact authorized centers.",
+            "You may have heard that you need a “DOL card” before you can begin working in your industry. The Department of Labor (DOL) issues a wallet card to anyone who completes OSHA outreach training. However, knowing exactly which course you need can be confusing. You'll see labels like “10-hour construction” and “30-hour general industry.” But how can you know which course you need to take? Why do you need it? And what can you expect to get out of that time?"
+        ]
+    },
+    "osha10-osha30": {
+        "title": "WHAT ARE OSHA 10 AND OSHA 30 COURSES?",
+        "text": [
+            "We've recently launched a new and improved version of our OSHA extension courses for construction.",
+            "Mobile-friendly and more interactive, with games and activities to increase understanding and retention of the material.",
+            "OSHA 10 and OSHA 30 are collectively referred to as OSHA extension courses. OSHA designs the curriculum for its extension courses to serve as a type of standardized safety training that employers and regulatory agencies can use as a defined minimum.",
+            "Each “industry,” as defined by OSHA, has its own version of the extension curriculum, namely general industry, construction, and three subsets of maritime work.",
+            "Each industry has two different levels of courses. The 10-hour extension curriculum is known as OSHA 10, and the 30-hour extension curriculum is known as OSHA 30."
+        ]
+    },
+    "difference": {
+        "title": "WHAT IS THE DIFFERENCE BETWEEN OSHA 10 AND OSHA 30?",
+        "text": "Obviously, OSHA 30 is a much longer course than OSHA 10. That's because OSHA 30 is for supervisory-level personnel. Supervisors must be aware of the hazards and safety standards that apply to all workers they supervise and must also know how to manage and enforce safety on construction sites."
+    },
+    "osha10": {
+        "title": "WHAT DOES THE OSHA 10 CONSTRUCTION COURSE COVER?",
+        "text": [
+            "The curriculum for individual OSHA extension courses varies from provider to provider. OSHA sets a framework for each industry and course level. Providers must cover a couple of required topics and choose a set number of topics from a list of elective topics.",
+            "For an OSHA 10 construction course, OSHA requires all providers to teach:"
+        ],
+        "list": [
+            "Introduction to OSHA",
+            "Four Focus Hazards",
+            "Personal Protective Equipment (PPE) and Lifesaving Equipment.",
+            "Health Hazards in Construction."
+        ]
+    },
+    "osha30": {
+        "title": "WHAT DOES OSHA 30 LET YOU DO?",
+        "text": [
+            "OSHA 30 covers the same topics as OSHA 10 but in more depth. For supervisors in industries such as construction, manufacturing, factory operations, and healthcare, OSHA 30 training covers required topics such as inspections and hazard control.",
+            "However, most of the time difference is spent on new topics.",
+            "There are responsibilities and processes that workers at supervisory levels must understand, which is why OSHA 30 has an additional required topic called Safety and Health Management."
+        ]
+    },
+    "should-take": {
+        "title": "WHO SHOULD TAKE IT?",
+        "text": "If your job requires OSHA outreach training and you do NOT have supervisory responsibilities, take the 10-hour OSHA. Some states and localities specifically require training courses for specific occupations. Even when that is not the case, employers in high-risk industries often require them because they provide a consistent foundation for safety training. These industries include (but are not limited to) construction, manufacturing, warehouses, and maritime. If you are not sure whether you need the 10-hour OSHA training, ask your employer. Or you can also check to see if state or local laws require Occupational Safety and Health Administration training or a DOL card.",
+        "card1": "Wallet cards or DOL cards (Department of Labor cards) are only available through authorized vendors after you complete one of the outreach training courses we have listed. You will receive your card in the mail after the course. Since 2016, these cards are made of durable plastic, so you can carry it with you to show employers or inspectors.",
+        "card2": "Certificates are issued immediately and serve as proof that you've completed the course before your wallet card arrives. Employers are required to provide training records to OSHA, so they may need a copy. You'll get one of these for any OSHA course, not just extension courses. For example, if you take separate ride-on forklift training, you'll get one certificate for everyone's records."
+    }
+}

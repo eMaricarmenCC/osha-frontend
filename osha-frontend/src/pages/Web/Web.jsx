@@ -18,6 +18,7 @@ import { Contactos } from './Contactos';
 import { Conducta } from './Conducta';
 import { Cumplimiento } from './Cumplimiento';
 import { Calidad } from './Calidad';
+import { Transparencia } from './Transparencia';
 
 function Web() {
   return (
@@ -49,6 +50,7 @@ function Web() {
         <Route path='/codigo-conducta' element={<Conducta/>} />
         <Route path='/calidad-educativa' element={<Calidad/>} />
         <Route path='/conoce-mas' element={<Contactos/>} />
+        <Route path='/transparencia' element={<Transparencia/>} />
       </Routes>
       <Footer/>
     </>

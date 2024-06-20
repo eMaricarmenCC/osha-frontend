@@ -27,6 +27,19 @@ const ListIcon = ({list, icon}) => {
   );
 };
 
+const ListIconWithBg = ({list, icon}) => {
+  return(
+    <ul className="mt-3 flex flex-col space-y-3">
+      {list.map((li, index) => (
+        <li key={index} className="bg-gray-100 rounded flex gap-3 p-2 h-full items-center">
+          <span className="mt-1">{icon}</span>
+          <p className="">{li}</p>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 const ListPoint = ({list}) => {
   return(
     <ul className="flex flex-col space-y-2">
@@ -69,4 +82,4 @@ const ListResponsive3Col = ({list, icon}) => {
   );
 };
 
-export {List, ListIcon, ListPoint, ListResponsive, ListResponsive3Col};
+export {List, ListIcon, ListIconWithBg, ListPoint, ListResponsive, ListResponsive3Col};

@@ -1,0 +1,70 @@
+{
+    "title": "Transparencia",
+    "text": "Osha-Institute es un centro de altos estudios profesionales que brinda grados profesionales de valor internacional con una metodología y aceptación universitaria.",
+    "list": [
+        "Acreditado por \"AE\" Accredited Uducation.",
+        "Cumplimiento internacional EU de la Unión Europea.",
+        "Cada grado profesional de Osha-Institute esta garantizado por el Iso 21001 (Calidad Educativa).",
+        "Validación de los centros de estado gubernamentales y centrales afiliados a la Unesco.",
+        "Comité Educativo Internacional \"IEC\".",
+        "Convenio Internacional de la Haya."
+    ],
+    "degrees": {
+        "title": "Los grados profesionales de Osha-Institute certificados contienen la siguiente mensión.",
+        "list": [
+            "Gerente",
+            "Director",
+            "Trainer",
+            "Especialista",
+            "Supervisor",
+            "Técnico"
+        ],
+        "text": [
+            "Estos grados tienen valor académico profesional de aceptación en 98 países a nivel mundial cubriendo América Latina, Estados Unidos y Canadá, Europa y Asia y bajo cumplimiento de normas educativas locales en África.",
+            "Osha-Institute no brinda Osha 10 u Osha 30 cursos regulados por el departamento de trabajo de los Estados Unidos para trabajos en la Industria de la Construcción.",
+            "Para llevar estos cursos deberá contactar a centros autorizados.",
+            "Es posible que haya escuchado que necesita una “tarjeta DOL” antes de poder empezar a trabajar en su industria. El Departamento de Trabajo (DOL, por sus siglas en inglés) le emite una tarjeta para la billetera a toda persona que complete la capacitación de extensión de la OSHA. Sin embargo, saber exactamente qué curso necesita puede resultar confuso. Verá etiquetas como “construcción de 10 horas” e “industria general de 30 horas”. Pero, ¿cómo puede saber qué curso necesita tomar? ¿Por qué lo necesita? ¿Y qué puede esperar obtener de ese tiempo?"
+        ]
+    },
+    "osha10-osha30": {
+        "title": "¿QUÉ SON LOS CURSOS OSHA 10 Y OSHA 30?",
+        "text": [
+            "Recientemente, hemos lanzado una versión nueva y mejorada de nuestros cursos de extensión de la OSHA para la construcción.",
+            "A los dispositivos móviles y más interactivas, con juegos y actividades para aumentar la comprensión y la retención del material.",
+            "OSHA 10 y OSHA 30 se denominan colectivamente cursos OSHA de extensión. OSHA elabora el plan de estudios de sus cursos de extensión para que sirvan como un tipo de capacitación estandarizada respecto a la seguridad que los empleadores y los organismos reguladores pueden utilizar como un mínimo definido.",
+            "Cada “industria”, según la definición de la OSHA, tiene su propia versión del plan de estudios de extensión, es decir, la industria general, la construcción y tres subconjuntos del trabajo marítimo.",
+            "Cada industria tiene dos niveles de cursos diferentes. El plan de estudios de extensión de 10 horas se conoce como OSHA 10, y el de 30 horas se conoce como OSHA 30."
+        ]
+    },
+    "difference": {
+        "title": "¿CUÁL ES LA DIFERENCIA ENTRE OSHA 10 Y OSHA 30?",
+        "text": "Obviamente, OSHA 30 es un curso mucho más extenso que OSHA 10. Eso se debe a que OSHA 30 es para personal de nivel supervisor. Los supervisores deben conocer los peligros y las normas de seguridad que se aplican a todos los trabajadores que supervisan y también deben saber cómo administrar y hacer cumplir la seguridad en las obras."
+    },
+    "osha10": {
+        "title": "¿QUÉ CUBRE EL CURSO OSHA 10 PARA LA CONSTRUCCIÓN?",
+        "text": [
+            "El plan de estudios para los cursos individuales de extensión de la OSHA varía de un proveedor a otro. La OSHA establece un marco para cada industria y nivel de curso. Los proveedores deben cubrir un par de temas obligatorios y elegir un número determinado de temas de una lista de temas optativos.",
+            "Para un curso OSHA 10 para la construcción, OSHA requiere que todos los proveedores enseñen:"
+        ],
+        "list": [
+            "Introducción a la Osha",
+            "Cuatro peligros de enfoque",
+            "Equipo de protección personal (EPP) y equipo de salvamento.",
+            "Peligros para la salud en la construcción."
+        ]
+    },
+    "osha30": {
+        "title": "¿QUÉ LE PERMITE HACER OSHA 30?",
+        "text": [
+            "OSHA 30 cubre los mismos temas que OSHA 10 pero de manera más profunda. Para los supervisores de sectores como la construcción, la manufactura, las operaciones en fábricas y la atención médica, la capacitación OSHA 30 abarca temas obligatorios como las inspecciones y el control de peligros.",
+            "Sin embargo, la mayor parte de la diferencia de tiempo se dedica a temas nuevos.",
+            "Hay responsabilidades y procesos que los trabajadores en niveles de supervisor deben comprender, razón por la cual la OSHA 30 tiene un tema obligatorio adicional denominado Administración de la seguridad y la salud."
+        ]
+    },
+    "should-take": {
+        "title": "¿QUIÉN DEBE TOMARLA?",
+        "text": "Si su trabajo requiere la capacitación de extensión de la OSHA y usted NO tiene responsabilidades de supervisión, tome OSHA de 10 horas. Algunos estados y localidades requieren específicamente cursos de capacitación para profesiones específicas. Incluso cuando ese no sea el caso, los empleadores de industrias de alto riesgo suelen requerirlos porque proporcionan una base consistente para la capacitación en materia de seguridad. Estas industrias incluyen (entre otras) la construcción, la manufactura, los almacenes y el ámbito marítimo. Si no está seguro de si necesita la capacitación de la OSHA de 10 horas, pregúntele a su empleador. O también puede verificar si las leyes estatales o locales requieren una capacitación de la Administración de Seguridad y Salud Ocupacional o una tarjeta DOL.",
+        "card1": "Las tarjetas para la billetera o DOL (tarjetas del Departamento de Trabajo) solo están disponibles a través de proveedores autorizados después de completar uno de los cursos de capacitación de extensión que hemos mencionado. Recibirá su tarjeta por correo después del curso. Desde 2016, estas tarjetas están hechas de plástico duradero, por lo que puede llevarla consigo para mostrársela a empleadores o inspectores.",
+        "card2": "Los certificados se expiden inmediatamente y sirven como constancia de que ha completado el curso antes de que llegue su tarjeta para la billetera. Los empleadores deben proporcionarle registros de la capacitación a la OSHA, por lo que es posible que necesiten una copia. Obtendrá uno de estos para cualquier curso de la OSHA, no solo para los cursos de extensión. Por ejemplo, si toma una capacitación separada sobre montacargas con operador sentado, obtendrá un certificado para los registros de todos."
+    }
+}
