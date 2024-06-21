@@ -3,35 +3,31 @@ import { useTranslation } from "react-i18next";
 
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 import { Line1 } from "../../components/ui/Line";
-import { ImageWithInnerBorder } from "../../components/ui/Image";
 import { ButtonEmailInfo } from "../../components/ui/Button";
 
 import { AiFillSafetyCertificate } from "react-icons/ai";
 
 
-function Calidad() {
+function Credenciales() {
   const { t, i18n } = useTranslation("regulaciones");
   return(
     <section className="bg-white">
       <Breadcrumbs
-        text={t("educationalQuality.title")}
+        text={t("certificatesCredentials.title")}
         icon={<AiFillSafetyCertificate/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
-        <h1 className="text-primary font-bold uppercase">{t("educationalQuality.title")}</h1>
+        <h1 className="text-primary font-bold uppercase">{t("certificatesCredentials.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-8 flex flex-col lg:flex-row gap-5">
           <div>
-            {t("educationalQuality.p", { returnObjects: true }).map((li, index) => (
+            {t("certificatesCredentials.p", { returnObjects: true }).map((li, index) => (
               <p key={index} className="mt-3">{li}</p>
             ))}
           </div>
-          <div className="min-w-[400px] max-w-3xl mx-auto">
-            <ImageWithInnerBorder
-              src="/src/assets/img/SafetyHealthWorkTrainer.png"
-              alt="transparencia"
-            />
+          <div className="max-w-[600px] mx-auto">
+            <img src="/src/assets/logo/osha-certificado.png" alt="" />
           </div>
         </div>
         <ButtonEmailInfo />
@@ -40,4 +36,4 @@ function Calidad() {
   );
 };
 
-export { Calidad }
+export { Credenciales }

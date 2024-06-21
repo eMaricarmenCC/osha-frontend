@@ -9,6 +9,7 @@ import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 import { CardGrado } from '../../components/ui/Card';
 import { Linea, Line1, OneLine } from '../../components/ui/Line';
 import { ListIcon, ListPoint } from "../../components/ui/List";
+import { ImageWithInnerBorder } from "../../components/ui/Image";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { LuArrowRightSquare } from "react-icons/lu";
@@ -30,7 +31,7 @@ function Grados(){
     navigate(`/grados/${grado.id}`, { state: { grado } });
   };
   return (
-    <section className="">
+    <section className="bg-white">
       <Breadcrumbs
         text={"Grados"}
         icon={<FaBuildingColumns/>}
@@ -89,7 +90,12 @@ function GradoDetalle(){
               {grado.title}
             </h1>
             <Line1 bgColorClass={"bg-secondary"}/>
-            <img src={grado.src} alt="" className="mt-10"/>
+            <div className="mt-6 w-full">
+              <ImageWithInnerBorder
+                src={grado.img}
+                alt="engineer"
+              />
+            </div>
             <div className="mt-10">
               <TabSections
                 activeKey={0}
@@ -101,7 +107,7 @@ function GradoDetalle(){
           {/* div side right */}
           <div className="bg-white rounded-lg shadow-lg p-5 lg:min-w-lg">
             <div className="flex justify-center">
-              <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:w-[300px] max-w-[500px]"/>
+              <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:min-w-[300px] 2xl:min-w-[400px] 2xl:max-w-[450px] max-w-[500px]"/>
             </div>
             <hr className="my-6 border-t-2 border-gray-300" />
             <div className="flex flex-col gap-3">

@@ -15,9 +15,12 @@ import { Acreditacion, AcreditacionAE} from '../Web/Acreditacion';
 import { Corporativos } from '../Web/Corporativos';
 import { Sedes } from '../Web/Sedes';
 import { Contactos } from './Contactos';
-import { Conducta } from './Conducta';
 import { Cumplimiento } from './Cumplimiento';
+import { Conducta } from './Conducta';
+import { ConoceOsha } from './ConoceOsha';
 import { Calidad } from './Calidad';
+import { Credenciales } from './Credenciales';
+import { PoliticaPago } from './PoliticaPago';
 import { Transparencia } from './Transparencia';
 
 function Web() {
@@ -48,8 +51,10 @@ function Web() {
         <Route path='/contactanos' element={<Contactos/>} />
         <Route path='/cumplimiento' element={<Cumplimiento/>} />
         <Route path='/codigo-conducta' element={<Conducta/>} />
+        <Route path='/conoce-osha' element={<ConoceOsha/>} />
         <Route path='/calidad-educativa' element={<Calidad/>} />
-        <Route path='/conoce-mas' element={<Contactos/>} />
+        <Route path='/credenciales' element={<Credenciales/>} />
+        <Route path='/politica-pago' element={<PoliticaPago/>} />
         <Route path='/transparencia' element={<Transparencia/>} />
       </Routes>
       <Footer/>

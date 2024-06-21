@@ -67,13 +67,13 @@ function Footer(){
                 {/* Pago */}
                 <div className="flex flex-col gap-3">
                   <p className="text-white font-inter text-[16px] font-semibold">Realice un pago aquí</p>
-                  <PayPalScriptProvider>
+                  {/*<PayPalScriptProvider>
                     <PayPalButtons
                       style={{
                         layout: "horizontal",
                       }}
                     />
-                </PayPalScriptProvider>
+                    </PayPalScriptProvider>*/}
                 </div>
               </div>
             </div>

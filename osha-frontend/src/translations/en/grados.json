@@ -181,10 +181,10 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/TrainTrainer.png",
-            "img": ""
+            "src": "/src/assets/img-grados/tt-osha.jpg",
+            "img": "/src/assets/img-grados/tt.png"
         },
-        {
+        {       
             "id": "ttc-osha",
             "title": "Trainer de Trabajos Criticos",
             "code": 1002,
@@ -370,8 +370,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/CriticalWorkTrainer.png",
-            "img": ""
+            "src": "/src/assets/img-grados/ttc-osha.png",
+            "img": "/src/assets/img-grados/ttc.png"
         },
         {
             "id": "th-osha",
@@ -536,8 +536,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/HazmatTrainer.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/th-osha.png",
+            "img": "/src/assets/img-grados/th.png"
         },
         {
             "id": "tec-osha",
@@ -648,8 +648,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/ConfinedSpaceTraining.png",
-            "img": ""
+            "src": "/src/assets/img-grados/tec-osha.jpg",
+            "img": "/src/assets/img-grados/tec.jpg"
         },
         {
             "id": "tsso-osha",
@@ -805,8 +805,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/OccupationalHealthSafetyTrainer.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/tsso-osha.png",
+            "img": "/src/assets/img-grados/tsso.png"
         },
         {
             "id": "tta-osha",
@@ -966,8 +966,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/TrainerTrabajoEnAltura.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/tta-osha.avif",
+            "img": "/src/assets/img-grados/tta.png"
         },
         {
             "id": "gssl-osha",
@@ -1109,8 +1109,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/GerenciaSeguridadSaludLaboral.png",
-            "img": ""
+            "src": "/src/assets/img-grados/gssl-osha.jpg",
+            "img": "/src/assets/img-grados/gssl.avif"
         },
         {
             "id": "gsic-osha",
@@ -1279,8 +1279,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/GerenciaSeguridadSaludLaboral.png",
-            "img": ""
+            "src": "/src/assets/img-grados/gsic-osha.jpg",
+            "img": "/src/assets/img-grados/gsic.avif"
         },
         {
             "id": "tsstic-osha",
@@ -1391,8 +1391,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/OccupationalHealthSafetyManagerConstructionIndustry.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/tsstic-osha.avif",
+            "img": "/src/assets/img-grados/tsstic.avif"
         },
         {
             "id": "dprl-osha",
@@ -1520,8 +1520,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/DirectorOccupationalRiskPrevention.png",
-            "img": ""
+            "src": "/src/assets/img-grados/dprl-osha.avif",
+            "img": "/src/assets/img-grados/dprl.avif"
         },
         {
             "id": "esst-osha",
@@ -1649,8 +1649,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/OccupationalHealthSafetySpecialis.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/esst-osha.jpg",
+            "img": "/src/assets/img-grados/esst.avif"
         },
         {
             "id": "esso-osha",
@@ -1806,8 +1806,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/OccupationalHealthSafetySpecialist.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/esso-osha.jpg",
+            "img": "/src/assets/img-grados/esso.avif"
         },
         {
             "id": "eprl-osha",
@@ -1942,8 +1942,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/OccupationalRiskPreventionSpecialist.png",
-            "img": ""
+            "src": "/src/assets/img-grados/eprl-osha.avif",
+            "img": "/src/assets/img-grados/eprl.avif"
         },
         {
             "id": "tsslic-osha",
@@ -2099,8 +2099,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/SeguridadSaludTrabajo.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/tsslic-osha.png",
+            "img": "/src/assets/img-grados/tsslic.avif"
         },
         {
             "id": "ehiv-osha",
@@ -2253,8 +2253,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/Hazmat4.jpg",
-            "img": ""
+            "src": "/src/assets/img-grados/ehiv-osha.avif",
+            "img": "/src/assets/img-grados/ehiv.jpg"
         }
     ],
     "certificate":{

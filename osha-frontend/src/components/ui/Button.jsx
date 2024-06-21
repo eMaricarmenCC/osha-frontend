@@ -25,4 +25,12 @@ function imput() {
   )
 }
 
-export { buttonPrimary }
+const ButtonEmailInfo = () => {
+  return (
+    <div className="mt-10 p-5 rounded-lg bg-gray-100 border border-primary">
+      <p className="text-center">Para más información, escribenos a: info@osha.es</p>
+    </div>
+  );
+};
+
+export { buttonPrimary, ButtonEmailInfo }

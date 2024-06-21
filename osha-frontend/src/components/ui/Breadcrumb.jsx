@@ -10,11 +10,12 @@ const Breadcrumbs = ({text, icon, img}) => {
       <img src={img} alt="Background Image" className="object-cover object-center w-full h-full" />
       <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="absolute inset-0 flex flex-row px-5 items-center justify-between
-        px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
+      {/* Contenido */}
+      <div className="absolute inset-0 flex flex-col md:flex-row gap-4 items-center justify-between
+        px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-15 lg:py-20 w-full">
         <div className="flex flex-row gap-5 items-center text-white text-3xl">
           <span>{icon}</span>
-          <h2 className="font-bold">{text}</h2>
+          <h2 className="text-lg lg:text-2xl font-bold">{text}</h2>
         </div>
         <div className="bg-white bg-opacity-20 rounded-lg p-3 flex items-center flex-wrap">
           <ul className="flex items-center">
