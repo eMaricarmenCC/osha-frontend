@@ -21,7 +21,10 @@ import { ConoceOsha } from './ConoceOsha';
 import { Calidad } from './Calidad';
 import { Credenciales } from './Credenciales';
 import { PoliticaPago } from './PoliticaPago';
+import { FundacionOsha } from './FundacionOsha';
 import { Transparencia } from './Transparencia';
+import { RepresentanteLondres, RepresentantePakistan } from './Representantes';
+
 
 function Web() {
   return (
@@ -55,7 +58,10 @@ function Web() {
         <Route path='/calidad-educativa' element={<Calidad/>} />
         <Route path='/credenciales' element={<Credenciales/>} />
         <Route path='/politica-pago' element={<PoliticaPago/>} />
+        <Route path='/fundacion-osha' element={<FundacionOsha/>} />
         <Route path='/transparencia' element={<Transparencia/>} />
+        <Route path='/representante-pakistan' element={<RepresentantePakistan/>} />
+        <Route path='/representante-londres' element={<RepresentanteLondres/>} />
       </Routes>
       <Footer/>
     </>

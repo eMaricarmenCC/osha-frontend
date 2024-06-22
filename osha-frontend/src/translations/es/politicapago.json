@@ -27,7 +27,7 @@
         "description": "Para cancelar un servicio y requerir la devolución del total de su inversión aplicará en los siguientes casos.",
         "hospitalizationMedicalPrescription": {
             "title": "Hospitalización o prescripción médica.",
-            "description": "(Se debe justificar con 10 días una vez emitida la prescripción médica). Remitirá este justificante en el tiempo y forma marcados anteriormente y a la misma dirección de correo electrónico con el que procedió la inscripción, con la misma condición de efectividad tras el acuse de recibo enviado por la Occupational Safety Health Administration \"Osha\"."
+            "description": "Se debe justificar con 10 días una vez emitida la prescripción médica). Remitirá este justificante en el tiempo y forma marcados anteriormente y a la misma dirección de correo electrónico con el que procedió la inscripción, con la misma condición de efectividad tras el acuse de recibo enviado por la Occupational Safety Health Administration \"Osha\"."
         },
         "dueToForceMajeure": {
             "title": "Por causas de fuerza mayor.",

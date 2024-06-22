@@ -6,9 +6,9 @@ import { FaYoutube, FaWhatsapp, FaTelegramPlane, FaFacebookF, FaLinkedin, FaTwit
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
 
+
 function Footer(){
   const [selectedItem, setSelectedItem] = useState(1);
-
   const items = [
     { id:1, name: 'Información', description: <Informacion/> },
     { id:2, name: 'Fundación osha-institute', description: <Fundacion/> },
@@ -244,8 +244,8 @@ const Validacion = () => {
 const Transparencia = () => {
   return(
     <div>
-      <p className="mt-4 text-white/[80%] text-sm">Occupational Safety Health Administration “OSHA-INSTITUTE” es una organización privada sin fines de lucro creada para fortalecer las competencias profesionales basadas a las normas de OSHA de los Estados Unidos además es una casa de estudios particular que brinda educación especializada de grado y posgrado adoptando los estándares propuestos por OSHA-EE.UU, ANSI, ASME, NFPA y NIOSH, sin referenciar la relación con otras organizaciones además no está conectada ni afiliada al Departamento de Trabajo de EE. UU. (DOL) ni a la Occupational Safety and Health Administration “OSHA”.</p>
-
+      <p className="mt-4 mb-4 text-white/[80%] text-sm">Occupational Safety Health Administration “OSHA-INSTITUTE” es una organización privada sin fines de lucro creada para fortalecer las competencias profesionales basadas a las normas de OSHA de los Estados Unidos además es una casa de estudios particular que brinda educación especializada de grado y posgrado adoptando los estándares propuestos por OSHA-EE.UU, ANSI, ASME, NFPA y NIOSH, sin referenciar la relación con otras organizaciones además no está conectada ni afiliada al Departamento de Trabajo de EE. UU. (DOL) ni a la Occupational Safety and Health Administration “OSHA”.</p>
+      <Link to="/transparencia" className="px-4 py-1 border border-white rounded-lg text-[13px] text-white">Ver más</Link>
     </div>
   );
 };

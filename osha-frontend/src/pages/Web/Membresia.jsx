@@ -1,27 +1,26 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
-import { SliderImg } from "../../components/Slider/Slider";
+import { ButtonEmailInfo } from "../../components/ui/Button";
 import { Accordian, AccordianItem } from "../../components/ui/Accordions";
-import { CardFotTex } from "../../components/ui/Card";
 import { List } from "../../components/ui/List";
 import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
-import { PiHandshakeFill, PiSealCheckBold } from "react-icons/pi";
+
+import { PiSealCheckBold } from "react-icons/pi";
 import { FaBuildingColumns } from "react-icons/fa6";
 
 
 function Membresia() {
   const { t, i18n } = useTranslation("membresia");
   return(
-    <section className="bg-grisFondo">
+    <section className="">
       <Breadcrumbs
         text={"Membresía"}
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16 w-full">
         <h1 className="text-primary font-bold">{t("membership.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         {t("membership.description", { returnObjects: true }).map((li, index) => (
@@ -52,6 +51,7 @@ function Membresia() {
           </Accordian>
         </div>
         <p className="mt-5">{t("membership.contact")}</p>
+        <ButtonEmailInfo />
       </div>
     </section>
   );
