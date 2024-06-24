@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, color, motion } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
+
 import { FiArrowRight, FiBarChart2, FiChevronDown, FiHome, FiPieChart } from "react-icons/fi";
+import { PiShieldCheckBold } from "react-icons/pi";
+import { PiSealCheckBold } from "react-icons/pi";
+import { CgCheck } from "react-icons/cg";
 
 
 const Navbar = () => {
@@ -29,7 +34,7 @@ const Navbar = () => {
           {/* Navbar */}
           <div className={`
             absolute z-50 bg-grisFondo ${open ? "left-0" : "left-[-100%]"}
-            h-[90%] w-[70%] top-0 overflow-y-auto bottom-0 duration-500
+            h-[95%] w-[70%] top-0 overflow-y-auto bottom-0 duration-500
             border-grisMedio shadow-3xl rounded-r-3xl flex flex-col
           `}>
             <div className="py-6 px-5 w-full flex justify-center">
@@ -393,146 +398,43 @@ const Academy = () => {
 
 
 const Acreditacion = () => {
+  const navigate = useNavigate();
+  const handleCardClick = (area) => {
+    navigate(`/acreditacion-area/${area.id}`, { state: { area } });
+  };
+  const { t, i18n } = useTranslation("acreditacion");
   return (
-    <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <NavLink
-        to="acreditacion"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Acreditación</span>
-      </NavLink>
-      <NavLink
-        to="acreditacion-ae"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">ACreditación AE</span>
-      </NavLink>
-      <NavLink
-        to="sedes"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Sedes</span>
-      </NavLink>
-    </div>
-  );
-};
-
-
-
-const Products = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
+    <div className="grid grid-cols-2 gap-4 divide-x divide-neutral-700">
+      <div className="flex flex-col justify-center">
+        <NavLink
+          to="acreditacion"
+          className="flex w-full flex-col items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50"
+        >
+          <PiShieldCheckBold className="mb-2 text-xl text-indigo-300" />
+          <span className="text-xs">Acreditación</span>
+        </NavLink>
+        <NavLink
+          to="acreditacion-ae"
+          className="flex w-full flex-col items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50"
+        >
+          <PiSealCheckBold className="mb-2 text-xl text-indigo-300" />
+          <span className="text-xs">Acreditación AE</span>
+        </NavLink>
+      </div>
+      <div className="pl-4 flex flex-col">
+        <span className="text-sm mb-1">Áreas de acreditación</span>
         <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Bookkeeping
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Nuestra identidad
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Osha</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Cooperación internacional
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Declaración de privacidad
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Estándares
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            White glove
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            SOX Compliance
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Staffing
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            More
-          </a>
+          { t("areas", { returnObjects: true }).map(area => (
+            <div
+              onClick={() => handleCardClick(area)}
+              className="flex gap-2 w-full items-center py-1 text-neutral-400 transition-colors hover:text-neutral-50 items-center"
+            >
+              <CgCheck className="mb-2 text-xl text-indigo-300" />
+              <span className="text-xs">{area.title}</span>
+            </div>
+          ))}
         </div>
       </div>
-
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
-    </div>
-  );
-};
-
-const Pricing = () => {
-  return (
-    <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Startup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Scaleup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Enterprise</span>
-      </a>
-    </div>
-  );
-};
-
-const Blog = () => {
-  return (
-    <div>
-      <div className="grid grid-cols-2 gap-2">
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/4.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/5.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
-      </div>
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
     </div>
   );
 };

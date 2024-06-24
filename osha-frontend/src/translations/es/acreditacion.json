@@ -3,186 +3,170 @@
         "title" : "Acreditación",
         "content" : "Accede a una acreditación OSHA-INSTITUTE y conviértete en un especialista Osha-Institute y empieza a despegar como profesional. Nuestra trayectoria, el valor y el reconocimiento que implantamos a través de los años a nivel mundial con nuestros aportes y estandares es visible y parte de nuestro reconocimiento te lo queremos compartir al ser parte de nuestra familia y representar a Osha-Institute en cualquier parte del mundo."
     },
-    "mining" : {
-        "title" : "Minería",
-        "content" : "Nuestra acreditación en la industria Minera se ve reflejado en la prevención de accidentes de trabajo en las diversas áreas y sectores de influencia.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list" : [
-                "Seguridad Laboral",
-                "Operaciones Mineras",
-                "Plantas Industriales"
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Areas Vigente para Profesionales",
-            "list": [
-                "Supervisor de Brigadas de Emergencia.",
-                "Supervisor de Operaciones Mineras.",
-                "Supervisor de Trabajos de Alto Riesgo.",
-                "Supervisor de Transportes.",
-                "Supervisor de Izajes.",
-                "Supervisor de Materiales Peligrosos.",
-                "Supervisor de Trabajos en Plantas de Beneficios.",
-                "Supervisor de Sostenimiento.",
-                "Supervisor de Perforación y Voladura."
-            ]            
-        }
-    },
-    "building" : {
-        "title" : "Construcción",
-        "content" : "Abarcamos las diversas áreas en el sector construcción formando supervisores de categoría premiun en la industria de la construcción a nivel mundial.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list": [
-                "Logística y Alamacenes",
-                "Operaciones Constructivas"
-            ]            
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Areas Vigente para Profesionales",
-            "list" : [
-                "Supervisor de Seguridad Laboral.",
-                "Prevencionista de Riesgos.",
-                "Supervisor de excavación de Zanjas.",
-                "Supervisor de Muros de Concreto.",
-                "Gerente de Obra.",
-                "Supervisor de Logística y Almacenes."
-            ]
-        }
-    },
-    "hazardousMaterials" : {
-        "title" : "Materiales Peligrosos",
-        "content" : "Aplicando estándares de uso internacional y nuestros propios estándares como es Hazwoper fomentamos una excelente formación de personal de primera respuesta a emergencias con materiales peligrosos a nivel mundial.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list" : [
-                "Derrames Terrestres.",
-                "Derrames Maritimos.",
-                "Derrames Aéreos."
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Areas Vigente para Profesionales",
-            "list" : [
-                "Hazmat nivel 3 Técnico.",            
-                "Hazmat nivel 4 Especialista.",
-                "Hazmat nivel 5 Comandante.",
-                "Instructor Hazmat."
-            ]
-        }
-    },
-    "transport" : {
-        "title" : "Transportes",
-        "content" : "Buscamos reducir el índice de accidentalismo en las carreteras formando líderes en el transporte de personas, carga y materiales peligrosos.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list": [
-                "Transporte terrestre.",
-                "Transporte férreo.",
-                "Transporte de personal.",
-                "Transporte de mercancías."
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Areas Vigente para Profesionales",
-            "list" : [
-                "Supervisor de transporte terrestre.",
-                "Supervisor de carga y mercancías.",
-                "Supervisor de personal."
-            ]
-        }
-    },
-    "industries" : {
-        "title" : "Industrias",
-        "content" : "La formación de profesionales en las diversas industrias productivas nos involucraron directamente a formar profesionales con criterio en la toma de decisiones necesarias In Situ.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list" : [
-                "Fábricas.",
-                "Manufactura.",
-                "Papelera.",
-                "Maderera.",
-                "Agrícola",
-                "Automovilístico.",
-                "Metálico.",
-                "Alimentaria.",
-                "Farmacéuticas.",
-                "Informática.",
-                "Mecánica.",
-                "Paletera."
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Areas Vigente para Profesionales",
-            "list" : [
-                "Supervisor de líneas.",
-                "Supervisor de personal.",
-                "Supervisor superficie.",
-                "Supervisor de planta.",
-                "Supervisor de área.",
-                "Supervisor de calzada.",
-                "Supervisor de tránsito.",
-                "Supervisor Químico."
-            ]
-        }
-    },
-    "health" : {
-        "title" : "Salud",
-        "content" : "El personal del sector salud a nivel mundial cumple una importante tarea el cual involucra la vida y el bienestar de millones de individuos para ello fomentamos la mejora profesional en las diversas áreas de la salud.",
-        "areasOfInfluence" : {
-            "title" : "Areas de influencia",
-            "list" : [
-                "Psicología.",
-                "Asistencia Sanitaria.",
-                "Seguridad Social.",
-                "Enfermería.",
-                "Paramédicos."
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "list" : [
-                "Supervisor de Sala.",
-                "Supervisor de Área.",
-                "Paramédico.",
-                "Respuesta rápida.",
-                "Rescatista médico."
-            ]
-        }
-    },
-    "grades" : {
+    "degrees" : {
         "title" : "Grados",
-        "content" : "Nuestros grados profesionales están acreditados y validados en 78 países a nivel mundial gracias al convenio internacional del foro educativo.",
-        "p2" : "Respaldados por el ISO 21001.",
-        "p3" : "Y garantizados por nuestra acreditación AE (ACREDITED EDUCATION).",
-        "p4" : "Cada uno de nuestros grados cumplen los requisitos exigidos en todo el mundo y son válidos en 4 continentes.",
-        "grades" : {
-            "title" : "Grados",
-            "list" : [
-                "Gerente de Seguridad y Salud en el Trabajo en la Industria de la Construcción (GSSTIC OSHA).",
-                "Gerente de Prevención de Riesgos Laborales (GPRL OSHA).",
-                "Gerente de Seguridad y Salud Ocupacional (GSSO OSHA).",
-                "Gerente de Seguridad y Salud Laboral (GSSL OSHA).",
-                "Director de Prevención de Riesgos Laborales (DPRL OSHA).",
-                "Directo de Seguridad y Salud en el Trabajo (DSST OSHA).",
-                "Directo de Seguridad y Salud Ocupacional (DSSO OSHA).",
-                "Entrenador de Seguridad y Salud en el trabajo (ESST OSHA).",
-                "Entrenador de Seguridad y Salud Ocupacional (ESSO OSHA).",
-                "Entrenador de Prevención de Riesgos Laborales (EPRL OSHA).",
-                "Entrenador de Seguridad y Salud en el trabajo (ESST OSHA).",
-                "Entrenador HAZMAT (HAZWOPER) (EH OSHA).",
-                "Entrenador de Trabajos en Altura (ETA OSHA).",
-                "Entranador de Trabajos esn Espacios Confinados (ETEC OSHA).",
-                "Especialista de Seguridad y Salud Ocupacional (ESSO OSHA).",
-                "Entrenador de Seguridad y Salud en el trabajo (ESST OSHA).",
-                "specialista en Prevención de Riesgos Laborales (EPRL OSHA).",
-                "Especialista de Seguridad en Laboratorios de Atención Médica (ESLAT OSHA).",
-                "HAZMAT 4 Especialista (OSHA).",
-                "Train the Trainer (OSHA).",
-                "Supervisor de Seguridad en el Trabajo (SPST OSHA)."
-            ]            
-        }
+        "p": [
+            "Nuestros grados profesionales están acreditados y validados en 78 países a nivel mundial gracias al convenio internacional del foro educativo.",
+            "Respaldados por el ISO 21001.",
+            "Y garantizados por nuestra acreditación AE (ACREDITED EDUCATION).",
+            "Cada uno de nuestros grados cumplen los requisitos exigidos en todo el mundo y son válidos en 4 continentes."
+        ]
     },
+    "areas": [
+        {
+            "id": "mineria",
+            "title" : "Minería",
+            "content" : "Nuestra acreditación en la industria Minera se ve reflejado en la prevención de accidentes de trabajo en las diversas áreas y sectores de influencia.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list" : [
+                    "Seguridad Laboral",
+                    "Operaciones Mineras",
+                    "Plantas Industriales"
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
+                "list": [
+                    "Supervisor de Brigadas de Emergencia.",
+                    "Supervisor de Operaciones Mineras.",
+                    "Supervisor de Trabajos de Alto Riesgo.",
+                    "Supervisor de Transportes.",
+                    "Supervisor de Izajes.",
+                    "Supervisor de Materiales Peligrosos.",
+                    "Supervisor de Trabajos en Plantas de Beneficios.",
+                    "Supervisor de Sostenimiento.",
+                    "Supervisor de Perforación y Voladura."
+                ]            
+            }
+        },
+        {
+            "id": "construccion",
+            "title" : "Construcción",
+            "content" : "Abarcamos las diversas áreas en el sector construcción formando supervisores de categoría premiun en la industria de la construcción a nivel mundial.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list": [
+                    "Logística y Alamacenes",
+                    "Operaciones Constructivas"
+                ]            
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
+                "list" : [
+                    "Supervisor de Seguridad Laboral.",
+                    "Prevencionista de Riesgos.",
+                    "Supervisor de excavación de Zanjas.",
+                    "Supervisor de Muros de Concreto.",
+                    "Gerente de Obra.",
+                    "Supervisor de Logística y Almacenes."
+                ]
+            }
+        },
+        {
+            "id": "hazmat",
+            "title" : "Materiales Peligrosos",
+            "content" : "Aplicando estándares de uso internacional y nuestros propios estándares como es Hazwoper fomentamos una excelente formación de personal de primera respuesta a emergencias con materiales peligrosos a nivel mundial.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list" : [
+                    "Derrames Terrestres.",
+                    "Derrames Maritimos.",
+                    "Derrames Aéreos."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
+                "list" : [
+                    "Hazmat nivel 3 Técnico.",            
+                    "Hazmat nivel 4 Especialista.",
+                    "Hazmat nivel 5 Comandante.",
+                    "Instructor Hazmat."
+                ]
+            }
+        },
+        {
+            "id": "transporte",
+            "title" : "Transportes",
+            "content" : "Buscamos reducir el índice de accidentalismo en las carreteras formando líderes en el transporte de personas, carga y materiales peligrosos.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list": [
+                    "Transporte terrestre.",
+                    "Transporte férreo.",
+                    "Transporte de personal.",
+                    "Transporte de mercancías."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
+                "list" : [
+                    "Supervisor de transporte terrestre.",
+                    "Supervisor de carga y mercancías.",
+                    "Supervisor de personal."
+                ]
+            }
+        },
+        {
+            "id": "industria",
+            "title" : "Industrias",
+            "content" : "La formación de profesionales en las diversas industrias productivas nos involucraron directamente a formar profesionales con criterio en la toma de decisiones necesarias In Situ.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list" : [
+                    "Fábricas.",
+                    "Manufactura.",
+                    "Papelera.",
+                    "Maderera.",
+                    "Agrícola",
+                    "Automovilístico.",
+                    "Metálico.",
+                    "Alimentaria.",
+                    "Farmacéuticas.",
+                    "Informática.",
+                    "Mecánica.",
+                    "Paletera."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
+                "list" : [
+                    "Supervisor de líneas.",
+                    "Supervisor de personal.",
+                    "Supervisor superficie.",
+                    "Supervisor de planta.",
+                    "Supervisor de área.",
+                    "Supervisor de calzada.",
+                    "Supervisor de tránsito.",
+                    "Supervisor Químico."
+                ]
+            }
+        },
+        {
+            "id": "salud",
+            "title" : "Salud",
+            "content" : "El personal del sector salud a nivel mundial cumple una importante tarea el cual involucra la vida y el bienestar de millones de individuos para ello fomentamos la mejora profesional en las diversas áreas de la salud.",
+            "areasOfInfluence" : {
+                "title" : "Areas de influencia",
+                "list" : [
+                    "Psicología.",
+                    "Asistencia Sanitaria.",
+                    "Seguridad Social.",
+                    "Enfermería.",
+                    "Paramédicos."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "list" : [
+                    "Supervisor de Sala.",
+                    "Supervisor de Área.",
+                    "Paramédico.",
+                    "Respuesta rápida.",
+                    "Rescatista médico."
+                ]
+            }
+        }
+    ],
     "accreditationAE" : {
         "accreditationAE" : {
             "title" : "Acreditation AE",

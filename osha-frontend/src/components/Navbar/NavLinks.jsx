@@ -35,7 +35,7 @@ const NavLinks = () => {
       submenu: true,
       sublinks: [
         { name: t("accreditation"), link: "/acreditacion" },
-        { name: t("accreditationae"), link: "/adreditacion-ae" },
+        { name: t("accreditationae"), link: "/acreditacion-ae" },
       ],
       icon: <AiFillSafetyCertificate style={{color:"var(--primary)", width:20, height:20 }}/>
     },
@@ -44,8 +44,11 @@ const NavLinks = () => {
       submenu: true,
       sublinks:  [
         { name: t("degrees"), link: "/grados" },
+        { name: t("certex"), link: "/certex" },
         { name: t("courses"), link: "/cursos" },
         { name: t("freecourses"), link: "/cursos-gratuitos" },
+        { name: t("membership"), link: "/membresia" },
+        { name: t("corporate"), link: "/corporativos" },
       ],
       icon: <IoMdSchool style={{color:"var(--primary)", width:20, height:20 }}/>
     },

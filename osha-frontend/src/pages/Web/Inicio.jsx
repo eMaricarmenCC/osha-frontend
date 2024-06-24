@@ -308,17 +308,19 @@ const Grados = () => {
         </motion.h1>
         <Linea/>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
-          { t("degreeData", { returnObjects: true }).map(grado => (
-            <CardGrado
-              id={grado.id}
-              title={grado.title}
-              code={grado.code}
-              label={grado.label}
-              src={grado.src}
-              onClick={() => handleCardClick(grado)}
-            />
-          ))
-          }
+          { t("degreeData", { returnObjects: true }).map((grado,index) => (
+            <div key={index}>
+              <CardGrado
+                k={index}
+                id={grado.id}
+                title={grado.title}
+                code={grado.code}
+                label={grado.label}
+                src={grado.src}
+                onClick={() => handleCardClick(grado)}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

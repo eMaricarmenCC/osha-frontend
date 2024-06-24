@@ -42,6 +42,16 @@ function Grados(){
           {t("title")}
         </h1>
         <Line1 bgColorClass={"bg-secondary"}/>
+        <div className="mt-7 flex flex-col lg:flex-row gap-5 items-center">
+          <div>
+            {t("p", {returnObjects: true}).map((p,index) => (
+              <p key={index} className="mt-3">{p}</p>
+            ))}
+          </div>
+          <div className="mx-auto max-w-xl">
+            <img src="/src/assets/logo/logo-ISO-21001.png" alt="ISO 21001" />
+          </div>
+        </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
           { t("degreeData", { returnObjects: true }).map(grado => (
             <CardGrado

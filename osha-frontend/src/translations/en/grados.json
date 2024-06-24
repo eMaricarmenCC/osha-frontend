@@ -1,6 +1,12 @@
 {
     "title": "Grados",
     "titleHome": "Professional Accreditation Degrees",
+    "p": [
+        "Our professional degrees are accredited and validated in 78 countries worldwide thanks to the international agreement of the educational forum.",
+        "Supported by ISO 21001.",
+        "And guaranteed by our AE (ACREDITED EDUCATION) accreditation.",
+        "Each of our degrees meets the requirements demanded throughout the world and is valid on 4 continents."
+    ],
     "tab-header": [
         "Presentación",
         "Beneficios",
@@ -970,6 +976,118 @@
             "img": "/src/assets/img-grados/tta.png"
         },
         {
+            "id": "tsstic-osha",
+            "title": "Trainer de Seguridad y Salud en el Trabajo en la Industria de la Construcción",
+            "code": 1060,
+            "label": "TSSTIC-OSHA",
+            "presentation":[
+                "b",
+                ""
+            ],
+            "details": [
+                {
+                    "title": "Tipo",
+                    "text": ""
+                },
+                {
+                    "title": "Grado Obtenido",
+                    "text": ""
+                },
+                {
+                    "title": "Validez",
+                    "text": "Internacional"
+                },
+                {
+                    "title": "Modalidad",
+                    "text": "Online"
+                },
+                {
+                    "title": "Horas",
+                    "text": ""
+                },
+                {
+                    "title": "Estándares",
+                    "text": "OSHA"
+                }
+            ],
+            "hours":0,
+            "price": 0,
+            "benefits": {
+                "certificate": {
+                    "l1": "Certificado con el grado de:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "diplomat": {
+                    "l1": "Certificado de Diplomatura por  horas como:",
+                    "l2": "",
+                    "l3": ""
+                },
+                "carnet": {
+                    "l1": "Carnet de Acreditación para bolsillo",
+                    "l2": "Incluye código de verificación a Nivel Internacional"
+                },
+                "code": {
+                    "l1": "Código como:",
+                    "l2": "",
+                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
+                },
+                "hours": {
+                    "l1": "Horas cargadas",
+                    "l2": "",
+                    "l3": "Horas Académicas"
+                },
+                "classroom": {
+                    "l1":"Programa en Modalidad",
+                    "l2":"ON-LINE",
+                    "l3":"100% VIRTUAL",
+                    "l4":"Disponible 24/7"
+                }
+            },
+            "sylabus": [
+                {
+                    "module": "Módulo 1",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 2",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 3",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 4",
+                    "title": "",
+                    "courses": [
+                    ]
+                },
+                {
+                    "module": "Módulo 5",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                },
+                {
+                    "module": "Módulo 6",
+                    "title": "",
+                    "courses": [
+
+                    ]
+                }
+            ],
+            "src": "/src/assets/img-grados/tsstic-osha.avif",
+            "img": "/src/assets/img-grados/tsstic.avif"
+        },
+        {
             "id": "gssl-osha",
             "title": "Gerente de Seguridad y Salud Laboral \"Osha\"",
             "code": 1051,
@@ -1282,118 +1400,7 @@
             "src": "/src/assets/img-grados/gsic-osha.jpg",
             "img": "/src/assets/img-grados/gsic.avif"
         },
-        {
-            "id": "tsstic-osha",
-            "title": "Trainer de Seguridad y Salud en el Trabajo en la Industria de la Construcción",
-            "code": 1060,
-            "label": "TSSTIC-OSHA",
-            "presentation":[
-                "b",
-                ""
-            ],
-            "details": [
-                {
-                    "title": "Tipo",
-                    "text": ""
-                },
-                {
-                    "title": "Grado Obtenido",
-                    "text": ""
-                },
-                {
-                    "title": "Validez",
-                    "text": "Internacional"
-                },
-                {
-                    "title": "Modalidad",
-                    "text": "Online"
-                },
-                {
-                    "title": "Horas",
-                    "text": ""
-                },
-                {
-                    "title": "Estándares",
-                    "text": "OSHA"
-                }
-            ],
-            "hours":0,
-            "price": 0,
-            "benefits": {
-                "certificate": {
-                    "l1": "Certificado con el grado de:",
-                    "l2": "",
-                    "l3": ""
-                },
-                "diplomat": {
-                    "l1": "Certificado de Diplomatura por  horas como:",
-                    "l2": "",
-                    "l3": ""
-                },
-                "carnet": {
-                    "l1": "Carnet de Acreditación para bolsillo",
-                    "l2": "Incluye código de verificación a Nivel Internacional"
-                },
-                "code": {
-                    "l1": "Código como:",
-                    "l2": "",
-                    "l3": "Visible en nivel mundial desde nuestra página web oficial www.osha.es y de uso para Postfirma Profesional"
-                },
-                "hours": {
-                    "l1": "Horas cargadas",
-                    "l2": "",
-                    "l3": "Horas Académicas"
-                },
-                "classroom": {
-                    "l1":"Programa en Modalidad",
-                    "l2":"ON-LINE",
-                    "l3":"100% VIRTUAL",
-                    "l4":"Disponible 24/7"
-                }
-            },
-            "sylabus": [
-                {
-                    "module": "Módulo 1",
-                    "title": "",
-                    "courses": [
-                    ]
-                },
-                {
-                    "module": "Módulo 2",
-                    "title": "",
-                    "courses": [
-                    ]
-                },
-                {
-                    "module": "Módulo 3",
-                    "title": "",
-                    "courses": [
-                    ]
-                },
-                {
-                    "module": "Módulo 4",
-                    "title": "",
-                    "courses": [
-                    ]
-                },
-                {
-                    "module": "Módulo 5",
-                    "title": "",
-                    "courses": [
-
-                    ]
-                },
-                {
-                    "module": "Módulo 6",
-                    "title": "",
-                    "courses": [
-
-                    ]
-                }
-            ],
-            "src": "/src/assets/img-grados/tsstic-osha.avif",
-            "img": "/src/assets/img-grados/tsstic.avif"
-        },
+        
         {
             "id": "dprl-osha",
             "title": "Director de Prevención de Riesgos Laborales Osha",

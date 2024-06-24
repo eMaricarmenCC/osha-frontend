@@ -77,7 +77,7 @@ function PoliticaPago() {
             <div className="">
               <h4 className="text-primary font-semibold">{t("cancellationServiceReturns.dueToForceMajeure.title")}</h4>
               {t("cancellationServiceReturns.dueToForceMajeure.description", {returnObjects: true}).map((p,index) => (
-                <p className="mt-2">{p}</p>
+                <p key={index} className="mt-2">{p}</p>
               ))}
             </div>
           </div>

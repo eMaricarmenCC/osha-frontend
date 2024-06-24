@@ -25,8 +25,6 @@ import nosotros_es from "../translations/es/nosotros.json";
 import nosotros_en from "../translations/en/nosotros.json";
 import regulaciones_es from "../translations/es/regulaciones.json";
 import regulaciones_en from "../translations/en/regulaciones.json";
-import representantes_es from "../translations/es/regulaciones.json";
-import representantes_en from "../translations/en/regulaciones.json";
 import sedes_es from "../translations/es/sedes.json";
 import sedes_en from "../translations/en/sedes.json";
 import politicapago_es from "../translations/es/politicapago.json";
@@ -37,6 +35,8 @@ import cursos_es from "../translations/es/cursos.json";
 import cursos_en from "../translations/en/cursos.json";
 import transparencia_es from "../translations/es/transparencia.json";
 import transparencia_en from "../translations/en/transparencia.json";
+import representantes_es from "../translations/es/representantes.json";
+import representantes_en from "../translations/en/representantes.json";
 
 
 i18n.use(Backend).use(initReactI18next).init({
@@ -58,12 +58,12 @@ i18n.use(Backend).use(initReactI18next).init({
             nosotros: nosotros_es,
             prueba: prueba_es,
             regulaciones: regulaciones_es,
-            representantes: representantes_es,
             sedes: sedes_es,
             politicapago: politicapago_es,
             grados: grados_es,
             cursos: cursos_es,
             transparencia: transparencia_es,
+            representantes: representantes_es,
         },
         en: {
             labels: labels_en,
@@ -79,12 +79,12 @@ i18n.use(Backend).use(initReactI18next).init({
             nosotros: nosotros_en,
             prueba: prueba_en,
             regulaciones: regulaciones_en,
-            representantes: representantes_en,
             sedes: sedes_en,
             politicapago: politicapago_en,
             grados: grados_en,
             cursos: cursos_en,
             transparencia: transparencia_en,
+            representantes: representantes_en,
         }
     }
 });

@@ -11,7 +11,7 @@ import { GradoDetalle, Grados } from '../Web/Grados';
 import { Certex } from '../Web/Certex';
 import { Cursos, CursosGratuitos } from '../Web/Cursos';
 import { Membresia } from '../Web/Membresia';
-import { Acreditacion, AcreditacionAE} from '../Web/Acreditacion';
+import { Acreditacion, AcreditacionAE, AcreditacionArea, AcreditacionAreaDetalle } from '../Web/Acreditacion';
 import { Corporativos } from '../Web/Corporativos';
 import { Sedes } from '../Web/Sedes';
 import { Contactos } from './Contactos';
@@ -62,31 +62,10 @@ function Web() {
         <Route path='/transparencia' element={<Transparencia/>} />
         <Route path='/representante-pakistan' element={<RepresentantePakistan/>} />
         <Route path='/representante-londres' element={<RepresentanteLondres/>} />
+        <Route path="/acreditacion-area/:id" element={<AcreditacionAreaDetalle/>} />
       </Routes>
       <Footer/>
     </>
-  )
-}
-
-const Headerr = () => {
-  return(
-    <header>
-      <Top/>
-      <Navbar />
-    </header>
-  );
-};
-
-function Template({ children }) {
-  return (
-    <div className='flex flex-col w-full h-full'>
-      <Top />
-      <Header />
-      <main className=''>
-        {children}
-      </main>
-      <Footer/>
-    </div>
   )
 }
 

@@ -3,153 +3,170 @@
         "title" : "Accreditation",
         "content": "Access an OSHA-INSTITUTE accreditation and become an Osha-Institute specialist and start taking off as a professional. Our trajectory, the value and recognition that we have established over the years worldwide with our contributions and standards is visible and part of our recognition we want to share with you by being part of our family and representing Osha-Institute anywhere in the world."
     },
-    "mining" : {
-        "title" : "Mining",
-        "content" : "Our accreditation in the Mining industry is reflected in the prevention of work accidents in the various areas and sectors of influence.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list" : [
-                "Job security",
-                "Mining Operations",
-                "Industrial plants"
-            ]
-        },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Current Areas for Professionals",
-            "list": [
-                "Supervisor of Emergency Brigades.",
-                "Mining Operations Supervisor.",
-                "High Risk Work Supervisor.",
-                "Transportation Supervisor.",
-                "Lifting Supervisor.",
-                "Hazardous Materials Supervisor.",
-                "Supervisor of Work in Processing Plants.",
-                "Sustainability Supervisor.",
-                "Drill and Blast Supervisor."
-            ]
-        }
+    "degrees" : {
+        "title" : "Grados",
+        "p": [
+            "Nuestros grados profesionales están acreditados y validados en 78 países a nivel mundial gracias al convenio internacional del foro educativo.",
+            "Respaldados por el ISO 21001.",
+            "Y garantizados por nuestra acreditación AE (ACREDITED EDUCATION).",
+            "Cada uno de nuestros grados cumplen los requisitos exigidos en todo el mundo y son válidos en 4 continentes."
+        ]
     },
-    "building" : {
-        "title" : "Construction",
-        "content" : "We cover the various areas in the construction sector, training premium category supervisors in the construction industry worldwide.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list": [
-                "Logistics and Warehouses",
-                "Constructive Operations"
-            ]
+    "areas": [
+        {
+            "id": "mineria",
+            "title" : "Mining",
+            "content" : "Our accreditation in the Mining industry is reflected in the prevention of work accidents in the various areas and sectors of influence.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list" : [
+                    "Job security",
+                    "Mining Operations",
+                    "Industrial plants"
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
+                "list": [
+                    "Supervisor of Emergency Brigades.",
+                    "Mining Operations Supervisor.",
+                    "High Risk Work Supervisor.",
+                    "Transportation Supervisor.",
+                    "Lifting Supervisor.",
+                    "Hazardous Materials Supervisor.",
+                    "Supervisor of Work in Processing Plants.",
+                    "Sustainability Supervisor.",
+                    "Drill and Blast Supervisor."
+                ]
+            }
         },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Current Areas for Professionals",
-            "list" : [
-                "Occupational Safety Supervisor.",
-                "Risk Preventionist.",
-                "Trenching supervisor.",
-                "Concrete Wall Supervisor.",
-                "Construction manager.",
-                "Logistics and Warehouse Supervisor."
-            ]
-        }
-    },
-    "hazardousMaterials" : {
-        "title" : "Hazardous Materials",
-        "content" : "By applying internationally used standards and our own standards such as Hazwoper, we promote excellent training of first responders to emergencies with hazardous materials worldwide.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list" : [
-                "Land Spills.",
-                "Marine Spills.",
-                "Air Spills."
-            ]
+        {
+            "id": "construccion",
+            "title" : "Construction",
+            "content" : "We cover the various areas in the construction sector, training premium category supervisors in the construction industry worldwide.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list": [
+                    "Logistics and Warehouses",
+                    "Constructive Operations"
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
+                "list" : [
+                    "Occupational Safety Supervisor.",
+                    "Risk Preventionist.",
+                    "Trenching supervisor.",
+                    "Concrete Wall Supervisor.",
+                    "Construction manager.",
+                    "Logistics and Warehouse Supervisor."
+                ]
+            }
         },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Current Areas for Professionals",
-            "list" : [
-                "Hazmat level 3 Technician.",
-                "Hazmat level 4 Specialist.",
-                "Hazmat level 5 Commander.",
-                "Instructor Hazmat."
-            ]
-        }
-    },
-    "transport" : {
-        "title" : "Transports",
-        "content" : "We seek to reduce the rate of accidents on the roads by training leaders in the transportation of people, cargo and dangerous materials.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list": [
-                "Ground transportation.",
-                "Railway transportation.",
-                "Personal transportation.",
-                "Merchandise transports."
-            ]
+        {
+            "id": "hazmat",
+            "title" : "Hazardous Materials",
+            "content" : "By applying internationally used standards and our own standards such as Hazwoper, we promote excellent training of first responders to emergencies with hazardous materials worldwide.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list" : [
+                    "Land Spills.",
+                    "Marine Spills.",
+                    "Air Spills."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
+                "list" : [
+                    "Hazmat level 3 Technician.",
+                    "Hazmat level 4 Specialist.",
+                    "Hazmat level 5 Commander.",
+                    "Instructor Hazmat."
+                ]
+            }
         },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Current Areas for Professionals",
-            "list" : [
-                "Land transportation supervisor.",
-                "Cargo and merchandise supervisor.",
-                "Personnel supervisor."
-            ]
-        }
-    },
-    "industries" : {
-        "title" : "Industries",
-        "content": "The training of professionals in the various productive industries involved us directly in training professionals with judgment in making necessary decisions in situ.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list" : [
-                "Factories.",
-                "Manufacture.",
-                "Paper bin.",
-                "Wood.",
-                "Agricultural",
-                "Motoring.",
-                "Metal.",
-                "Alimentary.",
-                "Pharmaceuticals.",
-                "Computing.",
-                "Mechanics.",
-                "Paletera."
-            ]
+        {
+            "id": "transporte",
+            "title" : "Transports",
+            "content" : "We seek to reduce the rate of accidents on the roads by training leaders in the transportation of people, cargo and dangerous materials.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list": [
+                    "Ground transportation.",
+                    "Railway transportation.",
+                    "Personal transportation.",
+                    "Merchandise transports."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
+                "list" : [
+                    "Land transportation supervisor.",
+                    "Cargo and merchandise supervisor.",
+                    "Personnel supervisor."
+                ]
+            }
         },
-        "currentAccreditationForProfessionals" : {
-            "title" : "Current Areas for Professionals",
-            "list" : [
-                "Line supervisor.",
-                "Personnel supervisor.",
-                "Surface supervisor.",
-                "Plant supervisor.",
-                "Area supervisor.",
-                "road supervisor.",
-                "Traffic supervisor.",
-                "Chemical Supervisor."
-            ]
-        }
-    },
-    "health" : {
-        "title" : "Health",
-        "content": "The personnel of the health sector worldwide fulfill an important task which involves the life and well-being of millions of individuals. For this reason, we promote professional improvement in the various areas of health.",
-        "areasOfInfluence" : {
-            "title" : "Areas of influence",
-            "list" : [
-                "Psychology.",
-                "Healthcare.",
-                "Social Security.",
-                "Nursing.",
-                "Paramedics."
-            ]
+        {
+            "id": "industria",
+            "title" : "Industries",
+            "content": "The training of professionals in the various productive industries involved us directly in training professionals with judgment in making necessary decisions in situ.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list" : [
+                    "Factories.",
+                    "Manufacture.",
+                    "Paper bin.",
+                    "Wood.",
+                    "Agricultural",
+                    "Motoring.",
+                    "Metal.",
+                    "Alimentary.",
+                    "Pharmaceuticals.",
+                    "Computing.",
+                    "Mechanics.",
+                    "Paletera."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
+                "list" : [
+                    "Line supervisor.",
+                    "Personnel supervisor.",
+                    "Surface supervisor.",
+                    "Plant supervisor.",
+                    "Area supervisor.",
+                    "road supervisor.",
+                    "Traffic supervisor.",
+                    "Chemical Supervisor."
+                ]
+            }
         },
-        "currentAccreditationForProfessionals" : {
-            "list" : [
-                "Room Supervisor.",
-                "Area supervisor.",
-                "Paramedic.",
-                "Fast answer.",
-                "Medical rescuer."
-            ]
+        {
+            "id": "salud",
+            "title" : "Health",
+            "content": "The personnel of the health sector worldwide fulfill an important task which involves the life and well-being of millions of individuals. For this reason, we promote professional improvement in the various areas of health.",
+            "areasOfInfluence" : {
+                "title" : "Areas of influence",
+                "list" : [
+                    "Psychology.",
+                    "Healthcare.",
+                    "Social Security.",
+                    "Nursing.",
+                    "Paramedics."
+                ]
+            },
+            "currentAccreditationForProfessionals" : {
+                "list" : [
+                    "Room Supervisor.",
+                    "Area supervisor.",
+                    "Paramedic.",
+                    "Fast answer.",
+                    "Medical rescuer."
+                ]
+            }
         }
-    },
+    ],
     "grades" : {
         "title" : "Degrees",
         "content" : "Our professional degrees are accredited and validated in 78 countries worldwide thanks to the international educational forum agreement.",

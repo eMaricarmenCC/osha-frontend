@@ -183,8 +183,8 @@ const Informacion = () => {
   ];
   return(
     <ul className="mt-5">
-      {items.map((item, index) => (
-        <li key={index} className="mt-2 flex">
+      {items.map((item) => (
+        <li key={item.id} className="mt-2 flex">
           <IoIosArrowForward color='white'/>
           <Link
             to={item.link}
@@ -200,12 +200,12 @@ const Informacion = () => {
 
 const Fundacion = () => {
   const items = [
-    { id:1, name: '¿Qué es la fundación OSHA-Institute', link: '/fundacion-osha' },
+    { id:11, name: '¿Qué es la fundación OSHA-Institute', link: '/fundacion-osha' },
   ];
   return(
     <ul className="mt-5">
-      {items.map((item, index) => (
-        <li key={index} className="mt-2 flex" onClick={() => onSelectItem(item)}>
+      {items.map((item) => (
+        <li key={item.id} className="mt-2 flex">
           <IoIosArrowForward color='white'/>
           <Link
             to={item.link}
@@ -221,13 +221,13 @@ const Fundacion = () => {
 
 const Validacion = () => {
   const items = [
-    { id:1, name: 'Verificar un Negocio en mi Pais', link: '/sedes' },
-    { id:2, name: 'Verificar a un Instructor de mi Pais', link: '/membresia' },
+    { id:21, name: 'Verificar un Negocio en mi Pais', link: '/sedes' },
+    { id:22, name: 'Verificar a un Instructor de mi Pais', link: '/membresia' },
   ];
   return(
     <ul className="mt-5">
-      {items.map((item, index) => (
-        <li key={index} className="mt-2 flex" onClick={() => onSelectItem(item)}>
+      {items.map((item) => (
+        <li key={item.id} className="mt-2 flex">
           <IoIosArrowForward color='white'/>
           <Link
             to={item.link}
@@ -268,13 +268,13 @@ const Privacidad = () => {
 
 const Representantes = () => {
   const items = [
-    { id:1, name: 'Representante en Pakistán', link: '/representante-pakistan' },
-    { id:2, name: 'Representante en Londres', link: '/representante-londres' },
+    { id:31, name: 'Representante en Pakistán', link: '/representante-pakistan' },
+    { id:32, name: 'Representante en Londres', link: '/representante-londres' },
   ];
   return(
     <ul className="mt-5">
-      {items.map((item, index) => (
-        <li key={index} className="mt-2 flex" onClick={() => onSelectItem(item)}>
+      {items.map((item) => (
+        <li key={item.id} className="mt-2 flex">
           <IoIosArrowForward color='white'/>
           <Link
             to={item.link}
