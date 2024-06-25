@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 
 import { CardGrado } from '../../components/ui/Card';
-import { Linea, Line1, OneLine } from '../../components/ui/Line';
+import { Line1 } from '../../components/ui/Line';
 import { ListIcon, ListPoint } from "../../components/ui/List";
 import { ImageWithInnerBorder } from "../../components/ui/Image";
 
@@ -19,7 +19,6 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import { FaLaptop, FaQrcode } from "react-icons/fa";
 import { TiTime } from "react-icons/ti";
 import { TbArrowBigRightFilled } from "react-icons/tb";
-
 import "../../styles/Tab.css";
 
 

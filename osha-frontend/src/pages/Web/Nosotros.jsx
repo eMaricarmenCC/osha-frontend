@@ -9,6 +9,7 @@ import { ListPoint } from "../../components/ui/List";
 import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 import { buttonPrimary } from "../../components/ui/Button";
+import { ImageWithInnerBorder } from "../../components/ui/Image";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
@@ -111,14 +112,14 @@ function WhoWeAre(){
 function LegalNature(){
   const { t, i18n } = useTranslation("nosotros");
   return(
-    <section>
+    <section className="bg-white">
       <Breadcrumbs
         text={t("legalNature.title")}
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
       {/* legalNature */}
-      <div className="px-5 md:px-10 lg:px-20 xl:px-60 py-10 lg:py-12 lg:py-12 bg-gray-100">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-60 py-10 lg:py-12 lg:py-12">
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="">
             <h1 className={`text-primary font-bold inline-block ease-in-out inline-block mb-1`}>{t("legalNature.title")}</h1>
@@ -277,19 +278,24 @@ function PrivacyAndSecurityDeclaration(){
         icon={<FaBuildingColumns/>}
         img="/src/assets/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16 bg-gray-100">
-        <div className="flex flex-col gap-5 lg:gap-12 sm:flex-row">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16">
+        <h1 className="text-primary uppercase font-bold">{t("privacyAndSecurityDeclaration.title")}</h1>
+        <Line1 bgColorClass={"bg-secondary"}/>
+        <div className="mt-8 flex flex-col gap-5 lg:gap-12 md:flex-row">
           <div className="">
-            <h2 className="text-primary"><b>{t("privacyAndSecurityDeclaration.title")}</b></h2>
-            <Line1 bgColorClass={"bg-secondary"}/>
-            <p className="mt-10">{t("privacyAndSecurityDeclaration.content")}</p>
+            <p>{t("privacyAndSecurityDeclaration.content")}</p>
+            <div className="mt-5 rounded-r-lg shadow-lg p-5 border-l-8 border-primary border-2">
+              <p>{t("privacyAndSecurityDeclaration.content-p1")}</p>
+            </div>
           </div>
-          <img className="rounded-full h-full h-max-[300px] sm:mt-28 md:mt-0 xs:h-[200px] lg:h-[200px]" src="/src/assets/img-inicio/datasecurity.jpg" alt="" />
+          <div className="md:min-w-[400px] lg:min-w-[500px] lg:max-w-[550px] mx-auto">
+            <ImageWithInnerBorder
+              src={"/src/assets/img-nosotros/privacy-security.avif"}
+              alt="privacy"
+            />
+          </div>
         </div>
-        <div className="mt-10 flex flex-col gap-5">
-          <div className="rounded-r-lg shadow-lg p-5 border-l-8 border-primary border-2">
-            <p>{t("privacyAndSecurityDeclaration.content-p1")}</p>
-          </div>
+        <div className="mt-10 py-8 px-5 flex flex-col gap-5 bg-gray-100 rounded-lg">
           <Accordian className='flex flex-col gap-5' >
             <AccordianItem value='1' trigger={t("privacyAndSecurityDeclaration.queans1.question")}>
               <p>{t("privacyAndSecurityDeclaration.queans1.answer")}</p>
@@ -322,12 +328,12 @@ function PrivacyAndSecurityDeclaration(){
               <p className="mt-3">{t("privacyAndSecurityDeclaration.queans7.answer-p7")}</p>
             </AccordianItem>
           </Accordian>
-          <div className="border-2 border-primary p-5 rounded-lg">
+        </div>
+        <div className="mt-10 border-2 border-primary p-5 rounded-lg">
             <p>{t("privacyAndSecurityDeclaration.content-p2")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p3")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p4")}</p>
           </div>
-        </div>
       </div>
     </section>
   );

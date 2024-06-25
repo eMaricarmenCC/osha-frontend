@@ -38,7 +38,8 @@
                     "Sustainability Supervisor.",
                     "Drill and Blast Supervisor."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/mining.avif"
         },
         {
             "id": "construccion",
@@ -61,7 +62,8 @@
                     "Construction manager.",
                     "Logistics and Warehouse Supervisor."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/construction.avif"
         },
         {
             "id": "hazmat",
@@ -83,7 +85,8 @@
                     "Hazmat level 5 Commander.",
                     "Instructor Hazmat."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/hazmat.avif"
         },
         {
             "id": "transporte",
@@ -105,7 +108,8 @@
                     "Cargo and merchandise supervisor.",
                     "Personnel supervisor."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/transport.avif"
         },
         {
             "id": "industria",
@@ -140,7 +144,8 @@
                     "Traffic supervisor.",
                     "Chemical Supervisor."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/industry.avif"
         },
         {
             "id": "salud",
@@ -157,6 +162,7 @@
                 ]
             },
             "currentAccreditationForProfessionals" : {
+                "title" : "Current Areas for Professionals",
                 "list" : [
                     "Room Supervisor.",
                     "Area supervisor.",
@@ -164,7 +170,8 @@
                     "Fast answer.",
                     "Medical rescuer."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/health.avif"
         }
     ],
     "grades" : {

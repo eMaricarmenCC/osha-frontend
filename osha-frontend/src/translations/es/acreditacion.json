@@ -38,7 +38,8 @@
                     "Supervisor de Sostenimiento.",
                     "Supervisor de Perforación y Voladura."
                 ]            
-            }
+            },
+            "src": "/src/assets/img-acre-area/mining.avif"
         },
         {
             "id": "construccion",
@@ -61,7 +62,8 @@
                     "Gerente de Obra.",
                     "Supervisor de Logística y Almacenes."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/construction.avif"
         },
         {
             "id": "hazmat",
@@ -83,7 +85,8 @@
                     "Hazmat nivel 5 Comandante.",
                     "Instructor Hazmat."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/hazmat.avif"
         },
         {
             "id": "transporte",
@@ -105,7 +108,8 @@
                     "Supervisor de carga y mercancías.",
                     "Supervisor de personal."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/transport.avif"
         },
         {
             "id": "industria",
@@ -140,7 +144,8 @@
                     "Supervisor de tránsito.",
                     "Supervisor Químico."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/industry.avif"
         },
         {
             "id": "salud",
@@ -157,6 +162,7 @@
                 ]
             },
             "currentAccreditationForProfessionals" : {
+                "title" : "Areas Vigente para Profesionales",
                 "list" : [
                     "Supervisor de Sala.",
                     "Supervisor de Área.",
@@ -164,7 +170,8 @@
                     "Respuesta rápida.",
                     "Rescatista médico."
                 ]
-            }
+            },
+            "src": "/src/assets/img-acre-area/health.avif"
         }
     ],
     "accreditationAE" : {

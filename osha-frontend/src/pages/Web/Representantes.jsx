@@ -25,7 +25,7 @@ function RepresentantePakistan() {
         <h1 className="text-primary font-bold upeercase">{t("representativePakistan.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-10 mx-auto max-w-lg">
-          <img className="w-full" src="/src/assets/logo/hsas.png" alt="hsas" />
+          <img className="w-full" src="/src/assets/img-representantes/hsas.png" alt="hsas" />
         </div>
         <p className="mt-10">{t("representativePakistan.description")}</p>
         <div className="mt-10">
@@ -77,7 +77,7 @@ function RepresentanteLondres() {
         <h1 className="text-primary font-bold uppercase">{t("representativeLondon.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-10 mx-auto max-w-lg">
-          <img className="w-full" src="/src/assets/logo/human-focus.png" alt="human focus" />
+          <img className="w-full" src="/src/assets/img-representantes/human-focus.png" alt="human focus" />
         </div>
         <div className="mt-8">
           {t("representativeLondon.description",{returnObjects: true}).map((p,index) => (

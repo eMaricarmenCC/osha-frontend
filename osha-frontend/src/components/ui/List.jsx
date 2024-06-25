@@ -82,4 +82,11 @@ const ListResponsive3Col = ({list, icon}) => {
   );
 };
 
-export {List, ListIcon, ListIconWithBg, ListPoint, ListResponsive, ListResponsive3Col};
+export {
+  List,
+  ListIcon,
+  ListIconWithBg,
+  ListPoint,
+  ListResponsive,
+  ListResponsive3Col
+};
