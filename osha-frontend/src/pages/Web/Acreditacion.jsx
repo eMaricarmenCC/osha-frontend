@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +8,11 @@ import { Line1 } from "../../components/ui/Line";
 import { CardGrado } from '../../components/ui/Card';
 import { ImageWithInnerBorder } from '../../components/ui/Image';
 import { ListIconWithBg, ListIcon } from '../../components/ui/List';
+
+import {getCredencialesProgramaByEmail,
+        getCredencialesProgramaMatriculadoByEmail,
+        getCertificadosCursoByEmail,
+        getCertificadosCursoMatriculadoByEmail} from "../../api/Credenciales.api";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { AiFillSafetyCertificate } from "react-icons/ai";
@@ -18,7 +24,39 @@ import { MdOutlineDashboard } from "react-icons/md";
 
 function Acreditacion() {
   const { t, i18n } = useTranslation("acreditacion");
+  const [query, setQuery] = useState("");
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   
+  const handleSearch = async () => {
+    if (!query.trim()) {
+      setError("Por favor, ingrese un documento de identidad o código.");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+    setData(null);
+
+    try {
+      const credencialesMatriculado = await getCredencialesProgramaMatriculadoByEmail(query);
+      const credenciales = await getCredencialesProgramaByEmail(query);
+      const certificadosMatriculado = await getCertificadosCursoMatriculadoByEmail(query);
+      const certificados = await getCertificadosCursoByEmail(query);
+      setData({
+        credencialesMatriculado,
+        credenciales,
+        certificadosMatriculado,
+        certificados,
+      });
+    } catch (err) {
+      setError(err.message || "Error al realizar la consulta");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return(
     <section className="bg-white">
       <Breadcrumbs
@@ -35,18 +73,74 @@ function Acreditacion() {
 
         {/* Verificacion de certificadopor código */}
         <div className="mt-10">
-          <h3 className="">Verificación de certificados por código</h3>
+          <h3 className="">Verificación de certificados</h3>
           <div className="mt-4 mx-auto bg-gray-100 p-5 rounded-lg flex items-center gap-5 shadow-lg border border-primary">
             <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
-            <div className="relative w-full max-w-xl bg-white rounded-full">
-              <input placeholder="Ingrese su código osha" className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500" type="text" name="query" id="query"/>
-              <button type="submit" className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2">
+            <div className="relative w-full bg-white rounded-full">
+              <input
+                placeholder="Ingrese su documento de identidad"
+                className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
+                type="text"
+                name="query"
+                id="query"
+              />
+              <button
+                type="submit"
+                className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2"
+              >
+                <IoMdSearch/>
+                Buscar
+              </button>
+            </div>
+          </div>
+          <div className="mt-4 mx-auto bg-gray-100 p-5 rounded-lg flex items-center gap-5 shadow-lg border border-primary">
+            <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
+            <div className="relative w-full bg-white rounded-full">
+              <input
+                placeholder="Ingrese su código de osha institute"
+                className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
+                type="text"
+                name="query"
+                id="query"
+              />
+              <button
+                type="submit"
+                className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2"
+              >
                 <IoMdSearch/>
                 Buscar
               </button>
             </div>
           </div>
         </div>
+
+        {/* Resultados */}
+        {loading && <p className="mt-4 text-center text-blue-500">Cargando...</p>}
+        {error && <p className="mt-4 text-center text-red-500">{error}</p>}
+        {data && (
+          <div className="mt-4 bg-gray-100 p-5 rounded-lg shadow-lg border border-primary">
+            <h4 className="text-primary font-bold">Resultados:</h4>
+            <p><strong>Nombres:</strong> </p>
+            <p><strong>Apellidos:</strong> </p>
+            <p><strong>Doc.Identidad:</strong> </p>
+            <div>
+                <h5 className="font-bold">Credenciales Programa Matriculado:</h5>
+                <pre>{JSON.stringify(results.credencialesMatriculado, null, 2)}</pre>
+              </div>
+              <div>
+                <h5 className="font-bold">Credenciales Programa:</h5>
+                <pre>{JSON.stringify(results.credenciales, null, 2)}</pre>
+              </div>
+              <div>
+                <h5 className="font-bold">Certificados Curso Matriculado:</h5>
+                <pre>{JSON.stringify(results.certificadosMatriculado, null, 2)}</pre>
+              </div>
+              <div>
+                <h5 className="font-bold">Certificados Curso:</h5>
+                <pre>{JSON.stringify(results.certificados, null, 2)}</pre>
+              </div>
+          </div>
+        )}
 
         {/* Especializaciones */}
         <div className="mt-10">
