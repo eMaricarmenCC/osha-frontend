@@ -67,13 +67,7 @@ function Footer(){
                 {/* Pago */}
                 <div className="flex flex-col gap-3">
                   <p className="text-white font-inter text-[16px] font-semibold">Realice un pago aquí</p>
-                  {/*<PayPalScriptProvider>
-                    <PayPalButtons
-                      style={{
-                        layout: "horizontal",
-                      }}
-                    />
-                    </PayPalScriptProvider>*/}
+                  {/*<PayPalButtonComponent/>*/}
                 </div>
               </div>
             </div>
@@ -87,6 +81,48 @@ function Footer(){
         </div>
       </div>  
     </footer>
+  )
+}
+
+const PayPalButtonComponent = () => {
+  const initialOptions = {
+    "client-id": "YOUR-CLIENT-ID-HERE",
+    currency: "USD",
+    intent: "capture",
+  };
+
+  const createOrder = (data, actions) => {
+    return actions.order.create({
+      purchase_units: [
+        {
+          amount: {
+            currency_code: "USD",
+            value: "1" //valor de depósito
+          }
+        }
+      ]
+    })
+  };
+
+  const onApprove = (data, actions) => {
+    return actions.order.capture().then(function (details) {
+      alert("Transaccion completada por" + details.payer.name.given_name)
+    })
+  };
+
+  return (
+    <PayPalScriptProvider options={initialOptions}>
+      <PayPalButtons
+        style={{
+          layout: "horizontal",
+          color: 'blue',
+          shape: 'rect',
+          label: 'paypal'
+        }}
+        createOrder={(data, actions) => createOrder(data, actions)}
+        onApprove={(data, actions) => onApprove(data, actions)} 
+      />
+    </PayPalScriptProvider>
   )
 }
 

@@ -41,8 +41,9 @@ function Web() {
         <Route path="/cooperacion-internacional" element={<InternationalCooperation/>} />
         <Route path="/declaracion-privacidad" element={<PrivacyAndSecurityDeclaration/>} />
         <Route path="/estandares-osha" element={<Estandares/>} />
-        <Route path="/acreditaCion" element={<Acreditacion/>} />
-        <Route path="/acreditaCion-ae" element={<AcreditacionAE/>} />
+        <Route path="/acreditacion" element={<Acreditacion/>} />
+        <Route path="/acreditacion/:documentoIdentidad" element={<Acreditacion/>} />
+        <Route path="/acreditacion-ae" element={<AcreditacionAE/>} />
         <Route path="/grados" element={<Grados/>} />
         <Route path="/grados/:id" element={<GradoDetalle/>} />
         <Route path="/certex" element={<Certex/>} />

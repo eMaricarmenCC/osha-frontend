@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
@@ -9,10 +8,10 @@ import { CardGrado } from '../../components/ui/Card';
 import { ImageWithInnerBorder } from '../../components/ui/Image';
 import { ListIconWithBg, ListIcon } from '../../components/ui/List';
 
-import {getCredencialesProgramaByEmail,
-        getCredencialesProgramaMatriculadoByEmail,
-        getCertificadosCursoByEmail,
-        getCertificadosCursoMatriculadoByEmail} from "../../api/Credenciales.api";
+import {getCredencialesProgramaMatriculadoByDocId,
+        getCredencialesProgramaByDocId,
+        getCertificadosCursoMatriculadoByDocId,
+        getCertificadosCursoByDocId} from "../../api/Credenciales.api";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { AiFillSafetyCertificate } from "react-icons/ai";
@@ -24,32 +23,37 @@ import { MdOutlineDashboard } from "react-icons/md";
 
 function Acreditacion() {
   const { t, i18n } = useTranslation("acreditacion");
-  const [query, setQuery] = useState("");
-  const [data, setData] = useState(null);
+  const { documentoIdentidad } = useParams();
+  const [query, setQuery] = useState(documentoIdentidad || "");;
+  const [credencialesProgramaMatriculado, setCredencialesProgramaMatriculado] = useState([]);
+  const [credencialesPrograma, setCredencialesPrograma] = useState([]);
+  const [certificadosCursoMatriculado, setCertificadosCursoMatriculado] = useState([]);
+  const [certificadosCurso, setCertificadosCurso] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  
-  const handleSearch = async () => {
-    if (!query.trim()) {
-      setError("Por favor, ingrese un documento de identidad o código.");
-      return;
-    }
 
+  useEffect(() => {
+    if (documentoIdentidad) {
+      handleSearch(documentoIdentidad);
+    }
+  }, [documentoIdentidad]);
+
+  const handleSearch = async (dni = query) => {
+    if (!dni) return;
     setLoading(true);
-    setError("");
-    setData(null);
 
     try {
-      const credencialesMatriculado = await getCredencialesProgramaMatriculadoByEmail(query);
-      const credenciales = await getCredencialesProgramaByEmail(query);
-      const certificadosMatriculado = await getCertificadosCursoMatriculadoByEmail(query);
-      const certificados = await getCertificadosCursoByEmail(query);
-      setData({
-        credencialesMatriculado,
-        credenciales,
-        certificadosMatriculado,
-        certificados,
-      });
+      const [credencialesMatriculado, credenciales, certificadosMatriculado, certificados] = await Promise.all([
+        getCredencialesProgramaMatriculadoByDocId(dni),
+        getCredencialesProgramaByDocId(dni),
+        getCertificadosCursoMatriculadoByDocId(dni),
+        getCertificadosCursoByDocId(dni),
+      ]);
+
+      setCredencialesProgramaMatriculado(credencialesMatriculado || []);
+      setCredencialesPrograma(credenciales || []);
+      setCertificadosCursoMatriculado(certificadosMatriculado || []);
+      setCertificadosCurso(certificados || []);
     } catch (err) {
       setError(err.message || "Error al realizar la consulta");
     } finally {
@@ -58,7 +62,7 @@ function Acreditacion() {
   };
 
   return(
-    <section className="bg-white">
+    <section className="bg-gray-100">
       <Breadcrumbs
         text={t("accreditation.title")}
         icon={<AiFillSafetyCertificate/>}
@@ -81,31 +85,13 @@ function Acreditacion() {
                 placeholder="Ingrese su documento de identidad"
                 className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
                 type="text"
-                name="query"
-                id="query"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
               />
               <button
                 type="submit"
                 className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2"
-              >
-                <IoMdSearch/>
-                Buscar
-              </button>
-            </div>
-          </div>
-          <div className="mt-4 mx-auto bg-gray-100 p-5 rounded-lg flex items-center gap-5 shadow-lg border border-primary">
-            <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
-            <div className="relative w-full bg-white rounded-full">
-              <input
-                placeholder="Ingrese su código de osha institute"
-                className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
-                type="text"
-                name="query"
-                id="query"
-              />
-              <button
-                type="submit"
-                className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2"
+                onClick={() => handleSearch()}
               >
                 <IoMdSearch/>
                 Buscar
@@ -117,30 +103,130 @@ function Acreditacion() {
         {/* Resultados */}
         {loading && <p className="mt-4 text-center text-blue-500">Cargando...</p>}
         {error && <p className="mt-4 text-center text-red-500">{error}</p>}
-        {data && (
+        
+        {/* Credenciales de programas*/}
+        {(credencialesProgramaMatriculado.length > 0 || credencialesPrograma.length > 0 || certificadosCursoMatriculado.length > 0 || certificadosCurso.length > 0) && (
           <div className="mt-4 bg-gray-100 p-5 rounded-lg shadow-lg border border-primary">
-            <h4 className="text-primary font-bold">Resultados:</h4>
-            <p><strong>Nombres:</strong> </p>
-            <p><strong>Apellidos:</strong> </p>
-            <p><strong>Doc.Identidad:</strong> </p>
             <div>
-                <h5 className="font-bold">Credenciales Programa Matriculado:</h5>
-                <pre>{JSON.stringify(results.credencialesMatriculado, null, 2)}</pre>
+              <p><strong className="uppercase">Nombres: </strong>
+                {credencialesProgramaMatriculado.length > 0 
+                  ? credencialesProgramaMatriculado[0].crepromatprocod.matproestcod.estusernom 
+                  : (credencialesPrograma.length > 0 
+                      ? credencialesPrograma[0].creproestcod.estusernom 
+                      : (certificadosCursoMatriculado.length > 0
+                          ? certificadosCursoMatriculado[0].cercurmatcurcod.matcurestcod.estusernom
+                          : (certificadosCurso.length > 0
+                              ? certificadosCurso[0].cercurestcod.estusernom
+                              : ""
+                            )
+                        )
+                    )
+                }
+              </p>
+              <p><strong className="uppercase">Apellidos: </strong>
+                {credencialesProgramaMatriculado.length > 0 
+                  ? credencialesProgramaMatriculado[0].crepromatprocod.matproestcod.estuserape 
+                  : (credencialesPrograma.length > 0 
+                      ? credencialesPrograma[0].creproestcod.estuserape 
+                      : (certificadosCursoMatriculado.length > 0
+                          ? certificadosCursoMatriculado[0].cercurmatcurcod.matcurestcod.estuserape
+                          : (certificadosCurso.length > 0
+                              ? certificadosCurso[0].cercurestcod.estuserape
+                              : ""
+                            )
+                        )
+                    )
+                }
+              </p>
+              <p><strong className="uppercase">Doc.Identidad: </strong>
+                {credencialesProgramaMatriculado.length > 0 
+                  ? credencialesProgramaMatriculado[0].crepromatprocod.matproestcod.estuserdocide 
+                  : (credencialesPrograma.length > 0 
+                      ? credencialesPrograma[0].creproestcod.estuserdocide 
+                      : (certificadosCursoMatriculado.length > 0
+                          ? certificadosCursoMatriculado[0].cercurmatcurcod.matcurestcod.estuserdocide
+                          : (certificadosCurso.length > 0
+                              ? certificadosCurso[0].cercurestcod.estuserdocide
+                              : ""
+                            )
+                        )
+                    )
+                }
+              </p>
+              <p><strong className="uppercase">País: </strong>
+                {credencialesProgramaMatriculado.length > 0 
+                  ? credencialesProgramaMatriculado[0].crepromatprocod.matproestcod.estuserpai 
+                  : (credencialesPrograma.length > 0 
+                      ? credencialesPrograma[0].creproestcod.estuserpai 
+                      : (certificadosCursoMatriculado.length > 0
+                          ? certificadosCursoMatriculado[0].cercurmatcurcod.matcurestcod.estuserpai
+                          : (certificadosCurso.length > 0
+                              ? certificadosCurso[0].cercurestcod.estuserpai
+                              : ""
+                            )
+                        )
+                    )
+                }
+              </p>
+              <p><strong className="uppercase">Código Osha Institute:</strong>
+              </p>
+            </div>
+            <div className="mt-6 space-y-4">
+              <h4 className="uppercase font-bold">Grados y Diplomas:</h4>
+              <div className="flex flex-col gap-4">
+                {credencialesProgramaMatriculado.map((credencial, index) => (
+                  <CredentialCard
+                    key={index}
+                    nombreCert={credencial.crepromatprocod.matproprocod.pronomeng}
+                    nombreDip={credencial.crepromatprocod.matproprocod.pronomdip}
+                    nombreEst={`${credencial.crepromatprocod.matproestcod.estusernom} ${credencial.crepromatprocod.matproestcod.estuserape}`}
+                    estDocIde={credencial.crepromatprocod.matproestcod.estuserdocide}
+                    fechaEmision={credencial.creprofecemi}
+                    boolCertificado={credencial.creprocer}
+                    boolDiploma={credencial.creprodip}
+                    boolCarnet={credencial.creprocarnet}
+                    horas={credencial.crepromatprocod.matproprocod.pronumhor}
+                    nModulos={5}
+                    promedio={96}
+                  />
+                ))}
+                {credencialesPrograma.map((credencial, index) => (
+                  <CredentialCard
+                    key={index}
+                    nombreCert={credencial.creproprocod.pronom}
+                    nombreDip={credencial.creproprocod.pronomdip}
+                    fechaEmision={credencial.creprofecemi}
+                    boolDiploma={credencial.creprodip}
+                    horas={credencial.creproprocod.pronumhor}
+                  />
+                ))}
               </div>
-              <div>
-                <h5 className="font-bold">Credenciales Programa:</h5>
-                <pre>{JSON.stringify(results.credenciales, null, 2)}</pre>
+            </div>
+            <div className="mt-6 space-y-4">
+                <h4 className="uppercase font-bold">Certificados :</h4>
+                <div className="mt-6 flex flex-col gap-4">
+                  {certificadosCursoMatriculado.map((credencial, index) => (
+                    <CertificadoCard
+                      key={index}
+                      nombreCer={credencial.cercurmatcurcod.matcurcurcod.curnom}
+                      fechaEmision={credencial.cercurfecemi}
+                      fechaCaducidad={credencial.cercurfeccad}
+                    />
+                  ))}
+                  {certificadosCurso.map((credencial, index) => (
+                    <CertificadoCard
+                      key={index}
+                      nombreCer={credencial.cercurcurcod.curnom}
+                      fechaEmision={credencial.cercurfecemi}
+                      fechaCaducidad={credencial.cercurfeccad}
+                      nombreEst={`${credencial.cercurestcod.estusernom} ${credencial.cercurestcod.estuserape}`}
+                      estDocIde={credencial.cercurestcod.estuserdocide}
+                    />
+                  ))}
+                </div>
               </div>
-              <div>
-                <h5 className="font-bold">Certificados Curso Matriculado:</h5>
-                <pre>{JSON.stringify(results.certificadosMatriculado, null, 2)}</pre>
-              </div>
-              <div>
-                <h5 className="font-bold">Certificados Curso:</h5>
-                <pre>{JSON.stringify(results.certificados, null, 2)}</pre>
-              </div>
-          </div>
-        )}
+            </div>
+          )}
 
         {/* Especializaciones */}
         <div className="mt-10">
@@ -170,6 +256,69 @@ function Acreditacion() {
     
   );
 };
+
+const CredentialCard = ({
+  nombreCert,
+  nombreDip,
+  fechaEmision,
+  fechaCaducidad,
+  boolDiploma,
+  horas,
+}) => {
+  const hoy = new Date();
+  const fechaExpiracion = fechaCaducidad ? new Date(fechaCaducidad) : null;
+
+  // Determinar el estado
+  const estado = fechaExpiracion && hoy > fechaExpiracion ? "CADUCADO" : "VIGENTE";
+
+  return (
+    <>
+      <div className="flex flex-col gap-2 bg-white p-5 rounded-r-lg shadow-lg border-l-8 border-green-600">
+        <p className="uppercase"><strong>Grado :</strong> {nombreCert || 'Programa desconocido'}</p>
+        {boolDiploma && (
+          <p className="uppercase"><strong>Diploma :</strong> {nombreDip || 'Programa desconocido'}</p>
+        )}
+        <p className="uppercase"><strong>N° de Horas :</strong> {horas}</p>
+        <p className="uppercase">
+            <strong>Estado :</strong> <span className={estado === "CADUCADO" ? "text-red-500" : "text-green-500"}>{estado}</span>
+          </p>
+        <div className="flex flex-row gap-4 text-[12px] text-gray-700">
+          <p><strong className="uppercase">Fecha de Emisión:</strong> {fechaEmision}</p>
+          <p><strong className="uppercase">Fecha de Caducidad:</strong> {fechaCaducidad}</p>
+        </div>
+      </div>
+    </>
+  )
+};
+
+
+const CertificadoCard = ({
+  nombreCer,
+  nHoras,
+  fechaEmision,
+  fechaCaducidad,
+}) => {
+  const hoy = new Date();
+  const fechaExpiracion = fechaCaducidad ? new Date(fechaCaducidad) : null;
+
+  // Determinar el estado
+  const estado = fechaExpiracion && hoy > fechaExpiracion ? "CADUCADO" : "VIGENTE";
+
+  return (
+    <div className="flex flex-col gap-2 bg-white p-4 rounded-r-md shadow-lg border-l-8 border-orange-500">
+      <p className="text-[16px] uppercase"><strong>Certificado :</strong> {nombreCer}</p>
+      <p className="uppercase"><strong>N° de Horas :</strong> {nHoras}</p>
+      <p className="uppercase">
+        <strong>Estado :</strong> <span className={estado === "CADUCADO" ? "text-red-500" : "text-green-500"}>{estado}</span>
+      </p>
+      <div className="flex flex-row gap-4 text-[12px] text-gray-700">
+        <p><strong className="uppercase">Fecha de Emisión:</strong> {fechaEmision}</p>
+        <p><strong className="uppercase">Fecha de Caducidad:</strong> {fechaCaducidad}</p>
+      </div>
+    </div>
+  );
+};
+
 
 const Especializaciones = () => {
   const { t, i18n } = useTranslation("grados");

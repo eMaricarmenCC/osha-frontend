@@ -32,7 +32,7 @@ function Email({text, content, email, icon}) {
         </div>
         <div className="bg-sky-100 p-3 px-10 w-full flex flex-col md:flex-row justify-between rounded-lg">
           <p className=""><b>{text}</b></p>
-          <p className="text-primary"><b>{email}</b></p>
+          {/*<p className="text-primary"><b>{email}</b></p>*/}
         </div>
       </a>
       <div className="mt-2 bg-gray-100 py-2 px-5 w-full rounded-lg">
