@@ -67,7 +67,7 @@ function Footer(){
                 {/* Pago */}
                 <div className="flex flex-col gap-3">
                   <p className="text-white font-inter text-[16px] font-semibold">Realice un pago aquí</p>
-                  {/*<PayPalButtonComponent/>*/}
+                  <PayPalButtonComponent/>
                 </div>
               </div>
             </div>
@@ -79,14 +79,14 @@ function Footer(){
             </p>
           </div>
         </div>
-      </div>  
+      </div>
     </footer>
   )
 }
 
 const PayPalButtonComponent = () => {
   const initialOptions = {
-    "client-id": "YOUR-CLIENT-ID-HERE",
+    "client-id": "AVsp3CiwuKLgDSetyTRU60VAQVJLB3WC8-daa8mhHJ5L3MV6Ii9qbrB1o0lKBiPfw-o0CAmroOKSy3Wk", //"AQ6-ONAMYQc8UoJjMTN0C35iw9dMyIUu-LNPqsOIUm_KbNnN1u7RArE8HVAFnh7X9rFKl4CgnLuiBfy2",
     currency: "USD",
     intent: "capture",
   };
@@ -97,7 +97,7 @@ const PayPalButtonComponent = () => {
         {
           amount: {
             currency_code: "USD",
-            value: "1" //valor de depósito
+            value: "5" //valor de depósito
           }
         }
       ]
