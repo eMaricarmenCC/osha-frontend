@@ -16,7 +16,7 @@ function Estandares(){
       <Breadcrumbs
         text={"Nosotros"}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
         <h1 className="text-primary font-bold uppercase">{t("title")}</h1>
@@ -29,7 +29,7 @@ function Estandares(){
           <div className="mx-auto lg:min-w-[500px] max-w-[600px] flex flex-col items-center">
             <img
               className="border-2 border-primary rounded-lg"
-              src="/src/assets/img/normas-osha.png"
+              src="/img/normas-osha.png"
               alt="Estandares osha"
             />
             <div className="mt-10">

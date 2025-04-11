@@ -8,7 +8,7 @@ import { FaBuildingColumns } from "react-icons/fa6";
 function Breadcrumbs(){
   return(
     <div className="relative w-full" style={{height:150}}>
-      <img src="/src/assets/img-nosotros/business.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
+      <img src="/img-nosotros/business.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
       <img src="" alt="Background Image" className="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 flex flex-row items-center justify-between px-5 md:px-10 lg:px-20 xl:px-40">

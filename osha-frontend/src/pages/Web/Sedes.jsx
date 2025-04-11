@@ -18,7 +18,7 @@ function Sedes() {
       <Breadcrumbs
         text={"Sedes"}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-16 w-full">
         <h1 className="text-primary uppercase font-bold">{t("locations.title")}</h1>

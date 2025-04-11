@@ -16,7 +16,7 @@ function Calidad() {
       <Breadcrumbs
         text={t("educationalQuality.title")}
         icon={<AiFillSafetyCertificate/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
         <h1 className="text-primary font-bold uppercase">{t("educationalQuality.title")}</h1>
@@ -29,7 +29,7 @@ function Calidad() {
           </div>
           <div className="min-w-[400px] max-w-3xl mx-auto">
             <ImageWithInnerBorder
-              src="/src/assets/img/SafetyHealthWorkTrainer.png"
+              src="/img/SafetyHealthWorkTrainer.png"
               alt="transparencia"
             />
           </div>

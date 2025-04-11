@@ -19,13 +19,13 @@ function RepresentantePakistan() {
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       /> 
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 w-full">
         <h1 className="text-primary font-bold upeercase">{t("representativePakistan.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-10 mx-auto max-w-lg">
-          <img className="w-full" src="/src/assets/img-representantes/hsas.png" alt="hsas" />
+          <img className="w-full" src="/img-representantes/hsas.png" alt="hsas" />
         </div>
         <p className="mt-10">{t("representativePakistan.description")}</p>
         <div className="mt-10">
@@ -71,13 +71,13 @@ function RepresentanteLondres() {
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 w-full">
         <h1 className="text-primary font-bold uppercase">{t("representativeLondon.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-10 mx-auto max-w-lg">
-          <img className="w-full" src="/src/assets/img-representantes/human-focus.png" alt="human focus" />
+          <img className="w-full" src="/img-representantes/human-focus.png" alt="human focus" />
         </div>
         <div className="mt-8">
           {t("representativeLondon.description",{returnObjects: true}).map((p,index) => (

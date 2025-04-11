@@ -20,7 +20,7 @@ function PoliticaPago() {
       <Breadcrumbs
         text={t("registrationPaymentCancellationPolicy.title")}
         icon={<AiFillSafetyCertificate/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
         <div>
@@ -41,7 +41,7 @@ function PoliticaPago() {
             </div>
             <div className="max-w-[400px] 2xl:max-w-[400px] mx-auto">
               <ImageWithInnerBorder
-                src="/src/assets/img/payment-policy.png"
+                src="/img/payment-policy.png"
                 alt="transparencia"
               />
           </div>

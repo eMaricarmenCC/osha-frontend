@@ -121,7 +121,7 @@ const Hero = () => {
               type: "spring",
             }}
             className='image-container'>
-            <img className="h-[380px] w-[280px] md:h-[500px] md:w-[360px] lg:h-[800px] lg:w-[600px]" src="/src/assets/img-inicio/hero/engineer.png" alt=""/>
+            <img className="h-[380px] w-[280px] md:h-[500px] md:w-[360px] lg:h-[800px] lg:w-[600px]" src="/img-inicio/hero/engineer.png" alt=""/>
           </motion.div>
         </div>
       </div>
@@ -211,7 +211,7 @@ const IntroCards = () => {
     threshold: 0.1,     // Se activa cuando el 10% del div es visible
   });
   return(    
-    <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10" style={{ backgroundImage: "url('/src/assets/papel/papel15.jpg')" }}>
+    <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10" style={{ backgroundImage: "url('/papel/papel15.jpg')" }}>
       <motion.div
         ref={ref}
         initial={{ y: '10%', opacity: 0 }}
@@ -270,7 +270,7 @@ const MetodologiaEducativa = () => {
     <section className="bg-grisFondo">
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-8 lg:py-10">
         <SectionImgContent
-          imagePath={"/src/assets/img-inicio/education.jpeg"}
+          imagePath={"/img-inicio/education.jpeg"}
           title={t("methodology.title")}
           content={t("methodology.description")}
           textButton={t("methodology.learnMoreUs")}
@@ -293,7 +293,7 @@ const Grados = () => {
     threshold: 0.1,     // Se activa cuando el 10% del div es visible
   });
   return(
-    <section className="bg-grisFondo" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
+    <section className="bg-grisFondo" style={{ backgroundImage: "url('/papel/papel12.jpg')" }}>
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <motion.h1
           ref={ref}
@@ -334,7 +334,7 @@ const Acreditacion = () => {
     <section className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
       <div className="flex flex-col md:flex-row gap-5 items-center">
         <div className="">
-          <img src="/src/assets/img-inicio/accreditation.png" alt="Educacion acreditada" className="rounded-lg h-full"/>
+          <img src="/img-inicio/accreditation.png" alt="Educacion acreditada" className="rounded-lg h-full"/>
         </div>
         <div className="px-5 py-10 border-secondary border-r-4 border-b-4">
           <h2 className="text-primary uppercase"><b>{t("accreditation.title")}</b></h2>
@@ -419,7 +419,7 @@ const Categorias = () => {
 const AlianzaConvenio = () => {
   const { t, i18n } = useTranslation("inicio");
   return(
-    <section className="" style={{ backgroundImage: "url('/src/assets/papel/papel12.jpg')" }}>
+    <section className="" style={{ backgroundImage: "url('/papel/papel12.jpg')" }}>
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <h2 className="text-white text-center uppercase font-bold">{t("alliences.title")}</h2>
         <Linea/>
@@ -447,34 +447,34 @@ const AlianzaConvenio = () => {
           className="relative h-[16rem] xs:h-[28rem] sm:h-[28rem] pt-[2rem]"
         >
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/ansi.jpg" alt="slide_image" />
+            <img src="/img-alianzas/ansi.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/asme.jpg" alt="slide_image" />
+            <img src="/img-alianzas/asme.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/atm.jpg" alt="slide_image" />
+            <img src="/img-alianzas/atm.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/nfpa.jpg" alt="slide_image" />
+            <img src="/img-alianzas/nfpa.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/niosh.jpg" alt="slide_image" />
+            <img src="/img-alianzas/niosh.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/osha.jpg" alt="slide_image" />
+            <img src="/img-alianzas/osha.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/safety.jpg" alt="slide_image" />
+            <img src="/img-alianzas/safety.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/teex.jpg" alt="slide_image" />
+            <img src="/img-alianzas/teex.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/texas.jpg" alt="slide_image" />
+            <img src="/img-alianzas/texas.jpg" alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/img-alianzas/wso.jpg" alt="slide_image" />
+            <img src="/img-alianzas/wso.jpg" alt="slide_image" />
           </SwiperSlide>
 
           <div className="slider-controler">
@@ -498,35 +498,35 @@ const Galería = () => {
   const squareDataGalery = [
     {
       id: 1,
-      src: "/src/assets/img-inicio/galeria/galeria1.jpg",
+      src: "/img-inicio/galeria/galeria1.jpg",
     },
     {
       id: 2,
-      src: "/src/assets/img-inicio/galeria/galeria2.jpg",
+      src: "/img-inicio/galeria/galeria2.jpg",
     },
     {
       id: 3,
-      src: "/src/assets/img-inicio/galeria/galeria3.jpg",
+      src: "/img-inicio/galeria/galeria3.jpg",
     },
     {
       id: 4,
-      src: "/src/assets/img-inicio/galeria/galeria4.jpg",
+      src: "/img-inicio/galeria/galeria4.jpg",
     },
     {
       id: 5,
-      src: "/src/assets/img-inicio/galeria/galeria5.jpg",
+      src: "/img-inicio/galeria/galeria5.jpg",
     },
     {
       id: 6,
-      src: "/src/assets/img-inicio/galeria/galeria6.jpg",
+      src: "/img-inicio/galeria/galeria6.jpg",
     },
     {
       id: 7,
-      src: "/src/assets/img-inicio/galeria/galeria7.jpg",
+      src: "/img-inicio/galeria/galeria7.jpg",
     },
     {
       id: 8,
-      src: "/src/assets/img-inicio/galeria/galeria8.jpg",
+      src: "/img-inicio/galeria/galeria8.jpg",
     },
   ];
   return (

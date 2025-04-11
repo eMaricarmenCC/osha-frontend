@@ -4,8 +4,6 @@ import api from './axios';
 export const getCredencialesProgramaMatriculadoByDocId = async (documentoId) => {
   try {
     const response = await api.get(`/credenciales/programa/matriculado/by-doc-identidad/${documentoId}/`);
-    console.log("getCredencialesProgramaMatriculadoByDocId");
-    console.log(response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -21,8 +19,6 @@ export const getCredencialesProgramaMatriculadoByDocId = async (documentoId) => 
 export const getCredencialesProgramaByDocId = async (documentoId) => {
   try {
     const response = await api.get(`/credenciales/programa/by-doc-identidad/${documentoId}/`);
-    console.log("getCredencialesProgramaByDocId");
-    console.log(response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -39,8 +35,6 @@ export const getCredencialesProgramaByDocId = async (documentoId) => {
 export const getCertificadosCursoMatriculadoByDocId = async (documentoId) => {
   try {
     const response = await api.get(`/certificados/curso/matriculado/by-doc-identidad/${documentoId}/`);
-    console.log("getCertificadosCursoMatriculadoByDocId");
-    console.log(response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -57,8 +51,6 @@ export const getCertificadosCursoMatriculadoByDocId = async (documentoId) => {
 export const getCertificadosCursoByDocId = async (documentoId) => {
   try {
     const response = await api.get(`/certificados/curso/by-doc-identidad/${documentoId}/`);
-    console.log("getCertificadosCursoByDocId");
-    console.log(response.data);
     return response.data;
   } catch (error) {
     if (error.response) {

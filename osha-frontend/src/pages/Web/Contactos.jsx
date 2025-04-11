@@ -1,12 +1,10 @@
-import React from "react";
-import { useForm } from 'react-hook-form';
+import React, { useEffect, useState } from 'react';
+import { useForm, Controller } from 'react-hook-form';
 import { useTranslation } from "react-i18next";
-import { useNavigate } from 'react-router-dom';
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { postFormContacto, getProgramas } from "../../api/Contacto.api";
+import Select from 'react-select';
 
 import { Email } from "../../components/ui/Questions";
 import { Line1 } from "../../components/ui/Line";
@@ -22,34 +20,49 @@ import { FaBuildingColumns } from "react-icons/fa6";
 
 function Contactos() {
   const { t, i18n } = useTranslation("contactos");
-  /*Estado de los registros del formulario*/
+  const [programas, setProgramas] = useState([]);
+  const [error, setError] = useState(null);
+
   const {
     register,
-    handleSubmit, 
+    handleSubmit,
     setValue,
     getValues,
+    control,
     formState: { errors },
   } = useForm();
-  const navigate = useNavigate();
-  // funcion llamada al enviar el formualrio
+
   const onSubmit = handleSubmit(async data => {
     try {
+      await postFormContacto(data);
       toast.success('Información enviada');
     } catch (error) {
       toast.error(`No se puso completar su envio`);
     }
   });
+
+  useEffect(() => {
+    const loadProgramas = async () => {
+      try {
+        const programasData = await getProgramas();
+        setProgramas(programasData);
+      } catch (error) {
+        setError(error.message || "Ocurrió un error al cargar programas.");
+      }
+    };
+    loadProgramas();
+  }, []);
+
   return(
     <section className="bg-grisFondo">
       <Breadcrumbs
         text={"Contáctanos"}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       {/* CONTACT SECTION */}
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full">
         <div className="w-full flex flex-col lg:flex-row gap-5">
-          {/*  */}
           <div className="w-full">
             <h4 className="">{t("subtitle")}</h4>
             <h2 className="text-primary"><b>{t("title")}</b></h2>
@@ -77,16 +90,16 @@ function Contactos() {
                   <div className="relative bg-inherit">
                     <input
                       type="text"
-                      name="name"
+                      name="fullname"
                       className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
-                      placeholder="Nombre completos"
-                      {...register('name', {required: true})}
+                      placeholder="Nombres y apellidos"
+                      {...register('fullname', {required: true})}
                     />
                     <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                       <FaRegUser style={{color:"var(--primary)"}}/>
                     </span>
                   </div>
-                  {errors.name?.type === 'required' && <p className="mt-1 text-xs text-red-500">*El campo nombre es requerido</p>}
+                  {errors.fullname?.type === 'required' && <p className="mt-1 text-xs text-red-500">*El campo nombre es requerido</p>}
                 </div>
                 <div>
                   <div className="relative bg-inherit">
@@ -122,13 +135,12 @@ function Contactos() {
                       type="number"
                       className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
                       placeholder="Edad"
-                      {...register('age', {required: true})}
+                      {...register('age')}
                     />
                     <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                       <FaRegCalendar style={{color:"var(--primary)"}}/>
                     </span>
                   </div>
-                  {errors.age?.type === 'required' && <p className="mt-1 text-xs text-red-400">*El campo edad es requerido</p>}
                 </div>
                 <div>
                   <div className="relative bg-inherit">
@@ -159,18 +171,45 @@ function Contactos() {
                   {errors.degree?.type === 'required' && <p className="mt-1 text-xs text-red-400">*El campo grado es requerido</p>}
                 </div>
                 <div>
+                  <div className="flex flex-row gap-2 items-center">
+                    <span className="">
+                      <MdOutlineSchool style={{ color: "var(--primary)" }} />
+                    </span>
+                    <Controller
+                      name="programOsha"
+                      control={control}
+                      rules={{ required: true }}
+                      render={({ field }) => (
+                        <Select
+                          {...field}
+                          placeholder="Selecciona el programa de su interés ..."
+                          isSearchable={true}
+                          isClearable={true}
+                          options={programas.map(p => ({
+                            value: p.procod,                                     // envío al backend
+                            label: `${p.procod} ${p.procodosh} -> ${p.pronom}`,  // visible para el usuario
+                          }))}
+                          className="text-sm w-full"
+                        />
+                      )}
+                    />
+                    
+                  </div>
+                  {errors.programOsha && <p className="mt-1 text-xs text-red-400">*El campo programa es requerido</p>}
+                </div>
+                <div>
                   <div className="relative bg-inherit">
                     <input
                       type="text"
                       className="block w-full h-10 pl-8 pr-3 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-primary"
-                      placeholder="Carrera o programa de elección"
-                      {...register('career', {required: true})}
+                      placeholder="¿Que información requiere?"
+                      {...register('information', {required: true})}
                     />
                     <span className="absolute inset-y-0 left-0 flex items-center justify-center ml-2">
                       <MdOutlineSchool style={{color:"var(--primary)"}}/>
                     </span>
                   </div>
-                  {errors.career?.type === 'required' && <p className="mt-1 text-xs text-red-400">*El campo carrera es requerido</p>}
+                  {errors.information?.type === 'required' && <p className="mt-1 text-xs text-red-400">*El campo información es requerido</p>}
                 </div>
                 <button className="p-2 rounded-lg bg-primary hover:bg-azulOscuro text-white"><b>Enviar</b></button>
               </form>

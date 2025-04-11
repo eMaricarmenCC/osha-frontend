@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //import '../styles/Header.css';
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from "react-outside-click-handler";
-import logoOsha from '/src/assets/logo/logoOsha.png';
+import logoOsha from '/logo/logoOsha.png';
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -25,7 +25,7 @@ function Header(){
     <nav className="bg-white py-5 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         <Link to="/" className="flex items-center">
-          <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
+          <img src='/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
         </Link>
         <div className="flex items-center lg:order-2">
           <div className="hidden mt-2 mr-4 sm:inline-block">
@@ -95,7 +95,7 @@ function Header(){
 
 {/*<section className="h-wrapper">
       <div className="flex gap-10 flexCenter paddings innerWidth h-container">
-        <img src='/src/assets/logo/logoOsha.png' alt="logo" width={100} />
+        <img src='/logo/logoOsha.png' alt="logo" width={100} />
         <OutsideClickHandler 
           onOutsideClick={()=>{
             setMenuOpened(false)

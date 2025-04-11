@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="py-3 px-5 w-full flex justify-between">
             {/* Logo */}
             <Link to="/" className="">
-              <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-10"/>
+              <img src='/logo/logoOsha.png' alt="Osha logo"  className="h-10"/>
             </Link>
             {/* Menu Icon */}
             <div className="text-3xl" onClick={() => setOpen(!open)}>
@@ -38,7 +38,7 @@ const Navbar = () => {
             border-grisMedio shadow-3xl rounded-r-3xl flex flex-col
           `}>
             <div className="py-6 px-5 w-full flex justify-center">
-              <img src="/src/assets/logo/logoOsha.png" alt="logo" className="h-16" />
+              <img src="/logo/logoOsha.png" alt="logo" className="h-16" />
               {/*<div className="text-3xl" onClick={() => setOpen(!open)}>
                 <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
               </div>*/}
@@ -72,11 +72,11 @@ const NavbarMd = () => {
       submenu: true,
       Component: Nosotross,
       sublinks: [
-        { name: t("aboutus"), link: "/nosotros" },
-        { name: t("ouridentity"), link: "/nuestra-identidad" },
-        { name: t("cooperation"), link: "/cooperacion-internacional" },
-        { name: t("privacy"), link: "/declaracion-privacidad" },
-        { name: t("standards"), link: "/estandares-osha" },
+        { id:11, name: t("aboutus"), link: "/nosotros" },
+        { id:12, name: t("ouridentity"), link: "/nuestra-identidad" },
+        { id:13, name: t("cooperation"), link: "/cooperacion-internacional" },
+        { id:14, name: t("privacy"), link: "/declaracion-privacidad" },
+        { id:15, name: t("standards"), link: "/estandares-osha" },
       ],
     },
     {
@@ -85,8 +85,8 @@ const NavbarMd = () => {
       submenu: true,
       Component: Acreditacion,
       sublinks: [
-        { name: t("accreditation"), link: "/acreditacion" },
-        { name: t("accreditationae"), link: "/adreditacion-ae" },
+        { id:21, name: t("accreditation"), link: "/acreditacion" },
+        { id:22, name: t("accreditationae"), link: "/adreditacion-ae" },
       ],
     },
     {
@@ -95,9 +95,9 @@ const NavbarMd = () => {
       submenu: true,
       Component: Academy,
       sublinks:  [
-        { name: t("degrees"), link: "/grados" },
-        { name: t("courses"), link: "/cursos" },
-        { name: t("freecourses"), link: "/cursos-gratuitos" },
+        { id:31, name: t("degrees"), link: "/grados" },
+        { id:32, name: t("courses"), link: "/cursos" },
+        { id:33, name: t("freecourses"), link: "/cursos-gratuitos" },
       ],
     },
     {
@@ -125,16 +125,16 @@ const NavbarMd = () => {
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src='/src/assets/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
+          <img src='/logo/logoOsha.png' alt="Osha logo"  className="h-8 mr-3 sm:h-16"/>
         </Link>
         {/* Navbar */}
         <div
           onMouseLeave={() => handleSetSelected(null)}
           className="relative flex h-fit gap-2 z-50"
         >
-          {navlinks.map((link) => {
+          {navlinks.map((link, index) => {
             return (
-              <>
+              <div key={index}>
                 {link.submenu ? (
                   <Tab1
                     tab={link.id}
@@ -145,14 +145,15 @@ const NavbarMd = () => {
                     {link.name}
                   </Tab1>
                 ) : (
-                  <NavLink to={link.link}
+                  <NavLink
+                    to={link.link}
                     id={`shift-tab-${link.id}`}
                     className="flex items-center gap-1 rounded-full px-3 py-1.5 text-lg transition-colors hover:bg-primary hover:text-neutral-100 text-neutral-400"
                   >
                     {link.name}
                   </NavLink>
                 )}
-              </>
+              </div>
             );
           })}
           <AnimatePresence>
@@ -160,7 +161,8 @@ const NavbarMd = () => {
           </AnimatePresence>
         </div>
         {/* Boton de Contactanos */}
-        <Link to="/contactanos"
+        <Link
+          to="/contactanos"
           className="px-8 py-4 bg-gradient-to-t from-primary to-sky-400 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
         >
           {t("contactUs")}
@@ -173,6 +175,7 @@ const NavbarMd = () => {
 const Tab1 = ({ children, tab, handleSetSelected, selected }) => {
   return (
     <NavLink
+      key={tab}
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}

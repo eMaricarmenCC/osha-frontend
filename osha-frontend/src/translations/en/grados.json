@@ -187,8 +187,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tt-osha.jpg",
-            "img": "/src/assets/img-grados/tt.png"
+            "src": "/img-grados/tt-osha.jpg",
+            "img": "/img-grados/tt.png"
         },
         {       
             "id": "ttc-osha",
@@ -376,8 +376,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/ttc-osha.png",
-            "img": "/src/assets/img-grados/ttc.png"
+            "src": "/img-grados/ttc-osha.png",
+            "img": "/img-grados/ttc.png"
         },
         {
             "id": "th-osha",
@@ -542,8 +542,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/th-osha.png",
-            "img": "/src/assets/img-grados/th.png"
+            "src": "/img-grados/th-osha.png",
+            "img": "/img-grados/th.png"
         },
         {
             "id": "tec-osha",
@@ -654,8 +654,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tec-osha.jpg",
-            "img": "/src/assets/img-grados/tec.jpg"
+            "src": "/img-grados/tec-osha.jpg",
+            "img": "/img-grados/tec.jpg"
         },
         {
             "id": "tsso-osha",
@@ -811,8 +811,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tsso-osha.png",
-            "img": "/src/assets/img-grados/tsso.png"
+            "src": "/img-grados/tsso-osha.png",
+            "img": "/img-grados/tsso.png"
         },
         {
             "id": "tta-osha",
@@ -972,8 +972,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tta-osha.avif",
-            "img": "/src/assets/img-grados/tta.png"
+            "src": "/img-grados/tta-osha.avif",
+            "img": "/img-grados/tta.png"
         },
         {
             "id": "tsstic-osha",
@@ -1084,8 +1084,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tsstic-osha.avif",
-            "img": "/src/assets/img-grados/tsstic.avif"
+            "src": "/img-grados/tsstic-osha.avif",
+            "img": "/img-grados/tsstic.avif"
         },
         {
             "id": "gssl-osha",
@@ -1227,8 +1227,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/gssl-osha.jpg",
-            "img": "/src/assets/img-grados/gssl.avif"
+            "src": "/img-grados/gssl-osha.jpg",
+            "img": "/img-grados/gssl.avif"
         },
         {
             "id": "gsic-osha",
@@ -1397,8 +1397,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/gsic-osha.jpg",
-            "img": "/src/assets/img-grados/gsic.avif"
+            "src": "/img-grados/gsic-osha.jpg",
+            "img": "/img-grados/gsic.avif"
         },
         
         {
@@ -1527,8 +1527,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/dprl-osha.avif",
-            "img": "/src/assets/img-grados/dprl.avif"
+            "src": "/img-grados/dprl-osha.avif",
+            "img": "/img-grados/dprl.avif"
         },
         {
             "id": "esst-osha",
@@ -1656,8 +1656,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/esst-osha.jpg",
-            "img": "/src/assets/img-grados/esst.avif"
+            "src": "/img-grados/esst-osha.jpg",
+            "img": "/img-grados/esst.avif"
         },
         {
             "id": "esso-osha",
@@ -1813,8 +1813,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/esso-osha.jpg",
-            "img": "/src/assets/img-grados/esso.avif"
+            "src": "/img-grados/esso-osha.jpg",
+            "img": "/img-grados/esso.avif"
         },
         {
             "id": "eprl-osha",
@@ -1949,8 +1949,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/eprl-osha.avif",
-            "img": "/src/assets/img-grados/eprl.avif"
+            "src": "/img-grados/eprl-osha.avif",
+            "img": "/img-grados/eprl.avif"
         },
         {
             "id": "tsslic-osha",
@@ -2106,8 +2106,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/tsslic-osha.png",
-            "img": "/src/assets/img-grados/tsslic.avif"
+            "src": "/img-grados/tsslic-osha.png",
+            "img": "/img-grados/tsslic.avif"
         },
         {
             "id": "ehiv-osha",
@@ -2260,8 +2260,8 @@
                     ]
                 }
             ],
-            "src": "/src/assets/img-grados/ehiv-osha.avif",
-            "img": "/src/assets/img-grados/ehiv.jpg"
+            "src": "/img-grados/ehiv-osha.avif",
+            "img": "/img-grados/ehiv.jpg"
         }
     ],
     "certificate":{

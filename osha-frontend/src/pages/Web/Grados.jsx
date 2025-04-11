@@ -34,7 +34,7 @@ function Grados(){
       <Breadcrumbs
         text={"Grados"}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14">
         <h1 className="font-bold uppercase text-primary w-auto text-2xl lg:text-3xl">
@@ -48,7 +48,7 @@ function Grados(){
             ))}
           </div>
           <div className="mx-auto max-w-xl">
-            <img src="/src/assets/logo/logo-ISO-21001.png" alt="ISO 21001" />
+            <img src="/logo/logo-ISO-21001.png" alt="ISO 21001" />
           </div>
         </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
@@ -90,7 +90,7 @@ function GradoDetalle(){
       <Breadcrumbs
         text={"Grados"}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-14 bg-gray-100">
         <div className="flex flex-col lg:flex-row gap-10 w-full">
@@ -116,7 +116,7 @@ function GradoDetalle(){
           {/* div side right */}
           <div className="bg-white rounded-lg shadow-lg p-5 lg:min-w-lg">
             <div className="flex justify-center">
-              <img src="/src/assets/logo/osha-certificado.png" className="min-w-[150px] w-full lg:min-w-[300px] 2xl:min-w-[400px] 2xl:max-w-[450px] max-w-[500px]"/>
+              <img src="/logo/osha-certificado.png" className="min-w-[150px] w-full lg:min-w-[300px] 2xl:min-w-[400px] 2xl:max-w-[450px] max-w-[500px]"/>
             </div>
             <hr className="my-6 border-t-2 border-gray-300" />
             <div className="flex flex-col gap-3">

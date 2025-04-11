@@ -39,7 +39,7 @@
                     "Drill and Blast Supervisor."
                 ]
             },
-            "src": "/src/assets/img-acre-area/mining.avif"
+            "src": "/img-acre-area/mining.avif"
         },
         {
             "id": "construccion",
@@ -63,7 +63,7 @@
                     "Logistics and Warehouse Supervisor."
                 ]
             },
-            "src": "/src/assets/img-acre-area/construction.avif"
+            "src": "/img-acre-area/construction.avif"
         },
         {
             "id": "hazmat",
@@ -86,7 +86,7 @@
                     "Instructor Hazmat."
                 ]
             },
-            "src": "/src/assets/img-acre-area/hazmat.avif"
+            "src": "/img-acre-area/hazmat.avif"
         },
         {
             "id": "transporte",
@@ -109,7 +109,7 @@
                     "Personnel supervisor."
                 ]
             },
-            "src": "/src/assets/img-acre-area/transport.avif"
+            "src": "/img-acre-area/transport.avif"
         },
         {
             "id": "industria",
@@ -145,7 +145,7 @@
                     "Chemical Supervisor."
                 ]
             },
-            "src": "/src/assets/img-acre-area/industry.avif"
+            "src": "/img-acre-area/industry.avif"
         },
         {
             "id": "salud",
@@ -171,7 +171,7 @@
                     "Medical rescuer."
                 ]
             },
-            "src": "/src/assets/img-acre-area/health.avif"
+            "src": "/img-acre-area/health.avif"
         }
     ],
     "grades" : {

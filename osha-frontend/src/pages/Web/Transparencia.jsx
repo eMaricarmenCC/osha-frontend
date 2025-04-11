@@ -19,7 +19,7 @@ function Transparencia() {
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 w-full">
         <h1 className="text-primary font-bold">{t("title")}</h1>
@@ -34,7 +34,7 @@ function Transparencia() {
           </div>
           <div className="max-w-2xl">
             <ImageWithInnerBorder
-              src="/src/assets/img-transparencia/osha-safety.jpg"
+              src="/img-transparencia/osha-safety.jpg"
               alt="transparencia"
             />
           </div>
@@ -66,7 +66,7 @@ function Transparencia() {
           </div>
           <div className="max-w-2xl mx-auto">
             <ImageWithInnerBorder
-              src="/src/assets/img-transparencia/osha-future.jpg"
+              src="/img-transparencia/osha-future.jpg"
               alt="transparencia"
             />
           </div>
@@ -76,7 +76,7 @@ function Transparencia() {
           <Line1 bgColorClass={"bg-secondary"}/>
           <p className="mt-8">{t("difference.text")}</p>
           <div className="mt-4 max-w-md mx-auto">
-            <img className="w-full border border-primary rounded" src="/src/assets/img-transparencia/osha10-osha30.png" alt=""/>
+            <img className="w-full border border-primary rounded" src="/img-transparencia/osha10-osha30.png" alt=""/>
           </div>
         </div>
         <div className="mt-10">
@@ -102,7 +102,7 @@ function Transparencia() {
           </div>
           <div className="max-w-2xl mx-auto">
             <ImageWithInnerBorder
-              src="/src/assets/img-transparencia/osharegulations.png"
+              src="/img-transparencia/osharegulations.png"
               alt="transparencia"
             />
           </div>
@@ -116,12 +116,12 @@ function Transparencia() {
               <p>{t("should-take.card1")}</p>
             </div>
             <div className="max-w-md mx-auto">
-              <img className="w-full" src="/src/assets/img-transparencia/carnet.jpeg" alt=""/>
+              <img className="w-full" src="/img-transparencia/carnet.jpeg" alt=""/>
             </div>
           </div>
           <div className="mt-8 flex flex-col lg:flex-row gap-5 items-center">
             <div className="max-w-md mx-auto">
-              <img className="w-full" src="/src/assets/img-transparencia/certificado.jpeg" alt=""/>
+              <img className="w-full" src="/img-transparencia/certificado.jpeg" alt=""/>
             </div>
             <div className="py-8 px-8 bg-gray-100 border-r-8 border-primary">
               <p>{t("should-take.card2")}</p>

@@ -14,7 +14,7 @@ function Cursos() {
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
         <h1 className="text-primary font-bold">{t("title")}</h1>
@@ -36,7 +36,7 @@ function CursosGratuitos() {
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
         <h1 className="text-primary font-bold">{t("title")}</h1>

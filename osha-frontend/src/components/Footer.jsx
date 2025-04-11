@@ -28,7 +28,7 @@ function Footer(){
               <h1 className="text-white font-extrabold">
               <img
                 className="h-10 w-auto"
-                src="/src/assets/logo/logoOsha.png"
+                src="/logo/logoOsha.png"
                 alt="Osha Institute"
               />
               </h1>
@@ -67,7 +67,7 @@ function Footer(){
                 {/* Pago */}
                 <div className="flex flex-col gap-3">
                   <p className="text-white font-inter text-[16px] font-semibold">Realice un pago aquí</p>
-                  <PayPalButtonComponent/>
+                  {/*<PayPalButtonComponent/>*/}
                 </div>
               </div>
             </div>

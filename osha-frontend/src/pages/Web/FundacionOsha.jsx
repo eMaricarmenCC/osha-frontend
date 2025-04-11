@@ -16,7 +16,7 @@ function FundacionOsha() {
       <Breadcrumbs
         text={t("breadcrumb")}
         icon={<AiFillSafetyCertificate/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-14">
         <h1 className="text-primary font-bold uppercase">{t("title")}</h1>
@@ -29,7 +29,7 @@ function FundacionOsha() {
           </div>
           <div className="max-w-[500px] mx-auto">
             <ImageWithInnerBorder
-              src="/src/assets/img-nosotros/nosotros.jpg"
+              src="/img-nosotros/nosotros.jpg"
               alt="transparencia"
             />
           </div>

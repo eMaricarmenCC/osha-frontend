@@ -39,7 +39,7 @@
                     "Supervisor de Perforación y Voladura."
                 ]            
             },
-            "src": "/src/assets/img-acre-area/mining.avif"
+            "src": "/img-acre-area/mining.avif"
         },
         {
             "id": "construccion",
@@ -63,7 +63,7 @@
                     "Supervisor de Logística y Almacenes."
                 ]
             },
-            "src": "/src/assets/img-acre-area/construction.avif"
+            "src": "/img-acre-area/construction.avif"
         },
         {
             "id": "hazmat",
@@ -86,7 +86,7 @@
                     "Instructor Hazmat."
                 ]
             },
-            "src": "/src/assets/img-acre-area/hazmat.avif"
+            "src": "/img-acre-area/hazmat.avif"
         },
         {
             "id": "transporte",
@@ -109,7 +109,7 @@
                     "Supervisor de personal."
                 ]
             },
-            "src": "/src/assets/img-acre-area/transport.avif"
+            "src": "/img-acre-area/transport.avif"
         },
         {
             "id": "industria",
@@ -145,7 +145,7 @@
                     "Supervisor Químico."
                 ]
             },
-            "src": "/src/assets/img-acre-area/industry.avif"
+            "src": "/img-acre-area/industry.avif"
         },
         {
             "id": "salud",
@@ -171,7 +171,7 @@
                     "Rescatista médico."
                 ]
             },
-            "src": "/src/assets/img-acre-area/health.avif"
+            "src": "/img-acre-area/health.avif"
         }
     ],
     "accreditationAE" : {

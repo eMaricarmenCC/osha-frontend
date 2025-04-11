@@ -54,15 +54,15 @@ function WhoWeAre(){
       <Breadcrumbs
         text={t("title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20 w-full bg-gray-100">
         {/* Who are we? */}
         <div className="w-full flex justify-center">
-          <div className="lg:ml-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/src/assets/papel/papel3.jpeg')" }}>
+          <div className="lg:ml-8 lg:flex lg:max-w-10xl lg:shadow-lg rounded-lg" style={{ backgroundImage: "url('/papel/papel3.jpeg')" }}>
             <div className="lg:w-2/4">
               <div className="lg:scale-110 h-80 bg-cover lg:w-full lg:h-full rounded-b-none border lg:rounded-lg"
-                style={{backgroundImage:'url("/src/assets/img-nosotros/nosotrosCrop.jpg")'}}>
+                style={{backgroundImage:'url("/img-nosotros/nosotrosCrop.jpg")'}}>
               </div>
             </div>
             <div className="py-12 px-6 lg:px-12 max-w-3xl md:max-w-7xl lg:w-2/4 rounded-t-none border lg:rounded-lg">
@@ -116,7 +116,7 @@ function LegalNature(){
       <Breadcrumbs
         text={t("legalNature.title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       {/* legalNature */}
       <div className="px-5 md:px-10 lg:px-20 xl:px-60 py-10 lg:py-12 lg:py-12">
@@ -127,12 +127,12 @@ function LegalNature(){
             <p className="mt-10">{t("legalNature.content")}</p>
           </div>
           <div className="">
-            <img className="w-[3000px] h-full" src="/src/assets/img-inicio/engineerwithlaptop.png" alt="" />
+            <img className="w-[3000px] h-full" src="/img-inicio/engineerwithlaptop.png" alt="" />
           </div>
         </div>
-        {/*<div className="mt-10 p-5 rounded-l-full" style={{ backgroundImage: "url('/src/assets/papel/papel14.jpg')"}}>
+        {/*<div className="mt-10 p-5 rounded-l-full" style={{ backgroundImage: "url('/papel/papel14.jpg')"}}>
           <div className="overflow-hidden flex flex-col lg:flex-row mx-auto">
-            <img className="w-full max-w-xl rounded-l-full" src="/src/assets/img-nosotros/juridic.jpg" alt="osha-institute"/>
+            <img className="w-full max-w-xl rounded-l-full" src="/img-nosotros/juridic.jpg" alt="osha-institute"/>
             <div className={`relative lg:-ml-40 px-5 lg:px-10 pt-8 pb-8 bg-white lg:m-10 rounded-l-xl shadow-xl`}>
               <p className="">{t("legalNature.content")}</p>
             </div>
@@ -145,13 +145,13 @@ function LegalNature(){
               title={t("legalNature.tit2-mision")}
               text={t("legalNature.mision")}
               textColorClass="text-primary"
-              img="/src/assets/img-nosotros/eduaction.jpeg"
+              img="/img-nosotros/eduaction.jpeg"
             />
             <CardFotTex
               title={t("legalNature.tit2-vision")}
               text={t("legalNature.vision")}
               textColorClass="text-primary"
-              img="/src/assets/img-nosotros/profesionals.jpg"
+              img="/img-nosotros/profesionals.jpg"
             />
           </div>
         </div>
@@ -177,63 +177,63 @@ function InternationalCooperation(){
   const coopImages = [
     {
       id: 1,
-      src: "/src/assets/img-coopinte/coop-accsb.jpg",
+      src: "/img-coopinte/coop-accsb.jpg",
     },
     {
       id: 2,
-      src: "/src/assets/img-coopinte/coop-amba.jpg",
+      src: "/img-coopinte/coop-amba.jpg",
     },
     {
       id: 3,
-      src: "/src/assets/img-coopinte/coop-ansi.jpg",
+      src: "/img-coopinte/coop-ansi.jpg",
     },
     {
       id: 4,
-      src: "/src/assets/img-coopinte/coop-asme.jpg",
+      src: "/img-coopinte/coop-asme.jpg",
     },
     {
       id: 5,
-      src: "/src/assets/img-coopinte/coop-cat.jpg",
+      src: "/img-coopinte/coop-cat.jpg",
     },
     {
       id: 6,
-      src: "/src/assets/img-coopinte/coop-ecbe.jpg",
+      src: "/img-coopinte/coop-ecbe.jpg",
     },
     {
       id: 7,
-      src: "/src/assets/img-coopinte/coop-eed.jpg",
+      src: "/img-coopinte/coop-eed.jpg",
     },
     {
       id: 8,
-      src: "/src/assets/img-coopinte/coop-etsi.jpg",
+      src: "/img-coopinte/coop-etsi.jpg",
     },
     {
       id: 9,
-      src: "/src/assets/img-coopinte/coop-mit.jpg",
+      src: "/img-coopinte/coop-mit.jpg",
     },
     {
       id: 10,
-      src: "/src/assets/img-coopinte/coop-nfpa.jpg",
+      src: "/img-coopinte/coop-nfpa.jpg",
     },
     {
       id: 11,
-      src: "/src/assets/img-coopinte/coop-niosh.jpg",
+      src: "/img-coopinte/coop-niosh.jpg",
     },
     {
       id: 12,
-      src: "/src/assets/img-coopinte/coop-osha.jpg",
+      src: "/img-coopinte/coop-osha.jpg",
     },
     {
       id: 13,
-      src: "/src/assets/img-coopinte/coop-teex.jpg",
+      src: "/img-coopinte/coop-teex.jpg",
     },
     {
       id: 14,
-      src: "/src/assets/img-coopinte/coop-texas.jpg",
+      src: "/img-coopinte/coop-texas.jpg",
     },
     {
       id: 15,
-      src: "/src/assets/img-coopinte/coop-wso.jpg",
+      src: "/img-coopinte/coop-wso.jpg",
     },
   ];
   return(
@@ -241,7 +241,7 @@ function InternationalCooperation(){
       <Breadcrumbs
         text={t("internationalCooperation.title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-20">
         {/* internationalCooperation */}
@@ -255,7 +255,7 @@ function InternationalCooperation(){
             <button className="mt-4 bg-primary hover:bg-azulOscuro py-2 px-4 rounded-lg text-white">Contáctanos</button>
           </div>
           <div className="lg:basis-1/2 flex-grow">
-            <img className="rounded-xl h-full object-center" src="/src/assets/img-inicio/coopeinter.png" alt="cooperacion internacional"/>
+            <img className="rounded-xl h-full object-center" src="/img-inicio/coopeinter.png" alt="cooperacion internacional"/>
           </div>
         </div>
         {/* Carousel */}
@@ -276,7 +276,7 @@ function PrivacyAndSecurityDeclaration(){
       <Breadcrumbs
         text={t("privacyAndSecurityDeclaration.title")}
         icon={<FaBuildingColumns/>}
-        img="/src/assets/img-nosotros/business.jpg"
+        img="/img-nosotros/business.jpg"
       />
       <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16">
         <h1 className="text-primary uppercase font-bold">{t("privacyAndSecurityDeclaration.title")}</h1>
@@ -290,7 +290,7 @@ function PrivacyAndSecurityDeclaration(){
           </div>
           <div className="md:min-w-[400px] lg:min-w-[500px] lg:max-w-[550px] mx-auto">
             <ImageWithInnerBorder
-              src={"/src/assets/img-nosotros/privacy-security.avif"}
+              src={"/img-nosotros/privacy-security.avif"}
               alt="privacy"
             />
           </div>
