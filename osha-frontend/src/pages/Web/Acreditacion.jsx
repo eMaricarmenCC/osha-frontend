@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
@@ -11,8 +11,12 @@ import { ListIconWithBg, ListIcon } from '../../components/ui/List';
 import {getCredencialesProgramaMatriculadoByDocId,
         getCredencialesProgramaByDocId,
         getCertificadosCursoMatriculadoByDocId,
-        getCertificadosCursoByDocId} from "../../api/Credenciales.api";
-import { getUsuarioByDocId } from "../../api/User.api";
+        getCertificadosCursoByDocId,
+        getCredencialesProgramaMatriculadoByCodOsh,
+        getCredencialesProgramaByCodOsh,
+        getCertificadosCursoMatriculadoByCodOsh,
+        getCertificadosCursoByCodOsh } from "../../api/Credenciales.api";
+import { getUsuarioByDocId, getUsuarioByCodOsh } from "../../api/User.api";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { AiFillSafetyCertificate } from "react-icons/ai";
@@ -24,8 +28,12 @@ import { MdOutlineDashboard } from "react-icons/md";
 
 function Acreditacion() {
   const { t, i18n } = useTranslation("acreditacion");
-  const { documentoIdentidad } = useParams();
-  const [query, setQuery] = useState(documentoIdentidad || "");
+  const { codigoosha } = useParams();
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+  const [query, setQuery] = useState(codigoosha || "");
+  const [queryDocId, setQueryDocId] = useState("");
 
   const [datosUsuario, setDatosUsuario] = useState([]);
   const [credencialesProgramaMatriculado, setCredencialesProgramaMatriculado] = useState([]);
@@ -43,12 +51,79 @@ function Acreditacion() {
   const [errorCertificados, setErrorCertificados] = useState(null);
 
   useEffect(() => {
-    if (documentoIdentidad) {
-      handleSearch(documentoIdentidad);
-    }
-  }, [documentoIdentidad]);
+    const params = new URLSearchParams(location.search);
+    const codigoOshaFromQuery = params.get("CODIGO_OSHA");
 
-  const handleSearch = async (dni = query) => {
+    if (codigoOshaFromQuery && !codigoosha) {
+      navigate(`/acreditacion/${codigoOshaFromQuery}`, { replace: true });
+    }
+  }, [location.search, codigoosha, navigate]);
+  
+  useEffect(() => {
+    if (codigoosha) {
+      handleSearchByCodOsha(codigoosha);
+    }
+    
+  }, [codigoosha]);
+
+  const handleSearchByCodOsha = async (docOsha = query) => {
+    if (!docOsha) return;
+
+    // Limpiar errores previos
+    setError("");
+    setErrorCredencialesMatriculado(null);
+    setErrorCredenciales(null);
+    setErrorCertificadosMatriculado(null);
+    setErrorCertificados(null);
+
+    // Limpiar contenido previo
+    setDatosUsuario([]);
+    setCredencialesProgramaMatriculado([]);
+    setCredencialesPrograma([]);
+    setCertificadosCursoMatriculado([]);
+    setCertificadosCurso([]);
+
+    setLoading(true);
+
+    try {
+      const datosUsuario = await getUsuarioByCodOsh(docOsha);
+      setDatosUsuario(datosUsuario);
+    } catch (error) {
+      setError(`${error.message}`);
+    }
+
+    try {
+      const credencialesMatriculado = await getCredencialesProgramaMatriculadoByCodOsh(docOsha);
+      setCredencialesProgramaMatriculado(credencialesMatriculado || []);
+    } catch (error) {
+      setErrorCredencialesMatriculado(`Error al obtener credenciales matriculados: ${error.message}`);
+    }
+
+    try {
+      const credenciales = await getCredencialesProgramaByCodOsh(docOsha);
+      setCredencialesPrograma(credenciales || []);
+    } catch (error) {
+      setErrorCredenciales(`Error al obtener credenciales disponibles: ${error.message}`);
+    }
+
+    try {
+      const certificadosMatriculado = await getCertificadosCursoMatriculadoByCodOsh(docOsha);
+      setCertificadosCursoMatriculado(certificadosMatriculado || []);
+    } catch (error) {
+      setErrorCertificadosMatriculado(`Error al obtener certificados matriculados: ${error.message}`);
+    }
+
+    try {
+      const certificados = await getCertificadosCursoByCodOsh(docOsha);
+      setCertificadosCurso(certificados || []);
+    } catch (error) {
+      setErrorCertificados(`Error al obtener certificados disponibles: ${error.message}`);
+    }
+
+    setLoading(false);
+  };
+
+  const handleSearch = async (dni = queryDocId) => {
     if (!dni) return;
 
     // Limpiar errores previos
@@ -119,9 +194,34 @@ function Acreditacion() {
           <p className="mt-10">{t("accreditation.content")}</p>
         </div>
 
-        {/* Verificacion de certificadopor código */}
+        {/* Verificacion de certificado por código osha */}
         <div className="mt-10">
-          <h3 className="">Verificación de certificados</h3>
+          <h3 className="">Verificación de certificados por código osha institute</h3>
+          <div className="mt-4 mx-auto bg-white p-5 rounded-lg flex items-center gap-5 shadow-lg">
+            <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
+            <div className="relative w-full bg-white rounded-full">
+              <input
+                placeholder="Ingrese su código osha institute"
+                className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+              <button
+                type="submit"
+                className="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-sky-600 sm:px-6 sm:text-base sm:font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 gap-2"
+                onClick={() => handleSearchByCodOsha()}
+              >
+                <IoMdSearch/>
+                Buscar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Verificacion de certificado por documento de identidad */}
+        <div className="mt-6">
+          <h3 className="">Verificación de certificados por documento de identidad</h3>
           <div className="mt-4 mx-auto bg-white p-5 rounded-lg flex items-center gap-5 shadow-lg">
             <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
             <div className="relative w-full bg-white rounded-full">
@@ -129,8 +229,8 @@ function Acreditacion() {
                 placeholder="Ingrese su documento de identidad"
                 className="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-sky-200 focus:border-sky-500"
                 type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                value={queryDocId}
+                onChange={(e) => setQueryDocId(e.target.value)}
               />
               <button
                 type="submit"

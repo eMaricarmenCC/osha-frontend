@@ -67,6 +67,14 @@ function Footer(){
                 {/* Pago */}
                 <div className="flex flex-col gap-3">
                   <p className="text-white font-inter text-[16px] font-semibold">Realice un pago aquí</p>
+                  <a
+                    href="https://osha.osha.es/paypal_pagos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-md text-center transition duration-200"
+                  >
+                    Pagar Aquí
+                  </a>
                   {/*<PayPalButtonComponent/>*/}
                 </div>
               </div>

@@ -42,7 +42,7 @@ function Web() {
         <Route path="/declaracion-privacidad" element={<PrivacyAndSecurityDeclaration/>} />
         <Route path="/estandares-osha" element={<Estandares/>} />
         <Route path="/acreditacion" element={<Acreditacion/>} />
-        <Route path="/acreditacion/:documentoIdentidad" element={<Acreditacion/>} />
+        <Route path="/acreditacion/:codigoosha" element={<Acreditacion/>} />
         <Route path="/acreditacion-ae" element={<AcreditacionAE/>} />
         <Route path="/grados" element={<Grados/>} />
         <Route path="/grados/:id" element={<GradoDetalle/>} />
