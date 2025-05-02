@@ -67,7 +67,9 @@ export const getCredencialesProgramaMatriculadoByCodOsh = async (codigoOsha) => 
     const response = await api.get(`/credenciales/programa/matriculado/by-codosh/${codigoOsha}/`);
     return response.data;
   } catch (error) {
-    if (error.response) {
+    if (error.response && error.response.status === 404) {
+      return;
+    } else if (error.response) {
       throw new Error(error.response.data.detail || 'Error al obtener los credenciales de programas matriculados');
     } else if (error.request) {
       throw new Error('No se recibió respuesta del servidor');
@@ -80,6 +82,7 @@ export const getCredencialesProgramaMatriculadoByCodOsh = async (codigoOsha) => 
 export const getCredencialesProgramaByCodOsh = async (codigoOsha) => {
   try {
     const response = await api.get(`/credenciales/programa/by-codosh/${codigoOsha}/`);
+    console.log(response.data)
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -97,7 +100,9 @@ export const getCertificadosCursoMatriculadoByCodOsh = async (codigoOsha) => {
     const response = await api.get(`/certificados/curso/matriculado/by-codosh/${codigoOsha}/`);
     return response.data;
   } catch (error) {
-    if (error.response) {
+    if (error.response && error.response.status === 404) {
+      return;
+    } else if (error.response) {
       throw new Error(error.response.data.detail || 'Error al obtener los certificados de cursos matriculados');
     } else if (error.request) {
       throw new Error('No se recibió respuesta del servidor');

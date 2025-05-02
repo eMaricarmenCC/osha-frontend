@@ -96,7 +96,7 @@ function Acreditacion() {
       const credencialesMatriculado = await getCredencialesProgramaMatriculadoByCodOsh(docOsha);
       setCredencialesProgramaMatriculado(credencialesMatriculado || []);
     } catch (error) {
-      setErrorCredencialesMatriculado(`Error al obtener credenciales matriculados: ${error.message}`);
+      setErrorCredencialesMatriculado(`1Error al obtener credenciales matriculados: ${error.message}`);
     }
 
     try {
@@ -110,7 +110,7 @@ function Acreditacion() {
       const certificadosMatriculado = await getCertificadosCursoMatriculadoByCodOsh(docOsha);
       setCertificadosCursoMatriculado(certificadosMatriculado || []);
     } catch (error) {
-      setErrorCertificadosMatriculado(`Error al obtener certificados matriculados: ${error.message}`);
+      setErrorCertificadosMatriculado(`1Error al obtener certificados matriculados: ${error.message}`);
     }
 
     try {
@@ -286,8 +286,10 @@ function Acreditacion() {
                 {credencialesProgramaMatriculado.map((credencial, index) => (
                   <CredentialCard
                     key={index}
-                    nombreCert={credencial.crepromatprocod.matproprocod.pronomeng}
-                    nombreDip={credencial.crepromatprocod.matproprocod.pronomdip}
+                    nombreCert={credencial.crepromatprocod.matproprocod.pronom}
+                    nombreCertEng={credencial.crepromatprocod.matproprocod.pronomeng}
+                    nombreDip={credencial.crepromatprocod.matproprocod.prodip}
+                    nombreDipEng={credencial.crepromatprocod.matproprocod.prodipeng}
                     fechaEmision={credencial.creprofecemi}
                     fechaCaducidad={credencial.creprofeccad}
                     boolDiploma={credencial.creprodip}
@@ -299,7 +301,9 @@ function Acreditacion() {
                   <CredentialCard
                     key={index}
                     nombreCert={credencial.creproprocod.pronom}
-                    nombreDip={credencial.creproprocod.pronomdip}
+                    nombreCertEng={credencial.creproprocod.pronomeng}
+                    nombreDip={credencial.creproprocod.prodip}
+                    nombreDipEng={credencial.creproprocod.prodipeng}
                     fechaEmision={credencial.creprofecemi}
                     fechaCaducidad={credencial.creprofeccad}
                     boolDiploma={credencial.creprodip}
@@ -367,7 +371,9 @@ function Acreditacion() {
 
 const CredentialCard = ({
   nombreCert,
+  nombreCertEng,
   nombreDip,
+  nombreDipEng,
   fechaEmision,
   fechaCaducidad,
   boolDiploma,
@@ -381,9 +387,21 @@ const CredentialCard = ({
 
   return (
     <div className="flex flex-col gap-2 bg-gray-50 p-5 rounded-r-lg border border-l-8 border-yellow-500">
-      <p className="uppercase"><strong>Grado :</strong> {nombreCert || 'Programa desconocido'}</p>
+      <div className="flex flex-row uppercase gap-3">
+        <p><strong>Grado :</strong></p>
+        <div>
+          <p>{nombreCertEng || ''}</p>
+          <p className="text-[13px]">{nombreCert || ''}</p>
+        </div>
+      </div>
       {boolDiploma && (
-        <p className="uppercase"><strong>Diploma :</strong> {nombreDip || 'Programa desconocido'}</p>
+        <div className="flex flex-row uppercase gap-3">
+          <p><strong>Diploma :</strong></p>
+          <div>
+            <p>{nombreDipEng || ''}</p>
+            <p className="text-[13px]">{nombreDip || ''}</p>
+          </div>
+        </div>
       )}
       <p className="uppercase"><strong>N° de Horas :</strong> {horas}</p>
       <div className="flex flex-row gap-6 text-[12px] text-gray-700">
