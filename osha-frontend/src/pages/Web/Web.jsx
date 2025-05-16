@@ -24,6 +24,7 @@ import { PoliticaPago } from './PoliticaPago';
 import { FundacionOsha } from './FundacionOsha';
 import { Transparencia } from './Transparencia';
 import { RepresentanteLondres, RepresentantePakistan } from './Representantes';
+import { ProcesoAcreditacionAE } from './ProcesoAcreditacionAE';
 
 
 function Web() {
@@ -64,6 +65,7 @@ function Web() {
         <Route path='/representante-pakistan' element={<RepresentantePakistan/>} />
         <Route path='/representante-londres' element={<RepresentanteLondres/>} />
         <Route path="/acreditacion-area/:id" element={<AcreditacionAreaDetalle/>} />
+        <Route path="/proceso_acreditacion_ae" element={<ProcesoAcreditacionAE/>} />
       </Routes>
       <Footer/>
     </>

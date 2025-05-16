@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-
+import { Link } from "react-router-dom";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
 import { Line1 } from "../../components/ui/Line";
 import { CardGrado } from '../../components/ui/Card';
@@ -24,6 +24,7 @@ import { IoMdSearch } from "react-icons/io";
 import { PiCertificate } from "react-icons/pi";
 import { BsPersonCheck } from "react-icons/bs";
 import { MdOutlineDashboard } from "react-icons/md";
+import { ButtonContacto, ButtonEmailAccreditation } from "../../components/ui/Button";
 
 
 function Acreditacion() {
@@ -192,11 +193,12 @@ function Acreditacion() {
           <h1 className="text-primary font-bold uppercase">{t("accreditation.title")}</h1>
           <Line1 bgColorClass={"bg-secondary"}/>
           <p className="mt-10">{t("accreditation.content")}</p>
+          <ButtonContacto />
         </div>
 
         {/* Verificacion de certificado por código osha */}
         <div className="mt-10">
-          <h3 className="">Verificación de certificados por código osha institute</h3>
+          <h3 className="">{t("accreditation.verification-cod")}</h3>
           <div className="mt-4 mx-auto bg-white p-5 rounded-lg flex items-center gap-5 shadow-lg">
             <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
             <div className="relative w-full bg-white rounded-full">
@@ -221,7 +223,7 @@ function Acreditacion() {
 
         {/* Verificacion de certificado por documento de identidad */}
         <div className="mt-6">
-          <h3 className="">Verificación de certificados por documento de identidad</h3>
+          <h3 className="">{t("accreditation.verification-docid")}</h3>
           <div className="mt-4 mx-auto bg-white p-5 rounded-lg flex items-center gap-5 shadow-lg">
             <PiCertificate style={{color:"var(--secondary)", height:50, width:50}}/>
             <div className="relative w-full bg-white rounded-full">
@@ -336,14 +338,15 @@ function Acreditacion() {
                 ))}
               </div>
             </div>
-          
-        </div>
+          </div>
         )}
+
+        <ButtonEmailAccreditation />
 
         {/* Especializaciones */}
         <div className="mt-10">
           <div className="bg-sky-600 p-2 bg-gray-100 font-bold rounded-full">
-            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">Especializaciones</h3>
+            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">{t("accreditation.specializations")}</h3>
           </div>
           <Especializaciones/>
         </div>
@@ -351,15 +354,22 @@ function Acreditacion() {
         {/* Grados */}
         <div className="mt-10">
           <div className="bg-sky-600 p-2 bg-gray-100 font-bold rounded-full">
-            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">Grados</h3>
+            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">{t("accreditation.degrees")}</h3>
+          </div>
+          <div className="mt-4 mx-6 bg-white py-4 px-6 rounded-lg shadow-lg">
+            <p>Osha-Institute, ofrece una amplia selección de certificaciones profesionales para los profesionales de la Seguridad y salud Laboral, seguridad y salud Ocupacional, seguridad ambiental y prevención de riesgos laborales en todo el mundo.</p>
+            <p>El requisito previo para obtener cualquiera de las Certificaciones Profesionales de Osha-Institute es una membresía de Afiliado actual con Osha-Institute. Grados disponibles en nuestros programas de educación complementaria a profesionales.</p>
           </div>
           <Grados/>
         </div>
 
         {/* Trainers (Entrenadores) */}
         <div className="mt-10">
-        <div className="bg-sky-600 p-2 bg-gray-100 font-bold rounded-full">
-            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">Trainer</h3>
+          <div className="bg-sky-600 p-2 bg-gray-100 font-bold rounded-full">
+            <h3 className="text-center text-white border-2 p-2 border-white uppercase rounded-full">{t("accreditation.trainer")}</h3>
+          </div>
+          <div className="mt-4 mx-6 bg-white py-4 px-6 rounded-lg shadow-lg">
+            <p>{t("accreditation.trainer-p")}</p>
           </div>
           <Trainers/>
         </div>
@@ -444,6 +454,7 @@ const CertificadoCard = ({
 
 const Especializaciones = () => {
   const { t, i18n } = useTranslation("grados");
+  const navigate = useNavigate();
   const gradosFiltrados = t("degreeData", { returnObjects: true }).filter(grado => grado.id.startsWith('e'));
   const handleCardClick = (grado) => {
     navigate(`/grados/${grado.id}`, { state: { grado } });
@@ -468,6 +479,7 @@ const Especializaciones = () => {
 
 const Grados = () => {
   const { t, i18n } = useTranslation("grados");
+  const navigate = useNavigate();
   const gradosFiltrados = t("degreeData", { returnObjects: true }).filter(grado => 
     !grado.id.startsWith('e') && !grado.id.startsWith('t')
   );
@@ -494,6 +506,7 @@ const Grados = () => {
 
 const Trainers = () => {
   const { t, i18n } = useTranslation("grados");
+  const navigate = useNavigate();
   const gradosFiltrados = t("degreeData", { returnObjects: true }).filter(grado => grado.id.startsWith('t'));
   const handleCardClick = (grado) => {
     navigate(`/grados/${grado.id}`, { state: { grado } });
@@ -624,21 +637,13 @@ function AcreditacionAE() {
             ))}
           </div>
         </div>
+        <div className="mt-8">
+          <Link to="/proceso_acreditacion_ae" className="text-[16px] py-2 px-4 min-w-[150px] text-center text-white bg-sky-600 border border-sky-600 rounded-md active:text-sky-500 hover:bg-transparent hover:text-sky-600 focus:outline-none focus:ring">Proceso de Acreditación AE</Link>
+        </div>
       </div>
     </section>
   );
 };
 
 
-function Areas() {
-  const { t, i18n } = useTranslation("estandares");
-  return(
-    <div className="">
-      <div>
-
-      </div>
-      <div></div>
-    </div>
-  );
-};
 export { Acreditacion, AcreditacionAE, AcreditacionArea, AcreditacionAreaDetalle }

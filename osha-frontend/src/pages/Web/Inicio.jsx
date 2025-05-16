@@ -142,21 +142,21 @@ const CountUpHome = () => {
       <ItemCount
         icon={<PiStudentBold/>}
         text={t("countup.est")}
-        nstart={130}
-        nend={150}
+        nstart={195}
+        nend={295}
         time={4}
       />
       <ItemCount
         icon={<PiBooks/>}
         text={t("countup.pro")}
-        nstart={80}
+        nstart={70}
         nend={100}
         time={4}
       />
       <ItemCount
         icon={<LuBookMarked/>}
         text={t("countup.cur")}
-        nstart={180}
+        nstart={170}
         nend={200}
         time={4}
       />

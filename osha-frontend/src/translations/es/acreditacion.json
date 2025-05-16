@@ -1,7 +1,15 @@
 {
     "accreditation" : {
         "title" : "Acreditación",
-        "content" : "Accede a una acreditación OSHA-INSTITUTE y conviértete en un especialista Osha-Institute y empieza a despegar como profesional. Nuestra trayectoria, el valor y el reconocimiento que implantamos a través de los años a nivel mundial con nuestros aportes y estandares es visible y parte de nuestro reconocimiento te lo queremos compartir al ser parte de nuestra familia y representar a Osha-Institute en cualquier parte del mundo."
+        "content" : "Accede a una acreditación OSHA-INSTITUTE y conviértete en un especialista Osha-Institute y empieza a despegar como profesional. Nuestra trayectoria, el valor y el reconocimiento que implantamos a través de los años a nivel mundial con nuestros aportes y estandares es visible y parte de nuestro reconocimiento te lo queremos compartir al ser parte de nuestra familia y representar a Osha-Institute en cualquier parte del mundo.",
+        "verification-cod": "Verificación de certificados por código Osha Institute",
+        "verification-docid": "Verificación de certificados por documento de identidad",
+        "specializations": "Especializaciones",
+        "degrees": "Grados",
+        "degrees-p": "Osha-Institute, ofrece una amplia selección de certificaciones profesionales para los profesionales de la Seguridad y salud Laboral, seguridad y salud Ocupacional, seguridad ambiental y prevención de riesgos laborales en todo el mundo.",
+        "degrees-p2": "El requisito previo para obtener cualquiera de las Certificaciones Profesionales de Osha-Institute es una membresía de Afiliado actual con Osha-Institute. Grados disponibles en nuestros programas de educación complementaria a profesionales.",
+        "trainer": "Trainer",
+        "trainer-p": "Osha-Institute con el fin de darle valor y prestigio a tu experiencia basado a las normas internacionales ofrece una gran lista de acreditaciones para instructores con valor a nivel mundial."
     },
     "degrees" : {
         "title" : "Grados",
@@ -193,5 +201,17 @@
                 "Aprende más sobre como obtener la acreditación AE aquí"
             ]
         }
+    },
+    "process-acreditation": {
+        "title": "Proceso Acreditacion AE",
+        "list": [
+            "El Centro de estudio tiene que ser un centro autorizado de Osha-Institute o contar con mínimo 3 Trainer acreditados.",
+            "Evaluación de experiencia, actitudes, aptitudes y conocimientos de cada miembro que forma parte del ente educativo.",
+            "Se evalúa los procedimientos y técnicas educativas donde el conocimiento de los alumnos deberá tener una evaluación Aprobatoria no menor de 87 puntos de 100. Si los alumnos de la entidad educativa adquiere calificaciones menor a los 87 puntos es indicador que la técnica o procedimientos aplicados en su gestión no son las adecuadas para el tipo de clientes que se encuentra abordando. En este proceso el centro educativo debe mejorar la calidad empezando por los procedimientos y técnicas de formación.",
+            "Estructuras de programas educativos.El cumplimiento de establecer estructuras a cada programa de formación debe ser estricta. Seguridad. Secuencia. Mejoras. Debilidades. Gestión especifica. Habilidades de mejora. Competencias desarrolladas. Sostenibilidad del programa. Casuisticas y generalidades. Gestión integral. Y mejora de conocimientos y habilidades. Al cumplir con esta estructura se procede a la fiscalización. En cada país tenemos inspectores de cumplimiento qué verifican si se aplica a diario los métodos de la estructura formativa. Las verificaciones son inopinadas. De manera presencial.",
+            "Organización de la empresa. Cada empresa debe cumplir con enlistar en su staff: Jefe de directorio, Director académico, Especialista académico, Master Trainer y Trainer. Cada uno de ellos debe complir con las funciones asignadas del titular para la mejora en la calidad educativa. Especialista académico. Master Trainer. Trainer. Deberán estar acreditados por RAIA (Red Americana de Instructores Acreditados). Contar con la acreditación en el tema que se maneja en la organización. Deben ser gestores de la mejora continua. Deben abordar los conocimientos necesarios y ser transmitido de manera efectiva.",
+            "Acreditación del centro de formación profesional. En este proceso la organización recibe el credencial como Organismo AE y podrá usar el logo oficial en las acreditaciones que gestionen. Esta acreditación tiene de vigencia 5 años desde la emisión. A la vez cuenta con Inspecciones anuales imprevistas para verificar el cumplimento del mismo."
+        ],
+        "p": "Conoce más sobre los incumplimientos y sanciones aqui"
     }
 }

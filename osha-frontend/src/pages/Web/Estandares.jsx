@@ -1,11 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-
 import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
-import { ImageWithInnerBorder } from "../../components/ui/Image";
-
+import { ButtonEmailInfo } from "../../components/ui/Button";
 import { FaBuildingColumns } from "react-icons/fa6";
 
 
@@ -33,13 +30,14 @@ function Estandares(){
               alt="Estandares osha"
             />
             <div className="mt-10">
-              <a className="px-6 py-2 min-w-[120px] text-center text-white bg-sky-600 border border-sky-600 rounded active:text-sky-500 hover:bg-transparent hover:text-sky-600 focus:outline-none focus:ring"
+              <a target="_blank" className="px-6 py-2 min-w-[120px] text-center text-white bg-sky-600 border border-sky-600 rounded active:text-sky-500 hover:bg-transparent hover:text-sky-600 focus:outline-none focus:ring"
                 href="https://www.osha.gov/topics/text-index">
                 Conoce los estándares OSHA
               </a>
             </div>
           </div>
         </div>
+        <ButtonEmailInfo />
       </div>
     </section>
   );

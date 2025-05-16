@@ -1,11 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
-import { Linea, Line1, OneLine } from '../../components/ui/Line';
+import { Line1 } from '../../components/ui/Line';
 import { FaBuildingColumns } from "react-icons/fa6";
-import { List, ListPoint, ListResponsive } from "../../components/ui/List";
+import { ListPoint } from "../../components/ui/List";
 import { Accordian, AccordianItem } from "../../components/ui/Accordions";
 import { TbPointFilled } from "react-icons/tb";
+import { ButtonContacto } from "../../components/ui/Button";
+import { ButtonEmailInfo } from "../../components/ui/Button";
 
 
 function Certex() {
@@ -23,7 +25,7 @@ function Certex() {
           <h2 className="text-primary"><b>{t("certex.subtitle")}</b></h2>
           <Line1 bgColorClass={"bg-secondary"}/>
           <p>{t("certex.description")}</p>
-          <button className="mt-5 bg-primary hover:bg-azulOscuro text-white p-3 rounded-lg">Contactar</button>
+          <ButtonContacto />
         </div>
         {/* OBjetivo */}
         <div className="mt-10 bg-white p-5 rounded-r-lg shadow-lg border-l-8 border-primary">
@@ -89,6 +91,10 @@ function Certex() {
         <div className="mt-10 bg-white p-6 rounded-lg shadow-lg">
           <h3 className="text-primary font-bold">{t("certex.certificationAndAccreditation.title")}</h3>
           <p className="mt-3">{t("certex.certificationAndAccreditation.content")}</p>
+        </div>
+        {/* Correo */}
+        <div className="mt-14">
+          <ButtonEmailInfo />
         </div>
       </div>
     </section>

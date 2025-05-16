@@ -1,7 +1,15 @@
 {
     "accreditation" : {
         "title" : "Accreditation",
-        "content": "Access an OSHA-INSTITUTE accreditation and become an Osha-Institute specialist and start taking off as a professional. Our trajectory, the value and recognition that we have established over the years worldwide with our contributions and standards is visible and part of our recognition we want to share with you by being part of our family and representing Osha-Institute anywhere in the world."
+        "content": "Access an OSHA-INSTITUTE accreditation and become an Osha-Institute specialist and start taking off as a professional. Our trajectory, the value and recognition that we have established over the years worldwide with our contributions and standards is visible and part of our recognition we want to share with you by being part of our family and representing Osha-Institute anywhere in the world.",
+        "verification-cod": "Certificate verification using OSHA Institute code",
+        "verification-docid": "Certificate verification using ID",
+        "specializations": "Specializations",
+        "degrees": "Degrees",
+        "degrees-p": "OSHA-Institute offers a wide selection of professional certifications for Occupational Safety and Health, Occupational Health and Safety, Environmental Safety, and Occupational Risk Prevention professionals worldwide.",
+        "degrees-p2": "The prerequisite for obtaining any of the OSHA-Institute Professional Certifications is a current Affiliate membership with OSHA-Institute. Degrees are available in our complementary professional education programs.",
+        "trainer": "Trainer",
+        "trainer-p": "To enhance and enhance your experience based on international standards, the OSHA Institute offers a comprehensive list of instructor accreditations with global value."
     },
     "degrees" : {
         "title" : "Grados",
@@ -226,5 +234,17 @@
                 "Learn more about how to obtain AE accreditation here"
             ]
         }
+    },
+    "process-acreditation": {
+        "title": "Proceso Acreditacion AE",
+        "list": [
+            "The study center must be an authorized Osha-Institute center or have at least three accredited trainers.",
+            "Evaluation of the experience, attitudes, skills, and knowledge of each member of the educational institution.",
+            "Educational procedures and techniques are evaluated, with students' knowledge required to achieve a passing score of no less than 87 out of 100. If the educational institution's students achieve scores below 87 points, this indicates that the technique or procedures applied in their management are not appropriate for the type of clients they are serving. In this process, the educational center must improve quality, starting with training procedures and techniques.",
+            "Educational program structures. Strict compliance with the established structures for each training program must be followed. Safety, Sequence, Improvements, Weaknesses, Specific management, Improvement skills, Developed competencies, Program sustainability, Case studies and generalities, Comprehensive management, and improvement of knowledge and skills. Upon compliance with this structure, the following steps are taken: to oversight. In each country, we have compliance inspectors who verify that the training structure methods are being applied daily. The inspections are unannounced and in person.",
+            "Company organization. Each company must include the following staff members: Head of Board, Academic Director, Academic Specialist, Master Trainer, and Trainer. Each of them must fulfill the assigned duties of the incumbent for improving educational quality. Academic Specialist, Master Trainer, and Trainer. They must be accredited by RAIA (American Network of Accredited Instructors). They must be accredited in the subject matter handled by the organization. They must be managers of continuous improvement. They must address the necessary knowledge and transmit it effectively.",
+            "Accreditation of the vocational training center. In this process, the organization receives the credential as an AE Organization and may use the official logo on the accreditations they manage. This accreditation is valid for 5 years from issuance. It also includes unannounced annual inspections to verify compliance with the Same."
+        ],
+        "p": "Learn more about non-compliance and penalties here"
     }
 }

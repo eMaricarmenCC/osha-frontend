@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 import { SliderImg } from "../../components/Slider/Slider";
 import { Accordian, AccordianItem } from "../../components/ui/Accordions";
@@ -8,13 +7,13 @@ import { CardFotTex } from "../../components/ui/Card";
 import { ListPoint } from "../../components/ui/List";
 import { Line1 } from "../../components/ui/Line";
 import { Breadcrumbs } from "../../components/ui/Breadcrumb";
-import { buttonPrimary } from "../../components/ui/Button";
 import { ImageWithInnerBorder } from "../../components/ui/Image";
+import { ButtonEmailInfo } from "../../components/ui/Button";
 
 import { FaBuildingColumns } from "react-icons/fa6";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { PiHandshakeFill, PiSealCheckBold } from "react-icons/pi";
-import { TbPointFilled } from "react-icons/tb";
+import { PiHandshakeFill } from "react-icons/pi";
+import { ButtonContacto } from "../../components/ui/Button";
 
 
 function Nosotros(){
@@ -28,8 +27,8 @@ function Nosotros(){
       <PrivacyAndSecurityDeclaration/>
       <Estandares/>
     </div>
-  )   
-}
+  )
+};
 
 const Card = ({ icon, title, text, backgroundClass, borderClass, textColorClass }) => {
   return (
@@ -69,9 +68,7 @@ function WhoWeAre(){
               <h2 className="text-3xl text-secondary font-bold">{t("whoWeAre.title")}</h2>
               <p className="mt-2">{t("whoWeAre.p1")}</p>
               <p className="mt-2">{t("whoWeAre.p2")}</p>
-              <div className="mt-8">
-                <Link to="/contactanos" className="bg-primary text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</Link>
-              </div>
+              <ButtonContacto />
             </div>
           </div>
         </div>
@@ -98,9 +95,7 @@ function WhoWeAre(){
         </div>
         {/* Correo */}
         <div className="mt-14">
-          <div className="bg-grisOscuro px-5 py-5">
-            <p className="text-white text-center">Para más información, escríbenos a: info@osha.es</p>
-          </div>
+          <ButtonEmailInfo />
         </div>
       </div>
     </section>
@@ -157,16 +152,6 @@ function LegalNature(){
         </div>
       </div>
     </section>
-  );
-};
-
-const Line = () => {
-  return (
-    <div className="flex">
-      <div className="bg-secondary h-1 w-5"></div>
-      <div className="bg-white h-1 w-2"></div>
-      <div className="bg-secondary h-1 w-20"></div>
-    </div>
   );
 };
 
@@ -278,13 +263,13 @@ function PrivacyAndSecurityDeclaration(){
         icon={<FaBuildingColumns/>}
         img="/img-nosotros/business.jpg"
       />
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16">
+      <div className="px-5 md:px-10 lg:px-20 xl:px-40 py-10 lg:py-15 lg:py-16 bg-gray-50">
         <h1 className="text-primary uppercase font-bold">{t("privacyAndSecurityDeclaration.title")}</h1>
         <Line1 bgColorClass={"bg-secondary"}/>
         <div className="mt-8 flex flex-col gap-5 lg:gap-12 md:flex-row">
           <div className="">
             <p>{t("privacyAndSecurityDeclaration.content")}</p>
-            <div className="mt-5 rounded-r-lg shadow-lg p-5 border-l-8 border-primary border-2">
+            <div className="mt-5 rounded-r-lg shadow-lg p-5 border-l-8 border-primary border-2 bg-white">
               <p>{t("privacyAndSecurityDeclaration.content-p1")}</p>
             </div>
           </div>
@@ -295,7 +280,7 @@ function PrivacyAndSecurityDeclaration(){
             />
           </div>
         </div>
-        <div className="mt-10 py-8 px-5 flex flex-col gap-5 bg-gray-100 rounded-lg">
+        <div className="mt-10 py-8 px-5 flex flex-col gap-5 bg-blue-100 rounded-lg">
           <Accordian className='flex flex-col gap-5' >
             <AccordianItem value='1' trigger={t("privacyAndSecurityDeclaration.queans1.question")}>
               <p>{t("privacyAndSecurityDeclaration.queans1.answer")}</p>
@@ -329,7 +314,7 @@ function PrivacyAndSecurityDeclaration(){
             </AccordianItem>
           </Accordian>
         </div>
-        <div className="mt-10 border-2 border-primary p-5 rounded-lg">
+        <div className="mt-10 border-2 border-t-8 border-primary p-5 rounded-b-lg bg-white">
             <p>{t("privacyAndSecurityDeclaration.content-p2")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p3")}</p>
             <p className="mt-3">{t("privacyAndSecurityDeclaration.content-p4")}</p>
