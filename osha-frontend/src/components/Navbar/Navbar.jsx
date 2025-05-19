@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-import { AnimatePresence, color, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
-import { FiArrowRight, FiBarChart2, FiChevronDown, FiHome, FiPieChart } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 import { PiShieldCheckBold } from "react-icons/pi";
 import { PiSealCheckBold } from "react-icons/pi";
 import { CgCheck } from "react-icons/cg";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
             </Link>
             {/* Menu Icon */}
             <div className="text-3xl" onClick={() => setOpen(!open)}>
-              <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+              {open ? <IoClose /> : <IoMenu />}
             </div>
           </div>
           {/* Navbar */}
@@ -47,7 +48,7 @@ const Navbar = () => {
               <NavLinks/>
             </div>
             <div className="mx-auto mt-auto mb-5">
-              <button className="bg-primary py-2 px-3 rounded-lg shadow-lg text-white">Contactanos</button>
+              <Link to="/contactanos" className="bg-primary py-2 px-3 rounded-lg shadow-lg text-white">Contáctanos</Link>
             </div>
           </div>
         </div>

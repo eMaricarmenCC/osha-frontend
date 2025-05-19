@@ -58,6 +58,12 @@ const NavLinks = () => {
       link: "/grados",
       icon: <FaBook style={{color:"var(--primary)", width:20, height:20 }}/>
     },
+    {
+      name: t("headquarters"),
+      submenu: false,
+      link: "/sedes",
+      icon: <FaBuildingColumns style={{color:"var(--primary)", width:20, height:20 }}/>
+    },
   ];
   const [heading, setHeading] = useState("");
   return (
